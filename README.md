@@ -33,16 +33,24 @@ UVC 부트캠프 중간 역량강화 프로젝트 2팀 입니다.
 ░░░░░░░░░░░▀█▄█▄███▀░░░ ▀██▄█▄███▀░    
 
 
+[참고]  https://beyond-limits.tistory.com/33
 
-# Project 설명
+# Git 전략
+>
+```
+[참고 1] (https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-github-flow-git-flow-%F0%9F%93%88-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5)  
+[참고 2] (https://rainbound.tistory.com/entry/git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5#github-flow)   
 
-https://beyond-limits.tistory.com/33
+main 브랜치에서 frontend와 backend 라는 sub-main 브랜치를 분기한 이후 frontend,backend 브랜치에서 각각 커밋을 진행.   
+작업진행 중간마다  frontend와 backend에서 새로운 기능을 작업하는 경우 각각의 브랜치에서 feature 브랜치를 분기하여 작업하고,   
+기능이 완성되면 각각의 sub-main branch로 merge 할거고, 배포가 가능하다면  main 브랜치로 sub-main 브랜치로 merge할 예정.  
+```
 
+# Project 설명  
 
+<br>   
 
-<br>
-
-## [ 프로젝트 진행간 특이사항 ]
+## [ 프로젝트 진행간 특이사항 ]   
 
 **매일 오전 9-10시 회의 진행 예정**
 ```
