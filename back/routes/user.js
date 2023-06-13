@@ -81,7 +81,6 @@ router.put("/:id", async (req, res) => {
   try {
     const params = {
       id: req.params.id,
-      departmentId: req.body.departmentId,
       name: req.body.name,
       role: req.body.role,
       email: req.body.email,

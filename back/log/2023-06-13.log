@@ -189,3 +189,38 @@
 2023-06-13 16:46:37.748[info] Sequelize sync success
 2023-06-13 16:46:50.452[info] (department.info.params) {"id":"1"}
 2023-06-13 16:46:50.470[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-13 22:38:45.120[info] app start
+2023-06-13 22:38:45.865[error] DB Connection fail Unknown database 'real_estate_users'
+2023-06-13 22:39:12.662[info] app start
+2023-06-13 22:39:12.788[info] DB connection success
+2023-06-13 22:39:12.850[info] Sequelize sync success
+2023-06-13 23:57:12.764[info] (user.list.params) {}
+2023-06-13 23:57:12.837[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:12.837[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:57:12.841[info] (user.list.params) {}
+2023-06-13 23:57:12.846[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:12.846[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:57:12.848[info] (user.list.params) {}
+2023-06-13 23:57:12.852[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:12.853[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:57:17.724[info] (user.list.params) {}
+2023-06-13 23:57:17.731[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:17.733[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:57:17.737[info] (user.list.params) {}
+2023-06-13 23:57:17.743[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:17.744[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:57:17.746[info] (user.list.params) {}
+2023-06-13 23:57:17.750[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:17.751[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:58:05.751[info] (user.list.params) {}
+2023-06-13 23:58:05.762[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:58:05.763[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:59:47.476[info] (user.list.params) {}
+2023-06-13 23:59:47.487[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:59:47.488[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:59:47.494[info] (user.list.params) {}
+2023-06-13 23:59:47.499[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:59:47.500[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:59:47.503[info] (user.list.params) {}
+2023-06-13 23:59:47.509[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:59:47.509[info] (user.list.result) {"count":0,"rows":[]}
