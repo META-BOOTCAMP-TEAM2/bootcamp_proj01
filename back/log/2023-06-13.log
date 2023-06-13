@@ -1,0 +1,61 @@
+2023-06-13 15:15:57.726[info] app start
+2023-06-13 15:15:57.831[error] DB Connection fail Access denied for user 'root'@'localhost' (using password: YES)
+2023-06-13 15:16:55.361[info] app start
+2023-06-13 15:16:55.428[error] DB Connection fail Unknown database 'real_estate_users'
+2023-06-13 15:18:12.905[info] app start
+2023-06-13 15:18:12.985[info] DB connection success
+2023-06-13 15:18:13.030[info] Sequelize sync success
+2023-06-13 15:21:33.428[info] app start
+2023-06-13 15:21:33.511[info] DB connection success
+2023-06-13 15:21:33.520[info] Sequelize sync success
+2023-06-13 15:23:14.571[info] app start
+2023-06-13 15:23:14.647[info] DB connection success
+2023-06-13 15:23:14.656[info] Sequelize sync success
+2023-06-13 15:23:24.188[info] app start
+2023-06-13 15:23:24.319[info] DB connection success
+2023-06-13 15:23:24.334[info] Sequelize sync success
+2023-06-13 15:23:39.065[info] app start
+2023-06-13 15:23:39.143[info] DB connection success
+2023-06-13 15:23:39.152[info] Sequelize sync success
+2023-06-13 15:24:14.824[info] app start
+2023-06-13 15:24:14.906[info] DB connection success
+2023-06-13 15:24:14.915[info] Sequelize sync success
+2023-06-13 15:24:34.300[info] app start
+2023-06-13 15:24:34.380[info] DB connection success
+2023-06-13 15:24:34.390[info] Sequelize sync success
+2023-06-13 15:25:02.889[info] app start
+2023-06-13 15:25:02.975[info] DB connection success
+2023-06-13 15:25:02.984[info] Sequelize sync success
+2023-06-13 15:25:32.395[info] app start
+2023-06-13 15:25:32.476[info] DB connection success
+2023-06-13 15:25:32.484[info] Sequelize sync success
+2023-06-13 15:25:41.668[info] app start
+2023-06-13 15:25:41.753[info] DB connection success
+2023-06-13 15:25:41.763[info] Sequelize sync success
+2023-06-13 15:26:00.799[info] app start
+2023-06-13 15:26:00.883[info] DB connection success
+2023-06-13 15:26:00.893[info] Sequelize sync success
+2023-06-13 15:35:14.129[info] app start
+2023-06-13 15:35:14.211[info] DB connection success
+2023-06-13 15:35:14.219[info] Sequelize sync success
+2023-06-13 15:35:33.465[info] app start
+2023-06-13 15:35:33.539[info] DB connection success
+2023-06-13 15:35:33.548[info] Sequelize sync success
+2023-06-13 15:35:44.511[info] app start
+2023-06-13 15:35:44.582[info] DB connection success
+2023-06-13 15:35:44.590[info] Sequelize sync success
+2023-06-13 15:35:58.537[info] app start
+2023-06-13 15:35:58.619[info] DB connection success
+2023-06-13 15:35:58.628[info] Sequelize sync success
+2023-06-13 15:40:09.672[info] app start
+2023-06-13 15:40:09.750[info] DB connection success
+2023-06-13 15:40:09.760[info] Sequelize sync success
+2023-06-13 15:41:35.408[info] app start
+2023-06-13 15:41:35.483[info] DB connection success
+2023-06-13 15:41:35.493[info] Sequelize sync success
+2023-06-13 15:42:17.840[info] app start
+2023-06-13 15:42:17.922[info] DB connection success
+2023-06-13 15:42:17.931[info] Sequelize sync success
+2023-06-13 15:42:38.053[info] app start
+2023-06-13 15:42:38.139[info] DB connection success
+2023-06-13 15:42:38.149[info] Sequelize sync success
