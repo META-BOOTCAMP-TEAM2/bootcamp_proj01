@@ -58,15 +58,16 @@ router.get("/", async (req, res) => {
 
 // 상세정보 조회
 // router.get("/:id", isLoggedIn, async (req, res) => {
+//  "/:id"는 경로 매개변수. 동적으로 값을 캡처함.  예를 들어 "/users/123"과 같은 요청에서 123은 id 매개변수에 할당.
 router.get("/:id", async (req, res) => {
   try {
     const params = {
       id: req.params.id,
     };
-    logger.info(`(board.info.params) ${JSON.stringify(params)}`);
+    logger.info(`(department.info.params) ${JSON.stringify(params)}`);
 
+    // 비즈니스 로직 호출
     const result = await userService.info(params);
-    logger.info(`(board.info.result) ${JSON.stringify(result)}`);
 
     // 최종 응답
     res.status(200).json(result);
@@ -75,19 +76,21 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// 수정
-// router.put('/:id', isLoggedIn, async (req, res) => {
+// 유저 수정
 router.put("/:id", async (req, res) => {
   try {
     const params = {
       id: req.params.id,
-      title: req.body.title,
-      active: req.body.active,
+      departmentId: req.body.departmentId,
+      name: req.body.name,
+      role: req.body.role,
+      email: req.body.email,
+      phone: req.body.phone,
     };
-    logger.info(`(board.update.params) ${JSON.stringify(params)}`);
+    logger.info(`(department.edit.params) ${JSON.stringify(params)}`);
 
+    // 비즈니스 로직 호출
     const result = await userService.edit(params);
-    logger.info(`(board.update.result) ${JSON.stringify(result)}`);
 
     // 최종 응답
     res.status(200).json(result);
@@ -96,17 +99,16 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-// 삭제
-// router.delete("/:id", isLoggedIn, async (req, res) => {
+// 유저 삭제
 router.delete("/:id", async (req, res) => {
   try {
     const params = {
       id: req.params.id,
     };
-    logger.info(`(board.delete.params) ${JSON.stringify(params)}`);
+    logger.info(`(department.delete.params) ${JSON.stringify(params)}`);
 
+    // 비즈니스 로직 호출
     const result = await userService.delete(params);
-    logger.info(`(board.delete.result) ${JSON.stringify(result)}`);
 
     // 최종 응답
     res.status(200).json(result);
