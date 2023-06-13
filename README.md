@@ -82,7 +82,11 @@ main 브랜치에서 frontend와 backend 라는 sub-main 브랜치를 분기한 
 
 
 **13일(화)**
- - 프로젝트 진행(1) 
+- Git branch 초기 세팅
+- backend 기본 세팅
+- frontend 기본 세팅
+- Main 홈페이지 회원가입 페이지 만들기
+- 회원가입 및 로그인 기능
 
 
 
