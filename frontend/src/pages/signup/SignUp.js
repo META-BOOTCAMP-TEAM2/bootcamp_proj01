@@ -71,12 +71,24 @@ const SignUpPage = () => {
           <div>
             <label htmlFor="name">이름</label>
             <br />
-            <input type="text" id="name" value={name} onChange={handleNameChange} required />
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={handleNameChange}
+              required
+            />
           </div>
           <div>
             <label htmlFor="id">아이디:</label>
             <br />
-            <input type="text" id="id" value={id} onChange={handleIdChange} required />
+            <input
+              type="text"
+              id="id"
+              value={id}
+              onChange={handleIdChange}
+              required
+            />
           </div>
           <div>
             <label htmlFor="password">비밀번호:</label>
@@ -103,7 +115,13 @@ const SignUpPage = () => {
           <div>
             <label htmlFor="email">이메일:</label>
             <br />
-            <input type="email" id="email" value={email} onChange={handleEmailChange} required />
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={handleEmailChange}
+              required
+            />
           </div>
           <div>
             <label htmlFor="phoneNumber">연락처:</label>
