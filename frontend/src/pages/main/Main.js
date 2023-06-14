@@ -1,9 +1,10 @@
 import React from "react";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import "./Main.css";
 import { Link } from "react-router-dom";
 
-function Main() {
+function Home() {
   return (
     <>
       <Header />
@@ -19,9 +20,11 @@ function Main() {
               방 구하기
             </button>
           </Link>
-          <button className="upload" id="Button">
-            방 내놓기
-          </button>
+          <Link to="/upload">
+            <button className="upload" id="Button">
+              방 내놓기
+            </button>
+          </Link>
         </div>
       </div>
       <Footer />
@@ -29,4 +32,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;

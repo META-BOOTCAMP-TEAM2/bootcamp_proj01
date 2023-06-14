@@ -6,6 +6,8 @@ import Home from "./pages/main/Main";
 import LoginForm from "./pages/login/Login";
 import SignUpPage from "./pages/signup/SignUp";
 import LocationPage from "./pages/location/Location";
+import UploadPage from "./pages/upload/upload";
+import MyPage from "./pages/myPage/MyPage";
 
 function App() {
   // const [users, setUsers] = useState([]);
@@ -23,6 +25,8 @@ function App() {
           <Route path="/login" element={<LoginForm />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/room" element={<LocationPage />} />
+          <Route path="/upload" element={<UploadPage />} />
+          <Route path="/MyPage" element={<MyPage />} />
         </Routes>
       </BrowserRouter>
 
