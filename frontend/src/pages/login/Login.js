@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
+import Header from "../../components/Header/Header";
+// import axios from "axios";
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
@@ -24,6 +25,7 @@ const LoginForm = () => {
 
   return (
     <>
+      <Header />
       <div>로그인</div>
       <div>서비스 이용을 위해 로그인해주세요</div>
       <form onSubmit={handleSubmit}>

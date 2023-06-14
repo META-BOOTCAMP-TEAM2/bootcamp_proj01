@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import "./Main.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -12,9 +13,11 @@ function Home() {
           최적의 선택을 제공합니다.
         </div>
         <div className="buttons">
-          <button className="choice" id="Button">
-            방 구하기
-          </button>
+          <Link to="/room">
+            <button className="choice" id="Button">
+              방 구하기
+            </button>
+          </Link>
           <button className="upload" id="Button">
             방 내놓기
           </button>
