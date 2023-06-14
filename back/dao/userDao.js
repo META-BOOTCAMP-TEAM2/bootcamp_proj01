@@ -1,5 +1,6 @@
 /*eslint-disable*/
 
+//사용자에 대한 데이터베이스 액세스관련기능 처리
 const { Op } = require("sequelize");
 const { User } = require("../models/index");
 
@@ -52,11 +53,28 @@ const dao = {
         });
     });
   },
-  // 로그인용 아이디로 사용자 검색
-  // 상세정보 조회
-  selectUser(params) {
+  // pk로 상세정보 조회
+  selectUserByPk(params) {
     return new Promise((resolve, reject) => {
       User.findByPk(params.id)
+        .then((selectedOne) => {
+          resolve(selectedOne);
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    });
+  },
+
+  // 로그인을 위한 사용자 조회
+  selectUser(params) {
+    return new Promise((resolve, reject) => {
+      User.findOne({
+        attributes: ["id", "userid", "password", "name", "role"],
+        where: {
+          userid: params.userid,
+        },
+      })
         .then((selectedOne) => {
           resolve(selectedOne);
         })

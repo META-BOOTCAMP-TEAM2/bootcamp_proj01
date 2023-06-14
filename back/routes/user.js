@@ -64,7 +64,7 @@ router.get("/:id", async (req, res) => {
     const params = {
       id: req.params.id,
     };
-    logger.info(`(department.info.params) ${JSON.stringify(params)}`);
+    logger.info(`(user.info.params) ${JSON.stringify(params)}`);
 
     // 비즈니스 로직 호출
     const result = await userService.info(params);

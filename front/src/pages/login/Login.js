@@ -24,8 +24,8 @@ const LoginForm = () => {
 
   return (
     <>
-      <div>로그인</div>
-      <div>서비스 이용을 위해 로그인해주세요</div>
+      <h1>로그인</h1>
+      <p>서비스 이용을 위해 로그인해주세요</p>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

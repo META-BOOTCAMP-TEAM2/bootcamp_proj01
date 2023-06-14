@@ -189,6 +189,7 @@
 2023-06-13 16:46:37.748[info] Sequelize sync success
 2023-06-13 16:46:50.452[info] (department.info.params) {"id":"1"}
 2023-06-13 16:46:50.470[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+<<<<<<< Updated upstream
 2023-06-13 22:38:45.120[info] app start
 2023-06-13 22:38:45.865[error] DB Connection fail Unknown database 'real_estate_users'
 2023-06-13 22:39:12.662[info] app start
@@ -224,3 +225,26 @@
 2023-06-13 23:59:47.503[info] (user.list.params) {}
 2023-06-13 23:59:47.509[debug] (userService.list) {"count":0,"rows":[]}
 2023-06-13 23:59:47.509[info] (user.list.result) {"count":0,"rows":[]}
+=======
+2023-06-13 16:54:48.969[info] app start
+2023-06-13 16:54:49.056[info] DB connection success
+2023-06-13 16:54:49.063[info] Sequelize sync success
+2023-06-13 16:54:58.397[info] (department.info.params) {"id":"1"}
+2023-06-13 16:54:58.412[debug] (userService.info) {"id":1,"name":"김개발","userid":"kim","password":"1","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}
+2023-06-13 16:55:49.747[info] (department.delete.params) {"id":"1"}
+2023-06-13 16:55:49.768[debug] (userService.delete) {"deletedCount":1}
+2023-06-13 16:55:58.388[info] (department.info.params) {"id":"1"}
+2023-06-13 16:55:58.393[debug] (userService.info) null
+2023-06-13 16:56:03.685[info] (user.list.params) {}
+2023-06-13 16:56:03.700[debug] (userService.list) {"count":4,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null}]}
+2023-06-13 16:56:03.704[info] (user.list.result) {"count":4,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null}]}
+2023-06-13 16:57:39.563[info] (department.edit.params) {"id":"1","name":"김개발1","role":"member","email":"kim@email.com","phone":"010-1234-5678"}
+2023-06-13 16:57:39.570[debug] (userService.edit) {"updatedCount":0}
+2023-06-13 16:57:51.488[info] (department.edit.params) {"id":"2","name":"김개발1","role":"member","email":"kim@email.com","phone":"010-1234-5678"}
+2023-06-13 16:57:51.504[debug] (userService.edit) {"updatedCount":1}
+2023-06-13 16:57:56.527[info] (department.info.params) {"id":"1"}
+2023-06-13 16:57:56.530[debug] (userService.info) null
+2023-06-13 16:58:01.636[info] (user.list.params) {}
+2023-06-13 16:58:01.646[debug] (userService.list) {"count":4,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발1","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T07:57:51.000Z","deletedAt":null}]}
+2023-06-13 16:58:01.647[info] (user.list.result) {"count":4,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발1","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T07:57:51.000Z","deletedAt":null}]}
+>>>>>>> Stashed changes
