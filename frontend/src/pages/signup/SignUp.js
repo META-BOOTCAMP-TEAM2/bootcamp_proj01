@@ -10,6 +10,7 @@ const SignUpPage = () => {
   const [passwordCheck, setPasswordCheck] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [passwordError, setPasswordError] = useState(false);
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -21,6 +22,10 @@ const SignUpPage = () => {
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
+    setPasswordError(
+      !/(?=.*[a-zA-Z])(?=.*\d)(?=.*[?!@#$%/])/.test(e.target.value) ||
+        e.target.value.length < 6
+    );
   };
 
   const handlePasswordCheckChange = (e) => {
@@ -100,6 +105,12 @@ const SignUpPage = () => {
               onChange={handlePasswordChange}
               required
             />
+            {passwordError && (
+              <p>
+                비밀번호는 최소 6자 이상이며 알파벳, 숫자, 특수문자(?!@#$%/) 중
+                하나를 포함해야 합니다.
+              </p>
+            )}
           </div>
           <div>
             <label htmlFor="passwordCheck">비밀번호 확인:</label>

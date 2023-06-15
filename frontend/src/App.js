@@ -8,6 +8,7 @@ import SignUpPage from "./pages/signup/SignUp";
 import LocationPage from "./pages/location/Location";
 import UploadPage from "./pages/upload/upload";
 import MyPage from "./pages/myPage/MyPage";
+import Listing from "./pages/listing/Listing";
 
 function App() {
   // const [users, setUsers] = useState([]);
@@ -27,6 +28,7 @@ function App() {
           <Route path="/room" element={<LocationPage />} />
           <Route path="/upload" element={<UploadPage />} />
           <Route path="/MyPage" element={<MyPage />} />
+          <Route path="/Listing" element={<Listing />} />
         </Routes>
       </BrowserRouter>
 

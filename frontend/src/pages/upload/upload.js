@@ -5,15 +5,32 @@ import DaumPostcode from "react-daum-postcode";
 import { Link } from "react-router-dom";
 
 const UploadPage = () => {
-  const [propertyType, setPropertyType] = useState("");
-  const [selectedFiles, setSelectedFiles] = useState([]);
-  const [address, setAddress] = useState("");
-  const [price, setPrice] = useState("");
-  const [deposit, setDeposit] = useState("");
-  const [monthlyRent, setMonthlyRent] = useState("");
+  const [propertyType, setPropertyType] = useState(""); //계약 방식
+  const [selectedFiles, setSelectedFiles] = useState([]); //사진 파일
+  const [address, setAddress] = useState(""); //주소 등록
+  const [price, setPrice] = useState(""); //매매 가격
+  const [deposit, setDeposit] = useState(""); //전세 가격
+  const [monthlyRent, setMonthlyRent] = useState(""); //월세 가격
+  const [structure, setStructure] = useState(""); //방 구조
+  const [selectedOptions, setSelectedOptions] = useState([]); //옵션 선택
 
   const handlePropertyTypeChange = (event) => {
     setPropertyType(event.target.value);
+  };
+
+  const handleStructureChange = (event) => {
+    setStructure(event.target.value);
+  };
+
+  const handleOptionChange = (event) => {
+    const option = event.target.value;
+    setSelectedOptions((prevOptions) => {
+      if (prevOptions.includes(option)) {
+        return prevOptions.filter((prevOption) => prevOption !== option);
+      } else {
+        return [...prevOptions, option];
+      }
+    });
   };
 
   useEffect(() => {
@@ -38,7 +55,6 @@ const UploadPage = () => {
     // 업로드 처리 로직 작성
   };
 
-  //@@가격 입력
   const handlePriceChange = (event) => {
     setPrice(event.target.value);
   };
@@ -101,7 +117,12 @@ const UploadPage = () => {
           <div>
             <label>
               매매가격:
-              <input type="text" value={price} onChange={handlePriceChange} />
+              <input
+                type="text"
+                placeholder="만원 단위로 입력해주세요"
+                value={price}
+                onChange={handlePriceChange}
+              />
             </label>
           </div>
         )}
@@ -112,6 +133,7 @@ const UploadPage = () => {
               보증금:
               <input
                 type="text"
+                placeholder="만원 단위로 입력해주세요"
                 value={deposit}
                 onChange={handleDepositChange}
               />
@@ -121,6 +143,7 @@ const UploadPage = () => {
               월세:
               <input
                 type="text"
+                placeholder="만원 단위로 입력해주세요"
                 value={monthlyRent}
                 onChange={handleMonthlyRentChange}
               />
@@ -134,6 +157,7 @@ const UploadPage = () => {
               보증금:
               <input
                 type="text"
+                placeholder="만원 단위로 입력해주세요"
                 value={deposit}
                 onChange={handleDepositChange}
               />
@@ -143,6 +167,7 @@ const UploadPage = () => {
               월세:
               <input
                 type="text"
+                placeholder="만원 단위로 입력해주세요"
                 value={monthlyRent}
                 onChange={handleMonthlyRentChange}
               />
@@ -151,26 +176,115 @@ const UploadPage = () => {
         )}
         <br />
         <br />
+        <label>
+          <input
+            type="radio"
+            name="structure"
+            value="원룸"
+            checked={structure === "원룸"}
+            onChange={handleStructureChange}
+          />
+          원룸
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="structure"
+            value="1.5룸"
+            checked={structure === "1.5룸"}
+            onChange={handleStructureChange}
+          />
+          1.5룸
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="structure"
+            value="2룸 이상"
+            checked={structure === "2룸 이상"}
+            onChange={handleStructureChange}
+          />
+          2룸 이상
+        </label>
+        <br />
+        <br />
+        <label>
+          <input
+            type="checkbox"
+            name="options"
+            value="냉장고"
+            checked={selectedOptions.includes("냉장고")}
+            onChange={handleOptionChange}
+          />
+          냉장고
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="options"
+            value="세탁기"
+            checked={selectedOptions.includes("세탁기")}
+            onChange={handleOptionChange}
+          />
+          세탁기
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="options"
+            value="에어컨"
+            checked={selectedOptions.includes("에어컨")}
+            onChange={handleOptionChange}
+          />
+          에어컨
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="options"
+            value="침대"
+            checked={selectedOptions.includes("침대")}
+            onChange={handleOptionChange}
+          />
+          침대
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="options"
+            value="책상"
+            checked={selectedOptions.includes("책상")}
+            onChange={handleOptionChange}
+          />
+          책상
+        </label>
+        <br />
+        <br />
         <input type="file" multiple onChange={handleFileChange} />
         <br />
-        <br />
+
         <div>
           {selectedFiles.map((file, index) => (
             <img
               key={index}
               src={URL.createObjectURL(file)}
               alt={`Image ${index + 1}`}
-              style={{ width: "200px", marginRight: "10px" }}
+              style={{ width: "250px", height: "200px", marginRight: "20px" }}
             />
           ))}
         </div>
+        <br />
+        <div>상세 설명을 적어주세요 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        {/* <input type="text" style={{ width: "400px", height: "50px" }} /> */}
+        <textarea style={{ width: "400px", height: "60px" }}></textarea>
         <br />
         <br />
         <Link to="/MyPage">
           <button type="submit">매물 등록</button>
         </Link>
       </form>
-
+      <br />
+      <br />
       <Footer />
     </>
   );
