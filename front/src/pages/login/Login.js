@@ -8,7 +8,7 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // try {
-    //     const response = await axios.post("백엔드 api 엔드", {
+    //     const response = await axios.post("http://192.168.0.30:8000/auth/login", {
     //       username,
     //       password,
     //     });
