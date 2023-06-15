@@ -81,12 +81,12 @@ router.get(
   }
 );
 
-router.get("/login", function (req, res, next) {
-  res.render("index", { title: "로그인 폼 양식입니다." });
-});
-router.get("/join", function (req, res, next) {
-  res.render("register", { title: "회원가입 폼 양식입니다." });
-});
+// router.get("/login", function (req, res, next) {
+//   res.render("index", { title: "로그인 폼 양식입니다." });
+// });
+// router.get("/join", function (req, res, next) {
+//   res.render("register", { title: "회원가입 폼 양식입니다." });
+// });
 
 //로컬 회원가입 , 로그인 , 로그아웃
 // POST /auth/join

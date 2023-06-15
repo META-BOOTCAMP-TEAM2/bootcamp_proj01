@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import DaumPostcode from "react-daum-postcode";
 import { Link } from "react-router-dom";
 

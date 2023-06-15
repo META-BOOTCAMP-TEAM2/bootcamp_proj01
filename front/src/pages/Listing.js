@@ -1,5 +1,5 @@
 import React from "react";
-import example from "./example";
+import example from "../assets/example.json";
 
 const Listing = () => {
   const itemsPerRow = 3; // 한 줄에 표시할 항목 수

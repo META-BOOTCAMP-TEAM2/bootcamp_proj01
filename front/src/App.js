@@ -1,40 +1,34 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
 import "./App.css";
-import Login from "./pages/login/Login";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-function App() {
-  const [users, setUsers] = useState([]);
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
 
-  useEffect(() => {
-    axios.get("http://localhost:8000/users").then((response) => {
-      console.log(response.data.rows);
-      setUsers(response.data.rows);
-    });
-  }, []);
+//pages
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Signup from "./pages/SignUp";
+import Location from "./pages/Location";
+import Upload from "./pages/Upload";
+import MyPage from "./pages/MyPage";
+import Listing from "./pages/Listing";
+
+// API 서버 url : http://localhost:8000
+function App() {
   return (
-    <div>
+    //usestate로 로그인 여부 체크하면서 mypage view 판단하는건??
+    <>
       <Router>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/room" element={<Location />} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/mypage" element={<MyPage />} />
+          <Route path="/lists" element={<Listing />} />
         </Routes>
       </Router>
-    </div>
-
-    // <div className="App">
-    //   {users.map((value, key) => {
-    //     return (
-    //       <div className="user">
-    //         <h1>User Lists {value.id}</h1>
-    //         <div className=""> {value.name} </div>
-    //         <div className="">{value.userid}</div>
-    //         <div className="">{value.password}</div>
-    //         <div className="">{value.email}</div>
-    //         <div className="">{value.phone}</div>
-    //       </div>
-    //     );
-    //   })}
-    // </div>
+    </>
   );
 }
 
