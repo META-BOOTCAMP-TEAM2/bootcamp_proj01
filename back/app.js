@@ -10,20 +10,37 @@ const models = require("./models/index");
 const logger = require("./lib/logger");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
-
+const passport = require("passport");
+const passportConfig = require("./passport/index");
+const session = require("express-session");
 dotenv.config();
 
 const NODE_ENV = process.env.NODE_ENV;
 
-// 라우팅 처리를 위한 라우터 모듈 호출
 const indexRouter = require("./routes/index");
 
 const app = express();
 logger.info("app start");
 
+//sessions
+app.use(
+  session({
+    secret: "keyboard cat",
+    resave: false,
+    saveUninitialized: false,
+  })
+);
+
+//passport 설정
+passportConfig();
+
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+
+//passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
 
 // DB 연결 확인 및 table 생성
 models.sequelize
@@ -51,7 +68,9 @@ app.use(cors(corsConfig));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// Routes
 app.use("/", indexRouter);
+
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
   next(createError(404));
