@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
-import "./Home.css";
+import Footer from "../components/Footer";
+import "./stylePages.css";
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <>
+    <div className="home">
       <Header />
       <div className="back">
         <div className="sentence">
@@ -26,7 +27,8 @@ function Home() {
           </Link>
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 

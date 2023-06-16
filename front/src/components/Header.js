@@ -7,7 +7,10 @@ function Header() {
   return (
     <div className="Header">
       <div className="header1">
-        <p className="Logo"> 🏠 Your Sweet Home</p>
+        <Link to="/">
+          {" "}
+          <p className="Logo"> 🏠 Your Sweet Home</p>
+        </Link>
       </div>
       <div className="header2">
         <Link to="/">
@@ -25,7 +28,7 @@ function Header() {
             Sign up
           </Button>{" "}
         </Link>
-        <Link to="mypage">
+        <Link to="/mypage">
           <Button variant="My page" id="buttons">
             My page
           </Button>

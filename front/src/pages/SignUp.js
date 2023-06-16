@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import "./stylePages.css";
 
 const SignUpPage = () => {
   const [name, setName] = useState("");
@@ -70,7 +71,7 @@ const SignUpPage = () => {
   return (
     <div>
       <Header />
-      <div>
+      <div className="Sign">
         <h2>회원가입</h2>
         <form onSubmit={handleSubmit}>
           <div>
