@@ -27,3 +27,40 @@
 .Logo {
   color: white;
 }
+
+/* navbar */
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: #0c0c0c;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+li a:hover {
+  color: rgb(59, 190, 205);
+}
+
+/* footer */
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #070707;
+  padding: 0;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  bottom: 0;
+  width: 100%;
+}

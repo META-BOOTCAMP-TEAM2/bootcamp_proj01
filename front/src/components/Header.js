@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import "./Header.css"; // CSS 파일을 불러옵니다.
+import "./style.css"; // CSS 파일을 불러옵니다.
 import { Link } from "react-router-dom";
 
 function Header() {
