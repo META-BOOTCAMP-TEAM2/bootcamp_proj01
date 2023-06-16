@@ -1,0 +1,250 @@
+2023-06-13 15:15:57.726[info] app start
+2023-06-13 15:15:57.831[error] DB Connection fail Access denied for user 'root'@'localhost' (using password: YES)
+2023-06-13 15:16:55.361[info] app start
+2023-06-13 15:16:55.428[error] DB Connection fail Unknown database 'real_estate_users'
+2023-06-13 15:18:12.905[info] app start
+2023-06-13 15:18:12.985[info] DB connection success
+2023-06-13 15:18:13.030[info] Sequelize sync success
+2023-06-13 15:21:33.428[info] app start
+2023-06-13 15:21:33.511[info] DB connection success
+2023-06-13 15:21:33.520[info] Sequelize sync success
+2023-06-13 15:23:14.571[info] app start
+2023-06-13 15:23:14.647[info] DB connection success
+2023-06-13 15:23:14.656[info] Sequelize sync success
+2023-06-13 15:23:24.188[info] app start
+2023-06-13 15:23:24.319[info] DB connection success
+2023-06-13 15:23:24.334[info] Sequelize sync success
+2023-06-13 15:23:39.065[info] app start
+2023-06-13 15:23:39.143[info] DB connection success
+2023-06-13 15:23:39.152[info] Sequelize sync success
+2023-06-13 15:24:14.824[info] app start
+2023-06-13 15:24:14.906[info] DB connection success
+2023-06-13 15:24:14.915[info] Sequelize sync success
+2023-06-13 15:24:34.300[info] app start
+2023-06-13 15:24:34.380[info] DB connection success
+2023-06-13 15:24:34.390[info] Sequelize sync success
+2023-06-13 15:25:02.889[info] app start
+2023-06-13 15:25:02.975[info] DB connection success
+2023-06-13 15:25:02.984[info] Sequelize sync success
+2023-06-13 15:25:32.395[info] app start
+2023-06-13 15:25:32.476[info] DB connection success
+2023-06-13 15:25:32.484[info] Sequelize sync success
+2023-06-13 15:25:41.668[info] app start
+2023-06-13 15:25:41.753[info] DB connection success
+2023-06-13 15:25:41.763[info] Sequelize sync success
+2023-06-13 15:26:00.799[info] app start
+2023-06-13 15:26:00.883[info] DB connection success
+2023-06-13 15:26:00.893[info] Sequelize sync success
+2023-06-13 15:35:14.129[info] app start
+2023-06-13 15:35:14.211[info] DB connection success
+2023-06-13 15:35:14.219[info] Sequelize sync success
+2023-06-13 15:35:33.465[info] app start
+2023-06-13 15:35:33.539[info] DB connection success
+2023-06-13 15:35:33.548[info] Sequelize sync success
+2023-06-13 15:35:44.511[info] app start
+2023-06-13 15:35:44.582[info] DB connection success
+2023-06-13 15:35:44.590[info] Sequelize sync success
+2023-06-13 15:35:58.537[info] app start
+2023-06-13 15:35:58.619[info] DB connection success
+2023-06-13 15:35:58.628[info] Sequelize sync success
+2023-06-13 15:40:09.672[info] app start
+2023-06-13 15:40:09.750[info] DB connection success
+2023-06-13 15:40:09.760[info] Sequelize sync success
+2023-06-13 15:41:35.408[info] app start
+2023-06-13 15:41:35.483[info] DB connection success
+2023-06-13 15:41:35.493[info] Sequelize sync success
+2023-06-13 15:42:17.840[info] app start
+2023-06-13 15:42:17.922[info] DB connection success
+2023-06-13 15:42:17.931[info] Sequelize sync success
+2023-06-13 15:42:38.053[info] app start
+2023-06-13 15:42:38.139[info] DB connection success
+2023-06-13 15:42:38.149[info] Sequelize sync success
+2023-06-13 15:56:10.468[info] app start
+2023-06-13 15:56:10.553[info] DB connection success
+2023-06-13 15:56:10.563[info] Sequelize sync success
+2023-06-13 15:56:13.965[info] app start
+2023-06-13 15:56:14.044[info] DB connection success
+2023-06-13 15:56:14.051[info] Sequelize sync success
+2023-06-13 15:56:17.152[info] (user.reg.params) {"name":"김개발","userid":"kim","password":"1","role":"member","email":"kim@email.com","phone":"010-1234-5678"}
+2023-06-13 15:56:17.183[debug] (userService.reg) {"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedAt":"2023-06-13T06:56:17.155Z","createdAt":"2023-06-13T06:56:17.155Z"}
+2023-06-13 15:56:17.184[info] (user.reg.result) {"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedAt":"2023-06-13T06:56:17.155Z","createdAt":"2023-06-13T06:56:17.155Z"}
+2023-06-13 15:59:06.006[info] (user.reg.params) {"name":"김개발","userid":"kim2","password":"1","role":"member","email":"kim@email.com","phone":"010-1234-5678"}
+2023-06-13 15:59:06.030[debug] (userService.reg) {"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedAt":"2023-06-13T06:59:06.008Z","createdAt":"2023-06-13T06:59:06.008Z"}
+2023-06-13 15:59:06.033[info] (user.reg.result) {"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedAt":"2023-06-13T06:59:06.008Z","createdAt":"2023-06-13T06:59:06.008Z"}
+2023-06-13 16:01:21.406[info] app start
+2023-06-13 16:01:21.483[info] DB connection success
+2023-06-13 16:01:21.492[info] Sequelize sync success
+2023-06-13 16:01:57.665[info] (user.reg.params) {"name":"김개발","userid":"kim3","password":"1","role":"member","email":"kim@email.com","phone":"010-1234-5678"}
+2023-06-13 16:01:57.685[debug] (userService.reg) {"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedAt":"2023-06-13T07:01:57.668Z","createdAt":"2023-06-13T07:01:57.668Z"}
+2023-06-13 16:01:57.686[info] (user.reg.result) {"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedAt":"2023-06-13T07:01:57.668Z","createdAt":"2023-06-13T07:01:57.668Z"}
+2023-06-13 16:02:00.941[info] (user.reg.params) {"name":"김개발","userid":"kim4","password":"1","role":"member","email":"kim@email.com","phone":"010-1234-5678"}
+2023-06-13 16:02:00.953[debug] (userService.reg) {"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedAt":"2023-06-13T07:02:00.942Z","createdAt":"2023-06-13T07:02:00.942Z"}
+2023-06-13 16:02:00.954[info] (user.reg.result) {"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedAt":"2023-06-13T07:02:00.942Z","createdAt":"2023-06-13T07:02:00.942Z"}
+2023-06-13 16:02:03.739[info] (user.reg.params) {"name":"김개발","userid":"kim5","password":"1","role":"member","email":"kim@email.com","phone":"010-1234-5678"}
+2023-06-13 16:02:03.749[debug] (userService.reg) {"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedAt":"2023-06-13T07:02:03.740Z","createdAt":"2023-06-13T07:02:03.740Z"}
+2023-06-13 16:02:03.750[info] (user.reg.result) {"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedAt":"2023-06-13T07:02:03.740Z","createdAt":"2023-06-13T07:02:03.740Z"}
+2023-06-13 16:04:45.844[info] (user.list.params) {}
+2023-06-13 16:04:45.861[debug] (userService.list) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:04:45.864[info] (user.list.result) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:05:00.914[info] (user.list.params) {"name":""}
+2023-06-13 16:05:00.925[debug] (userService.list) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:05:00.929[info] (user.list.result) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:05:08.328[info] (user.list.params) {"name":"김개"}
+2023-06-13 16:05:08.335[debug] (userService.list) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:05:08.341[info] (user.list.result) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:05:19.082[info] (user.list.params) {}
+2023-06-13 16:05:19.095[debug] (userService.list) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:05:19.099[info] (user.list.result) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:08:05.189[info] (user.update.params) {"id":"<:id>"}
+2023-06-13 16:08:24.536[info] (user.update.params) {"id":":id"}
+2023-06-13 16:10:39.671[info] app start
+2023-06-13 16:10:39.760[info] DB connection success
+2023-06-13 16:10:39.768[info] Sequelize sync success
+2023-06-13 16:11:08.249[info] app start
+2023-06-13 16:11:08.327[info] DB connection success
+2023-06-13 16:11:08.336[info] Sequelize sync success
+2023-06-13 16:11:10.380[info] app start
+2023-06-13 16:11:10.464[info] DB connection success
+2023-06-13 16:11:10.474[info] Sequelize sync success
+2023-06-13 16:11:14.527[info] app start
+2023-06-13 16:11:14.615[info] DB connection success
+2023-06-13 16:11:14.624[info] Sequelize sync success
+2023-06-13 16:11:16.360[info] params정보입니다. {"id":":id"}
+2023-06-13 16:11:16.361[info] (user.update.params) {"id":":id"}
+2023-06-13 16:11:58.418[info] app start
+2023-06-13 16:11:58.497[info] DB connection success
+2023-06-13 16:11:58.505[info] Sequelize sync success
+2023-06-13 16:14:35.530[info] (user.list.params) {}
+2023-06-13 16:14:35.551[debug] (userService.list) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:14:35.554[info] (user.list.result) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:15:39.299[info] (user.list.params) {}
+2023-06-13 16:15:39.309[debug] (userService.list) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:15:39.313[info] (user.list.result) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:17:16.773[info] (user.list.params) {}
+2023-06-13 16:17:16.782[debug] (userService.list) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:17:16.785[info] (user.list.result) {"count":5,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null},{"id":1,"name":"김개발","userid":"kim","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}]}
+2023-06-13 16:17:22.540[info] (user.info.params) {"id":"1"}
+2023-06-13 16:24:30.353[info] app start
+2023-06-13 16:24:30.430[info] DB connection success
+2023-06-13 16:24:30.439[info] Sequelize sync success
+2023-06-13 16:24:56.746[info] app start
+2023-06-13 16:24:56.862[info] DB connection success
+2023-06-13 16:24:56.870[info] Sequelize sync success
+2023-06-13 16:25:01.632[info] (user.info.params) {"id":"1"}
+2023-06-13 16:25:01.633[error] (userService.info) ReferenceError: boardDao is not defined
+2023-06-13 16:25:27.620[info] app start
+2023-06-13 16:25:27.700[info] DB connection success
+2023-06-13 16:25:27.710[info] Sequelize sync success
+2023-06-13 16:25:33.944[info] (user.info.params) {"id":"1"}
+2023-06-13 16:25:33.945[error] (userService.info) TypeError: userDao.selectInfo is not a function
+2023-06-13 16:30:56.775[info] app start
+2023-06-13 16:30:56.901[info] DB connection success
+2023-06-13 16:30:56.913[info] Sequelize sync success
+2023-06-13 16:30:59.606[info] (user.info.params) {"id":"1"}
+2023-06-13 16:30:59.607[error] (userService.info) TypeError: userDao.selectInfo is not a function
+2023-06-13 16:31:25.924[info] app start
+2023-06-13 16:31:26.086[info] DB connection success
+2023-06-13 16:31:26.098[info] Sequelize sync success
+2023-06-13 16:31:27.635[info] (user.info.params) {"id":"1"}
+2023-06-13 16:31:27.642[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-13 16:33:36.540[info] app start
+2023-06-13 16:33:36.619[info] DB connection success
+2023-06-13 16:33:36.628[info] Sequelize sync success
+2023-06-13 16:33:57.289[info] app start
+2023-06-13 16:33:57.370[info] DB connection success
+2023-06-13 16:33:57.378[info] Sequelize sync success
+2023-06-13 16:38:48.631[info] app start
+2023-06-13 16:38:48.733[info] DB connection success
+2023-06-13 16:38:48.740[info] Sequelize sync success
+2023-06-13 16:39:34.934[info] (department.info.params) {"id":"1"}
+2023-06-13 16:39:34.939[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-13 16:40:16.790[info] app start
+2023-06-13 16:40:16.875[info] DB connection success
+2023-06-13 16:40:16.883[info] Sequelize sync success
+2023-06-13 16:41:59.668[info] app start
+2023-06-13 16:41:59.758[info] DB connection success
+2023-06-13 16:41:59.770[info] Sequelize sync success
+2023-06-13 16:42:10.155[info] (department.info.params) {"id":"1"}
+2023-06-13 16:42:10.156[error] (userService.info) TypeError: userDao.selectInfo is not a function
+2023-06-13 16:42:34.020[info] app start
+2023-06-13 16:42:34.104[info] DB connection success
+2023-06-13 16:42:34.114[info] Sequelize sync success
+2023-06-13 16:44:37.544[info] app start
+2023-06-13 16:44:37.626[info] DB connection success
+2023-06-13 16:44:37.634[info] Sequelize sync success
+2023-06-13 16:44:40.947[info] (department.info.params) {"id":"1"}
+2023-06-13 16:44:40.947[error] (userService.info) TypeError: userDao.selectInfo is not a function
+2023-06-13 16:45:40.838[info] app start
+2023-06-13 16:45:40.949[info] DB connection success
+2023-06-13 16:45:40.961[info] Sequelize sync success
+2023-06-13 16:45:42.321[info] (department.info.params) {"id":"1"}
+2023-06-13 16:45:42.328[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-13 16:46:29.852[info] app start
+2023-06-13 16:46:29.934[info] DB connection success
+2023-06-13 16:46:29.943[info] Sequelize sync success
+2023-06-13 16:46:32.363[info] (department.info.params) {"id":"1"}
+2023-06-13 16:46:32.369[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-13 16:46:37.655[info] app start
+2023-06-13 16:46:37.737[info] DB connection success
+2023-06-13 16:46:37.748[info] Sequelize sync success
+2023-06-13 16:46:50.452[info] (department.info.params) {"id":"1"}
+2023-06-13 16:46:50.470[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+<<<<<<< Updated upstream
+2023-06-13 22:38:45.120[info] app start
+2023-06-13 22:38:45.865[error] DB Connection fail Unknown database 'real_estate_users'
+2023-06-13 22:39:12.662[info] app start
+2023-06-13 22:39:12.788[info] DB connection success
+2023-06-13 22:39:12.850[info] Sequelize sync success
+2023-06-13 23:57:12.764[info] (user.list.params) {}
+2023-06-13 23:57:12.837[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:12.837[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:57:12.841[info] (user.list.params) {}
+2023-06-13 23:57:12.846[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:12.846[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:57:12.848[info] (user.list.params) {}
+2023-06-13 23:57:12.852[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:12.853[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:57:17.724[info] (user.list.params) {}
+2023-06-13 23:57:17.731[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:17.733[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:57:17.737[info] (user.list.params) {}
+2023-06-13 23:57:17.743[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:17.744[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:57:17.746[info] (user.list.params) {}
+2023-06-13 23:57:17.750[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:57:17.751[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:58:05.751[info] (user.list.params) {}
+2023-06-13 23:58:05.762[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:58:05.763[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:59:47.476[info] (user.list.params) {}
+2023-06-13 23:59:47.487[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:59:47.488[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:59:47.494[info] (user.list.params) {}
+2023-06-13 23:59:47.499[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:59:47.500[info] (user.list.result) {"count":0,"rows":[]}
+2023-06-13 23:59:47.503[info] (user.list.params) {}
+2023-06-13 23:59:47.509[debug] (userService.list) {"count":0,"rows":[]}
+2023-06-13 23:59:47.509[info] (user.list.result) {"count":0,"rows":[]}
+=======
+2023-06-13 16:54:48.969[info] app start
+2023-06-13 16:54:49.056[info] DB connection success
+2023-06-13 16:54:49.063[info] Sequelize sync success
+2023-06-13 16:54:58.397[info] (department.info.params) {"id":"1"}
+2023-06-13 16:54:58.412[debug] (userService.info) {"id":1,"name":"김개발","userid":"kim","password":"1","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:56:17.000Z","updatedAt":"2023-06-13T06:56:17.000Z","deletedAt":null}
+2023-06-13 16:55:49.747[info] (department.delete.params) {"id":"1"}
+2023-06-13 16:55:49.768[debug] (userService.delete) {"deletedCount":1}
+2023-06-13 16:55:58.388[info] (department.info.params) {"id":"1"}
+2023-06-13 16:55:58.393[debug] (userService.info) null
+2023-06-13 16:56:03.685[info] (user.list.params) {}
+2023-06-13 16:56:03.700[debug] (userService.list) {"count":4,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null}]}
+2023-06-13 16:56:03.704[info] (user.list.result) {"count":4,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T06:59:06.000Z","deletedAt":null}]}
+2023-06-13 16:57:39.563[info] (department.edit.params) {"id":"1","name":"김개발1","role":"member","email":"kim@email.com","phone":"010-1234-5678"}
+2023-06-13 16:57:39.570[debug] (userService.edit) {"updatedCount":0}
+2023-06-13 16:57:51.488[info] (department.edit.params) {"id":"2","name":"김개발1","role":"member","email":"kim@email.com","phone":"010-1234-5678"}
+2023-06-13 16:57:51.504[debug] (userService.edit) {"updatedCount":1}
+2023-06-13 16:57:56.527[info] (department.info.params) {"id":"1"}
+2023-06-13 16:57:56.530[debug] (userService.info) null
+2023-06-13 16:58:01.636[info] (user.list.params) {}
+2023-06-13 16:58:01.646[debug] (userService.list) {"count":4,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발1","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T07:57:51.000Z","deletedAt":null}]}
+2023-06-13 16:58:01.647[info] (user.list.result) {"count":4,"rows":[{"id":5,"name":"김개발","userid":"kim5","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:03.000Z","updatedAt":"2023-06-13T07:02:03.000Z","deletedAt":null},{"id":4,"name":"김개발","userid":"kim4","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:02:00.000Z","updatedAt":"2023-06-13T07:02:00.000Z","deletedAt":null},{"id":3,"name":"김개발","userid":"kim3","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T07:01:57.000Z","updatedAt":"2023-06-13T07:01:57.000Z","deletedAt":null},{"id":2,"name":"김개발1","userid":"kim2","role":"member","email":"kim@email.com","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-06-13T06:59:06.000Z","updatedAt":"2023-06-13T07:57:51.000Z","deletedAt":null}]}
+>>>>>>> Stashed changes
