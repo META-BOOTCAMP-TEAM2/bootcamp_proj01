@@ -11,3 +11,9 @@
 2023-06-16 01:36:21.214[info] app start
 2023-06-16 01:36:21.340[info] DB connection success
 2023-06-16 01:36:21.368[info] Sequelize sync success
+2023-06-16 08:51:11.772[info] app start
+2023-06-16 08:51:12.359[info] DB connection success
+2023-06-16 08:51:12.378[info] Sequelize sync success
+2023-06-16 08:53:26.466[info] app start
+2023-06-16 08:53:26.539[info] DB connection success
+2023-06-16 08:53:26.561[info] Sequelize sync success
