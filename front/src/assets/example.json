@@ -3,72 +3,112 @@
     "img": "https://magazine.brique.co/wp-content/uploads/2020/11/4974b887-%EC%9D%B4%ED%95%9C%EA%B1%B4%EC%B6%95%EC%82%AC%EC%82%AC%EB%AC%B4%EC%86%8C-lee.haan_.architects-%ED%92%8D%EA%B2%BD%EC%9D%B4-%EC%8A%A4%EB%AF%B8%EB%8A%94-%EC%A7%91-houses-where-landscape-soaks-%EC%82%AC%EC%A7%84-02.jpg",
     "propertyType": "매매",
     "address": "서울시 강남구 A동 101호",
-    "price": "1억 5,000만원",
+    "price": "1500",
     "structure": "3룸",
     "options": ["에어컨", "난방", "베란다"]
   },
   {
     "img": "https://blog.kakaocdn.net/dn/lgLlp/btq6lnaAjnZ/O2l8mXAfy18KKuuK18Jpd1/img.jpg",
     "propertyType": "전세",
-    "address": "부산시 해운대구 B동 202호",
-    "price": "3억원",
+    "address": "부산시 해운대구 B동 102호",
+    "price": "300",
     "structure": "오픈형 원룸",
     "options": ["에어컨", "난방", "인터넷"]
   },
   {
     "img": "https://t1.daumcdn.net/cfile/tistory/99D01A4B5B952C572C",
     "propertyType": "월세",
-    "address": "인천시 서구 C동 301호",
-    "price": "800만원",
+    "address": "인천시 서구 C동 103호",
+    "price": "800",
     "structure": "2룸",
     "options": ["에어컨", "난방", "주차장"]
   },
   {
     "img": "https://magazine.brique.co/wp-content/uploads/2020/11/4974b887-%EC%9D%B4%ED%95%9C%EA%B1%B4%EC%B6%95%EC%82%AC%EC%82%AC%EB%AC%B4%EC%86%8C-lee.haan_.architects-%ED%92%8D%EA%B2%BD%EC%9D%B4-%EC%8A%A4%EB%AF%B8%EB%8A%94-%EC%A7%91-houses-where-landscape-soaks-%EC%82%AC%EC%A7%84-02.jpg",
     "propertyType": "매매",
-    "address": "서울시 강남구 A동 101호",
-    "price": "1억 5,000만원",
+    "address": "서울시 강남구 A동 104호",
+    "price": "1800",
     "structure": "3룸",
     "options": ["에어컨", "난방", "베란다"]
   },
   {
     "img": "https://blog.kakaocdn.net/dn/lgLlp/btq6lnaAjnZ/O2l8mXAfy18KKuuK18Jpd1/img.jpg",
     "propertyType": "전세",
-    "address": "부산시 해운대구 B동 202호",
-    "price": "3억원",
+    "address": "부산시 해운대구 B동 105호",
+    "price": "3000",
     "structure": "오픈형 원룸",
     "options": ["에어컨", "난방", "인터넷"]
   },
   {
     "img": "https://t1.daumcdn.net/cfile/tistory/99D01A4B5B952C572C",
     "propertyType": "월세",
-    "address": "인천시 서구 C동 301호",
-    "price": "800만원",
+    "address": "인천시 서구 C동 106호",
+    "price": "500",
     "structure": "2룸",
     "options": ["에어컨", "난방", "주차장"]
   },
   {
     "img": "https://magazine.brique.co/wp-content/uploads/2020/11/4974b887-%EC%9D%B4%ED%95%9C%EA%B1%B4%EC%B6%95%EC%82%AC%EC%82%AC%EB%AC%B4%EC%86%8C-lee.haan_.architects-%ED%92%8D%EA%B2%BD%EC%9D%B4-%EC%8A%A4%EB%AF%B8%EB%8A%94-%EC%A7%91-houses-where-landscape-soaks-%EC%82%AC%EC%A7%84-02.jpg",
     "propertyType": "매매",
-    "address": "서울시 강남구 A동 101호",
-    "price": "1억 5,000만원",
+    "address": "서울시 강남구 A동 107호",
+    "price": "9700",
     "structure": "3룸",
     "options": ["에어컨", "난방", "베란다"]
   },
   {
-    "img": "https://blog.kakaocdn.net/dn/lgLlp/btq6lnaAjnZ/O2l8mXAfy18KKuuK18Jpd1/img.jpg",
+    "img": "https://t1.daumcdn.net/cfile/tistory/99CC85445C136C5F1F",
     "propertyType": "전세",
-    "address": "부산시 해운대구 B동 202호",
-    "price": "3억원",
+    "address": "부산시 해운대구 B동 108호",
+    "price": "6500",
     "structure": "오픈형 원룸",
     "options": ["에어컨", "난방", "인터넷"]
   },
   {
-    "img": "https://t1.daumcdn.net/cfile/tistory/99D01A4B5B952C572C",
+    "img": "https://t1.daumcdn.net/cfile/tistory/99CC85445C136C5F1F",
     "propertyType": "월세",
-    "address": "인천시 서구 C동 301호",
-    "price": "800만원",
+    "address": "인천시 서구 C동 109호",
+    "price": "500",
     "structure": "2룸",
     "options": ["에어컨", "난방", "주차장"]
+  },
+  {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS9N8IQT4Ope_BtOaZbW3kZbGjaqfet_TXzg&usqp=CAU",
+    "propertyType": "매매",
+    "address": "서울시 강남구 A동 110호",
+    "price": "9700",
+    "structure": "3룸",
+    "options": ["에어컨", "난방", "베란다"]
+  },
+  {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS9N8IQT4Ope_BtOaZbW3kZbGjaqfet_TXzg&usqp=CAU",
+    "propertyType": "전세",
+    "address": "부산시 해운대구 B동 111호",
+    "price": "6500",
+    "structure": "오픈형 원룸",
+    "options": ["에어컨", "난방", "인터넷"]
+  },
+  {
+    "img": "https://cdn.onseoul.net/news/photo/202212/23293_23827_527.jpg",
+    "propertyType": "월세",
+    "address": "인천시 서구 C동 112호",
+    "price": "500",
+    "structure": "2룸",
+    "options": ["에어컨", "난방", "주차장"]
+  },
+  {
+    "img": "https://cdn.onseoul.net/news/photo/202212/23293_23827_527.jpg",
+    "propertyType": "매매",
+    "address": "서울시 강남구 A동 113호",
+    "price": "9700",
+    "structure": "3룸",
+    "options": ["에어컨", "난방", "베란다"]
+  },
+  {
+    "img": "https://cdn.onseoul.net/news/photo/202212/23293_23827_527.jpg",
+    "propertyType": "전세",
+    "address": "부산시 해운대구 B동 114호",
+    "price": "6500",
+    "structure": "오픈형 원룸",
+    "options": ["에어컨", "난방", "인터넷"]
   }
 ]

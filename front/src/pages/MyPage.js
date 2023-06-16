@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./stylePages.css";
+import { Link } from "react-router-dom";
 
 const MyPage = () => {
   return (
@@ -15,6 +16,9 @@ const MyPage = () => {
           <h3>내 정보 : 이름, 이메일, 연락처</h3>
           <h3>내가 올린 매물 목록</h3>
           <h3>문의 사항</h3>
+          <Link to="/myLists">
+            <button className="myUpLoad">내가 올린 매물</button>
+          </Link>
         </div>
       </div>
       <Footer />
