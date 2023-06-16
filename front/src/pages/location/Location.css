@@ -1,0 +1,30 @@
+/* location 페이지 */
+.location {
+  display: flex;
+}
+.location .table2 {
+  padding-top: 80px;
+}
+
+li {
+  cursor: pointer;
+  padding: 8px;
+}
+
+li:hover {
+  background-color: lightgray;
+}
+
+li.selected {
+  background-color: rgb(235, 34, 34);
+}
+
+/* LocationDetail */
+.Detail-total {
+  background-color: #e1dbf6;
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 50px;
+}

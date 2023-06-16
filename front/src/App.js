@@ -7,7 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/SignUp";
-import Location from "./pages/Location";
+import Location from "./pages/location/Location";
+import LocationDetail from "./pages/location/LocationDetail";
 import Upload from "./pages/Upload";
 import MyPage from "./pages/MyPage";
 import Listing from "./pages/Listing";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/upload" element={<Upload />} />
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/lists" element={<Listing />} />
+          <Route path="/room_detail" element={<LocationDetail />} />
         </Routes>
       </Router>
     </>
