@@ -1,0 +1,26 @@
+[
+  {
+    "userID": "1",
+    "name": "사람1",
+    "id": "test1",
+    "password": "abcd1234!",
+    "email": "test1@naver.com",
+    "phoneNumber": "010-1234-5678"
+  },
+  {
+    "userID": "2",
+    "name": "사람2",
+    "id": "test2",
+    "password": "abcd1234!",
+    "email": "test2@naver.com",
+    "phoneNumber": "010-1234-5678"
+  },
+  {
+    "userID": "3",
+    "name": "사람3",
+    "id": "test3",
+    "password": "abcd1234!",
+    "email": "test3@naver.com",
+    "phoneNumber": "010-1234-5678"
+  }
+]

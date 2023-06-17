@@ -1,51 +1,59 @@
 import React from "react";
+import example from "../assets/example.json";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./stylePages.css";
-import example from "../assets/example.json";
+import { useParams } from "react-router-dom";
 
 const ListingDetail = () => {
-  const storedData = sessionStorage.getItem("myData");
-  const data = JSON.parse(storedData);
-  console.log(typeof data);
-  console.log(typeof example);
-  const itemsPerRow = 4; // 한 줄에 표시할 항목 수
-
-  const rows = data.reduce((accumulator, currentValue, index) => {
-    const rowIndex = Math.floor(index / itemsPerRow);
-    if (!accumulator[rowIndex]) {
-      accumulator[rowIndex] = [];
-    }
-    accumulator[rowIndex].push(currentValue);
-    return accumulator;
-  }, []);
+  const { saleItem } = useParams();
+  const itemData = example.find((item) => item.saleItem === saleItem);
 
   return (
-    <div className="listing">
+    <div className="listingDetail">
       <Header />
-      <h1>매물 목록</h1>
-      {rows.map((row, rowIndex) => (
-        <div key={rowIndex} className="row">
-          {row.map((item, itemIndex) => (
-            <div key={itemIndex} className="item">
-              <div className="box">
-                <div>
-                  <img src={item.img} alt="Property" style={{ width: "300px", height: "200px" }} />
-                </div>
-                <div>계약 방식: {item.propertyType}</div>
-                <br />
-                <div>주소: {item.address}</div>
-                <br />
-                <div>가격: {item.price}</div>
-                <br />
-                <div>방 구조: {item.structure}</div>
-                <br />
-                <div>해당 옵션: {item.options.join(", ")}</div>
-              </div>
+      <div className="listingDetailForm">
+        <h1>상세 정보</h1>
+        <div className="top">
+          <Carousel className="imgTotal" showThumbs={false}>
+            <div>
+              <img
+                src={itemData.img1}
+                alt="Property Image"
+                style={{ width: "600px", height: "400px" }}
+              />
             </div>
-          ))}
+            <div>
+              <img
+                src={itemData.img2}
+                alt="Property Image"
+                style={{ width: "600px", height: "400px" }}
+              />
+            </div>
+            <div>
+              <img
+                src={itemData.img3}
+                alt="Property Image"
+                style={{ width: "600px", height: "400px" }}
+              />
+            </div>
+          </Carousel>
+          <div className="keyContent">
+            <h3>중요 정보</h3>
+            <p>계약 방식: {itemData.propertyType}</p>
+            <p>가격: {itemData.price}</p>
+            <p>주소: {itemData.address}</p>
+            <p>방 구조: {itemData.structure}</p>
+            <p>옵션: {itemData.options.join(", ")}</p>
+          </div>
         </div>
-      ))}
+        <div className="content">
+          <h3>상세 정보</h3>
+          <p>{itemData.detailInfo}</p>
+        </div>
+      </div>
       <Footer />
     </div>
   );

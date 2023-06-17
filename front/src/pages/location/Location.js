@@ -4,8 +4,6 @@ import Footer from "../../components/Footer";
 import areas from "./areas";
 import Map from "../../components/Map";
 import "./Location.css";
-import { useQuery } from "react-query";
-import { fetchCoins } from "../.././components/ReactQuery";
 
 const Location = () => {
   const [selectedCity, setSelectedCity] = useState("");

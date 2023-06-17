@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./stylePages.css";
-import googleImg from "../assets/google.jpg";
-import kakaoImg from "../assets/kakao.jpg";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
@@ -43,6 +42,7 @@ const LoginForm = () => {
         <div>서비스 이용을 위해 로그인해주세요</div>
         <form onSubmit={handleSubmit}>
           <input
+            className="input-group"
             type="text"
             placeholder="아이디 입력"
             value={username}
@@ -50,25 +50,34 @@ const LoginForm = () => {
           />
           <br />
           <input
+            className="input-group"
             type="password"
             placeholder="비밀번호 입력"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
           <br />
-          <button type="submit">Login</button>
-          <br />
-          <button type="button" onClick={handleGoogleLogin}>
-            <img src={googleImg} style={{ width: 100, height: 30 }} />
-          </button>
-          <br />
-          <button type="button" onClick={handleKakaoLogin}>
-            <img src={kakaoImg} style={{ width: 100, height: 30 }} />
-          </button>
-          <br />
-          {/* <a href="" class="button button--google">
+          <button
+            type="button"
+            onClick={handleGoogleLogin}
+            className="buttonGoogle"
+          >
             Login With Google
-          </a> */}
+          </button>
+          <br />
+          <button
+            type="button"
+            onClick={handleKakaoLogin}
+            className="buttonKakao"
+          >
+            Login With Kakao
+          </button>
+          <br />
+          <div className="linkSign">
+            <Link to="/signup" className="linkText">
+              회원가입
+            </Link>
+          </div>
         </form>
       </div>
       <Footer />

@@ -1,33 +1,72 @@
 [
   {
-    "img": "https://magazine.brique.co/wp-content/uploads/2020/11/4974b887-%EC%9D%B4%ED%95%9C%EA%B1%B4%EC%B6%95%EC%82%AC%EC%82%AC%EB%AC%B4%EC%86%8C-lee.haan_.architects-%ED%92%8D%EA%B2%BD%EC%9D%B4-%EC%8A%A4%EB%AF%B8%EB%8A%94-%EC%A7%91-houses-where-landscape-soaks-%EC%82%AC%EC%A7%84-02.jpg",
+    "saleItem": "1",
+    "img1": "https://magazine.brique.co/wp-content/uploads/2020/11/4974b887-%EC%9D%B4%ED%95%9C%EA%B1%B4%EC%B6%95%EC%82%AC%EC%82%AC%EB%AC%B4%EC%86%8C-lee.haan_.architects-%ED%92%8D%EA%B2%BD%EC%9D%B4-%EC%8A%A4%EB%AF%B8%EB%8A%94-%EC%A7%91-houses-where-landscape-soaks-%EC%82%AC%EC%A7%84-02.jpg",
+    "img2": "https://photo.jtbc.co.kr/news/2019/07/29/20190729153611942.jpg",
+    "img3": "https://t1.daumcdn.net/cfile/tistory/99CC85445C136C5F1F",
     "propertyType": "매매",
     "address": "서울시 강남구 A동 101호",
-    "price": "1억 5,000만원",
+    "price": "1500",
     "structure": "3룸",
     "options": ["에어컨", "난방", "베란다"],
-    "ad": [37.55321, 126.972613]
+    "ad": [37.55321, 126.972613],
+    "detailInfo": "이 매물은 강남과 가까운 쾌적한 단독주택으로, 주택의 위치는 강남구 A동 101호에 위치해 있습니다. 이 곳은 도심의 혜택과 자연의 조화를 동시에 누릴 수 있는 멋진 장소입니다. 단독주택은 넓은 공간과 조용한 환경을 제공하며, 3개의 방으로 구성되어 있어 가족들이 편안하게 생활할 수 있습니다. 또한, 에어컨, 난방, 베란다 등 다양한 옵션들이 제공되어 편리한 생활을 즐길 수 있습니다. 이 매물은 강남에서 편안하고 품격 있는 주거 환경을 찾는 분들에게 적합한 선택이 될 것입니다."
   },
   {
-    "img": "https://blog.kakaocdn.net/dn/lgLlp/btq6lnaAjnZ/O2l8mXAfy18KKuuK18Jpd1/img.jpg",
+    "saleItem": "2",
+    "img1": "https://cdn.onseoul.net/news/photo/202212/23293_23827_527.jpg",
+    "img2": "https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/2xEY/image/HhJrklKIyc26J4Z6CMf-VryCPYk.JPG",
+    "img3": "https://img.smlounge.co.kr/upload/woman/article/202011/thumb/46400-433807-sampleM.jpg",
     "propertyType": "전세",
-    "address": "부산시 해운대구 B동 202호",
-    "price": "3억원",
+    "address": "부산시 해운대구 B동 102호",
+    "price": "300",
     "structure": "오픈형 원룸",
     "options": ["에어컨", "난방", "인터넷"],
-    "ad": [37.5558907, 126.978305]
+    "ad": [37.5558907, 126.978305],
+    "detailInfo": "서울과 가까운 공기 좋은 단독주택으로, 탁 트인 환경과 자연적인 경치를 즐길 수 있습니다. 부산의 해운대구에 위치하여 해변과 관광지에도 가까워 편리한 생활을 즐길 수 있습니다. 이 매물은 도심의 소음과 분주한 생활에서 벗어나 휴식과 평온을 찾는 분들에게 적합한 선택이 될 것입니다."
   },
   {
-    "img": "https://t1.daumcdn.net/cfile/tistory/99D01A4B5B952C572C",
+    "saleItem": "3",
+    "img1": "https://t1.daumcdn.net/cfile/tistory/99D01A4B5B952C572C",
+    "img2": "https://t1.daumcdn.net/cfile/tistory/99D8CB445FF672E90C",
+    "img3": "https://t1.daumcdn.net/cfile/tistory/99C958495F6BF58519",
     "propertyType": "월세",
-    "address": "인천시 서구 C동 301호",
-    "price": "800만원",
+    "address": "인천시 서구 C동 103호",
+    "price": "800",
     "structure": "2룸",
     "options": ["에어컨", "난방", "주차장"],
-    "ad": [37.538846, 126.950453]
+    "ad": [37.538846, 126.950453],
+    "detailInfo": "고양시와 가까운 따듯하고 행복한 집입니다."
   },
   {
-    "img": "https://magazine.brique.co/wp-content/uploads/2020/11/4974b887-%EC%9D%B4%ED%95%9C%EA%B1%B4%EC%B6%95%EC%82%AC%EC%82%AC%EB%AC%B4%EC%86%8C-lee.haan_.architects-%ED%92%8D%EA%B2%BD%EC%9D%B4-%EC%8A%A4%EB%AF%B8%EB%8A%94-%EC%A7%91-houses-where-landscape-soaks-%EC%82%AC%EC%A7%84-02.jpg",
+    "saleItem": "1",
+    "img1": "https://magazine.brique.co/wp-content/uploads/2020/11/4974b887-%EC%9D%B4%ED%95%9C%EA%B1%B4%EC%B6%95%EC%82%AC%EC%82%AC%EB%AC%B4%EC%86%8C-lee.haan_.architects-%ED%92%8D%EA%B2%BD%EC%9D%B4-%EC%8A%A4%EB%AF%B8%EB%8A%94-%EC%A7%91-houses-where-landscape-soaks-%EC%82%AC%EC%A7%84-02.jpg",
+    "img2": "https://photo.jtbc.co.kr/news/2019/07/29/20190729153611942.jpg",
+    "img3": "https://t1.daumcdn.net/cfile/tistory/99CC85445C136C5F1F",
+    "propertyType": "전세",
+    "address": "서울시 강남구 A동 104호",
+    "price": "1200",
+    "structure": "3룸",
+    "options": ["에어컨", "난방", "베란다"],
+    "detailInfo": "이 매물은 강남과 가까운 쾌적한 단독주택으로, 주택의 위치는 강남구 A동 101호에 위치해 있습니다. 이 곳은 도심의 혜택과 자연의 조화를 동시에 누릴 수 있는 멋진 장소입니다. 단독주택은 넓은 공간과 조용한 환경을 제공하며, 3개의 방으로 구성되어 있어 가족들이 편안하게 생활할 수 있습니다. 또한, 에어컨, 난방, 베란다 등 다양한 옵션들이 제공되어 편리한 생활을 즐길 수 있습니다. 이 매물은 강남에서 편안하고 품격 있는 주거 환경을 찾는 분들에게 적합한 선택이 될 것입니다."
+  },
+  {
+    "saleItem": "2",
+    "img1": "https://cdn.onseoul.net/news/photo/202212/23293_23827_527.jpg",
+    "img2": "https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/2xEY/image/HhJrklKIyc26J4Z6CMf-VryCPYk.JPG",
+    "img3": "https://img.smlounge.co.kr/upload/woman/article/202011/thumb/46400-433807-sampleM.jpg",
+    "propertyType": "월세",
+    "address": "부산시 해운대구 B동 105호",
+    "price": "700",
+    "structure": "오픈형 원룸",
+    "options": ["에어컨", "난방", "인터넷"],
+    "detailInfo": "서울과 가까운 공기 좋은 단독주택으로, 탁 트인 환경과 자연적인 경치를 즐길 수 있습니다. 부산의 해운대구에 위치하여 해변과 관광지에도 가까워 편리한 생활을 즐길 수 있습니다. 이 매물은 도심의 소음과 분주한 생활에서 벗어나 휴식과 평온을 찾는 분들에게 적합한 선택이 될 것입니다."
+  },
+  {
+    "saleItem": "3",
+    "img1": "https://t1.daumcdn.net/cfile/tistory/99D01A4B5B952C572C",
+    "img2": "https://t1.daumcdn.net/cfile/tistory/99D8CB445FF672E90C",
+    "img3": "https://t1.daumcdn.net/cfile/tistory/99C958495F6BF58519",
     "propertyType": "매매",
     "address": "서울시 강남구 A동 101호",
     "price": "1억 5,000만원",
@@ -36,7 +75,7 @@
     "ad": [37.48846, 127.950453]
   },
   {
-    "img": "https://blog.kakaocdn.net/dn/lgLlp/btq6lnaAjnZ/O2l8mXAfy18KKuuK18Jpd1/img.jpg",
+    "img1": "https://blog.kakaocdn.net/dn/lgLlp/btq6lnaAjnZ/O2l8mXAfy18KKuuK18Jpd1/img.jpg",
     "propertyType": "전세",
     "address": "부산시 해운대구 B동 202호",
     "price": "3억원",
@@ -45,7 +84,7 @@
     "ad": [35.538846, 124.950453]
   },
   {
-    "img": "https://t1.daumcdn.net/cfile/tistory/99D01A4B5B952C572C",
+    "img1": "https://t1.daumcdn.net/cfile/tistory/99D01A4B5B952C572C",
     "propertyType": "월세",
     "address": "인천시 서구 C동 301호",
     "price": "800만원",
@@ -54,7 +93,7 @@
     "ad": [33.538846, 126.80453]
   },
   {
-    "img": "https://magazine.brique.co/wp-content/uploads/2020/11/4974b887-%EC%9D%B4%ED%95%9C%EA%B1%B4%EC%B6%95%EC%82%AC%EC%82%AC%EB%AC%B4%EC%86%8C-lee.haan_.architects-%ED%92%8D%EA%B2%BD%EC%9D%B4-%EC%8A%A4%EB%AF%B8%EB%8A%94-%EC%A7%91-houses-where-landscape-soaks-%EC%82%AC%EC%A7%84-02.jpg",
+    "img1": "https://magazine.brique.co/wp-content/uploads/2020/11/4974b887-%EC%9D%B4%ED%95%9C%EA%B1%B4%EC%B6%95%EC%82%AC%EC%82%AC%EB%AC%B4%EC%86%8C-lee.haan_.architects-%ED%92%8D%EA%B2%BD%EC%9D%B4-%EC%8A%A4%EB%AF%B8%EB%8A%94-%EC%A7%91-houses-where-landscape-soaks-%EC%82%AC%EC%A7%84-02.jpg",
     "propertyType": "매매",
     "address": "서울시 강남구 A동 101호",
     "price": "1억 5,000만원",
@@ -63,7 +102,7 @@
     "ad": [39.38846, 126.950453]
   },
   {
-    "img": "https://blog.kakaocdn.net/dn/lgLlp/btq6lnaAjnZ/O2l8mXAfy18KKuuK18Jpd1/img.jpg",
+    "img1": "https://blog.kakaocdn.net/dn/lgLlp/btq6lnaAjnZ/O2l8mXAfy18KKuuK18Jpd1/img.jpg",
     "propertyType": "전세",
     "address": "부산시 해운대구 B동 202호",
     "price": "3억원",
@@ -72,12 +111,14 @@
     "ad": [31.538846, 124.950453]
   },
   {
-    "img": "https://t1.daumcdn.net/cfile/tistory/99D01A4B5B952C572C",
+    "img1": "https://t1.daumcdn.net/cfile/tistory/99D01A4B5B952C572C",
     "propertyType": "월세",
     "address": "인천시 서구 C동 301호",
     "price": "800만원",
     "structure": "2룸",
     "options": ["에어컨", "난방", "주차장"],
-    "ad": [38.538846, 126.120453]
+    "ad": [38.538846, 126.120453],
+
+    "detailInfo": "고양시와 가까운 따듯하고 행복한 집입니다."
   }
 ]

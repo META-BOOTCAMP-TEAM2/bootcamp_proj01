@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from "react";
 import seoulJson from "../assets/seoul.json";
 import busanJson from "../assets/busan.json";
-import example from "../assets/example.json";
-import axios from "axios";
+import example2 from "../assets/example2";
 
 // const { kakao } = window;
 
@@ -46,18 +45,18 @@ const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
     var markers = [];
     // console.log(example);
     // console.log(example[0].address);
-    for (var i = 0; i < example.length; i++) {
+    for (var i = 0; i < example2.length; i++) {
       var marker = new kakao.maps.Marker({
-        position: new kakao.maps.LatLng(example[i].ad[0], example[i].ad[1]),
+        position: new kakao.maps.LatLng(example2[i].ad[0], example2[i].ad[1]),
         map: map,
       });
       marker.userData = {
-        propertyType: example[i].propertyType,
-        structure: example[i].structure,
-        options: example[i].options,
-        address: example[i].address,
-        price: example[i].price,
-        img: example[i].img,
+        propertyType: example2[i].propertyType,
+        structure: example2[i].structure,
+        options: example2[i].options,
+        address: example2[i].address,
+        price: example2[i].price,
+        img: example2[i].img,
       };
       // console.log(marker.userData.address + "hi");
 
