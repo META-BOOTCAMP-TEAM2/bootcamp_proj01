@@ -3,8 +3,9 @@ import React, { useEffect, useState } from "react";
 import seoulJson from "../assets/seoul.json";
 import busanJson from "../assets/busan.json";
 import example from "../assets/example.json";
+import axios from "axios";
 
-const { kakao } = window;
+// const { kakao } = window;
 
 const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
   useEffect(() => {
@@ -43,22 +44,26 @@ const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
     });
 
     var markers = [];
-    console.log(example);
-    console.log(example[0].address);
+    // console.log(example);
+    // console.log(example[0].address);
     for (var i = 0; i < example.length; i++) {
       var marker = new kakao.maps.Marker({
         position: new kakao.maps.LatLng(example[i].ad[0], example[i].ad[1]),
         map: map,
       });
       marker.userData = {
+        propertyType: example[i].propertyType,
+        structure: example[i].structure,
+        options: example[i].options,
         address: example[i].address,
         price: example[i].price,
+        img: example[i].img,
       };
-      console.log(marker.userData.address + "hi");
+      // console.log(marker.userData.address + "hi");
 
       markers.push(marker);
     }
-    console.log(markers);
+    // console.log(markers);
 
     clusterer.addMarkers(markers);
 
@@ -73,19 +78,29 @@ const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
         var info = {
           address: marker.userData.address,
           price: marker.userData.price,
+          structure: marker.userData.structure,
+          options: marker.userData.options,
+          propertyType: marker.userData.propertyType,
+          img: marker.userData.img,
         };
+        // console.log(typeof info);
+        // console.log(info);
         markerInfo.push(info);
       });
-      console.log(typeof markerInfo);
 
-      // markerInfo.forEach(function (info) {
-      //   console.log(markerInfo);
+      sessionStorage.setItem("myData", JSON.stringify(markerInfo));
+      window.open("http://localhost:3000/lists");
 
-      var url = "/lists"; // 이동할 페이지의 URL
+      // // console.log(markerInfo + "????????");
 
-      window.open(url);
-      // 원하는 방식으로 정보를 표시하는 로직을 추가
-      // 예를 들어 정보를 HTML 요소로 동적으로 생성하여 페이지에 추가하는 등의 방법을 사용할 수 있습니다.
+      // const data = JSON.stringify(markerInfo);
+      // // console.log(typeof data + "hidsjflsd");
+
+      // const childWindow = window.open("http://localhost:3000/lists");
+
+      // childWindow.addEventListener("load", function () {
+      //   childWindow.postMessage(data, "*");
+      // });
     });
 
     const displayArea = (coordinates, name) => {

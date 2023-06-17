@@ -12,7 +12,7 @@ import LocationDetail from "./pages/location/LocationDetail";
 import Upload from "./pages/Upload";
 import MyPage from "./pages/MyPage";
 import Listing from "./pages/Listing";
-
+import ListingDetail from "./pages/ListingDetail";
 // API 서버 url : http://localhost:8000
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
           <Route path="/upload" element={<Upload />} />
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/lists" element={<Listing />} />
+          <Route path="/lists_detail" element={<ListingDetail />} />
           <Route path="/room_detail" element={<LocationDetail />} />
         </Routes>
       </Router>

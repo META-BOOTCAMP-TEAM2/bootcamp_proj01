@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import "./stylePages.css";
 import example from "../assets/example.json";
 
-const Listing = () => {
+const ListingDetail = () => {
   const storedData = sessionStorage.getItem("myData");
   const data = JSON.parse(storedData);
   console.log(typeof data);
@@ -51,4 +51,4 @@ const Listing = () => {
   );
 };
 
-export default Listing;
+export default ListingDetail;
