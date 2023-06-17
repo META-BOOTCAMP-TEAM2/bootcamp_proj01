@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../components/authContext";
+
 import { Button } from "react-bootstrap";
 import "./style.css"; // CSS 파일을 불러옵니다.
-import { Link } from "react-router-dom";
 
-function Header({ isLoggedIn }) {
+function Header() {
+  const { currentUser, logout } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    const confirmLogout = window.confirm("로그아웃 하시겠습니까?");
+
+    if (confirmLogout) {
+      logout();
+    }
+  };
+
   return (
     <div className="Header">
       <div className="header1">
@@ -18,7 +30,22 @@ function Header({ isLoggedIn }) {
             Home
           </Button>{" "}
         </Link>
-        {!isLoggedIn && (
+
+        {currentUser && (
+          <div style={{ fontSize: "15px", color: "red" }}>
+            환영합니다! {currentUser.username}
+          </div>
+        )}
+        {currentUser ? (
+          <>
+            <Link to="/mypage">
+              <Button variant="My page" id="buttons">
+                My page
+              </Button>
+            </Link>
+            <span onClick={handleLogout}>Logout</span>
+          </>
+        ) : (
           <>
             <Link to="/login">
               <Button variant="Login" id="buttons">
@@ -28,20 +55,6 @@ function Header({ isLoggedIn }) {
             <Link to="/signup">
               <Button variant="Sign up" id="buttons">
                 Sign up
-              </Button>{" "}
-            </Link>
-            <Link to="/mypage">
-              <Button variant="My page" id="buttons">
-                My page
-              </Button>
-            </Link>
-          </>
-        )}
-        {isLoggedIn && (
-          <>
-            <Link to="/logout">
-              <Button variant="Logout" id="buttons">
-                Logout
               </Button>{" "}
             </Link>
             <Link to="/mypage">

@@ -1,70 +1,37 @@
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+
+//component & css
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./stylePages.css";
 
+//유저 모델 수정 필요함
 const SignUpPage = () => {
-  const [name, setName] = useState("");
-  const [id, setId] = useState("");
-  const [password, setPassword] = useState("");
-  const [passwordCheck, setPasswordCheck] = useState("");
-  const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [passwordError, setPasswordError] = useState(false);
+  const [inputs, setInputs] = useState({
+    // userInital: "",
+    username: "",
+    password: "",
+    email: "",
+    // phoneNumber: "",
+  });
+  const [err, setError] = useState(null);
 
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
+  const navigate = useNavigate();
 
-  const handleIdChange = (e) => {
-    setId(e.target.value);
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-    setPasswordError(
-      !/(?=.*[a-zA-Z])(?=.*\d)(?=.*[?!@#$%/])/.test(e.target.value) ||
-        e.target.value.length < 6
-    );
-  };
-
-  const handlePasswordCheckChange = (e) => {
-    setPasswordCheck(e.target.value);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePhoneNumberChange = (e) => {
-    setPhoneNumber(e.target.value);
+  //handleChange : 입력 필드의 값이 변경될 때마다 해당 입력 필드의 이름에 해당하는 inputs 상태를 업데이트
+  const handleChange = (e) => {
+    setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (password !== passwordCheck) {
-      alert("비밀번호가 일치하지 않습니다.");
-      return;
-    }
-
     try {
-      const response = await axios.post("http", {
-        name,
-        id,
-        password,
-        email,
-        phoneNumber,
-      });
-      console.log(response);
-
-      console.log("회원가입 성공:", response.data);
-      // 회원가입 성공 처리 및 페이지 이동 등 추가 작업 수행
-    } catch (error) {
-      console.error("회원가입 실패:", error.response.data);
-
-      // 회원가입 실패 처리
+      await axios.post("/auth/register", inputs);
+      navigate("/login"); //바로 로그인할수있도록 로그인 페이지로 리다이렉트함.
+    } catch (err) {
+      setError(err.response.data);
     }
   };
 
@@ -73,82 +40,62 @@ const SignUpPage = () => {
       <Header />
       <div className="Sign">
         <h2>회원가입</h2>
-        <form onSubmit={handleSubmit}>
+        <br></br>
+        <form>
           <div>
-            <label htmlFor="name">이름</label>
-            <br />
             <input
+              required
               type="text"
-              id="name"
-              value={name}
-              onChange={handleNameChange}
-              required
+              placeholder="이름"
+              name="userInital"
+              // onChange={handleChange}
             />
           </div>
           <div>
-            <label htmlFor="id">아이디:</label>
-            <br />
             <input
+              required
               type="text"
-              id="id"
-              value={id}
-              onChange={handleIdChange}
-              required
+              placeholder="아이디"
+              name="username"
+              onChange={handleChange}
             />
           </div>
           <div>
-            <label htmlFor="password">비밀번호:</label>
-            <br />
             <input
+              required
               type="password"
-              id="password"
-              value={password}
-              onChange={handlePasswordChange}
-              required
-            />
-            {passwordError && (
-              <p>
-                비밀번호는 최소 6자 이상이며 알파벳, 숫자, 특수문자(?!@#$%/) 중
-                하나를 포함해야 합니다.
-              </p>
-            )}
-          </div>
-          <div>
-            <label htmlFor="passwordCheck">비밀번호 확인:</label>
-            <br />
-            <input
-              type="password"
-              id="passwordCheck"
-              value={passwordCheck}
-              onChange={handlePasswordCheckChange}
-              required
+              placeholder="비밀번호"
+              name="password"
+              onChange={handleChange}
             />
           </div>
           <div>
-            <label htmlFor="email">이메일:</label>
-            <br />
             <input
+              required
               type="email"
-              id="email"
-              value={email}
-              onChange={handleEmailChange}
-              required
+              placeholder="이메일"
+              name="email"
+              onChange={handleChange}
             />
           </div>
           <div>
-            <label htmlFor="phoneNumber">연락처:</label>
-            <br />
             <input
-              type="text"
-              id="phoneNumber"
-              value={phoneNumber}
-              onChange={handlePhoneNumberChange}
               required
+              type="text"
+              placeholder="연락처"
+              name="phoneNumber"
+              // onChange={handleChange}
             />
           </div>
-          <button type="submit" className="submitButton">
-            가입하기
-          </button>
+          <div>
+            <button className="submitButton" onClick={handleSubmit}>
+              가입하기
+            </button>
+          </div>
+          {err && <p>{JSON.stringify(err)}</p>}
+          <div>
+            계정이 있으신가요? <Link to="/login">Login</Link>
+          </div>
         </form>
       </div>
       <Footer />
