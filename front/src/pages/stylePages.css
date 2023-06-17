@@ -49,7 +49,7 @@
 }
 #Button {
   color: white;
-  background-color: #0d0334;
+  background-color: #452c36;
   font-size: 30px;
   width: 300px;
   height: 70px;
@@ -74,6 +74,7 @@
   height: 100vh;
   font-size: 20px;
   flex-direction: column;
+  text-align: center;
 }
 .Login div {
   margin: 30px;
@@ -102,6 +103,24 @@
   justify-content: center;
   margin-top: 10px;
 }
+.linkSign {
+  background-color: #78718d;
+  font-size: 30px;
+  width: 340px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkSign .linkText {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
 /* signup */
 .Sign {
@@ -120,25 +139,36 @@
   background-color: #78718d;
   font-size: 30px;
   width: 250px;
-  height: 30px;
+  height: 50px;
   border-radius: 10px;
   justify-content: center;
 }
 
 /* mypage */
-.Total {
+.MyPage {
   background-color: #e1dbf6;
   display: flex;
   min-height: 100vh;
   width: 100%;
   flex-direction: column;
   padding-top: 50px;
+  text-align: center;
 }
 .Title {
   text-align: center;
-  font-size: 20px;
   padding: 30px;
 }
+.content {
+  place-self: center;
+  width: 50%;
+  min-height: 250px;
+  padding: 30px;
+  text-align: left;
+  background: #eceaf1;
+  border: groove 10px #b3b2b2;
+  line-height: 3;
+}
+
 .myUpLoad {
   color: white;
   background-color: #78718d;
@@ -148,7 +178,6 @@
   border-radius: 10px;
   justify-content: center;
   margin-top: 20px;
-  /* 버튼 간격 조정 */
 }
 
 /* upload */
@@ -166,11 +195,12 @@
   padding-top: 60px;
   justify-content: flex-start;
   text-align: center;
+  padding-bottom: 50px;
 }
 .uploadForm h2 {
   margin: 20px 0;
 }
-.searchAddress {
+.upload .searchAddress {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -178,6 +208,18 @@
 }
 .searchAddress > div {
   width: 50% !important;
+}
+.uploadButton {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #78718d;
+  color: rgb(39, 39, 39);
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
 }
 
 /* MyListing / listing */
@@ -207,6 +249,8 @@
   flex: wrap;
   width: 100%;
   border: 5px double;
+  /* border-radius: 10%; */
+  box-shadow: 2px 5px 15px 5px gray;
   align-items: center;
   padding: 10px;
   font-size: 15px;
@@ -243,4 +287,49 @@
 .priceType {
   text-align: center;
   margin-right: 180px;
+}
+
+/* ListingDetail 페이지 */
+.listingDetail {
+  background-color: #e1dbf6;
+  width: 100%;
+  text-align: center;
+  min-height: 100vh;
+}
+.listingDetailForm {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+}
+
+.imgTotal {
+  width: 600px;
+  height: 400px;
+}
+.listingDetail .top {
+  display: flex;
+  gap: 30px;
+}
+.keyContent {
+  text-align: left;
+  background: #eceaf1;
+  border: solid#767676;
+  padding: 20px;
+  width: 300px;
+  line-height: 2;
+}
+
+.keyContent h3,
+.content h3 {
+  text-align: center;
+}
+.listingDetail .content {
+  text-align: left;
+  background: #eceaf1;
+  border: solid#767676;
+  padding: 20px;
+  width: 930px;
+  line-height: 2;
 }

@@ -57,10 +57,6 @@ const LoginForm = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <br />
-          <Link to="/signup" style={{ fontSize: 20 }}>
-            회원가입
-          </Link>
-          <br />
           <button
             type="button"
             onClick={handleGoogleLogin}
@@ -76,6 +72,12 @@ const LoginForm = () => {
           >
             Login With Kakao
           </button>
+          <br />
+          <div className="linkSign">
+            <Link to="/signup" className="linkText">
+              회원가입
+            </Link>
+          </div>
         </form>
       </div>
       <Footer />

@@ -3,6 +3,7 @@ import example from "../assets/example.json";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "./stylePages.css";
+import { Link } from "react-router-dom";
 
 const Listing = () => {
   const [filteredPropertyType, setFilteredPropertyType] = useState(null);
@@ -97,10 +98,10 @@ const Listing = () => {
         <div key={rowIndex} className="row">
           {row.map((item, itemIndex) => (
             <div key={itemIndex} className="item">
-              <div className="box">
+              <Link to={`/listDetail/${item.saleItem}`} className="box">
                 <div>
                   <img
-                    src={item.img}
+                    src={item.img1}
                     alt="Property"
                     style={{ width: "300px", height: "200px" }}
                   />
@@ -114,7 +115,7 @@ const Listing = () => {
                 <div>방 구조: {item.structure}</div>
                 <br />
                 <div>해당 옵션: {item.options.join(", ")}</div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>

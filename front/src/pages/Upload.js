@@ -286,9 +286,11 @@ const UploadPage = () => {
             <textarea style={{ width: "400px", height: "60px" }}></textarea>
             <br />
             <br />
-            <Link to="/MyPage">
-              <button type="submit">매물 등록</button>
-            </Link>
+            <div className="uploadButton">
+              <Link to="/MyPage">
+                <button type="submit">매물 등록</button>
+              </Link>
+            </div>
           </form>
         </div>
 
