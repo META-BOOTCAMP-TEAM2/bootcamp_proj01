@@ -25,17 +25,17 @@ function Header() {
         </Link>
       </div>
       <div className="header2">
+        {currentUser && (
+          <div style={{ fontSize: "20px", color: "orange" }}>
+            환영합니다! {currentUser.username} 님
+          </div>
+        )}
         <Link to="/">
           <Button variant="Home" id="buttons">
             Home
           </Button>{" "}
         </Link>
 
-        {currentUser && (
-          <div style={{ fontSize: "15px", color: "red" }}>
-            환영합니다! {currentUser.username}
-          </div>
-        )}
         {currentUser ? (
           <>
             <Link to="/mypage">

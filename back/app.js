@@ -20,7 +20,7 @@ const NODE_ENV = process.env.NODE_ENV;
 const indexRouter = require("./routes/index");
 
 const app = express();
-logger.info("app start");
+logger.info("애플리케이션 실행....");
 
 //sessions
 app.use(

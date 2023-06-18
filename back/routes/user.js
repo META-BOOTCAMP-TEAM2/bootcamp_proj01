@@ -4,20 +4,19 @@ const router = express.Router();
 const logger = require("../lib/logger");
 const userService = require("../service/userService");
 
-// 등록
-router.post("/", async (req, res) => {
+// 로컬 회원가입
+router.post("/join", async (req, res) => {
   try {
     const params = {
       name: req.body.name,
       userid: req.body.userid,
       password: req.body.password,
-      role: req.body.role,
       email: req.body.email,
       phone: req.body.phone,
     };
     logger.info(`(user.reg.params) ${JSON.stringify(params)}`);
 
-    // 입력값 null 체크
+    // 입력값 null 체크 -> front에서 input required 하므로 불필요한 코드
     if (!params.name || !params.userid || !params.password) {
       const err = new Error("Not allowed null (name, userid, password)");
       logger.error(err.toString());

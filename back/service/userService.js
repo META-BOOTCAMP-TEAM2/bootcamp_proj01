@@ -5,18 +5,18 @@ const hashUtil = require("../lib/hashUtil");
 const service = {
   // login 프로세스
   async login(params) {
-    // 1.userid로 사용자 조회
+    // 1. userid로 사용자 조회
     let user = null;
     try {
       user = await userDao.selectUser(params);
       logger.debug(`(userService.login) ${JSON.stringify(user)}`);
       // 2. 유저정보 유무 확인
       if (!user) {
-        const err = new Error("Incorrect userid or pasword");
-        logger.error(err.toString(err));
+        const errorMessage = "아이디가 일치하지 않습니다. Incorrect userid";
+        logger.error(errorMessage);
 
         return new Promise((resolve, reject) => {
-          reject(err);
+          reject(errorMessage);
         });
       }
     } catch (err) {
@@ -25,7 +25,6 @@ const service = {
         reject(err);
       });
     }
-
     // 3. 패스워드 일치 비교
     try {
       const checkPassword = await hashUtil.checkPasswordHash(
@@ -36,7 +35,9 @@ const service = {
 
       // 패스워드 불일치시 에러 처리
       if (!checkPassword) {
-        const err = new Error("Incorect userid or password");
+        const err = new Error(
+          "비밀번호가 일치하지않습니다. Incorrect password"
+        );
         logger.error(err.toString());
 
         return new Promise((resolve, reject) => {
@@ -55,10 +56,10 @@ const service = {
       resolve(user);
     });
   },
-  // user 생성 [비밀번호 암호화]
+
+  // service_reg [유저 등록]
   async reg(params) {
     let inserted = null;
-
     // 1. 비밀번호 암호화
     let hashPassword = null;
     try {
@@ -94,7 +95,8 @@ const service = {
       resolve(inserted);
     });
   },
-  // selectList
+
+  // service_list [전체 유저 조회]
   async list(params) {
     let result = null;
 
@@ -112,7 +114,7 @@ const service = {
       resolve(result);
     });
   },
-  // selectUser
+  // service_info [특정 유저 조회]
   async info(params) {
     let result = null;
 
@@ -131,7 +133,8 @@ const service = {
       resolve(result);
     });
   },
-  // update
+
+  // service_update [유저 정보 수정]
   async edit(params) {
     let result = null;
 
@@ -150,7 +153,7 @@ const service = {
       resolve(result);
     });
   },
-  // delelte
+  // service_delelte [유저 삭제]
   async delete(params) {
     let result = null;
 

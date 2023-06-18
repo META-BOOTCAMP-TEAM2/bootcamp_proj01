@@ -8,7 +8,7 @@ import "./stylePages.css";
 
 const LoginForm = () => {
   const [inputs, setInputs] = useState({
-    username: "",
+    userid: "",
     password: "",
   });
 
@@ -52,7 +52,7 @@ const LoginForm = () => {
             className="input-group"
             type="text"
             placeholder="아이디 입력"
-            name="username"
+            name="userid"
             // onChange={(e) => setUsername(e.target.value)}
             onChange={handleChange}
           />
