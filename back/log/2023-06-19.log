@@ -724,3 +724,102 @@
 2023-06-19 17:08:20.410[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
 2023-06-19 17:08:20.412[debug] (userService.checkPassword) true
 2023-06-19 17:08:20.413[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 18:56:24.949[info] 애플리케이션 실행....
+2023-06-19 18:56:25.035[info] DB connection success
+2023-06-19 18:56:25.045[info] Sequelize sync success
+2023-06-19 18:57:40.684[info] 애플리케이션 실행....
+2023-06-19 18:57:40.763[info] DB connection success
+2023-06-19 18:57:40.774[info] Sequelize sync success
+2023-06-19 18:57:52.047[info] 애플리케이션 실행....
+2023-06-19 18:57:52.160[info] DB connection success
+2023-06-19 18:57:52.169[info] Sequelize sync success
+2023-06-19 18:57:57.388[info] 애플리케이션 실행....
+2023-06-19 18:57:57.468[info] DB connection success
+2023-06-19 18:57:57.479[info] Sequelize sync success
+2023-06-19 18:58:43.954[info] 애플리케이션 실행....
+2023-06-19 18:58:44.031[info] DB connection success
+2023-06-19 18:58:44.043[info] Sequelize sync success
+2023-06-19 20:11:23.399[error] Error: 파일 업로드 실패
+2023-06-19 20:11:24.355[error] Error: 파일 업로드 실패
+2023-06-19 20:17:25.525[error] Error: 파일 업로드 실패
+2023-06-19 20:25:36.955[error] Error: 파일 업로드 실패
+2023-06-19 20:26:11.756[error] Error: 파일 업로드 실패
+2023-06-19 20:27:46.624[error] Error: 파일 업로드 실패
+2023-06-19 20:28:21.457[error] Error: 파일 업로드 실패
+2023-06-19 20:30:25.462[error] Error: 파일 업로드 실패
+2023-06-19 20:30:45.266[error] Error: 파일 업로드 실패
+2023-06-19 20:32:27.010[error] Error: 파일 업로드 실패
+2023-06-19 20:32:57.752[error] Error: 파일 업로드 실패
+2023-06-19 20:36:33.204[error] Error: 파일 업로드 실패
+2023-06-19 20:36:48.123[error] Error: 파일 업로드 실패
+2023-06-19 20:39:34.317[error] Error: 파일 업로드 실패
+2023-06-19 20:40:15.759[error] Error: 파일 업로드 실패
+2023-06-19 20:40:28.441[error] Error: 파일 업로드 실패
+2023-06-19 20:40:44.579[error] Error: 파일 업로드 실패
+2023-06-19 20:41:33.392[error] Error: 파일 업로드 실패
+2023-06-19 20:41:49.363[error] Error: 파일 업로드 실패
+2023-06-19 20:42:44.595[error] Error: 파일 업로드 실패
+2023-06-19 20:42:52.800[error] Error: 파일 업로드 실패
+2023-06-19 20:42:59.984[error] Error: 파일 업로드 실패
+2023-06-19 20:43:10.173[error] Error: 파일 업로드 실패
+2023-06-19 20:46:19.570[error] Error: 파일 업로드 실패
+2023-06-19 20:46:45.032[error] Error: 파일 업로드 실패
+2023-06-19 20:47:07.382[error] Error: 파일 업로드 실패
+2023-06-19 20:47:34.584[error] Error: 파일 업로드 실패
+2023-06-19 21:09:42.565[info] (user.info.params) {"userid":"test"}
+2023-06-19 21:09:42.583[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 21:09:42.584[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 21:10:16.113[error] Error: 파일 업로드 실패
+2023-06-19 21:24:11.960[info] (user.info.params) {"userid":"test"}
+2023-06-19 21:24:11.968[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 21:24:11.969[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 21:24:38.878[error] Error: 파일 업로드 실패
+2023-06-19 21:24:50.222[error] Error: 파일 업로드 실패
+2023-06-19 21:24:55.716[error] Error: 파일 업로드 실패
+2023-06-19 21:25:00.886[error] Error: 파일 업로드 실패
+2023-06-19 21:28:22.748[error] Error: 파일 업로드 실패
+2023-06-19 21:28:27.830[error] Error: 파일 업로드 실패
+2023-06-19 21:28:31.254[error] Error: 파일 업로드 실패
+2023-06-19 21:28:35.091[error] Error: 파일 업로드 실패
+2023-06-19 21:28:38.358[error] Error: 파일 업로드 실패
+2023-06-19 21:28:44.837[error] Error: 파일 업로드 실패
+2023-06-19 21:28:51.765[error] Error: 파일 업로드 실패
+2023-06-19 21:29:38.457[error] Error: 파일 업로드 실패
+2023-06-19 21:29:41.813[error] Error: 파일 업로드 실패
+2023-06-19 21:29:45.261[error] Error: 파일 업로드 실패
+2023-06-19 21:29:48.309[error] Error: 파일 업로드 실패
+2023-06-19 21:30:00.731[error] Error: 파일 업로드 실패
+2023-06-19 21:30:33.979[error] Error: 파일 업로드 실패
+2023-06-19 21:33:46.126[info] (user.info.params) {"userid":"test"}
+2023-06-19 21:33:46.134[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 21:33:46.134[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 21:34:16.145[info] (user.info.params) {"userid":"test"}
+2023-06-19 21:34:16.152[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 21:34:16.153[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 21:35:03.030[info] (user.info.params) {"userid":"test"}
+2023-06-19 21:35:03.039[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 21:35:03.041[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 21:35:06.376[info] (user.info.params) {"userid":"test"}
+2023-06-19 21:35:06.380[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 21:35:06.381[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 21:35:50.008[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 21:35:50.015[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 21:35:50.018[debug] (userService.checkPassword) true
+2023-06-19 21:35:50.019[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 21:35:52.816[info] (user.info.params) {"userid":"test"}
+2023-06-19 21:35:52.820[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 21:35:52.821[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 21:35:58.519[info] (user.info.params) {"userid":"test"}
+2023-06-19 21:35:58.525[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 21:35:58.526[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 21:45:21.139[info] (auth.token.params) {"userid":"test","password":""}
+2023-06-19 21:45:21.139[error] Error: Not allowed null (userid, password)
+2023-06-19 21:45:21.147[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 21:45:21.148[error] (userService.checkPassword) Error: Not allowed null (password)
+2023-06-19 21:45:23.901[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 21:45:23.904[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 21:45:23.906[debug] (userService.checkPassword) true
+2023-06-19 21:45:23.906[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 22:13:42.800[info] 애플리케이션 실행....
+2023-06-19 22:13:42.893[info] DB connection success
+2023-06-19 22:13:42.905[info] Sequelize sync success

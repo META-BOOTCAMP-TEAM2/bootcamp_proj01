@@ -2,24 +2,26 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import DaumPostcode from "react-daum-postcode";
-import { Link } from "react-router-dom";
+import axios from "axios";
 
 const UploadPage = () => {
-  const [propertyType, setPropertyType] = useState(""); //계약 방식
-  const [selectedFiles, setSelectedFiles] = useState([]); //사진 파일
-  const [address, setAddress] = useState(""); //주소 등록
-  const [price, setPrice] = useState(""); //매매 가격
-  const [deposit, setDeposit] = useState(""); //전세 가격
-  const [monthlyRent, setMonthlyRent] = useState(""); //월세 가격
-  const [structure, setStructure] = useState(""); //방 구조
-  const [selectedOptions, setSelectedOptions] = useState([]); //옵션 선택
+  const [inputs, setInputs] = useState({
+    propertyType: "매매", //계약방식
+    address: "", //주소
+    price: "", //매매가
+    deposit: "", //전세가
+    monthlyRent: "", //월세가
+    structure: "원룸", //방구조
+    additionalInfo: "",
+    // options: [],
+  });
 
-  const handlePropertyTypeChange = (event) => {
-    setPropertyType(event.target.value);
-  };
+  const [selectedFiles, setSelectedFiles] = useState([]);
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [err, setError] = useState(null);
 
-  const handleStructureChange = (event) => {
-    setStructure(event.target.value);
+  const handleChange = (e) => {
+    setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleOptionChange = (event) => {
@@ -31,7 +33,20 @@ const UploadPage = () => {
         return [...prevOptions, option];
       }
     });
+
+    const updatedOptions = selectedOptions.includes(option)
+      ? selectedOptions.filter((prevOption) => prevOption !== option)
+      : [...selectedOptions, option];
+
+    setInputs((prevInputs) => ({
+      ...prevInputs,
+      options: updatedOptions, // 선택한 옵션을 업데이트된 options으로 설정
+    }));
+
+    return updatedOptions; // 업데이트된 options 반환
   };
+
+  //카카오 주소검색
 
   useEffect(() => {
     handleAddressSearch();
@@ -43,7 +58,10 @@ const UploadPage = () => {
 
   const handleAddressSelect = (data) => {
     const fullAddress = data.address;
-    setAddress(fullAddress);
+    setInputs((prevInputs) => ({
+      ...prevInputs,
+      address: fullAddress,
+    }));
   };
 
   const handleFileChange = (event) => {
@@ -51,92 +69,93 @@ const UploadPage = () => {
     setSelectedFiles((prevFiles) => [...prevFiles, ...files]);
   };
 
-  const handleUpload = () => {
-    // 업로드 처리 로직 작성
-  };
+  const handleSubmit = async (e) => {
+    try {
+      e.preventDefault();
+      const formData = new FormData();
 
-  const handlePriceChange = (event) => {
-    setPrice(event.target.value);
-  };
+      // inputs 값 추가
+      for (const [key, value] of Object.entries(inputs)) {
+        formData.append(key, value);
+      }
 
-  const handleDepositChange = (event) => {
-    setDeposit(event.target.value);
-  };
+      // 이미지 파일 추가
+      for (const file of selectedFiles) {
+        formData.append("images", file);
+      }
 
-  const handleMonthlyRentChange = (event) => {
-    setMonthlyRent(event.target.value);
+      const res = await axios.post("/upload", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+      console.log(`res.data 값: ${res.data}`);
+    } catch (err) {
+      setError(err.response.data);
+    }
   };
 
   return (
     <>
       <div className="upload">
         <Header />
-        <div className="uploadForm">
+
+        <form className="uploadForm">
           <h2>내 방 올리기</h2>
           <h3>계약 방식</h3>
-          <form onSubmit={handleUpload}>
-            <label>
-              <input
-                type="radio"
-                name="propertyType"
-                value="매매"
-                checked={propertyType === "매매"}
-                onChange={handlePropertyTypeChange}
-              />
-              매매
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="propertyType"
-                value="전세"
-                checked={propertyType === "전세"}
-                onChange={handlePropertyTypeChange}
-              />
-              전세
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="propertyType"
-                value="월세"
-                checked={propertyType === "월세"}
-                onChange={handlePropertyTypeChange}
-              />
-              월세
-            </label>
-            <br />
-            <br />
-            <h3>위치 등록</h3>
-            <p>주소 검색: {address}</p>
-            {/* 주소 검색 모달 */}
-            <div className="searchAddress">
-              <DaumPostcode onComplete={handleAddressSelect} autoClose={true} />
-            </div>
-            <br />
-            <br />
-            {propertyType === "매매" && (
+          <div>
+            <select
+              name="propertyType"
+              value={inputs.propertyType}
+              onChange={handleChange}
+            >
+              <option value="매매">매매</option>
+              <option value="전세">전세</option>
+              <option value="월세">월세</option>
+            </select>
+          </div>
+          <br />
+
+          <div className="매매방식에 따른 입력">
+            {inputs.propertyType === "매매" && (
               <div>
                 <label>
                   매매가격:
                   <input
                     type="text"
                     placeholder="만원 단위로 입력해주세요"
-                    value={price}
-                    onChange={handlePriceChange}
+                    name="price"
+                    value={inputs.price}
+                    onChange={handleChange}
                   />
                 </label>
               </div>
             )}
-            {propertyType === "전세" && (
+            {inputs.propertyType === "전세" && (
+              <div>
+                <label>
+                  전세가:
+                  <input
+                    type="text"
+                    placeholder="만원 단위로 입력해주세요"
+                    name="deposit"
+                    value={inputs.deposit}
+                    onChange={handleChange}
+                  />
+                </label>
+                <br />
+              </div>
+            )}
+            {inputs.propertyType === "월세" && (
               <div>
                 <label>
                   보증금:
                   <input
                     type="text"
                     placeholder="만원 단위로 입력해주세요"
-                    value={deposit}
-                    onChange={handleDepositChange}
+                    name="deposit"
+                    value={inputs.deposit}
+                    onChange={handleChange}
                   />
                 </label>
                 <br />
@@ -145,70 +164,47 @@ const UploadPage = () => {
                   <input
                     type="text"
                     placeholder="만원 단위로 입력해주세요"
-                    value={monthlyRent}
-                    onChange={handleMonthlyRentChange}
+                    name="monthlyRent"
+                    value={inputs.monthlyRent}
+                    onChange={handleChange}
                   />
                 </label>
               </div>
             )}
-            {propertyType === "월세" && (
-              <div>
-                <label>
-                  보증금:
-                  <input
-                    type="text"
-                    placeholder="만원 단위로 입력해주세요"
-                    value={deposit}
-                    onChange={handleDepositChange}
-                  />
-                </label>
-                <br />
-                <label>
-                  월세:
-                  <input
-                    type="text"
-                    placeholder="만원 단위로 입력해주세요"
-                    value={monthlyRent}
-                    onChange={handleMonthlyRentChange}
-                  />
-                </label>
-              </div>
-            )}
-            <br />
-            <br />
-            <h3>방 구조</h3>
-            <label>
-              <input
-                type="radio"
-                name="structure"
-                value="원룸"
-                checked={structure === "원룸"}
-                onChange={handleStructureChange}
-              />
-              원룸
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="structure"
-                value="1.5룸"
-                checked={structure === "1.5룸"}
-                onChange={handleStructureChange}
-              />
-              1.5룸
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="structure"
-                value="2룸 이상"
-                checked={structure === "2룸 이상"}
-                onChange={handleStructureChange}
-              />
-              2룸 이상
-            </label>
-            <br />
-            <br />
+          </div>
+          <br />
+          <br />
+          <h3>위치 등록</h3>
+          <br />
+          <p>
+            주소 검색: <div style={{ color: "red" }}>{inputs.address}</div>
+          </p>
+          <br />
+          {/* 주소 검색 모달 */}
+          <div className="searchAddress">
+            <DaumPostcode onComplete={handleAddressSelect} autoClose={false} />
+          </div>
+          <br />
+          <br />
+
+          <br />
+          <br />
+          <h3>방 구조</h3>
+          <label>
+            <select
+              name="structure"
+              value={inputs.structure}
+              onChange={handleChange}
+            >
+              <option value="원룸">원룸</option>
+              <option value="1.5룸">1.5룸</option>
+              <option value="2룸 이상">2룸 이상</option>
+            </select>
+          </label>
+
+          <br />
+          <br />
+          <div className="기자재 추가 옵션">
             <h3>해당 옵션</h3>
             <label>
               <input
@@ -260,39 +256,41 @@ const UploadPage = () => {
               />
               책상
             </label>
-            <br />
-            <br />
-            <h3>사진 등록</h3>
-            <input type="file" multiple onChange={handleFileChange} />
-            <br />
-            <div>
-              {selectedFiles.map((file, index) => (
-                <img
-                  key={index}
-                  src={URL.createObjectURL(file)}
-                  alt={`Image ${index + 1}`}
-                  style={{
-                    width: "250px",
-                    height: "200px",
-                    marginRight: "20px",
-                  }}
-                />
-              ))}
-            </div>
-            <br />
-            <h3>추가 정보</h3>
-            <div>상세 설명을 적어주세요 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-            {/* <input type="text" style={{ width: "400px", height: "50px" }} /> */}
-            <textarea style={{ width: "400px", height: "60px" }}></textarea>
-            <br />
-            <br />
-            <div className="uploadButton">
-              <Link to="/MyPage">
-                <button type="submit">매물 등록</button>
-              </Link>
-            </div>
-          </form>
-        </div>
+          </div>
+          <br />
+          <br />
+          <h3>사진 등록</h3>
+          <input type="file" multiple onChange={handleFileChange} />
+          <br />
+          <div>
+            {selectedFiles.map((file, index) => (
+              <img
+                key={index}
+                src={URL.createObjectURL(file)}
+                alt={`Image ${index + 1}`}
+                style={{
+                  width: "250px",
+                  height: "200px",
+                  marginRight: "20px",
+                }}
+              />
+            ))}
+          </div>
+          <br />
+          <h3>추가 정보</h3>
+          <div>상세 설명을 적어주세요 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <textarea
+            style={{ width: "400px", height: "60px" }}
+            name="additionalInfo"
+            value={inputs.additionalInfo}
+            onChange={handleChange}
+          ></textarea>
+          <br />
+          <br />
+          <div className="uploadButton">
+            <button onClick={handleSubmit}>매물 등록</button>
+          </div>
+        </form>
 
         <Footer />
       </div>
