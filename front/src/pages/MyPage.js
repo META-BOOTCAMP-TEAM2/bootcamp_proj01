@@ -1,21 +1,31 @@
-import React from "react";
-import exampleUser from "../assets/examUser.json";
+import React, { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../components/authContext";
+
+//컴포넌트& css
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./stylePages.css";
-import { Link } from "react-router-dom";
+import axios from "axios";
 
 const MyPage = () => {
-  // 현재 로그인한 사용자의 userID (예: 1)
-  const currentUserId = "1";
+  const [userInfo, setUserInfo] = useState({});
 
-  // 현재 로그인한 사용자의 정보를 찾는 함수
-  const getCurrentUser = () => {
-    return exampleUser.find((user) => user.userID === currentUserId);
-  };
+  const { currentUser } = useContext(AuthContext);
 
-  // 현재 로그인한 사용자 정보 가져오기
-  const currentUser = getCurrentUser();
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        console.log(`/users/${currentUser}`);
+        const res = await axios.get(`/users/${currentUser}`);
+        // console.log(res.data);
+        setUserInfo(res.data);
+      } catch (err) {
+        alert(err);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="MyPage">
@@ -25,10 +35,10 @@ const MyPage = () => {
       </div>
       <div className="content">
         <h3>나의 정보</h3>
-        <p> 이름 : {currentUser.name}</p>
-        <p> 아이디 : {currentUser.id}</p>
-        <p> 이메일 주소 : {currentUser.email}</p>
-        <p> 연락처 : {currentUser.phoneNumber}</p>
+        <p> 이름 : {userInfo.name}</p>
+        <p> 아이디 : {userInfo.userid}</p>
+        <p> 이메일 주소 : {userInfo.email}</p>
+        <p> 연락처 : {userInfo.phone}</p>
       </div>
       <Link to="/myLists">
         <button className="myUpLoad">내가 올린 매물</button>

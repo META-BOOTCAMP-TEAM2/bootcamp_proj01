@@ -5,15 +5,16 @@ const hashUtil = require("../lib/hashUtil");
 const service = {
   // login 프로세스
   async login(params) {
-    // 1.userid로 사용자 조회
+    // 1. 사용자 조회
     let user = null;
     try {
       user = await userDao.selectUser(params);
       logger.debug(`(userService.login) ${JSON.stringify(user)}`);
-      // 2. 유저정보 유무 확인
+
+      // 해당 사용자가 없는 경우 튕겨냄
       if (!user) {
-        const err = new Error("Incorrect userid or pasword");
-        logger.error(err.toString(err));
+        const err = new Error("Incorect userid or password");
+        logger.error(err.toString());
 
         return new Promise((resolve, reject) => {
           reject(err);
@@ -26,7 +27,7 @@ const service = {
       });
     }
 
-    // 3. 패스워드 일치 비교
+    // 2. 비밀번호 비교
     try {
       const checkPassword = await hashUtil.checkPasswordHash(
         params.password,
@@ -34,7 +35,7 @@ const service = {
       );
       logger.debug(`(userService.checkPassword) ${checkPassword}`);
 
-      // 패스워드 불일치시 에러 처리
+      // 비밀번호 틀린 경우 튕겨냄
       if (!checkPassword) {
         const err = new Error("Incorect userid or password");
         logger.error(err.toString());
@@ -50,15 +51,14 @@ const service = {
       });
     }
 
-    // 결과값 리턴
     return new Promise((resolve) => {
       resolve(user);
     });
   },
-  // user 생성 [비밀번호 암호화]
+
+  // service_reg [유저 등록]
   async reg(params) {
     let inserted = null;
-
     // 1. 비밀번호 암호화
     let hashPassword = null;
     try {
@@ -94,7 +94,8 @@ const service = {
       resolve(inserted);
     });
   },
-  // selectList
+
+  // service_list [전체 유저 조회]
   async list(params) {
     let result = null;
 
@@ -112,12 +113,12 @@ const service = {
       resolve(result);
     });
   },
-  // selectUser
+  // service_info [특정 유저 조회]
   async info(params) {
     let result = null;
 
     try {
-      result = await userDao.selectUserByPk(params);
+      result = await userDao.selectUserForMypage(params);
       logger.debug(`(userService.info) ${JSON.stringify(result)}`);
     } catch (err) {
       logger.error(`(userService.info) ${err.toString()}`);
@@ -131,7 +132,8 @@ const service = {
       resolve(result);
     });
   },
-  // update
+
+  // service_update [유저 정보 수정]
   async edit(params) {
     let result = null;
 
@@ -150,7 +152,7 @@ const service = {
       resolve(result);
     });
   },
-  // delelte
+  // service_delelte [유저 삭제]
   async delete(params) {
     let result = null;
 

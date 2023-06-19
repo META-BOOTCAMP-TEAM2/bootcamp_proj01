@@ -16,7 +16,7 @@ exports.join = async (req, res, next) => {
       nick,
       password,
     });
-    return res.redirect("/?성공적으로 가입했습니다.");
+    return res.json("/?성공적으로 가입했습니다.");
   } catch (error) {
     console.error(error);
     return next(error);

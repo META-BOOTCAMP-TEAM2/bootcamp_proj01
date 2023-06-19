@@ -1,7 +1,5 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { useEffect, useState } from "react";
-// import axios from "axios";
 
 //pages
 import Home from "./pages/Home";
@@ -16,10 +14,8 @@ import ListingDetail from "./pages/ListingDetail";
 import "../src/assets/example.json";
 
 // API 서버 url : http://localhost:8000
-// API 서버 url : http://localhost:8000
 function App() {
   return (
-    //usestate로 로그인 여부 체크하면서 mypage view 판단하는건??
     <>
       <Router>
         <Routes>
