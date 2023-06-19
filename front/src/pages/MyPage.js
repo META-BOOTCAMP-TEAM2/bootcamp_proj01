@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../components/authContext";
 
@@ -6,9 +6,26 @@ import { AuthContext } from "../components/authContext";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./stylePages.css";
+import axios from "axios";
 
 const MyPage = () => {
+  const [userInfo, setUserInfo] = useState({});
+
   const { currentUser } = useContext(AuthContext);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        console.log(`/users/${currentUser}`);
+        const res = await axios.get(`/users/${currentUser}`);
+        // console.log(res.data);
+        setUserInfo(res.data);
+      } catch (err) {
+        alert(err);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="MyPage">
@@ -18,10 +35,10 @@ const MyPage = () => {
       </div>
       <div className="content">
         <h3>나의 정보</h3>
-        {/* <p> 이름 : {currentUser.userInital}</p> */}
-        <p> 아이디 : {currentUser.username}</p>
-        <p> 이메일 주소 : {currentUser.email}</p>
-        {/* <p> 연락처 : {currentUser.phoneNumber}</p> */}
+        <p> 이름 : {userInfo.name}</p>
+        <p> 아이디 : {userInfo.userid}</p>
+        <p> 이메일 주소 : {userInfo.email}</p>
+        <p> 연락처 : {userInfo.phone}</p>
       </div>
       <Link to="/myLists">
         <button className="myUpLoad">내가 올린 매물</button>

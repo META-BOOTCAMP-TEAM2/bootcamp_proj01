@@ -16,13 +16,28 @@ const SignUpPage = () => {
     phone: "", // 연락처
   });
   const [err, setError] = useState(null);
-  const ErrorMessage = ({ error }) => {
-    return <p>{error}</p>;
-  };
+  const [isUsernameValid, setIsUsernameValid] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
     setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleDuplicateCheck = async (e) => {
+    e.preventDefault();
+    try {
+      const id = inputs.userid;
+      const response = await axios.get(`/users/${id}`);
+      if (response.data === null) {
+        setIsUsernameValid(true);
+        alert("가입 가능한 회원입니다.");
+      } else {
+        setIsUsernameValid(false);
+        alert("중복된 사용자 이름입니다.");
+      }
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -50,6 +65,7 @@ const SignUpPage = () => {
 
     try {
       await axios.post("/auth/join", inputs);
+      alert("회원가입에 성공했습니다.");
       navigate("/login");
     } catch (err) {
       setError(err.response.data);
@@ -67,7 +83,7 @@ const SignUpPage = () => {
             <input
               required
               type="text"
-              placeholder="이름"
+              placeholder="이름 (예: 유비씨)"
               name="name"
               onChange={handleChange}
             />
@@ -76,10 +92,18 @@ const SignUpPage = () => {
             <input
               required
               type="text"
-              placeholder="아이디"
+              placeholder="아이디 (예: team)"
               name="userid"
               onChange={handleChange}
             />
+            <button onClick={handleDuplicateCheck} className="submitButton">
+              중복확인
+            </button>
+            {isUsernameValid ? (
+              <p>가입 가능한 회원입니다.</p>
+            ) : (
+              <p>중복된 사용자 이름입니다.</p>
+            )}
           </div>
           <div>
             <input
@@ -94,7 +118,7 @@ const SignUpPage = () => {
             <input
               required
               type="email"
-              placeholder="이메일"
+              placeholder="이메일 (예: test@test.com)"
               name="email"
               onChange={handleChange}
             />
@@ -103,17 +127,21 @@ const SignUpPage = () => {
             <input
               required
               type="text"
-              placeholder="연락처"
+              placeholder="연락처 (예: 010-1111-1111)"
               name="phone"
               onChange={handleChange}
             />
           </div>
           <div>
-            <button className="submitButton" onClick={handleSubmit}>
+            <button
+              className="submitButton"
+              onClick={handleSubmit}
+              disabled={!isUsernameValid}
+            >
               가입하기
             </button>
           </div>
-          {err && <ErrorMessage error={err} />}
+          {err && <p>{err}</p>}
           <div>
             계정이 있으신가요? <Link to="/login">Login</Link>
           </div>

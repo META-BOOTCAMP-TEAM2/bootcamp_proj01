@@ -65,15 +65,28 @@ const dao = {
         });
     });
   },
+  // 마이페이지 사용자 조회
+  selectUserForMypage(params) {
+    return new Promise((resolve, reject) => {
+      User.findOne({
+        attributes: { exclude: ["password"] }, // password 필드 제외
+        where: { userid: params.userid },
+      })
+        .then((selectedOne) => {
+          resolve(selectedOne);
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    });
+  },
 
   // 로그인을 위한 사용자 조회
   selectUser(params) {
     return new Promise((resolve, reject) => {
       User.findOne({
         attributes: ["id", "userid", "password", "name", "role"],
-        where: {
-          userid: params.userid,
-        },
+        where: { userid: params.userid },
       })
         .then((selectedOne) => {
           resolve(selectedOne);

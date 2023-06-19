@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../components/authContext";
 
 import { Button } from "react-bootstrap";
@@ -7,12 +7,14 @@ import "./style.css"; // CSS 파일을 불러옵니다.
 
 function Header() {
   const { currentUser, logout } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     const confirmLogout = window.confirm("로그아웃 하시겠습니까?");
 
     if (confirmLogout) {
       logout();
+      navigate("/");
     }
   };
 
@@ -27,7 +29,7 @@ function Header() {
       <div className="header2">
         {currentUser && (
           <div style={{ fontSize: "20px", color: "orange" }}>
-            환영합니다! {currentUser.username} 님
+            <h>환영합니다! {currentUser} 님</h>
           </div>
         )}
         <Link to="/">
@@ -56,11 +58,6 @@ function Header() {
               <Button variant="Sign up" id="buttons">
                 Sign up
               </Button>{" "}
-            </Link>
-            <Link to="/mypage">
-              <Button variant="My page" id="buttons">
-                My page
-              </Button>
             </Link>
           </>
         )}

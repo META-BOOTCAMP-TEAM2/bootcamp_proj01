@@ -313,3 +313,414 @@
 2023-06-19 04:03:57.932[info] 애플리케이션 실행....
 2023-06-19 04:03:58.043[info] DB connection success
 2023-06-19 04:03:58.054[info] Sequelize sync success
+2023-06-19 12:01:32.948[info] 애플리케이션 실행....
+2023-06-19 12:01:33.434[error] DB Connection fail Unknown database 'real_estate'
+2023-06-19 12:01:54.551[info] 애플리케이션 실행....
+2023-06-19 12:01:54.629[info] DB connection success
+2023-06-19 12:01:54.663[info] Sequelize sync success
+2023-06-19 12:02:23.608[info] (auth.token.params) {"userid":"aaaa","password":"1111"}
+2023-06-19 12:02:23.622[debug] (userService.login) null
+2023-06-19 12:02:23.622[error] 아이디가 일치하지 않습니다. Incorrect userid
+2023-06-19 12:08:30.137[info] (auth.token.params) {"userid":"aaaa","password":"1111"}
+2023-06-19 12:08:30.143[debug] (userService.login) null
+2023-06-19 12:08:30.144[error] 아이디가 일치하지 않습니다. Incorrect userid
+2023-06-19 12:16:04.717[info] 애플리케이션 실행....
+2023-06-19 12:16:04.792[info] DB connection success
+2023-06-19 12:16:04.802[info] Sequelize sync success
+2023-06-19 12:16:24.739[info] (auth.token.params) {"userid":"aaaa","password":"11111"}
+2023-06-19 12:16:24.752[debug] (userService.login) null
+2023-06-19 12:16:24.753[error] 아이디가 일치하지 않습니다. Incorrect userid
+2023-06-19 12:17:42.262[info] 애플리케이션 실행....
+2023-06-19 12:17:42.353[info] DB connection success
+2023-06-19 12:17:42.362[info] Sequelize sync success
+2023-06-19 12:17:48.104[info] (auth.token.params) {"userid":"aaaa","password":"1111"}
+2023-06-19 12:17:48.112[debug] (userService.login) null
+2023-06-19 12:17:48.113[error] 아이디가 일치하지 않습니다. Incorrect userid
+2023-06-19 12:18:05.888[info] 애플리케이션 실행....
+2023-06-19 12:18:06.000[info] DB connection success
+2023-06-19 12:18:06.008[info] Sequelize sync success
+2023-06-19 12:18:09.949[info] (auth.token.params) {"userid":"aaa","password":"1111"}
+2023-06-19 12:18:09.958[debug] (userService.login) null
+2023-06-19 12:18:09.959[error] 아이디가 일치하지 않습니다. Incorrect userid
+2023-06-19 12:18:19.191[info] 애플리케이션 실행....
+2023-06-19 12:18:19.273[info] DB connection success
+2023-06-19 12:18:19.285[info] Sequelize sync success
+2023-06-19 12:21:43.534[info] 애플리케이션 실행....
+2023-06-19 12:21:43.632[info] DB connection success
+2023-06-19 12:21:43.640[info] Sequelize sync success
+2023-06-19 12:22:32.710[info] 애플리케이션 실행....
+2023-06-19 12:22:32.785[info] DB connection success
+2023-06-19 12:22:32.794[info] Sequelize sync success
+2023-06-19 12:24:19.473[info] 애플리케이션 실행....
+2023-06-19 12:24:19.547[info] DB connection success
+2023-06-19 12:24:19.556[info] Sequelize sync success
+2023-06-19 12:25:28.418[info] 애플리케이션 실행....
+2023-06-19 12:25:28.493[info] DB connection success
+2023-06-19 12:25:28.502[info] Sequelize sync success
+2023-06-19 12:25:38.313[info] 애플리케이션 실행....
+2023-06-19 12:25:38.389[info] DB connection success
+2023-06-19 12:25:38.398[info] Sequelize sync success
+2023-06-19 12:28:34.750[info] (user.reg.params) {"name":"test","userid":"test","password":"1111","email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 12:28:34.752[debug] (userService.makePassword) "1111"
+2023-06-19 12:28:34.799[debug] (userService.reg) {"id":1,"name":"test","userid":"test","email":"test@test.com","phone":"010-1111-1111","updatedAt":"2023-06-19T03:28:34.755Z","createdAt":"2023-06-19T03:28:34.755Z"}
+2023-06-19 12:28:34.801[info] (user.reg.result) {"id":1,"name":"test","userid":"test","email":"test@test.com","phone":"010-1111-1111","updatedAt":"2023-06-19T03:28:34.755Z","createdAt":"2023-06-19T03:28:34.755Z"}
+2023-06-19 12:34:59.747[info] (user.reg.params) {"name":"test","userid":"test","password":"1111","email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 12:34:59.749[debug] (userService.makePassword) "1111"
+2023-06-19 12:34:59.762[debug] (userService.reg) {"id":2,"name":"test","userid":"test","email":"test@test.com","phone":"010-1111-1111","updatedAt":"2023-06-19T03:34:59.749Z","createdAt":"2023-06-19T03:34:59.749Z"}
+2023-06-19 12:34:59.763[info] (user.reg.result) {"id":2,"name":"test","userid":"test","email":"test@test.com","phone":"010-1111-1111","updatedAt":"2023-06-19T03:34:59.749Z","createdAt":"2023-06-19T03:34:59.749Z"}
+2023-06-19 12:36:24.594[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 12:36:24.606[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 12:36:24.609[debug] (userService.checkPassword) true
+2023-06-19 12:36:24.611[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 12:40:56.664[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 12:40:56.670[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 12:40:56.672[debug] (userService.checkPassword) true
+2023-06-19 12:40:56.673[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 12:50:31.780[info] 애플리케이션 실행....
+2023-06-19 12:50:31.852[info] DB connection success
+2023-06-19 12:50:31.861[info] Sequelize sync success
+2023-06-19 13:12:02.493[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 13:12:02.507[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 13:12:02.509[debug] (userService.checkPassword) true
+2023-06-19 13:12:02.511[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 13:31:09.119[info] 애플리케이션 실행....
+2023-06-19 13:31:09.200[info] DB connection success
+2023-06-19 13:31:09.211[info] Sequelize sync success
+2023-06-19 13:35:04.499[info] 애플리케이션 실행....
+2023-06-19 13:35:04.575[info] DB connection success
+2023-06-19 13:35:04.584[info] Sequelize sync success
+2023-06-19 13:54:06.977[info] 애플리케이션 실행....
+2023-06-19 13:54:07.046[info] DB connection success
+2023-06-19 13:54:07.056[info] Sequelize sync success
+2023-06-19 13:55:21.407[info] 애플리케이션 실행....
+2023-06-19 13:55:21.513[info] DB connection success
+2023-06-19 13:55:21.524[info] Sequelize sync success
+2023-06-19 13:56:18.137[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 13:56:18.151[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 13:56:18.153[debug] (userService.checkPassword) true
+2023-06-19 13:56:18.154[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 13:57:33.685[info] 애플리케이션 실행....
+2023-06-19 13:57:33.761[info] DB connection success
+2023-06-19 13:57:33.772[info] Sequelize sync success
+2023-06-19 13:57:46.527[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 13:57:46.540[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 13:57:46.543[debug] (userService.checkPassword) true
+2023-06-19 13:57:46.544[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:00:03.086[info] 애플리케이션 실행....
+2023-06-19 14:00:03.160[info] DB connection success
+2023-06-19 14:00:03.172[info] Sequelize sync success
+2023-06-19 14:01:12.934[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:01:12.948[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:01:12.951[debug] (userService.checkPassword) true
+2023-06-19 14:01:12.951[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:03:07.023[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:03:07.032[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:03:07.034[debug] (userService.checkPassword) true
+2023-06-19 14:03:07.035[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:03:30.607[info] 애플리케이션 실행....
+2023-06-19 14:03:30.688[info] DB connection success
+2023-06-19 14:03:30.698[info] Sequelize sync success
+2023-06-19 14:03:37.549[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:03:37.559[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:03:37.563[debug] (userService.checkPassword) true
+2023-06-19 14:03:37.564[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:03:46.877[info] 애플리케이션 실행....
+2023-06-19 14:03:46.955[info] DB connection success
+2023-06-19 14:03:46.963[info] Sequelize sync success
+2023-06-19 14:03:54.053[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:03:54.061[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:03:54.065[debug] (userService.checkPassword) true
+2023-06-19 14:03:54.067[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:04:49.530[info] 애플리케이션 실행....
+2023-06-19 14:04:49.608[info] DB connection success
+2023-06-19 14:04:49.617[info] Sequelize sync success
+2023-06-19 14:05:03.180[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:05:03.194[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:05:03.196[debug] (userService.checkPassword) true
+2023-06-19 14:05:03.197[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:06:28.853[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:06:28.862[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:06:28.865[debug] (userService.checkPassword) true
+2023-06-19 14:06:28.867[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:07:21.530[info] 애플리케이션 실행....
+2023-06-19 14:07:21.607[info] DB connection success
+2023-06-19 14:07:21.617[info] Sequelize sync success
+2023-06-19 14:07:30.623[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:07:30.632[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:07:30.636[debug] (userService.checkPassword) true
+2023-06-19 14:07:30.637[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:10:13.829[info] 애플리케이션 실행....
+2023-06-19 14:10:13.912[info] DB connection success
+2023-06-19 14:10:13.923[info] Sequelize sync success
+2023-06-19 14:10:29.415[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:10:29.429[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:10:29.432[debug] (userService.checkPassword) true
+2023-06-19 14:10:29.433[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:11:01.987[info] 애플리케이션 실행....
+2023-06-19 14:11:02.084[info] DB connection success
+2023-06-19 14:11:02.093[info] Sequelize sync success
+2023-06-19 14:14:11.641[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:14:11.656[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:14:11.659[debug] (userService.checkPassword) true
+2023-06-19 14:14:11.660[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:27:12.972[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:27:12.980[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:27:12.982[debug] (userService.checkPassword) true
+2023-06-19 14:27:12.983[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:38:42.961[info] 애플리케이션 실행....
+2023-06-19 14:38:43.034[info] DB connection success
+2023-06-19 14:38:43.043[info] Sequelize sync success
+2023-06-19 14:40:15.360[info] 애플리케이션 실행....
+2023-06-19 14:40:15.434[info] DB connection success
+2023-06-19 14:40:15.444[info] Sequelize sync success
+2023-06-19 14:40:22.461[info] 애플리케이션 실행....
+2023-06-19 14:40:22.530[info] DB connection success
+2023-06-19 14:40:22.539[info] Sequelize sync success
+2023-06-19 14:41:32.629[info] (user.info.params) {"id":"test"}
+2023-06-19 14:41:32.638[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-19 14:41:49.986[info] (user.info.params) {"id":"test"}
+2023-06-19 14:41:49.988[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-19 14:42:40.305[info] (user.info.params) {"id":"test"}
+2023-06-19 14:42:40.307[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-19 14:42:47.852[info] (user.info.params) {"id":"test"}
+2023-06-19 14:42:47.853[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-19 14:43:45.635[info] (user.info.params) {"id":"test"}
+2023-06-19 14:43:45.637[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-19 14:43:48.573[info] (user.info.params) {"id":"test"}
+2023-06-19 14:43:48.575[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-19 14:45:12.861[info] 애플리케이션 실행....
+2023-06-19 14:45:12.939[info] DB connection success
+2023-06-19 14:45:12.947[info] Sequelize sync success
+2023-06-19 14:45:17.898[info] (user.info.params) {"id":"test"}
+2023-06-19 14:45:17.904[error] (userService.info) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-19 14:46:28.023[info] 애플리케이션 실행....
+2023-06-19 14:46:28.106[info] DB connection success
+2023-06-19 14:46:28.117[info] Sequelize sync success
+2023-06-19 14:46:31.860[info] (user.info.params) {"id":"test"}
+2023-06-19 14:46:31.868[debug] (userService.info) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:46:59.722[info] 애플리케이션 실행....
+2023-06-19 14:46:59.794[info] DB connection success
+2023-06-19 14:46:59.802[info] Sequelize sync success
+2023-06-19 14:47:14.207[info] 애플리케이션 실행....
+2023-06-19 14:47:14.285[info] DB connection success
+2023-06-19 14:47:14.294[info] Sequelize sync success
+2023-06-19 14:47:16.695[info] (user.info.params) {"userid":"test"}
+2023-06-19 14:47:16.703[debug] (userService.info) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 14:48:57.765[info] 애플리케이션 실행....
+2023-06-19 14:48:57.844[info] DB connection success
+2023-06-19 14:48:57.855[info] Sequelize sync success
+2023-06-19 14:50:25.671[info] 애플리케이션 실행....
+2023-06-19 14:50:25.747[info] DB connection success
+2023-06-19 14:50:25.757[info] Sequelize sync success
+2023-06-19 14:51:28.515[info] 애플리케이션 실행....
+2023-06-19 14:51:28.590[info] DB connection success
+2023-06-19 14:51:28.600[info] Sequelize sync success
+2023-06-19 14:51:55.441[info] 애플리케이션 실행....
+2023-06-19 14:51:55.515[info] DB connection success
+2023-06-19 14:51:55.523[info] Sequelize sync success
+2023-06-19 14:52:02.630[info] (user.info.params) {"userid":"test"}
+2023-06-19 14:52:02.639[debug] (userService.info) {"userid":"test","name":"test","role":null,"email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 14:52:19.636[info] (user.info.params) {"userid":"test"}
+2023-06-19 14:52:19.643[debug] (userService.info) {"userid":"test","name":"test","role":null,"email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 14:53:57.631[info] (user.info.params) {"userid":"test"}
+2023-06-19 14:53:57.639[debug] (userService.info) {"userid":"test","name":"test","role":null,"email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 14:54:33.182[info] (user.info.params) {"userid":"test"}
+2023-06-19 14:54:33.189[debug] (userService.info) {"userid":"test","name":"test","role":null,"email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 14:55:32.632[info] (user.info.params) {"userid":"null"}
+2023-06-19 14:55:32.638[debug] (userService.info) null
+2023-06-19 14:57:26.284[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:57:26.290[debug] (userService.login) {"userid":"test","name":"test","role":null,"email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 14:57:26.293[error] (userService.checkPassword) Error: Not allowed null (password)
+2023-06-19 14:58:07.409[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 14:58:07.416[debug] (userService.login) {"userid":"test","name":"test","role":null,"email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 14:58:07.416[error] (userService.checkPassword) Error: Not allowed null (password)
+2023-06-19 15:00:19.238[info] 애플리케이션 실행....
+2023-06-19 15:00:19.344[info] DB connection success
+2023-06-19 15:00:19.352[info] Sequelize sync success
+2023-06-19 15:00:54.441[info] 애플리케이션 실행....
+2023-06-19 15:00:54.535[info] DB connection success
+2023-06-19 15:00:54.546[info] Sequelize sync success
+2023-06-19 15:01:03.628[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 15:01:03.637[debug] (userService.login) {"userid":"test","name":"test","role":null,"email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 15:01:03.639[error] (userService.checkPassword) Error: Not allowed null (password)
+2023-06-19 15:01:50.796[info] 애플리케이션 실행....
+2023-06-19 15:01:50.871[info] DB connection success
+2023-06-19 15:01:50.879[info] Sequelize sync success
+2023-06-19 15:02:01.819[info] 애플리케이션 실행....
+2023-06-19 15:02:01.933[info] DB connection success
+2023-06-19 15:02:01.941[info] Sequelize sync success
+2023-06-19 15:02:18.370[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 15:02:18.385[debug] (userService.login) {"userid":"test","name":"test","role":null,"email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 15:02:18.386[error] (userService.checkPassword) Error: Not allowed null (password)
+2023-06-19 15:07:55.847[info] 애플리케이션 실행....
+2023-06-19 15:07:55.925[info] DB connection success
+2023-06-19 15:07:55.935[info] Sequelize sync success
+2023-06-19 15:10:23.580[info] 애플리케이션 실행....
+2023-06-19 15:10:23.655[info] DB connection success
+2023-06-19 15:10:23.666[info] Sequelize sync success
+2023-06-19 15:10:32.539[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 15:10:32.548[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:10:32.552[debug] (userService.checkPassword) true
+2023-06-19 15:10:32.553[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:10:34.096[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:10:34.097[error] (userService.info) TypeError: userDao.selectUserForMypage is not a function
+2023-06-19 15:11:30.730[info] 애플리케이션 실행....
+2023-06-19 15:11:30.807[info] DB connection success
+2023-06-19 15:11:30.818[info] Sequelize sync success
+2023-06-19 15:11:54.305[info] 애플리케이션 실행....
+2023-06-19 15:11:54.404[info] DB connection success
+2023-06-19 15:11:54.417[info] Sequelize sync success
+2023-06-19 15:11:59.643[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:11:59.652[debug] (userService.info) {"userid":"test","name":"test","role":null,"email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 15:12:02.037[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:12:02.042[debug] (userService.info) {"userid":"test","name":"test","role":null,"email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 15:12:38.487[info] 애플리케이션 실행....
+2023-06-19 15:12:38.566[info] DB connection success
+2023-06-19 15:12:38.576[info] Sequelize sync success
+2023-06-19 15:12:42.646[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:12:42.656[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 15:14:06.513[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:14:06.522[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 15:16:28.726[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 15:16:28.734[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:16:28.736[debug] (userService.checkPassword) true
+2023-06-19 15:16:28.738[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:16:30.891[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:16:30.895[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 15:18:03.488[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 15:18:03.494[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:18:03.496[debug] (userService.checkPassword) true
+2023-06-19 15:18:03.497[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:18:05.454[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:18:05.457[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 15:27:02.654[info] 애플리케이션 실행....
+2023-06-19 15:27:02.766[info] DB connection success
+2023-06-19 15:27:02.775[info] Sequelize sync success
+2023-06-19 15:29:53.821[info] (auth.token.params) {"userid":"test","password":"1112"}
+2023-06-19 15:29:53.836[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:29:53.838[debug] (userService.checkPassword) false
+2023-06-19 15:29:53.839[error] Error: Incorect userid or password
+2023-06-19 15:30:11.429[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 15:30:11.436[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:30:11.439[debug] (userService.checkPassword) true
+2023-06-19 15:30:11.441[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:30:18.339[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:30:18.343[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 15:30:27.828[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:30:27.831[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 15:30:43.940[info] (auth.token.params) {"userid":"test","password":"11112"}
+2023-06-19 15:30:43.946[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:30:43.948[debug] (userService.checkPassword) false
+2023-06-19 15:30:43.949[error] Error: Incorect userid or password
+2023-06-19 15:30:51.358[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 15:30:51.361[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:30:51.363[debug] (userService.checkPassword) true
+2023-06-19 15:30:51.364[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:30:53.410[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:30:53.415[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 15:31:16.272[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 15:31:16.279[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:31:16.281[debug] (userService.checkPassword) true
+2023-06-19 15:31:16.282[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 15:31:18.939[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:31:18.943[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 15:31:46.489[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:31:46.496[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 15:32:04.521[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:32:04.528[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 15:32:19.331[info] (user.info.params) {"userid":"test"}
+2023-06-19 15:32:19.337[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 15:33:56.964[info] (user.reg.params) {"name":"aaaa","userid":"aaaa","password":"1111","email":"aaaa@aaaa.com","phone":"010-1111-1111"}
+2023-06-19 15:33:56.966[debug] (userService.makePassword) "1111"
+2023-06-19 15:33:56.997[debug] (userService.reg) {"id":3,"name":"aaaa","userid":"aaaa","email":"aaaa@aaaa.com","phone":"010-1111-1111","updatedAt":"2023-06-19T06:33:56.969Z","createdAt":"2023-06-19T06:33:56.969Z"}
+2023-06-19 15:33:56.999[info] (user.reg.result) {"id":3,"name":"aaaa","userid":"aaaa","email":"aaaa@aaaa.com","phone":"010-1111-1111","updatedAt":"2023-06-19T06:33:56.969Z","createdAt":"2023-06-19T06:33:56.969Z"}
+2023-06-19 15:34:04.177[info] (auth.token.params) {"userid":"aaaa","password":"1111"}
+2023-06-19 15:34:04.192[debug] (userService.login) {"id":3,"userid":"aaaa","password":"ReAoT20n6AXElmTMqpqg/H5XPZeERZFr+pEY7m2ajWQ5UWAPfcnHN9PVLw0wbLnkj5CpYs3ataXDqy979LcuJA==.ba963b22c826e5ffcb1c05272a588764ec2ef8f879472e31d4535bf7cf82c21af59012a082a34a84a62ecd01eef99661e16c5c1374af3223abe2dec545fe2b42","name":"aaaa","role":null}
+2023-06-19 15:34:04.198[debug] (userService.checkPassword) true
+2023-06-19 15:34:04.199[info] (auth.token.result) {"id":3,"userid":"aaaa","password":"ReAoT20n6AXElmTMqpqg/H5XPZeERZFr+pEY7m2ajWQ5UWAPfcnHN9PVLw0wbLnkj5CpYs3ataXDqy979LcuJA==.ba963b22c826e5ffcb1c05272a588764ec2ef8f879472e31d4535bf7cf82c21af59012a082a34a84a62ecd01eef99661e16c5c1374af3223abe2dec545fe2b42","name":"aaaa","role":null}
+2023-06-19 15:44:51.310[info] (user.reg.params) {"name":"test","userid":"test","password":"1111","email":"dasdsa@asdasdasd.com","phone":"010-1111-1111"}
+2023-06-19 15:44:51.312[debug] (userService.makePassword) "1111"
+2023-06-19 15:44:51.325[error] (userService.reg) SequelizeUniqueConstraintError: Validation error
+2023-06-19 15:45:35.925[info] (user.reg.params) {"name":"test","userid":"test","password":"1111","email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 15:45:35.927[debug] (userService.makePassword) "1111"
+2023-06-19 15:45:35.935[error] (userService.reg) SequelizeUniqueConstraintError: Validation error
+2023-06-19 16:19:55.117[info] (user.info.params) {"userid":"ㄴㅇㅇㄴㅇㄴ"}
+2023-06-19 16:19:55.144[debug] (userService.info) null
+2023-06-19 16:21:03.720[info] (user.info.params) {"userid":"ㄴㅇㅇㄴㅇㄴ"}
+2023-06-19 16:21:03.734[debug] (userService.info) null
+2023-06-19 16:24:04.040[info] (user.info.params) {"userid":"ㄴㅇㅇㄴㅇㄴ"}
+2023-06-19 16:24:04.049[debug] (userService.info) null
+2023-06-19 16:24:23.565[info] (user.info.params) {"userid":"sadasdasdas"}
+2023-06-19 16:24:23.576[debug] (userService.info) null
+2023-06-19 16:25:48.466[info] 애플리케이션 실행....
+2023-06-19 16:25:48.547[info] DB connection success
+2023-06-19 16:25:48.555[info] Sequelize sync success
+2023-06-19 16:25:53.342[info] (user.info.params) {"userid":"sadasdasdas"}
+2023-06-19 16:25:53.352[debug] (userService.info) null
+2023-06-19 16:25:53.354[info] result값:  null
+2023-06-19 16:26:22.863[info] (user.info.params) {"userid":"test"}
+2023-06-19 16:26:22.873[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 16:26:22.876[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 16:33:37.753[info] (user.info.params) {"userid":"sdsdss"}
+2023-06-19 16:33:37.765[debug] (userService.info) null
+2023-06-19 16:33:37.766[info] result값:  null
+2023-06-19 16:33:46.165[info] (user.info.params) {"userid":"test"}
+2023-06-19 16:33:46.173[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 16:33:46.174[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 16:47:17.921[info] (user.info.params) {"userid":"sdss"}
+2023-06-19 16:47:17.927[debug] (userService.info) null
+2023-06-19 16:47:17.928[info] result값:  null
+2023-06-19 16:47:23.073[info] (user.info.params) {"userid":"rrrr"}
+2023-06-19 16:47:23.077[debug] (userService.info) null
+2023-06-19 16:47:23.077[info] result값:  null
+2023-06-19 16:47:29.309[info] (user.info.params) {"userid":"test"}
+2023-06-19 16:47:29.313[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 16:47:29.315[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 16:50:28.320[info] (user.info.params) {"userid":"rrrr"}
+2023-06-19 16:50:28.332[debug] (userService.info) null
+2023-06-19 16:50:28.332[info] result값:  null
+2023-06-19 16:50:48.953[info] (user.info.params) {"userid":"test"}
+2023-06-19 16:50:48.960[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 16:50:48.961[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 16:51:33.887[info] (user.info.params) {"userid":"ssss"}
+2023-06-19 16:51:33.893[debug] (userService.info) null
+2023-06-19 16:51:33.894[info] result값:  null
+2023-06-19 16:51:48.998[info] (user.info.params) {"userid":"ssss"}
+2023-06-19 16:51:49.004[debug] (userService.info) null
+2023-06-19 16:51:49.005[info] result값:  null
+2023-06-19 16:51:53.029[info] (user.info.params) {"userid":"test"}
+2023-06-19 16:51:53.032[debug] (userService.info) {"id":2,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-19T03:34:59.000Z","updatedAt":"2023-06-19T03:34:59.000Z","deletedAt":null}
+2023-06-19 16:51:53.033[info] result값:  [object SequelizeInstance:Users]
+2023-06-19 16:52:03.379[info] (user.info.params) {"userid":"test2"}
+2023-06-19 16:52:03.385[debug] (userService.info) null
+2023-06-19 16:52:03.386[info] result값:  null
+2023-06-19 16:52:10.055[info] (user.reg.params) {"name":"sdsd","userid":"test2","password":"1111","email":"test@test.com","phone":"010-1111-1111"}
+2023-06-19 16:52:10.057[debug] (userService.makePassword) "1111"
+2023-06-19 16:52:10.072[debug] (userService.reg) {"id":6,"name":"sdsd","userid":"test2","email":"test@test.com","phone":"010-1111-1111","updatedAt":"2023-06-19T07:52:10.058Z","createdAt":"2023-06-19T07:52:10.058Z"}
+2023-06-19 16:52:10.073[info] (user.reg.result) {"id":6,"name":"sdsd","userid":"test2","email":"test@test.com","phone":"010-1111-1111","updatedAt":"2023-06-19T07:52:10.058Z","createdAt":"2023-06-19T07:52:10.058Z"}
+2023-06-19 16:58:08.265[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 16:58:08.273[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 16:58:08.275[debug] (userService.checkPassword) true
+2023-06-19 16:58:08.276[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 17:03:10.677[info] 애플리케이션 실행....
+2023-06-19 17:03:10.748[info] DB connection success
+2023-06-19 17:03:10.759[info] Sequelize sync success
+2023-06-19 17:04:30.437[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 17:04:30.451[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 17:04:30.453[debug] (userService.checkPassword) true
+2023-06-19 17:04:30.454[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 17:05:26.630[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 17:05:26.638[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 17:05:26.640[debug] (userService.checkPassword) true
+2023-06-19 17:05:26.642[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 17:06:33.099[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 17:06:33.106[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 17:06:33.108[debug] (userService.checkPassword) true
+2023-06-19 17:06:33.109[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 17:08:06.229[info] 애플리케이션 실행....
+2023-06-19 17:08:06.303[info] DB connection success
+2023-06-19 17:08:06.312[info] Sequelize sync success
+2023-06-19 17:08:20.396[info] (auth.token.params) {"userid":"test","password":"1111"}
+2023-06-19 17:08:20.410[debug] (userService.login) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}
+2023-06-19 17:08:20.412[debug] (userService.checkPassword) true
+2023-06-19 17:08:20.413[info] (auth.token.result) {"id":2,"userid":"test","password":"4pmpNy5IWrMaKhVGVej5C6LutQzEwsRbsydaJsI1+h6Oc8MrEUntCCn3nuPQRKHUhYc+0fnLJTV3qw5vwpwUag==.8ebb7b3d70f9597e9bf52c964ba335a5d68dd1bb813742742159cbb49b4f06d632a4bb0d5ffc2d4e658e455c99a8806050f081f881fb6b4d6b45a7494e42ae07","name":"test","role":null}

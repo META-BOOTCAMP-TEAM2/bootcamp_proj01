@@ -5,18 +5,19 @@ const hashUtil = require("../lib/hashUtil");
 const service = {
   // login 프로세스
   async login(params) {
-    // 1. userid로 사용자 조회
+    // 1. 사용자 조회
     let user = null;
     try {
       user = await userDao.selectUser(params);
       logger.debug(`(userService.login) ${JSON.stringify(user)}`);
-      // 2. 유저정보 유무 확인
+
+      // 해당 사용자가 없는 경우 튕겨냄
       if (!user) {
-        const errorMessage = "아이디가 일치하지 않습니다. Incorrect userid";
-        logger.error(errorMessage);
+        const err = new Error("Incorect userid or password");
+        logger.error(err.toString());
 
         return new Promise((resolve, reject) => {
-          reject(errorMessage);
+          reject(err);
         });
       }
     } catch (err) {
@@ -25,7 +26,8 @@ const service = {
         reject(err);
       });
     }
-    // 3. 패스워드 일치 비교
+
+    // 2. 비밀번호 비교
     try {
       const checkPassword = await hashUtil.checkPasswordHash(
         params.password,
@@ -33,11 +35,9 @@ const service = {
       );
       logger.debug(`(userService.checkPassword) ${checkPassword}`);
 
-      // 패스워드 불일치시 에러 처리
+      // 비밀번호 틀린 경우 튕겨냄
       if (!checkPassword) {
-        const err = new Error(
-          "비밀번호가 일치하지않습니다. Incorrect password"
-        );
+        const err = new Error("Incorect userid or password");
         logger.error(err.toString());
 
         return new Promise((resolve, reject) => {
@@ -51,7 +51,6 @@ const service = {
       });
     }
 
-    // 결과값 리턴
     return new Promise((resolve) => {
       resolve(user);
     });
@@ -119,7 +118,7 @@ const service = {
     let result = null;
 
     try {
-      result = await userDao.selectUserByPk(params);
+      result = await userDao.selectUserForMypage(params);
       logger.debug(`(userService.info) ${JSON.stringify(result)}`);
     } catch (err) {
       logger.error(`(userService.info) ${err.toString()}`);

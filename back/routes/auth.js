@@ -25,7 +25,7 @@ router.post("/join", async (req, res) => {
       const err = new Error("Not allowed null (name, userid, password)");
       logger.error(err.toString());
 
-      res.status(500).json({ err: err.toString() });
+      res.status(500).json(err.toString());
     }
 
     // 비즈니스 로직 호출
@@ -35,7 +35,7 @@ router.post("/join", async (req, res) => {
     // 최종 응답
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ err: err.toString() });
+    res.status(500).json(err.toString());
   }
 });
 
@@ -83,56 +83,24 @@ router.post("/logout", (req, res) => {
 //     res.status(401).json({ err: err.toString() });
 //   }
 // }
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 // user 토큰 발행
+
 router.post("/login", async (req, res) => {
   try {
-    console.log(req.body);
+    // console.log(req.body);
     const params = {
       userid: req.body.userid,
       password: req.body.password,
     };
     logger.info(`(auth.token.params) ${JSON.stringify(params)}`);
 
-    // 입력값 null 체크
+    // 입력값 null 체크 ->front required 하므로 불필요
     if (!params.userid || !params.password) {
       const err = new Error("Not allowed null (userid, password)");
       logger.error(err.toString());
 
-      res.status(500).json({ error: err.toString() });
+      res.status(500).json(err.toString());
     }
 
     // 비즈니스 로직 호출
@@ -144,9 +112,9 @@ router.post("/login", async (req, res) => {
     res.set("token", token); // header 세팅
 
     // 최종 응답
-    res.status(200).json({ token });
+    res.status(200).json(result.userid); //유저 id를 전달
   } catch (err) {
-    res.status(500).json({ err: err.toString() });
+    res.status(500).json(err);
   }
 });
 
