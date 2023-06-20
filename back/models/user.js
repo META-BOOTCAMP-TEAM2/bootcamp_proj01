@@ -44,9 +44,9 @@ module.exports = class User extends Sequelize.Model {
     db.User.hasMany(db.Board, {
       foreignKey: { name: "userId", onDelete: "SET NULL", as: "Boards" },
     });
-    db.User.hasMany(db.Post, {
-      foreignKey: { name: "userId", onDelete: "SET NULL", as: "Posts" },
-    });
+    // db.User.hasMany(db.Post, {
+    //   foreignKey: { name: "userId", onDelete: "SET NULL", as: "Posts" },
+    // });
   }
 
   static includeAttributes = ["id", "name", "role", "email", "phone"];

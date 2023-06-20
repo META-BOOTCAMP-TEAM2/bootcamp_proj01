@@ -21,24 +21,24 @@ const service = {
       resolve(inserted);
     });
   },
-  // // selectList
-  // async list(params) {
-  //   let result = null;
+  // selectList
+  async list(params) {
+    let result = null;
 
-  //   try {
-  //     result = await postDao.selectList(params);
-  //     logger.debug(`(postService.list) ${JSON.stringify(result)}`);
-  //   } catch (err) {
-  //     logger.error(`(postService.list) ${err.toString()}`);
-  //     return new Promise((resolve, reject) => {
-  //       reject(err);
-  //     });
-  //   }
+    try {
+      result = await postDao.selectList(params);
+      logger.debug(`(postService.list) ${JSON.stringify(result)}`);
+    } catch (err) {
+      logger.error(`(postService.list) ${err.toString()}`);
+      return new Promise((resolve, reject) => {
+        reject(err);
+      });
+    }
 
-  //   return new Promise((resolve) => {
-  //     resolve(result);
-  //   });
-  // },
+    return new Promise((resolve) => {
+      resolve(result);
+    });
+  },
   // // selectInfo
   // async info(params) {
   //   let result = null;

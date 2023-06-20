@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "./stylePages.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Listing = () => {
   const [filteredPropertyType, setFilteredPropertyType] = useState(null);
@@ -14,6 +15,9 @@ const Listing = () => {
   useEffect(() => {
     allButtonRef.current.focus();
   }, []);
+  let currentUser = localStorage.getItem("userid");
+
+  const results = axios.get(`/post/${currentUser}`);
 
   const filterByPropertyType = (propertyType) => {
     setFilteredPropertyType(propertyType);

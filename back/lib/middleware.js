@@ -13,10 +13,9 @@ const middleware = {
       // 토큰이 있는 경우 토큰 검증을 수행 한다.
       const loginUserId =
         tokenUtil.verifyToken(req.headers.authorization).userid || null;
-      console.log(`loginUserId값ㄴㄴㅇㄴㅇㄴㅁㅇㄴㅇㄴ: ${loginUserId}`);
-      // req.data.userid = loginUserId;
+      req.body.userid = loginUserId;
 
-      if (decoded) {
+      if (loginUserId) {
         // 1. 토큰 검증이 성공한 경우 새로 갱신해 준다.
         // const newToken = tokenUtil.makeToken(decoded);
         // res.set({

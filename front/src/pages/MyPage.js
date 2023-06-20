@@ -18,8 +18,9 @@ const MyPage = () => {
       try {
         console.log(`/users/${currentUser}`);
         const res = await axios.get(`/users/${currentUser}`);
-        // console.log(res.data);
-        setUserInfo(res.data);
+        console.log(res.data);
+        const result = res.data;
+        setUserInfo(result);
       } catch (err) {
         alert(err);
       }

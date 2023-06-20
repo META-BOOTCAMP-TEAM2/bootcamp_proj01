@@ -15,19 +15,10 @@ function Header() {
 
     if (confirmLogout) {
       logout();
+      alert("성공적으로 로그아웃하였습니다.");
       navigate("/");
     }
   };
-
-  useEffect(() => {
-    // 새로고침 시 로그인 상태를 복원
-    const getCookie = localStorage.getItem("token");
-    if (!!getCookie === true) {
-      // token이 빈 값이 아니라면
-      // setIsLoggedIn(true);
-      axios.defaults.headers.common.Authorization = `Bearer ${getCookie}`;
-    }
-  }, []);
 
   return (
     <div className="Header">
@@ -40,7 +31,7 @@ function Header() {
       <div className="header2">
         {currentUser && (
           <div style={{ fontSize: "20px", color: "orange" }}>
-            <h1>환영합니다! {currentUser} 님</h1>
+            <h2>환영합니다! {currentUser} 님 </h2>
           </div>
         )}
         <Link to="/">

@@ -24,8 +24,8 @@ Post.init(sequelize);
 // KakaoUser.init(sequelize);
 
 // // association(관계 생성)
-User.init(sequelize);
-Board.init(sequelize);
-Post.init(sequelize);
+User.associate(db);
+Board.associate(db);
+Post.associate(db);
 
 module.exports = db;

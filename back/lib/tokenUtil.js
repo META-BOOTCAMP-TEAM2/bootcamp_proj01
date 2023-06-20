@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 
 const secretKey = process.env.SECRETKEY;
 const options = {
-  expiresIn: "24h", // 만료시간
+  expiresIn: "1000h", // 만료시간
 };
 
 const tokenUtil = {

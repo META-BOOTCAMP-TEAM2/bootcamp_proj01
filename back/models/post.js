@@ -9,19 +9,67 @@ module.exports = class Post extends Sequelize.Model {
         },
         userId: {
           type: Sequelize.INTEGER,
-          allowNull: false,
+          defaultValue: 1,
         },
-        title: {
+        userid: {
           type: Sequelize.STRING(255),
           allowNull: false,
         },
-        content: {
+        address: {
+          type: Sequelize.STRING(255),
+          allowNull: false,
+        },
+        additionalInfo: {
           type: Sequelize.TEXT,
         },
-        imagePath: {
+        deposit: {
+          type: Sequelize.INTEGER,
+          allowNull: true,
+          defaultValue: 0,
+        },
+        monthlyRent: {
+          type: Sequelize.INTEGER,
+          allowNull: true,
+          defaultValue: 0,
+        },
+        price: {
+          type: Sequelize.INTEGER,
+          allowNull: true,
+          defaultValue: 0,
+        },
+        propertyType: {
           type: Sequelize.STRING(255),
         },
-        filePath: {
+        structure: {
+          type: Sequelize.STRING(255),
+        },
+        filename1: {
+          type: Sequelize.STRING(255),
+        },
+        filename2: {
+          type: Sequelize.STRING(255),
+        },
+        filename3: {
+          type: Sequelize.STRING(255),
+        },
+
+        originalName1: {
+          type: Sequelize.STRING(255),
+        },
+        originalName2: {
+          type: Sequelize.STRING(255),
+        },
+        originalName3: {
+          type: Sequelize.STRING(255),
+        },
+
+        path1: {
+          type: Sequelize.STRING(255),
+        },
+        path2: {
+          type: Sequelize.STRING(255),
+        },
+        path3: {
           type: Sequelize.STRING(255),
         },
         viewCount: {
@@ -50,5 +98,11 @@ module.exports = class Post extends Sequelize.Model {
     });
   }
 
-  static includeAttributes = ["id", "title", "userId", "createdAt"];
+  static includeAttributes = [
+    "id",
+    "address",
+    "propertyType",
+    "userId",
+    "createdAt",
+  ];
 };

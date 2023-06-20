@@ -3,16 +3,18 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import DaumPostcode from "react-daum-postcode";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const UploadPage = () => {
   const [inputs, setInputs] = useState({
     propertyType: "매매", //계약방식
     address: "", //주소
-    price: "", //매매가
-    deposit: "", //전세가
-    monthlyRent: "", //월세가
+    price: 0, //매매가
+    deposit: 0, //전세가
+    monthlyRent: 0, //월세가
     structure: "원룸", //방구조
     additionalInfo: "",
+    userid: localStorage.getItem("userid"),
     // options: [],
   });
 
@@ -70,42 +72,17 @@ const UploadPage = () => {
     setSelectedFiles((prevFiles) => [...prevFiles, ...files]);
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     const formData = new FormData();
-
-  //     // inputs 값 추가
-  //     for (const [key, value] of Object.entries(inputs)) {
-  //       formData.append(key, value);
-  //     }
-
-  //     // 이미지 파일 추가
-  //     for (const file of selectedFiles) {
-  //       formData.append("images", file);
-  //     }
-
-  //     const res = await axios.post("/upload", formData, {
-  //       headers: {
-  //         "Content-Type": "multipart/form-data",
-  //       },
-  //     });
-  //     console.log(`res.data 값: ${res.data}`);
-  //   } catch (err) {
-  //     setError(err.response.data);
-  //   }
-  // };
-
-  //입력내용 등록
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       // 나머지 입력 내용 서버로 전송
       const res = await axios.post("/post", inputs);
-      alert("Data uploaded successfully!");
+      alert("성공적으로 게시물이 등록되었습니다.");
+      navigate("/myLists");
     } catch (error) {
-      console.error("Error uploading data:", error);
+      alert("Error uploading data:", error);
     }
   };
 
@@ -345,6 +322,7 @@ const UploadPage = () => {
           <br />
           <br />
           <h3>사진 등록</h3>
+          <h5>사진 등록후 업로드 버튼 클릭.</h5>
           <input type="file" multiple onChange={handleFileChange} />
           <div>
             <button className="upload-button" onClick={handleUpload1}>

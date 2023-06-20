@@ -72,20 +72,6 @@ router.post("/login", async (req, res) => {
   }
 });
 
-router.post("/logout", (req, res) => {
-  // 사용자의 토큰을 받아옵니다.
-  const token = req.headers && req.headers.token;
-
-  // 토큰을 검증하고 무효화합니다.
-  try {
-    tokenUtil.verifyToken;
-  } catch (err) {
-    // 토큰 검증 실패
-    return res.status(401).json({ error: "Invalid token" });
-  }
-  res.status(200).json("User has been logged out.");
-});
-
 //구글
 
 // @desc    Auth with Google

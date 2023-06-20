@@ -16,50 +16,67 @@ const dao = {
         });
     });
   },
-  // 리스트 조회
-  selectList(params) {
-    // where 검색 조건
-    const setQuery = {};
-    if (params.title) {
-      setQuery.where = {
-        ...setQuery.where,
-        title: { [Op.like]: `%${params.title}%` }, // like검색
-      };
-    }
-    if (params.content) {
-      setQuery.where = {
-        ...setQuery.where,
-        content: { [Op.like]: `%${params.content}%` }, // like검색
-      };
-    }
-    if (params.userIds) {
-      setQuery.where = {
-        ...setQuery.where,
-        userId: params.userIds, // in 검색
-      };
-    }
-    // order by 정렬 조건
-    setQuery.order = [["id", "DESC"]];
 
+  // 게시물 조회
+  selectList(params) {
     return new Promise((resolve, reject) => {
-      Post.findAndCountAll({
-        ...setQuery,
-        include: [
-          {
-            model: User,
-            as: "User",
-            attributes: User.includeAttributes,
-          },
-        ],
+      Post.findAll({
+        attributes: { exclude: ["viewCount"] },
+        where: { userid: params.userid },
       })
-        .then((selectedList) => {
-          resolve(selectedList);
+        .then((selectedOne) => {
+          resolve(selectedOne);
         })
         .catch((err) => {
           reject(err);
         });
     });
   },
+
+  // 리스트 조회
+  // selectList(params) {
+  //   // where 검색 조건
+  //   const setQuery = {};
+  //   if (params.title) {
+  //     setQuery.where = {
+  //       ...setQuery.where,
+  //       title: { [Op.like]: `%${params.title}%` }, // like검색
+  //     };
+  //   }
+  //   if (params.content) {
+  //     setQuery.where = {
+  //       ...setQuery.where,
+  //       content: { [Op.like]: `%${params.content}%` }, // like검색
+  //     };
+  //   }
+  //   if (params.userIds) {
+  //     setQuery.where = {
+  //       ...setQuery.where,
+  //       userId: params.userIds, // in 검색
+  //     };
+  //   }
+  //   // order by 정렬 조건
+  //   setQuery.order = [["id", "DESC"]];
+
+  //   return new Promise((resolve, reject) => {
+  //     Post.findAndCountAll({
+  //       ...setQuery,
+  //       include: [
+  //         {
+  //           model: User,
+  //           as: "User",
+  //           attributes: User.includeAttributes,
+  //         },
+  //       ],
+  //     })
+  //       .then((selectedList) => {
+  //         resolve(selectedList);
+  //       })
+  //       .catch((err) => {
+  //         reject(err);
+  //       });
+  //   });
+  // },
   // 상세정보 조회
   selectInfo(params) {
     return new Promise((resolve, reject) => {

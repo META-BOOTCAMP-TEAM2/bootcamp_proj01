@@ -714,3 +714,467 @@ notNull Violation: Post.title cannot be null
 2023-06-20 17:38:56.566[info] 애플리케이션 실행....
 2023-06-20 17:38:56.642[info] DB connection success
 2023-06-20 17:38:56.657[info] Sequelize sync success
+2023-06-20 17:40:10.887[info] 애플리케이션 실행....
+2023-06-20 17:40:10.961[info] DB connection success
+2023-06-20 17:40:10.979[info] Sequelize sync success
+2023-06-20 17:41:26.454[info] 애플리케이션 실행....
+2023-06-20 17:41:26.532[info] DB connection success
+2023-06-20 17:41:26.549[info] Sequelize sync success
+2023-06-20 17:42:05.903[info] 애플리케이션 실행....
+2023-06-20 17:42:05.979[info] DB connection success
+2023-06-20 17:42:06.000[info] Sequelize sync success
+2023-06-20 17:42:31.914[info] 애플리케이션 실행....
+2023-06-20 17:42:32.004[info] DB connection success
+2023-06-20 17:42:32.022[info] Sequelize sync success
+2023-06-20 17:43:10.860[info] 애플리케이션 실행....
+2023-06-20 17:43:10.935[info] DB connection success
+2023-06-20 17:43:10.957[info] Sequelize sync success
+2023-06-20 17:43:56.622[info] 애플리케이션 실행....
+2023-06-20 17:43:56.698[info] DB connection success
+2023-06-20 17:43:56.719[info] Sequelize sync success
+2023-06-20 17:51:59.416[info] 애플리케이션 실행....
+2023-06-20 17:51:59.493[info] DB connection success
+2023-06-20 17:51:59.516[info] Sequelize sync success
+2023-06-20 17:52:58.313[info] 애플리케이션 실행....
+2023-06-20 17:52:58.389[info] DB connection success
+2023-06-20 17:52:58.406[info] Sequelize sync success
+2023-06-20 18:00:13.839[info] 애플리케이션 실행....
+2023-06-20 18:00:13.915[info] DB connection success
+2023-06-20 18:00:13.938[info] Sequelize sync success
+2023-06-20 18:01:25.136[info] 애플리케이션 실행....
+2023-06-20 18:01:25.211[info] DB connection success
+2023-06-20 18:01:25.231[info] Sequelize sync success
+2023-06-20 18:01:43.474[info] 애플리케이션 실행....
+2023-06-20 18:01:43.553[info] DB connection success
+2023-06-20 18:01:43.577[info] Sequelize sync success
+2023-06-20 18:02:54.005[info] (upload.reg.result) {"originalName":"1.jpg","filename":"1687251774002-1.jpg","path":"uploads\\1687251774002-1.jpg"}
+2023-06-20 18:04:22.347[info] 애플리케이션 실행....
+2023-06-20 18:04:22.424[info] DB connection success
+2023-06-20 18:04:22.443[info] Sequelize sync success
+2023-06-20 18:04:28.312[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:04:28.324[error] (postService.reg) SequelizeDatabaseError: Unknown column 'address' in 'field list'
+2023-06-20 18:04:33.354[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:04:33.358[error] (postService.reg) SequelizeDatabaseError: Unknown column 'address' in 'field list'
+2023-06-20 18:07:15.000[info] 애플리케이션 실행....
+2023-06-20 18:07:15.077[info] DB connection success
+2023-06-20 18:07:15.135[info] Sequelize sync success
+2023-06-20 18:10:33.711[info] 애플리케이션 실행....
+2023-06-20 18:10:33.789[info] DB connection success
+2023-06-20 18:10:33.843[info] Sequelize sync success
+2023-06-20 18:10:44.969[info] 애플리케이션 실행....
+2023-06-20 18:10:45.044[info] DB connection success
+2023-06-20 18:10:45.062[info] Sequelize sync success
+2023-06-20 18:11:24.256[info] 애플리케이션 실행....
+2023-06-20 18:11:24.342[info] DB connection success
+2023-06-20 18:11:24.368[info] Sequelize sync success
+2023-06-20 18:11:51.680[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:11:51.700[error] (postService.reg) SequelizeDatabaseError: Incorrect integer value: 'test' for column 'user_id' at row 1
+2023-06-20 18:12:52.899[info] 애플리케이션 실행....
+2023-06-20 18:12:52.973[info] DB connection success
+2023-06-20 18:12:52.993[info] Sequelize sync success
+2023-06-20 18:12:56.711[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:12:56.725[error] (postService.reg) SequelizeDatabaseError: Incorrect integer value: 'test' for column 'user_id' at row 1
+2023-06-20 18:13:06.850[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:13:06.854[error] (postService.reg) SequelizeDatabaseError: Incorrect integer value: 'test' for column 'user_id' at row 1
+2023-06-20 18:13:10.671[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:13:10.676[error] (postService.reg) SequelizeDatabaseError: Incorrect integer value: 'test' for column 'user_id' at row 1
+2023-06-20 18:13:28.764[info] 애플리케이션 실행....
+2023-06-20 18:13:28.849[info] DB connection success
+2023-06-20 18:13:28.869[info] Sequelize sync success
+2023-06-20 18:15:49.265[info] 애플리케이션 실행....
+2023-06-20 18:15:49.341[info] DB connection success
+2023-06-20 18:15:49.361[info] Sequelize sync success
+2023-06-20 18:16:03.321[info] 애플리케이션 실행....
+2023-06-20 18:16:03.396[info] DB connection success
+2023-06-20 18:16:03.413[info] Sequelize sync success
+2023-06-20 18:16:08.528[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:16:08.554[error] (postService.reg) SequelizeDatabaseError: Incorrect integer value: 'test' for column 'user_id' at row 1
+2023-06-20 18:20:24.332[info] 애플리케이션 실행....
+2023-06-20 18:20:24.411[info] DB connection success
+2023-06-20 18:20:24.430[info] Sequelize sync success
+2023-06-20 18:20:31.766[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:20:31.785[error] (postService.reg) SequelizeDatabaseError: Incorrect integer value: 'test' for column 'user_id' at row 1
+2023-06-20 18:26:04.569[info] 애플리케이션 실행....
+2023-06-20 18:26:04.648[info] DB connection success
+2023-06-20 18:26:04.666[info] Sequelize sync success
+2023-06-20 18:37:18.963[info] 애플리케이션 실행....
+2023-06-20 18:37:19.038[info] DB connection success
+2023-06-20 18:37:19.060[info] Sequelize sync success
+2023-06-20 18:37:32.044[info] 애플리케이션 실행....
+2023-06-20 18:37:32.125[info] DB connection success
+2023-06-20 18:37:32.146[info] Sequelize sync success
+2023-06-20 18:37:33.456[info] 애플리케이션 실행....
+2023-06-20 18:37:33.535[info] DB connection success
+2023-06-20 18:37:33.555[info] Sequelize sync success
+2023-06-20 18:37:40.641[info] 애플리케이션 실행....
+2023-06-20 18:37:40.722[info] DB connection success
+2023-06-20 18:37:40.740[info] Sequelize sync success
+2023-06-20 18:37:48.554[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:37:48.567[error] (postService.reg) SequelizeDatabaseError: Incorrect integer value: 'test' for column 'user_id' at row 1
+2023-06-20 18:38:48.321[info] 애플리케이션 실행....
+2023-06-20 18:38:48.401[info] DB connection success
+2023-06-20 18:38:48.421[info] Sequelize sync success
+2023-06-20 18:38:50.568[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:38:50.583[error] (postService.reg) SequelizeDatabaseError: Incorrect integer value: 'test' for column 'user_id' at row 1
+2023-06-20 18:39:05.477[info] 애플리케이션 실행....
+2023-06-20 18:39:05.552[info] DB connection success
+2023-06-20 18:39:05.573[info] Sequelize sync success
+2023-06-20 18:42:47.606[info] 애플리케이션 실행....
+2023-06-20 18:42:47.681[info] DB connection success
+2023-06-20 18:42:47.704[info] Sequelize sync success
+2023-06-20 18:42:56.960[info] 애플리케이션 실행....
+2023-06-20 18:42:57.046[info] DB connection success
+2023-06-20 18:42:57.066[info] Sequelize sync success
+2023-06-20 18:43:36.037[info] 애플리케이션 실행....
+2023-06-20 18:43:36.113[info] DB connection success
+2023-06-20 18:43:36.146[error] Sequelize sync error Referencing column 'user_id' and referenced column 'id' in foreign key constraint 'boards_ibfk_1' are incompatible.
+2023-06-20 18:44:28.039[info] 애플리케이션 실행....
+2023-06-20 18:44:28.118[info] DB connection success
+2023-06-20 18:44:28.136[error] Sequelize sync error Referencing column 'user_id' and referenced column 'id' in foreign key constraint 'boards_ibfk_1' are incompatible.
+2023-06-20 18:44:46.455[info] 애플리케이션 실행....
+2023-06-20 18:44:46.532[info] DB connection success
+2023-06-20 18:44:46.550[error] Sequelize sync error Referencing column 'user_id' and referenced column 'id' in foreign key constraint 'boards_ibfk_1' are incompatible.
+2023-06-20 18:45:34.451[info] 애플리케이션 실행....
+2023-06-20 18:45:34.531[info] DB connection success
+2023-06-20 18:45:34.547[error] Sequelize sync error Referencing column 'user_id' and referenced column 'id' in foreign key constraint 'boards_ibfk_1' are incompatible.
+2023-06-20 18:45:48.367[info] 애플리케이션 실행....
+2023-06-20 18:45:48.448[info] DB connection success
+2023-06-20 18:45:48.469[error] Sequelize sync error Referencing column 'user_id' and referenced column 'id' in foreign key constraint 'boards_ibfk_1' are incompatible.
+2023-06-20 18:45:58.371[info] 애플리케이션 실행....
+2023-06-20 18:45:58.453[info] DB connection success
+2023-06-20 18:45:58.471[error] Sequelize sync error Referencing column 'user_id' and referenced column 'id' in foreign key constraint 'boards_ibfk_1' are incompatible.
+2023-06-20 18:46:11.906[info] 애플리케이션 실행....
+2023-06-20 18:46:11.990[info] DB connection success
+2023-06-20 18:46:12.076[info] Sequelize sync success
+2023-06-20 18:46:29.129[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:46:29.146[error] (postService.reg) SequelizeDatabaseError: Incorrect integer value: 'test' for column 'user_id' at row 1
+2023-06-20 18:47:11.147[info] 애플리케이션 실행....
+2023-06-20 18:47:11.223[info] DB connection success
+2023-06-20 18:47:11.245[info] Sequelize sync success
+2023-06-20 18:47:19.272[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:47:19.277[error] (postService.reg) SequelizeValidationError: notNull Violation: Post.userid cannot be null
+2023-06-20 18:47:42.155[info] 애플리케이션 실행....
+2023-06-20 18:47:42.230[info] DB connection success
+2023-06-20 18:47:42.252[info] Sequelize sync success
+2023-06-20 18:47:44.260[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:47:44.265[error] (postService.reg) SequelizeValidationError: notNull Violation: Post.userid cannot be null
+2023-06-20 18:48:09.764[info] 애플리케이션 실행....
+2023-06-20 18:48:09.840[info] DB connection success
+2023-06-20 18:48:09.858[info] Sequelize sync success
+2023-06-20 18:48:11.261[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:48:11.264[error] (postService.reg) SequelizeValidationError: notNull Violation: Post.userid cannot be null
+2023-06-20 18:48:25.737[info] 애플리케이션 실행....
+2023-06-20 18:48:25.816[info] DB connection success
+2023-06-20 18:48:25.838[info] Sequelize sync success
+2023-06-20 18:48:29.874[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:48:29.890[error] (postService.reg) SequelizeValidationError: notNull Violation: Post.userid cannot be null
+2023-06-20 18:50:09.679[info] 애플리케이션 실행....
+2023-06-20 18:50:09.753[info] DB connection success
+2023-06-20 18:50:09.772[info] Sequelize sync success
+2023-06-20 18:50:19.299[info] 애플리케이션 실행....
+2023-06-20 18:50:19.377[info] DB connection success
+2023-06-20 18:50:19.395[info] Sequelize sync success
+2023-06-20 18:50:28.361[info] 애플리케이션 실행....
+2023-06-20 18:50:28.439[info] DB connection success
+2023-06-20 18:50:28.459[info] Sequelize sync success
+2023-06-20 18:50:35.094[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:50:35.098[error] (postService.reg) SequelizeValidationError: notNull Violation: Post.userid cannot be null
+2023-06-20 18:51:13.783[info] 애플리케이션 실행....
+2023-06-20 18:51:13.857[info] DB connection success
+2023-06-20 18:51:13.900[info] Sequelize sync success
+2023-06-20 18:51:17.445[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:51:17.449[error] (postService.reg) SequelizeValidationError: notNull Violation: Post.userid cannot be null
+2023-06-20 18:51:31.318[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:51:31.321[error] (postService.reg) SequelizeValidationError: notNull Violation: Post.userid cannot be null
+2023-06-20 18:51:31.580[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:51:31.582[error] (postService.reg) SequelizeValidationError: notNull Violation: Post.userid cannot be null
+2023-06-20 18:51:31.650[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":"test"}
+2023-06-20 18:51:31.652[error] (postService.reg) SequelizeValidationError: notNull Violation: Post.userid cannot be null
+2023-06-20 18:53:17.273[info] 애플리케이션 실행....
+2023-06-20 18:53:17.350[info] DB connection success
+2023-06-20 18:53:17.372[info] Sequelize sync success
+2023-06-20 18:53:19.470[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁ","address":"서울 강남구 강남대로 328","deposit":"","monthlyRent":"","price":"2131","propertyType":"매매","structure":"원룸","filename1":"1687251774002-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687251774002-1.jpg","userId":1,"userid":"test"}
+2023-06-20 18:53:19.482[error] (postService.reg) SequelizeDatabaseError: Incorrect integer value: '' for column 'deposit' at row 1
+2023-06-20 18:56:02.271[info] (upload.reg.result) {"originalName":"1.jpg","filename":"1687254962269-1.jpg","path":"uploads\\1687254962269-1.jpg"}
+2023-06-20 18:58:48.689[info] (post.reg.params) {"additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"1000","propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687254962269-1.jpg","userId":1,"userid":"test"}
+2023-06-20 18:58:48.705[debug] (postService.reg) {"viewCount":0,"id":1,"additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"1000","propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687254962269-1.jpg","userId":1,"userid":"test","updatedAt":"2023-06-20T09:58:48.690Z","createdAt":"2023-06-20T09:58:48.690Z"}
+2023-06-20 18:58:48.705[info] (post.reg.result) {"viewCount":0,"id":1,"additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"1000","propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","originalName1":"1.jpg","path1":"uploads\\1687254962269-1.jpg","userId":1,"userid":"test","updatedAt":"2023-06-20T09:58:48.690Z","createdAt":"2023-06-20T09:58:48.690Z"}
+2023-06-20 18:59:18.181[info] (user.info.params) {"userid":"test"}
+2023-06-20 18:59:18.200[debug] (userService.info) null
+2023-06-20 18:59:18.203[info] result값:  null
+2023-06-20 19:01:12.707[info] (user.info.params) {"userid":"\"test\""}
+2023-06-20 19:01:12.714[debug] (userService.info) null
+2023-06-20 19:01:12.715[info] result값:  null
+2023-06-20 19:04:38.792[info] (user.info.params) {"userid":"\"test\""}
+2023-06-20 19:04:38.799[debug] (userService.info) null
+2023-06-20 19:04:38.800[info] result값:  null
+2023-06-20 19:05:02.254[info] (user.info.params) {"userid":"\"test\""}
+2023-06-20 19:05:02.262[debug] (userService.info) null
+2023-06-20 19:05:02.262[info] result값:  null
+2023-06-20 19:05:40.232[info] (user.info.params) {"userid":"\"test\""}
+2023-06-20 19:05:40.239[debug] (userService.info) null
+2023-06-20 19:05:40.239[info] result값:  null
+2023-06-20 19:05:43.818[info] (user.info.params) {"userid":"\"test\""}
+2023-06-20 19:05:43.821[debug] (userService.info) null
+2023-06-20 19:05:43.821[info] result값:  null
+2023-06-20 19:06:19.611[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 19:06:19.617[debug] (userService.login) null
+2023-06-20 19:06:19.618[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-20 19:06:28.253[info] (user.info.params) {"userid":"test"}
+2023-06-20 19:06:28.256[debug] (userService.info) null
+2023-06-20 19:06:28.256[info] result값:  null
+2023-06-20 19:06:41.772[info] (user.info.params) {"userid":"test"}
+2023-06-20 19:06:41.779[debug] (userService.info) null
+2023-06-20 19:06:41.780[info] result값:  null
+2023-06-20 19:06:44.108[info] (user.reg.params) {"name":"test","userid":"test","password":"1111","email":"test@test.com","phone":"010-1111-1111"}
+2023-06-20 19:06:44.110[debug] (userService.makePassword) "1111"
+2023-06-20 19:06:44.117[debug] (userService.reg) {"id":1,"name":"test","userid":"test","email":"test@test.com","phone":"010-1111-1111","updatedAt":"2023-06-20T10:06:44.111Z","createdAt":"2023-06-20T10:06:44.111Z"}
+2023-06-20 19:06:44.119[info] (user.reg.result) {"id":1,"name":"test","userid":"test","email":"test@test.com","phone":"010-1111-1111","updatedAt":"2023-06-20T10:06:44.111Z","createdAt":"2023-06-20T10:06:44.111Z"}
+2023-06-20 19:06:49.177[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 19:06:49.181[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:06:49.184[debug] (userService.checkPassword) true
+2023-06-20 19:06:49.185[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:12:17.623[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 19:12:17.629[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:12:17.631[debug] (userService.checkPassword) true
+2023-06-20 19:12:17.632[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:13:40.365[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 19:13:40.371[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:13:40.373[debug] (userService.checkPassword) true
+2023-06-20 19:13:40.374[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:14:27.317[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 19:14:27.324[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:14:27.326[debug] (userService.checkPassword) true
+2023-06-20 19:14:27.327[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:15:45.309[info] 애플리케이션 실행....
+2023-06-20 19:15:45.393[info] DB connection success
+2023-06-20 19:15:45.411[info] Sequelize sync success
+2023-06-20 19:15:56.050[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 19:15:56.066[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:15:56.069[debug] (userService.checkPassword) true
+2023-06-20 19:15:56.070[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:16:45.366[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 19:16:45.372[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:16:45.374[debug] (userService.checkPassword) true
+2023-06-20 19:16:45.375[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:18:07.906[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 19:18:07.913[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:18:07.915[debug] (userService.checkPassword) true
+2023-06-20 19:18:07.916[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:20:37.808[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 19:20:37.815[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:20:37.817[debug] (userService.checkPassword) true
+2023-06-20 19:20:37.818[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:21:32.976[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 19:21:32.982[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:21:32.984[debug] (userService.checkPassword) true
+2023-06-20 19:21:32.985[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:22:57.864[info] (user.info.params) {"userid":"test"}
+2023-06-20 19:22:57.872[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 19:22:57.875[info] result값:  [object SequelizeInstance:User]
+2023-06-20 19:23:00.281[info] (user.info.params) {"userid":"test"}
+2023-06-20 19:23:00.286[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 19:23:00.287[info] result값:  [object SequelizeInstance:User]
+2023-06-20 19:23:20.844[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 19:23:20.850[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:23:20.852[debug] (userService.checkPassword) true
+2023-06-20 19:23:20.853[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 19:23:23.343[info] (user.info.params) {"userid":"test"}
+2023-06-20 19:23:23.347[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 19:23:23.348[info] result값:  [object SequelizeInstance:User]
+2023-06-20 19:23:54.966[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"test"}
+2023-06-20 19:23:54.983[debug] (postService.reg) {"viewCount":0,"id":2,"additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"test","updatedAt":"2023-06-20T10:23:54.968Z","createdAt":"2023-06-20T10:23:54.968Z"}
+2023-06-20 19:23:54.987[info] (post.reg.result) {"viewCount":0,"id":2,"additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"test","updatedAt":"2023-06-20T10:23:54.968Z","createdAt":"2023-06-20T10:23:54.968Z"}
+2023-06-20 19:24:07.201[info] (user.info.params) {"userid":"test"}
+2023-06-20 19:24:07.209[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 19:24:07.210[info] result값:  [object SequelizeInstance:User]
+2023-06-20 19:24:22.654[info] 애플리케이션 실행....
+2023-06-20 19:24:22.732[info] DB connection success
+2023-06-20 19:24:22.752[info] Sequelize sync success
+2023-06-20 19:25:01.886[info] (user.info.params) {"userid":"test"}
+2023-06-20 19:25:01.904[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 19:25:01.905[info] result값:  [object SequelizeInstance:User]
+2023-06-20 19:26:45.420[info] (user.info.params) {"userid":"test"}
+2023-06-20 19:26:45.429[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 19:26:45.430[info] result값:  [object SequelizeInstance:User]
+2023-06-20 19:27:07.133[info] (post.reg.params) {"additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"test"}
+2023-06-20 19:27:07.150[debug] (postService.reg) {"viewCount":0,"id":3,"additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"test","updatedAt":"2023-06-20T10:27:07.136Z","createdAt":"2023-06-20T10:27:07.136Z"}
+2023-06-20 19:27:07.152[info] (post.reg.result) {"viewCount":0,"id":3,"additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"test","updatedAt":"2023-06-20T10:27:07.136Z","createdAt":"2023-06-20T10:27:07.136Z"}
+2023-06-20 20:33:15.241[info] (user.info.params) {"userid":"test"}
+2023-06-20 20:33:15.248[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 20:33:15.249[info] result값:  [object SequelizeInstance:User]
+2023-06-20 20:44:46.479[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 20:44:46.486[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 20:44:46.489[debug] (userService.checkPassword) true
+2023-06-20 20:44:46.490[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 20:44:47.764[error] Error: 토큰이 없습니다.
+2023-06-20 20:45:07.275[error] Error: 토큰이 없습니다.
+2023-06-20 20:50:48.643[error] Error: 토큰이 없습니다.
+2023-06-20 20:50:48.739[error] Error: 토큰이 없습니다.
+2023-06-20 20:50:48.794[error] Error: 토큰이 없습니다.
+2023-06-20 20:50:48.812[error] Error: 토큰이 없습니다.
+2023-06-20 20:50:48.975[error] Error: 토큰이 없습니다.
+2023-06-20 20:50:49.052[error] Error: 토큰이 없습니다.
+2023-06-20 20:50:49.129[error] Error: 토큰이 없습니다.
+2023-06-20 20:50:49.299[error] Error: 토큰이 없습니다.
+2023-06-20 20:54:55.263[error] Error: 토큰이 없습니다.
+2023-06-20 20:56:00.915[error] Error: 토큰이 없습니다.
+2023-06-20 20:56:25.848[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 20:56:25.854[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 20:56:25.856[debug] (userService.checkPassword) true
+2023-06-20 20:56:25.857[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 20:56:28.928[error] Error: 토큰이 없습니다.
+2023-06-20 20:56:39.534[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 20:56:39.540[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 20:56:39.542[debug] (userService.checkPassword) true
+2023-06-20 20:56:39.543[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 20:57:22.383[error] Error: 토큰이 없습니다.
+2023-06-20 20:58:26.749[info] 애플리케이션 실행....
+2023-06-20 20:58:26.824[info] DB connection success
+2023-06-20 20:58:26.842[info] Sequelize sync success
+2023-06-20 20:58:42.707[info] (user.info.params) {"userid":"test"}
+2023-06-20 20:58:42.721[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 20:58:42.722[info] result값:  [object SequelizeInstance:User]
+2023-06-20 20:58:47.346[info] 애플리케이션 실행....
+2023-06-20 20:58:47.417[info] DB connection success
+2023-06-20 20:58:47.434[info] Sequelize sync success
+2023-06-20 20:58:51.925[info] (user.info.params) {"userid":"test"}
+2023-06-20 20:58:51.935[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 20:58:51.936[info] result값:  [object SequelizeInstance:User]
+2023-06-20 20:58:55.522[info] (user.info.params) {"userid":"test"}
+2023-06-20 20:58:55.526[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 20:58:55.527[info] result값:  [object SequelizeInstance:User]
+2023-06-20 20:59:13.738[info] (upload.reg.result) {"originalName":"1.jpg","filename":"1687262353736-1.jpg","path":"uploads\\1687262353736-1.jpg"}
+2023-06-20 20:59:25.116[error] Error: 토큰이 없습니다.
+2023-06-20 21:00:09.091[info] 애플리케이션 실행....
+2023-06-20 21:00:09.159[info] DB connection success
+2023-06-20 21:00:09.176[info] Sequelize sync success
+2023-06-20 21:00:21.297[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 21:00:21.309[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 21:00:21.311[debug] (userService.checkPassword) true
+2023-06-20 21:00:21.312[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 21:00:56.004[info] (user.info.params) {"userid":"test"}
+2023-06-20 21:00:56.012[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 21:00:56.013[info] result값:  [object SequelizeInstance:User]
+2023-06-20 21:02:22.658[info] 애플리케이션 실행....
+2023-06-20 21:02:22.730[info] DB connection success
+2023-06-20 21:02:22.766[info] Sequelize sync success
+2023-06-20 21:02:24.753[info] (post.reg.params) {"additionalInfo":"ㄴㅇㅁㅇㅁㄴ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1}
+2023-06-20 21:02:24.757[error] (postService.reg) SequelizeValidationError: notNull Violation: Post.userid cannot be null
+2023-06-20 21:04:30.408[info] (post.reg.params) {"additionalInfo":"ㄴㅇㄴㅇㄴㅇ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"test"}
+2023-06-20 21:04:30.423[debug] (postService.reg) {"viewCount":0,"id":4,"additionalInfo":"ㄴㅇㄴㅇㄴㅇ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"test","updatedAt":"2023-06-20T12:04:30.409Z","createdAt":"2023-06-20T12:04:30.409Z"}
+2023-06-20 21:04:30.424[info] (post.reg.result) {"viewCount":0,"id":4,"additionalInfo":"ㄴㅇㄴㅇㄴㅇ","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"test","updatedAt":"2023-06-20T12:04:30.409Z","createdAt":"2023-06-20T12:04:30.409Z"}
+2023-06-20 21:07:10.020[info] 애플리케이션 실행....
+2023-06-20 21:07:10.092[info] DB connection success
+2023-06-20 21:07:10.109[info] Sequelize sync success
+2023-06-20 21:07:40.528[info] 애플리케이션 실행....
+2023-06-20 21:07:40.599[info] DB connection success
+2023-06-20 21:07:40.617[info] Sequelize sync success
+2023-06-20 21:07:59.799[info] 애플리케이션 실행....
+2023-06-20 21:07:59.870[info] DB connection success
+2023-06-20 21:07:59.888[info] Sequelize sync success
+2023-06-20 21:09:07.146[info] (auth.login.params) {"userid":" test","password":"11111"}
+2023-06-20 21:09:07.156[debug] (userService.login) null
+2023-06-20 21:09:07.157[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-20 21:09:10.384[info] (auth.login.params) {"userid":" test","password":"1111"}
+2023-06-20 21:09:10.387[debug] (userService.login) null
+2023-06-20 21:09:10.388[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-20 21:09:12.378[info] (auth.login.params) {"userid":" test","password":"1111"}
+2023-06-20 21:09:12.381[debug] (userService.login) null
+2023-06-20 21:09:12.382[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-20 21:09:14.050[info] (auth.login.params) {"userid":" test","password":"1111"}
+2023-06-20 21:09:14.053[debug] (userService.login) null
+2023-06-20 21:09:14.054[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-20 21:09:16.995[info] (auth.login.params) {"userid":" test","password":"1111"}
+2023-06-20 21:09:16.999[debug] (userService.login) null
+2023-06-20 21:09:17.000[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-20 21:09:18.179[info] (auth.login.params) {"userid":" test","password":"1111"}
+2023-06-20 21:09:18.181[debug] (userService.login) null
+2023-06-20 21:09:18.182[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-20 21:09:18.860[info] (auth.login.params) {"userid":" test","password":"1111"}
+2023-06-20 21:09:18.864[debug] (userService.login) null
+2023-06-20 21:09:18.864[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-20 21:09:19.014[info] (auth.login.params) {"userid":" test","password":"1111"}
+2023-06-20 21:09:19.017[debug] (userService.login) null
+2023-06-20 21:09:19.018[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-20 21:09:25.091[info] (auth.login.params) {"userid":" test","password":"1111"}
+2023-06-20 21:09:25.094[debug] (userService.login) null
+2023-06-20 21:09:25.095[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-20 21:09:35.246[info] (auth.login.params) {"userid":" test","password":"1111"}
+2023-06-20 21:09:35.249[debug] (userService.login) null
+2023-06-20 21:09:35.250[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-20 21:10:50.822[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-20 21:10:50.830[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 21:10:50.832[debug] (userService.checkPassword) true
+2023-06-20 21:10:50.833[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-20 21:10:54.606[info] (user.info.params) {"userid":"test"}
+2023-06-20 21:10:54.612[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 21:10:54.613[info] result값:  [object SequelizeInstance:User]
+2023-06-20 21:15:11.939[info] 애플리케이션 실행....
+2023-06-20 21:15:12.024[info] DB connection success
+2023-06-20 21:15:12.058[info] Sequelize sync success
+2023-06-20 21:15:26.352[info] 애플리케이션 실행....
+2023-06-20 21:15:26.428[info] DB connection success
+2023-06-20 21:15:26.450[info] Sequelize sync success
+2023-06-20 21:15:32.613[info] 애플리케이션 실행....
+2023-06-20 21:15:32.695[info] DB connection success
+2023-06-20 21:15:32.715[info] Sequelize sync success
+2023-06-20 21:24:36.734[info] 애플리케이션 실행....
+2023-06-20 21:24:36.812[info] DB connection success
+2023-06-20 21:24:36.833[info] Sequelize sync success
+2023-06-20 21:26:15.582[info] 애플리케이션 실행....
+2023-06-20 21:26:15.657[info] DB connection success
+2023-06-20 21:26:15.680[info] Sequelize sync success
+2023-06-20 21:27:14.124[info] 애플리케이션 실행....
+2023-06-20 21:27:14.201[info] DB connection success
+2023-06-20 21:27:14.223[info] Sequelize sync success
+2023-06-20 21:27:59.861[info] 애플리케이션 실행....
+2023-06-20 21:27:59.939[info] DB connection success
+2023-06-20 21:27:59.958[info] Sequelize sync success
+2023-06-20 21:31:48.642[info] (post.list.params) {"userid":"test"}
+2023-06-20 21:31:48.644[error] (postService.list) ReferenceError: post is not defined
+2023-06-20 21:33:02.527[info] 애플리케이션 실행....
+2023-06-20 21:33:02.601[info] DB connection success
+2023-06-20 21:33:02.624[info] Sequelize sync success
+2023-06-20 21:33:31.908[info] 애플리케이션 실행....
+2023-06-20 21:33:31.981[info] DB connection success
+2023-06-20 21:33:32.003[info] Sequelize sync success
+2023-06-20 21:33:36.181[info] (user.info.params) {"userid":"test"}
+2023-06-20 21:33:36.189[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 21:33:36.190[info] result값:  [object SequelizeInstance:User]
+2023-06-20 21:34:06.414[info] (post.list.params) {"userid":"test"}
+2023-06-20 21:34:06.430[debug] (postService.list) {"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null}
+2023-06-20 21:34:06.432[info] (post.list.result) {"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null}
+2023-06-20 21:36:24.011[info] 애플리케이션 실행....
+2023-06-20 21:36:24.089[info] DB connection success
+2023-06-20 21:36:24.110[info] Sequelize sync success
+2023-06-20 21:36:36.061[info] (user.info.params) {"userid":"test"}
+2023-06-20 21:36:36.080[debug] (userService.info) {"id":1,"name":"test","userid":"test","role":null,"email":"test@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-20T10:06:44.000Z","updatedAt":"2023-06-20T10:06:44.000Z","deletedAt":null}
+2023-06-20 21:36:36.082[info] result값:  [object SequelizeInstance:User]
+2023-06-20 21:36:37.039[info] (post.list.params) {"userid":"test"}
+2023-06-20 21:36:37.047[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:36:37.050[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:36:57.767[info] (post.list.params) {"userid":"test"}
+2023-06-20 21:36:57.776[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:36:57.779[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:36:58.394[info] (post.list.params) {"userid":"test"}
+2023-06-20 21:36:58.400[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:36:58.404[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:36:59.493[info] (post.list.params) {"userid":"test"}
+2023-06-20 21:36:59.497[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:36:59.499[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:37:01.410[info] (post.list.params) {"userid":"test"}
+2023-06-20 21:37:01.413[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:37:01.416[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:37:02.075[info] (post.list.params) {"userid":"test"}
+2023-06-20 21:37:02.079[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:37:02.082[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:37:02.338[info] (post.list.params) {"userid":"test"}
+2023-06-20 21:37:02.343[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:37:02.346[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:37:06.687[info] (post.list.params) {"userid":"test"}
+2023-06-20 21:37:06.692[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:37:06.694[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴ","deposit":0,"monthlyRent":0,"price":1000,"propertyType":"매매","structure":"원룸","filename1":"1687254962269-1.jpg","filename2":null,"filename3":null,"originalName1":"1.jpg","originalName2":null,"originalName3":null,"path1":"uploads\\1687254962269-1.jpg","path2":null,"path3":null,"createdAt":"2023-06-20T09:58:48.000Z","updatedAt":"2023-06-20T09:58:48.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅁㅇㄴㅁㅇㅁㄴㅁㄴㅇㄴㅁㅇㅁㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:23:54.000Z","updatedAt":"2023-06-20T10:23:54.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㅇㄴㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T10:27:07.000Z","updatedAt":"2023-06-20T10:27:07.000Z","deletedAt":null},{"id":4,"boardId":null,"userId":1,"userid":"test","address":"서울 강남구 강남대로 328","additionalInfo":"ㄴㅇㄴㅇㄴㅇ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T12:04:30.000Z","updatedAt":"2023-06-20T12:04:30.000Z","deletedAt":null}]
+2023-06-20 21:37:48.018[info] 애플리케이션 실행....
+2023-06-20 21:37:48.097[info] DB connection success
+2023-06-20 21:37:48.117[info] Sequelize sync success
