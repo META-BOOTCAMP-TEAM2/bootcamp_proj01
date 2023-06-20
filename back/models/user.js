@@ -1,7 +1,7 @@
 /*eslint-disable*/
 const Sequelize = require("sequelize");
 
-module.exports = class Users extends Sequelize.Model {
+module.exports = class User extends Sequelize.Model {
   static init(sequelize) {
     return super.init(
       {
@@ -40,6 +40,16 @@ module.exports = class Users extends Sequelize.Model {
       }
     );
   }
+  static associate(db) {
+    db.User.hasMany(db.Board, {
+      foreignKey: { name: "userId", onDelete: "SET NULL", as: "Boards" },
+    });
+    db.User.hasMany(db.Post, {
+      foreignKey: { name: "userId", onDelete: "SET NULL", as: "Posts" },
+    });
+  }
+
+  static includeAttributes = ["id", "name", "role", "email", "phone"];
 };
 
 // 이름	name	varchar(100)

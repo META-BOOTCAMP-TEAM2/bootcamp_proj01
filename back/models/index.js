@@ -1,6 +1,9 @@
 /*eslint-disable*/
 const { sequelize } = require("./connection");
 const User = require("./user");
+const Board = require("./board");
+const Post = require("./post");
+
 // const GoogleUser = require("./googleUser");
 // const KakaoUser = require("./kakaoUser");
 
@@ -10,16 +13,19 @@ db.sequelize = sequelize;
 
 // model 생성
 db.User = User;
-// db.GoogleUser = GoogleUser;
-// db.KakaoUser = KakaoUser;
+db.Board = Board;
+db.Post = Post;
 
 // model init
 User.init(sequelize);
+Board.init(sequelize);
+Post.init(sequelize);
 // GoogleUser.init(sequelize);
 // KakaoUser.init(sequelize);
 
 // // association(관계 생성)
-// Department.associate(db);
-// User.associate(db);
+User.init(sequelize);
+Board.init(sequelize);
+Post.init(sequelize);
 
 module.exports = db;

@@ -1,3 +1,22 @@
+.upload-button {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background-color: #ccc;
+}
+
+.upload-button:active {
+  background-color: #aaa;
+}
+
 .sentence {
   font-size: 30px;
   color: aliceblue;

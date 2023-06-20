@@ -13,17 +13,17 @@ const service = {
 
       // 해당 사용자가 없는 경우 튕겨냄
       if (!user) {
-        const err = new Error("Incorect userid or password");
+        const err = new Error("아이디 혹은 비밀번호를 확인해주세요.(code:01)");
         logger.error(err.toString());
 
         return new Promise((resolve, reject) => {
-          reject(err);
+          reject(err.toString());
         });
       }
     } catch (err) {
       logger.error(`(userService.login) ${err.toString()}`);
       return new Promise((resolve, reject) => {
-        reject(err);
+        reject(err.toString());
       });
     }
 
@@ -37,17 +37,17 @@ const service = {
 
       // 비밀번호 틀린 경우 튕겨냄
       if (!checkPassword) {
-        const err = new Error("Incorect userid or password");
+        const err = new Error("아이디 혹은 비밀번호를 확인해주세요.(code:02)");
         logger.error(err.toString());
 
         return new Promise((resolve, reject) => {
-          reject(err);
+          reject(err.toString());
         });
       }
     } catch (err) {
       logger.error(`(userService.checkPassword) ${err.toString()}`);
       return new Promise((resolve, reject) => {
-        reject(err);
+        reject(err.toString());
       });
     }
 
@@ -69,7 +69,7 @@ const service = {
     } catch (err) {
       logger.error(`(userService.makePassword) ${err.toString()}`);
       return new Promise((resolve, reject) => {
-        reject(err);
+        reject(err.toString());
       });
     }
 
@@ -85,7 +85,7 @@ const service = {
     } catch (err) {
       logger.error(`(userService.reg) ${err.toString()}`);
       return new Promise((resolve, reject) => {
-        reject(err);
+        reject(err.toString());
       });
     }
 
@@ -123,7 +123,7 @@ const service = {
     } catch (err) {
       logger.error(`(userService.info) ${err.toString()}`);
       return new Promise((resolve, reject) => {
-        reject(err);
+        reject(err.toString());
       });
     }
 
@@ -143,7 +143,7 @@ const service = {
     } catch (err) {
       logger.error(`(userService.edit) ${err.toString()}`);
       return new Promise((resolve, reject) => {
-        reject(err);
+        reject(err.toString());
       });
     }
 
@@ -162,7 +162,7 @@ const service = {
     } catch (err) {
       logger.error(`(userService.delete) ${err.toString()}`);
       return new Promise((resolve, reject) => {
-        reject(err);
+        reject(err.toString());
       });
     }
 

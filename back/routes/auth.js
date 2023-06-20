@@ -39,6 +39,39 @@ router.post("/join", async (req, res) => {
   }
 });
 
+//로그인
+router.post("/login", async (req, res) => {
+  try {
+    // console.log(req.body);
+    const params = {
+      userid: req.body.userid,
+      password: req.body.password,
+    };
+    logger.info(`(auth.login.params) ${JSON.stringify(params)}`);
+
+    // 입력값 null 체크 ->front required 하므로 불필요
+    if (!params.userid || !params.password) {
+      const err = new Error("Not allowed null (userid, password)");
+      logger.error(err.toString());
+
+      res.status(500).json(err.toString());
+    }
+
+    // 비즈니스 로직 호출
+    const result = await userService.login(params);
+    logger.info(`(auth.login.result) ${JSON.stringify(result)}`);
+
+    // 토큰 생성
+    const token = tokenUtil.makeToken(result);
+    res.set("token", token); // header 세팅
+
+    // 최종 응답
+    res.status(200).json(result); //유저 정보를 전달
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.post("/logout", (req, res) => {
   // 사용자의 토큰을 받아옵니다.
   const token = req.headers && req.headers.token;
@@ -51,71 +84,6 @@ router.post("/logout", (req, res) => {
     return res.status(401).json({ error: "Invalid token" });
   }
   res.status(200).json("User has been logged out.");
-});
-
-// isLoggedIn(req, res, next) {
-//   const token = req.headers && req.headers.token;
-
-//   if (token) {
-//     // 토큰이 있는 경우 토큰 검증을 수행 한다.
-//     const decoded = tokenUtil.verifyToken(token);
-//     if (decoded) {
-//       // 1. 토큰 검증이 성공한 경우 새로 갱신해 준다.
-//       const newToken = tokenUtil.makeToken(decoded);
-//       res.set({
-//         token: newToken,
-//         userId: decoded.id,
-//       }); // header 세팅`
-
-//       next(); // 미들웨어 통과(계속 진행)
-//     } else {
-//       // 2. 토큰 검증이 실패한 경우 401에러를 응답 한다.
-//       const err = new Error('Unauthorized token');
-//       logger.error(err.toString());
-
-//       res.status(401).json({ err: err.toString() });
-//     }
-//   } else {
-//     // 토큰이 없는 경우 401에러 응답
-//     const err = new Error('Unauthorized token');
-//     logger.error(err.toString());
-
-//     res.status(401).json({ err: err.toString() });
-//   }
-// }
-
-// user 토큰 발행
-
-router.post("/login", async (req, res) => {
-  try {
-    // console.log(req.body);
-    const params = {
-      userid: req.body.userid,
-      password: req.body.password,
-    };
-    logger.info(`(auth.token.params) ${JSON.stringify(params)}`);
-
-    // 입력값 null 체크 ->front required 하므로 불필요
-    if (!params.userid || !params.password) {
-      const err = new Error("Not allowed null (userid, password)");
-      logger.error(err.toString());
-
-      res.status(500).json(err.toString());
-    }
-
-    // 비즈니스 로직 호출
-    const result = await userService.login(params);
-    logger.info(`(auth.token.result) ${JSON.stringify(result)}`);
-
-    // 토큰 생성
-    const token = tokenUtil.makeToken(result);
-    res.set("token", token); // header 세팅
-
-    // 최종 응답
-    res.status(200).json(result.userid); //유저 id를 전달
-  } catch (err) {
-    res.status(500).json(err);
-  }
 });
 
 //구글

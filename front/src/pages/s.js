@@ -16,6 +16,7 @@ const UploadPage = () => {
     // options: [],
   });
 
+  const [selectedFiles, setSelectedFiles] = useState([]);
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [err, setError] = useState(null);
 
@@ -63,123 +64,37 @@ const UploadPage = () => {
     }));
   };
 
-  const [selectedFiles, setSelectedFiles] = useState([]);
-
   const handleFileChange = (event) => {
     const files = Array.from(event.target.files);
     setSelectedFiles((prevFiles) => [...prevFiles, ...files]);
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     const formData = new FormData();
-
-  //     // inputs 값 추가
-  //     for (const [key, value] of Object.entries(inputs)) {
-  //       formData.append(key, value);
-  //     }
-
-  //     // 이미지 파일 추가
-  //     for (const file of selectedFiles) {
-  //       formData.append("images", file);
-  //     }
-
-  //     const res = await axios.post("/upload", formData, {
-  //       headers: {
-  //         "Content-Type": "multipart/form-data",
-  //       },
-  //     });
-  //     console.log(`res.data 값: ${res.data}`);
-  //   } catch (err) {
-  //     setError(err.response.data);
-  //   }
-  // };
-
-  //입력내용 등록
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // 나머지 입력 내용 서버로 전송
-      const res = await axios.post("/post", inputs);
-      alert("Data uploaded successfully!");
-    } catch (error) {
-      console.error("Error uploading data:", error);
-    }
-  };
+      const formData = new FormData();
 
-  //////파일 업로드
+      // inputs 값 추가
+      for (const [key, value] of Object.entries(inputs)) {
+        formData.append(key, value);
+      }
 
-  const handleUpload1 = async (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("file", selectedFiles[0]);
+      // 이미지 파일 추가
+      for (const file of selectedFiles) {
+        formData.append("images", file);
+      }
 
-    try {
-      await axios.post("/upload", formData).then((res) => {
-        console.log(res.data);
-        let { originalName, filename, path } = res.data;
-        setInputs((prevInputs) => ({
-          ...prevInputs,
-          originalName1: originalName,
-          filename1: filename,
-          path1: path,
-        }));
+      const res = await axios.post("/upload", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
       });
-      alert("파일1 업로드 완료");
-      console.log(inputs);
-    } catch (error) {
-      const err = error.message;
-      console.log(`Error uploading file: ${err}`);
+      console.log(`res.data 값: ${res.data}`);
+    } catch (err) {
+      setError(err.response.data);
     }
   };
-  const handleUpload2 = async (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("file", selectedFiles[0]);
 
-    try {
-      await axios.post("/upload", formData).then((res) => {
-        console.log(res.data);
-        let { originalName, filename, path } = res.data;
-        setInputs((prevInputs) => ({
-          ...prevInputs,
-          originalName2: originalName,
-          filename2: filename,
-          path2: path,
-        }));
-      });
-      alert("파일2 업로드 완료");
-      console.log(inputs);
-    } catch (error) {
-      const err = error.message;
-      console.log(`Error uploading file: ${err}`);
-    }
-  };
-  const handleUpload3 = async (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("file", selectedFiles[0]);
-
-    try {
-      await axios.post("/upload", formData).then((res) => {
-        console.log(res.data);
-        let { originalName, filename, path } = res.data;
-        setInputs((prevInputs) => ({
-          ...prevInputs,
-          originalName3: originalName,
-          filename3: filename,
-          path3: path,
-        }));
-      });
-      alert("파일3 업로드 완료");
-      console.log(inputs);
-    } catch (error) {
-      const err = error.message;
-      console.log(`Error uploading file: ${err}`);
-    }
-  };
   return (
     <>
       <div className="upload">
@@ -346,18 +261,6 @@ const UploadPage = () => {
           <br />
           <h3>사진 등록</h3>
           <input type="file" multiple onChange={handleFileChange} />
-          <div>
-            <button className="upload-button" onClick={handleUpload1}>
-              파일1 업로드
-            </button>
-            <button className="upload-button" onClick={handleUpload2}>
-              파일2 업로드
-            </button>
-            <button className="upload-button" onClick={handleUpload3}>
-              파일3 업로드
-            </button>
-          </div>
-
           <br />
           <div>
             {selectedFiles.map((file, index) => (

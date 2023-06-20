@@ -21,9 +21,13 @@ const tokenUtil = {
     return token;
   },
   // 토큰 검증
-  verifyToken(token) {
+  verifyToken(tokenHeader) {
     try {
-      const decoded = jwt.verify(token, secretKey);
+      if (tokenHeader && tokenHeader.startsWith("Bearer ")) {
+        // "Bearer " 스키마 제외
+        tokenHeader = tokenHeader.split(" ")[1];
+      }
+      const decoded = jwt.verify(tokenHeader, secretKey);
 
       return decoded;
     } catch (err) {

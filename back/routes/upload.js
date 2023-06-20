@@ -29,7 +29,6 @@ const upload = multer({ storage: storage });
 
 // 등록
 router.post("/", upload.single("file"), async (req, res) => {
-  const loginUserId = res.get("userId") || null;
   try {
     if (!req.file) {
       const err = new Error("파일 업로드 실패");
@@ -38,6 +37,7 @@ router.post("/", upload.single("file"), async (req, res) => {
     }
     const result = {
       originalName: req.file.originalname,
+      filename: req.file.filename,
       path: req.file.path,
     };
     // 비즈니스 로직 호출
