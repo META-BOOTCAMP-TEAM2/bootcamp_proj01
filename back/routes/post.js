@@ -46,7 +46,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// 리스트 조회
+// 상세정보 조회
 router.get("/:id", async (req, res) => {
   try {
     const params = {
@@ -64,23 +64,20 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// // 상세정보 조회
-// router.get("/:id", async (req, res) => {
-//   try {
-//     const params = {
-//       id: req.params.id,
-//     };
-//     logger.info(`(post.info.params) ${JSON.stringify(params)}`);
+// 리스트 조회
+router.get("/", async (req, res) => {
+  try {
+    logger.info(`(post.info) ${JSON.stringify()}`);
 
-//     const result = await postService.info(params);
-//     logger.info(`(post.info.result) ${JSON.stringify(result)}`);
+    const result = await postService.info();
+    logger.info(`(post.info.result) ${JSON.stringify(result)}`);
 
-//     // 최종 응답
-//     res.status(200).json(result);
-//   } catch (err) {
-//     res.status(500).json({ err: err.toString() });
-//   }
-// });
+    // 최종 응답
+    res.status(200).json(result);
+  } catch (err) {
+    res.status(500).json({ err: err.toString() });
+  }
+});
 
 // // 수정
 // router.put("/:id", isLoggedIn, async (req, res) => {

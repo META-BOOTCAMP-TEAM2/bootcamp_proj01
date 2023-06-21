@@ -39,6 +39,24 @@ const service = {
       resolve(result);
     });
   },
+  // selectInfo
+  async info() {
+    let result = null;
+    try {
+      result = await postDao.selectInfo();
+      logger.debug(`(postService.list) ${JSON.stringify(result)}`);
+    } catch (err) {
+      logger.error(`(postService.list) ${err.toString()}`);
+      return new Promise((resolve, reject) => {
+        console.log(err);
+        reject(err);
+      });
+    }
+
+    return new Promise((resolve) => {
+      resolve(result);
+    });
+  },
   // // selectInfo
   // async info(params) {
   //   let result = null;

@@ -714,6 +714,7 @@ notNull Violation: Post.title cannot be null
 2023-06-20 17:38:56.566[info] 애플리케이션 실행....
 2023-06-20 17:38:56.642[info] DB connection success
 2023-06-20 17:38:56.657[info] Sequelize sync success
+<<<<<<< Updated upstream
 2023-06-20 17:40:10.887[info] 애플리케이션 실행....
 2023-06-20 17:40:10.961[info] DB connection success
 2023-06-20 17:40:10.979[info] Sequelize sync success
@@ -1178,3 +1179,493 @@ notNull Violation: Post.title cannot be null
 2023-06-20 21:37:48.018[info] 애플리케이션 실행....
 2023-06-20 21:37:48.097[info] DB connection success
 2023-06-20 21:37:48.117[info] Sequelize sync success
+=======
+2023-06-20 18:31:35.208[info] 애플리케이션 실행....
+2023-06-20 18:31:35.326[error] DB Connection fail Access denied for user 'root'@'localhost' (using password: YES)
+2023-06-20 18:33:20.810[info] 애플리케이션 실행....
+2023-06-20 18:33:20.900[error] DB Connection fail Unknown database 'real_estate'
+2023-06-20 18:34:45.353[info] 애플리케이션 실행....
+2023-06-20 18:34:45.451[info] DB connection success
+2023-06-20 18:34:45.623[info] Sequelize sync success
+>>>>>>> Stashed changes
+2023-06-20 22:08:17.107[info] 애플리케이션 실행....
+2023-06-20 22:08:17.225[info] DB connection success
+2023-06-20 22:08:17.254[info] Sequelize sync success
+2023-06-20 22:13:33.722[info] 애플리케이션 실행....
+2023-06-20 22:13:33.820[info] DB connection success
+2023-06-20 22:13:33.997[info] Sequelize sync success
+2023-06-20 22:31:13.919[info] (user.info.params) {"userid":"12"}
+2023-06-20 22:31:13.936[debug] (userService.info) null
+2023-06-20 22:31:13.937[info] result값:  null
+2023-06-20 22:31:28.039[info] (user.info.params) {"userid":"12"}
+2023-06-20 22:31:28.054[debug] (userService.info) null
+2023-06-20 22:31:28.055[info] result값:  null
+2023-06-20 22:32:08.799[info] (user.info.params) {"userid":"12"}
+2023-06-20 22:32:08.807[debug] (userService.info) null
+2023-06-20 22:32:08.807[info] result값:  null
+2023-06-20 22:32:16.696[info] (user.info.params) {"userid":"12"}
+2023-06-20 22:32:16.703[debug] (userService.info) null
+2023-06-20 22:32:16.704[info] result값:  null
+2023-06-20 22:35:51.393[info] (user.info.params) {"userid":"123"}
+2023-06-20 22:35:51.401[debug] (userService.info) null
+2023-06-20 22:35:51.402[info] result값:  null
+2023-06-20 22:36:12.043[info] (user.info.params) {"userid":"dblee"}
+2023-06-20 22:36:12.067[debug] (userService.info) null
+2023-06-20 22:36:12.068[info] result값:  null
+2023-06-20 22:36:27.988[info] (user.reg.params) {"name":"이동빈","userid":"dblee","password":"9504","email":"dblee@naver.com","phone":"010-1234-1234"}
+2023-06-20 22:36:27.990[debug] (userService.makePassword) "9504"
+2023-06-20 22:36:28.018[debug] (userService.reg) {"id":1,"name":"이동빈","userid":"dblee","email":"dblee@naver.com","phone":"010-1234-1234","updatedAt":"2023-06-20T13:36:27.993Z","createdAt":"2023-06-20T13:36:27.993Z"}
+2023-06-20 22:36:28.019[info] (user.reg.result) {"id":1,"name":"이동빈","userid":"dblee","email":"dblee@naver.com","phone":"010-1234-1234","updatedAt":"2023-06-20T13:36:27.993Z","createdAt":"2023-06-20T13:36:27.993Z"}
+2023-06-20 22:36:50.594[info] (auth.login.params) {"userid":"dblee","password":"9504"}
+2023-06-20 22:36:50.609[debug] (userService.login) {"id":1,"userid":"dblee","password":"TnJ9gQi2jh88OTkIUUsAWfTOH1uf+EDRB4BG3oD3Me0uo8DPK2as+dne3VIwLwo+NYemxxS5tYmIOhfxKoviKQ==.f316690583df76494295dc5b44d0d66d06881c4441b4e5fee77247646ebba9fe4aac35245b6a6cdf61640c4bf694a46b8b7c01477c5a849306e0a4bf3ff7d5e2","name":"이동빈","role":null}
+2023-06-20 22:36:50.614[debug] (userService.checkPassword) true
+2023-06-20 22:36:50.615[info] (auth.login.result) {"id":1,"userid":"dblee","password":"TnJ9gQi2jh88OTkIUUsAWfTOH1uf+EDRB4BG3oD3Me0uo8DPK2as+dne3VIwLwo+NYemxxS5tYmIOhfxKoviKQ==.f316690583df76494295dc5b44d0d66d06881c4441b4e5fee77247646ebba9fe4aac35245b6a6cdf61640c4bf694a46b8b7c01477c5a849306e0a4bf3ff7d5e2","name":"이동빈","role":null}
+2023-06-20 22:38:52.495[info] (post.reg.params) {"additionalInfo":"지구","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"100000000","propertyType":"매매","structure":"1.5룸","userId":1,"userid":"dblee"}
+2023-06-20 22:38:52.532[debug] (postService.reg) {"viewCount":0,"id":1,"additionalInfo":"지구","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"100000000","propertyType":"매매","structure":"1.5룸","userId":1,"userid":"dblee","updatedAt":"2023-06-20T13:38:52.499Z","createdAt":"2023-06-20T13:38:52.499Z"}
+2023-06-20 22:38:52.535[info] (post.reg.result) {"viewCount":0,"id":1,"additionalInfo":"지구","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"100000000","propertyType":"매매","structure":"1.5룸","userId":1,"userid":"dblee","updatedAt":"2023-06-20T13:38:52.499Z","createdAt":"2023-06-20T13:38:52.499Z"}
+2023-06-20 22:38:53.786[info] (post.list.params) {"userid":"dblee"}
+2023-06-20 22:38:53.793[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null}]
+2023-06-20 22:38:53.795[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null}]
+2023-06-20 22:40:06.452[info] (post.reg.params) {"additionalInfo":"돋보기","address":"서울 강남구 개포로 지하 403","deposit":"130000","monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","userId":1,"userid":"dblee"}
+2023-06-20 22:40:06.473[debug] (postService.reg) {"viewCount":0,"id":2,"additionalInfo":"돋보기","address":"서울 강남구 개포로 지하 403","deposit":"130000","monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","userId":1,"userid":"dblee","updatedAt":"2023-06-20T13:40:06.454Z","createdAt":"2023-06-20T13:40:06.454Z"}
+2023-06-20 22:40:06.475[info] (post.reg.result) {"viewCount":0,"id":2,"additionalInfo":"돋보기","address":"서울 강남구 개포로 지하 403","deposit":"130000","monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","userId":1,"userid":"dblee","updatedAt":"2023-06-20T13:40:06.454Z","createdAt":"2023-06-20T13:40:06.454Z"}
+2023-06-20 22:40:07.585[info] (post.list.params) {"userid":"dblee"}
+2023-06-20 22:40:07.590[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]
+2023-06-20 22:40:07.592[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]
+2023-06-20 22:40:18.182[info] (user.info.params) {"userid":"dblee"}
+2023-06-20 22:40:18.189[debug] (userService.info) {"id":1,"name":"이동빈","userid":"dblee","role":null,"email":"dblee@naver.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-06-20T13:36:27.000Z","updatedAt":"2023-06-20T13:36:27.000Z","deletedAt":null}
+2023-06-20 22:40:18.190[info] result값:  [object SequelizeInstance:User]
+2023-06-20 22:40:20.236[info] (post.list.params) {"userid":"dblee"}
+2023-06-20 22:40:20.241[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]
+2023-06-20 22:40:20.243[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]
+2023-06-20 22:56:08.259[info] 애플리케이션 실행....
+2023-06-20 22:56:08.364[info] DB connection success
+2023-06-20 22:56:08.383[info] Sequelize sync success
+2023-06-20 22:56:09.653[info] 애플리케이션 실행....
+2023-06-20 22:56:09.784[info] DB connection success
+2023-06-20 22:56:09.812[info] Sequelize sync success
+2023-06-20 22:56:25.364[info] 애플리케이션 실행....
+2023-06-20 22:56:25.464[info] DB connection success
+2023-06-20 22:56:25.488[info] Sequelize sync success
+2023-06-20 22:56:55.192[info] 애플리케이션 실행....
+2023-06-20 22:56:55.288[info] DB connection success
+2023-06-20 22:56:55.305[info] Sequelize sync success
+2023-06-20 22:57:40.528[info] 애플리케이션 실행....
+2023-06-20 22:57:40.631[info] DB connection success
+2023-06-20 22:57:40.656[info] Sequelize sync success
+2023-06-20 22:57:54.882[info] 애플리케이션 실행....
+2023-06-20 22:57:54.991[info] DB connection success
+2023-06-20 22:57:55.016[info] Sequelize sync success
+2023-06-20 22:58:06.366[info] 애플리케이션 실행....
+2023-06-20 22:58:06.464[info] DB connection success
+2023-06-20 22:58:06.486[info] Sequelize sync success
+2023-06-20 22:58:16.444[info] 애플리케이션 실행....
+2023-06-20 22:58:16.540[info] DB connection success
+2023-06-20 22:58:16.557[info] Sequelize sync success
+2023-06-20 22:58:22.830[info] 애플리케이션 실행....
+2023-06-20 22:58:22.936[info] DB connection success
+2023-06-20 22:58:22.955[info] Sequelize sync success
+2023-06-20 22:58:28.159[info] 애플리케이션 실행....
+2023-06-20 22:58:28.256[info] DB connection success
+2023-06-20 22:58:28.277[info] Sequelize sync success
+2023-06-20 22:58:42.085[info] 애플리케이션 실행....
+2023-06-20 22:58:42.184[info] DB connection success
+2023-06-20 22:58:42.205[info] Sequelize sync success
+2023-06-20 22:59:51.361[info] 애플리케이션 실행....
+2023-06-20 22:59:51.487[info] DB connection success
+2023-06-20 22:59:51.510[info] Sequelize sync success
+2023-06-20 23:00:00.631[info] 애플리케이션 실행....
+2023-06-20 23:00:00.753[info] DB connection success
+2023-06-20 23:00:00.774[info] Sequelize sync success
+2023-06-20 23:02:02.550[info] (post.info) undefined
+2023-06-20 23:02:02.552[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:02:03.050[info] (post.info) undefined
+2023-06-20 23:02:03.051[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:02:03.375[info] (post.info) undefined
+2023-06-20 23:02:03.376[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:02:03.639[info] (post.info) undefined
+2023-06-20 23:02:03.640[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:02:03.705[info] (post.info) undefined
+2023-06-20 23:02:03.706[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:02:04.347[info] (post.info) undefined
+2023-06-20 23:02:04.348[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:02:04.712[info] (post.info) undefined
+2023-06-20 23:02:04.714[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:02:04.980[info] (post.info) undefined
+2023-06-20 23:02:04.982[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:02:10.266[info] (post.info) undefined
+2023-06-20 23:02:10.267[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:02:39.974[info] 애플리케이션 실행....
+2023-06-20 23:02:40.087[info] DB connection success
+2023-06-20 23:02:40.115[info] Sequelize sync success
+2023-06-20 23:03:15.417[info] (post.info) undefined
+2023-06-20 23:03:15.419[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:03:26.121[info] (post.info) undefined
+2023-06-20 23:03:26.122[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:03:44.374[info] 애플리케이션 실행....
+2023-06-20 23:03:44.477[info] DB connection success
+2023-06-20 23:03:44.499[info] Sequelize sync success
+2023-06-20 23:03:50.517[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:03:50.526[debug] (postService.list) []
+2023-06-20 23:03:50.527[info] (post.list.result) []
+2023-06-20 23:04:10.611[info] 애플리케이션 실행....
+2023-06-20 23:04:10.721[info] DB connection success
+2023-06-20 23:04:10.743[info] Sequelize sync success
+2023-06-20 23:04:11.671[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:04:11.678[debug] (postService.list) []
+2023-06-20 23:04:11.679[info] (post.list.result) []
+2023-06-20 23:04:43.893[info] 애플리케이션 실행....
+2023-06-20 23:04:43.982[info] DB connection success
+2023-06-20 23:04:44.000[info] Sequelize sync success
+2023-06-20 23:05:51.590[info] 애플리케이션 실행....
+2023-06-20 23:05:51.684[info] DB connection success
+2023-06-20 23:05:51.702[info] Sequelize sync success
+2023-06-20 23:05:53.635[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:05:53.642[debug] (postService.list) []
+2023-06-20 23:05:53.643[info] (post.list.result) []
+2023-06-20 23:07:44.212[info] 애플리케이션 실행....
+2023-06-20 23:07:44.330[info] DB connection success
+2023-06-20 23:07:44.362[info] Sequelize sync success
+2023-06-20 23:07:50.659[info] 애플리케이션 실행....
+2023-06-20 23:07:50.748[info] DB connection success
+2023-06-20 23:07:50.768[info] Sequelize sync success
+2023-06-20 23:07:52.828[info] 애플리케이션 실행....
+2023-06-20 23:07:52.929[info] DB connection success
+2023-06-20 23:07:52.947[info] Sequelize sync success
+2023-06-20 23:07:53.362[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:07:53.371[debug] (postService.list) []
+2023-06-20 23:07:53.372[info] (post.list.result) []
+2023-06-20 23:08:29.749[info] 애플리케이션 실행....
+2023-06-20 23:08:29.857[info] DB connection success
+2023-06-20 23:08:29.882[info] Sequelize sync success
+2023-06-20 23:08:32.822[info] 애플리케이션 실행....
+2023-06-20 23:08:32.908[info] DB connection success
+2023-06-20 23:08:32.939[info] Sequelize sync success
+2023-06-20 23:08:34.095[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:08:34.104[debug] (postService.list) []
+2023-06-20 23:08:34.104[info] (post.list.result) []
+2023-06-20 23:10:15.998[info] 애플리케이션 실행....
+2023-06-20 23:10:16.103[info] DB connection success
+2023-06-20 23:10:16.125[info] Sequelize sync success
+2023-06-20 23:10:17.026[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:10:17.035[debug] (postService.list) []
+2023-06-20 23:10:17.036[info] (post.list.result) []
+2023-06-20 23:11:24.613[info] 애플리케이션 실행....
+2023-06-20 23:11:24.740[info] DB connection success
+2023-06-20 23:11:24.761[info] Sequelize sync success
+2023-06-20 23:11:26.232[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:11:26.240[debug] (postService.list) []
+2023-06-20 23:11:26.241[info] (post.list.result) []
+2023-06-20 23:11:40.113[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:11:40.125[debug] (postService.list) []
+2023-06-20 23:11:40.126[info] (post.list.result) []
+2023-06-20 23:11:42.918[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:11:42.923[debug] (postService.list) []
+2023-06-20 23:11:42.924[info] (post.list.result) []
+2023-06-20 23:11:59.410[info] 애플리케이션 실행....
+2023-06-20 23:11:59.537[info] DB connection success
+2023-06-20 23:11:59.559[info] Sequelize sync success
+2023-06-20 23:12:00.043[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:12:00.053[debug] (postService.list) []
+2023-06-20 23:12:00.055[info] (post.list.result) []
+2023-06-20 23:12:02.161[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:12:02.164[debug] (postService.list) []
+2023-06-20 23:12:02.165[info] (post.list.result) []
+2023-06-20 23:13:10.106[info] 애플리케이션 실행....
+2023-06-20 23:13:10.223[info] DB connection success
+2023-06-20 23:13:10.242[info] Sequelize sync success
+2023-06-20 23:13:10.730[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:13:10.741[debug] (postService.list) []
+2023-06-20 23:13:10.742[info] (post.list.result) []
+2023-06-20 23:13:53.400[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:13:53.416[debug] (postService.list) []
+2023-06-20 23:13:53.417[info] (post.list.result) []
+2023-06-20 23:13:58.172[info] (post.list.params) {"userid":"1"}
+2023-06-20 23:13:58.179[debug] (postService.list) []
+2023-06-20 23:13:58.179[info] (post.list.result) []
+2023-06-20 23:15:21.674[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:15:21.683[debug] (postService.list) []
+2023-06-20 23:15:21.683[info] (post.list.result) []
+2023-06-20 23:15:26.908[info] (post.list.params) {"userid":"1"}
+2023-06-20 23:15:26.912[debug] (postService.list) []
+2023-06-20 23:15:26.913[info] (post.list.result) []
+2023-06-20 23:15:32.641[info] (post.list.params) {"userid":"1"}
+2023-06-20 23:15:32.645[debug] (postService.list) []
+2023-06-20 23:15:32.646[info] (post.list.result) []
+2023-06-20 23:15:36.367[info] (post.list.params) {"userid":"1"}
+2023-06-20 23:15:36.371[debug] (postService.list) []
+2023-06-20 23:15:36.372[info] (post.list.result) []
+2023-06-20 23:16:18.934[info] (post.list.params) {"userid":"1"}
+2023-06-20 23:16:18.941[debug] (postService.list) []
+2023-06-20 23:16:18.942[info] (post.list.result) []
+2023-06-20 23:16:23.474[info] (post.list.params) {"userid":"1"}
+2023-06-20 23:16:23.478[debug] (postService.list) []
+2023-06-20 23:16:23.479[info] (post.list.result) []
+2023-06-20 23:16:28.311[info] (post.list.params) {"userid":"1"}
+2023-06-20 23:16:28.317[debug] (postService.list) []
+2023-06-20 23:16:28.318[info] (post.list.result) []
+2023-06-20 23:16:43.329[info] (post.list.params) {"userid":"1"}
+2023-06-20 23:16:43.340[debug] (postService.list) []
+2023-06-20 23:16:43.341[info] (post.list.result) []
+2023-06-20 23:20:53.174[info] (user.info.params) {"userid":"1"}
+2023-06-20 23:20:53.194[debug] (userService.info) null
+2023-06-20 23:20:53.195[info] result값:  null
+2023-06-20 23:21:31.677[info] (user.info.params) {"userid":"1"}
+2023-06-20 23:21:31.685[debug] (userService.info) null
+2023-06-20 23:21:31.686[info] result값:  null
+2023-06-20 23:21:34.498[info] (user.info.params) {"userid":"2"}
+2023-06-20 23:21:34.501[debug] (userService.info) null
+2023-06-20 23:21:34.502[info] result값:  null
+2023-06-20 23:22:46.831[info] (user.info.params) {"userid":"2"}
+2023-06-20 23:22:46.837[debug] (userService.info) null
+2023-06-20 23:22:46.838[info] result값:  null
+2023-06-20 23:23:34.512[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:23:34.520[debug] (postService.list) []
+2023-06-20 23:23:34.521[info] (post.list.result) []
+2023-06-20 23:24:29.636[info] 애플리케이션 실행....
+2023-06-20 23:24:29.727[info] DB connection success
+2023-06-20 23:24:29.753[info] Sequelize sync success
+2023-06-20 23:24:31.655[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:24:31.663[debug] (postService.list) []
+2023-06-20 23:24:31.663[info] (post.list.result) []
+2023-06-20 23:24:52.850[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:24:52.871[debug] (postService.list) []
+2023-06-20 23:24:52.872[info] (post.list.result) []
+2023-06-20 23:25:06.661[info] 애플리케이션 실행....
+2023-06-20 23:25:06.756[info] DB connection success
+2023-06-20 23:25:06.790[info] Sequelize sync success
+2023-06-20 23:25:07.854[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:25:07.862[debug] (postService.list) []
+2023-06-20 23:25:07.865[info] (post.list.result) []
+2023-06-20 23:25:31.279[info] 애플리케이션 실행....
+2023-06-20 23:25:31.375[info] DB connection success
+2023-06-20 23:25:31.397[info] Sequelize sync success
+2023-06-20 23:25:32.857[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:25:32.865[debug] (postService.list) []
+2023-06-20 23:25:32.868[info] (post.list.result) []
+2023-06-20 23:25:52.229[info] 애플리케이션 실행....
+2023-06-20 23:25:52.345[info] DB connection success
+2023-06-20 23:25:52.368[info] Sequelize sync success
+2023-06-20 23:25:53.634[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:25:53.642[debug] (postService.list) []
+2023-06-20 23:25:53.643[info] (post.list.result) []
+2023-06-20 23:26:35.517[info] 애플리케이션 실행....
+2023-06-20 23:26:35.609[info] DB connection success
+2023-06-20 23:26:35.632[info] Sequelize sync success
+2023-06-20 23:26:37.830[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:26:37.840[debug] (postService.list) []
+2023-06-20 23:26:37.840[info] (post.list.result) []
+2023-06-20 23:27:51.329[info] 애플리케이션 실행....
+2023-06-20 23:27:51.434[info] DB connection success
+2023-06-20 23:27:51.457[info] Sequelize sync success
+2023-06-20 23:27:56.018[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:27:56.027[debug] (postService.list) []
+2023-06-20 23:27:56.028[info] (post.list.result) []
+2023-06-20 23:28:25.994[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:28:26.001[debug] (postService.list) []
+2023-06-20 23:28:26.002[info] (post.list.result) []
+2023-06-20 23:28:57.269[info] 애플리케이션 실행....
+2023-06-20 23:28:57.387[info] DB connection success
+2023-06-20 23:28:57.411[info] Sequelize sync success
+2023-06-20 23:28:58.374[info] (post.list.params) {"userid":"hel"}
+2023-06-20 23:28:58.381[debug] (postService.list) []
+2023-06-20 23:28:58.382[info] (post.list.result) []
+2023-06-20 23:29:23.306[info] 애플리케이션 실행....
+2023-06-20 23:29:23.400[info] DB connection success
+2023-06-20 23:29:23.421[info] Sequelize sync success
+2023-06-20 23:29:26.735[info] (post.info) undefined
+2023-06-20 23:29:26.738[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:30:05.073[info] 애플리케이션 실행....
+2023-06-20 23:30:05.169[info] DB connection success
+2023-06-20 23:30:05.189[info] Sequelize sync success
+2023-06-20 23:30:08.066[info] (post.info) undefined
+2023-06-20 23:30:08.068[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:30:23.596[info] 애플리케이션 실행....
+2023-06-20 23:30:23.681[info] DB connection success
+2023-06-20 23:30:23.703[info] Sequelize sync success
+2023-06-20 23:30:25.356[info] (post.info) undefined
+2023-06-20 23:30:25.357[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:30:44.958[info] 애플리케이션 실행....
+2023-06-20 23:30:45.060[info] DB connection success
+2023-06-20 23:30:45.080[info] Sequelize sync success
+2023-06-20 23:30:46.757[info] (post.info) undefined
+2023-06-20 23:30:46.758[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:30:54.995[info] 애플리케이션 실행....
+2023-06-20 23:30:55.096[info] DB connection success
+2023-06-20 23:30:55.119[info] Sequelize sync success
+2023-06-20 23:30:56.644[info] (post.info) undefined
+2023-06-20 23:30:56.645[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:31:04.318[info] 애플리케이션 실행....
+2023-06-20 23:31:04.414[info] DB connection success
+2023-06-20 23:31:04.434[info] Sequelize sync success
+2023-06-20 23:31:08.770[info] 애플리케이션 실행....
+2023-06-20 23:31:08.868[info] DB connection success
+2023-06-20 23:31:08.889[info] Sequelize sync success
+2023-06-20 23:31:24.665[info] 애플리케이션 실행....
+2023-06-20 23:31:24.768[info] DB connection success
+2023-06-20 23:31:24.801[info] Sequelize sync success
+2023-06-20 23:31:25.343[info] (post.info) undefined
+2023-06-20 23:31:25.344[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:31:38.335[info] 애플리케이션 실행....
+2023-06-20 23:31:38.440[info] DB connection success
+2023-06-20 23:31:38.463[info] Sequelize sync success
+2023-06-20 23:31:38.596[info] (post.info) undefined
+2023-06-20 23:31:38.598[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:31:44.325[info] 애플리케이션 실행....
+2023-06-20 23:31:44.415[info] DB connection success
+2023-06-20 23:31:44.435[info] Sequelize sync success
+2023-06-20 23:31:50.143[info] 애플리케이션 실행....
+2023-06-20 23:31:50.239[info] DB connection success
+2023-06-20 23:31:50.258[info] Sequelize sync success
+2023-06-20 23:31:50.871[info] (post.info) undefined
+2023-06-20 23:31:50.873[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:32:10.107[info] 애플리케이션 실행....
+2023-06-20 23:32:10.208[info] DB connection success
+2023-06-20 23:32:10.230[info] Sequelize sync success
+2023-06-20 23:32:11.111[info] (post.info) undefined
+2023-06-20 23:32:11.113[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:33:03.196[info] (user.info.params) {"userid":"1"}
+2023-06-20 23:33:03.214[debug] (userService.info) null
+2023-06-20 23:33:03.215[info] result값:  null
+2023-06-20 23:33:22.331[info] (user.info.params) {"userid":"dblee"}
+2023-06-20 23:33:22.347[debug] (userService.info) {"id":1,"name":"이동빈","userid":"dblee","role":null,"email":"dblee@naver.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-06-20T13:36:27.000Z","updatedAt":"2023-06-20T13:36:27.000Z","deletedAt":null}
+2023-06-20 23:33:22.349[info] result값:  [object SequelizeInstance:User]
+2023-06-20 23:34:43.212[info] 애플리케이션 실행....
+2023-06-20 23:34:43.310[info] DB connection success
+2023-06-20 23:34:43.331[info] Sequelize sync success
+2023-06-20 23:34:52.959[info] 애플리케이션 실행....
+2023-06-20 23:34:53.050[info] DB connection success
+2023-06-20 23:34:53.070[info] Sequelize sync success
+2023-06-20 23:34:53.379[info] (post.list.params) {}
+2023-06-20 23:34:53.386[error] (postService.list) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-06-20 23:35:04.851[info] 애플리케이션 실행....
+2023-06-20 23:35:04.982[info] DB connection success
+2023-06-20 23:35:05.004[info] Sequelize sync success
+2023-06-20 23:35:05.018[info] (post.list.params) {"userid":"dblee"}
+2023-06-20 23:35:05.028[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]
+2023-06-20 23:35:05.030[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]
+2023-06-20 23:35:29.802[info] (post.info) undefined
+2023-06-20 23:35:29.804[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:35:47.070[info] (post.info) undefined
+2023-06-20 23:35:47.071[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:36:46.976[info] 애플리케이션 실행....
+2023-06-20 23:36:47.078[info] DB connection success
+2023-06-20 23:36:47.097[info] Sequelize sync success
+2023-06-20 23:36:47.386[info] (post.info) undefined
+2023-06-20 23:36:47.387[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:37:08.497[info] 애플리케이션 실행....
+2023-06-20 23:37:08.634[info] DB connection success
+2023-06-20 23:37:08.672[info] Sequelize sync success
+2023-06-20 23:37:09.820[info] (post.info) undefined
+2023-06-20 23:37:09.821[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:37:16.381[info] 애플리케이션 실행....
+2023-06-20 23:37:16.479[info] DB connection success
+2023-06-20 23:37:16.498[info] Sequelize sync success
+2023-06-20 23:37:19.442[info] (post.info) undefined
+2023-06-20 23:37:19.443[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:37:23.382[info] 애플리케이션 실행....
+2023-06-20 23:37:23.482[info] DB connection success
+2023-06-20 23:37:23.504[info] Sequelize sync success
+2023-06-20 23:37:37.598[info] 애플리케이션 실행....
+2023-06-20 23:37:37.714[info] DB connection success
+2023-06-20 23:37:37.748[info] Sequelize sync success
+2023-06-20 23:37:37.783[info] (post.info) undefined
+2023-06-20 23:37:37.785[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:37:42.114[info] 애플리케이션 실행....
+2023-06-20 23:37:42.217[info] DB connection success
+2023-06-20 23:37:42.239[info] Sequelize sync success
+2023-06-20 23:37:42.745[info] (post.info) undefined
+2023-06-20 23:37:42.746[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:39:36.142[info] (post.info) undefined
+2023-06-20 23:39:36.143[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:41:37.935[info] 애플리케이션 실행....
+2023-06-20 23:41:38.037[info] DB connection success
+2023-06-20 23:41:38.055[info] Sequelize sync success
+2023-06-20 23:41:40.920[info] (post.info) undefined
+2023-06-20 23:41:40.921[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:41:58.146[info] 애플리케이션 실행....
+2023-06-20 23:41:58.243[info] DB connection success
+2023-06-20 23:41:58.262[info] Sequelize sync success
+2023-06-20 23:42:09.673[info] 애플리케이션 실행....
+2023-06-20 23:42:09.777[info] DB connection success
+2023-06-20 23:42:09.798[info] Sequelize sync success
+2023-06-20 23:42:11.128[info] (post.info) undefined
+2023-06-20 23:42:11.130[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:42:18.675[info] 애플리케이션 실행....
+2023-06-20 23:42:18.777[info] DB connection success
+2023-06-20 23:42:18.794[info] Sequelize sync success
+2023-06-20 23:42:38.572[info] (post.info) undefined
+2023-06-20 23:42:38.573[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:42:52.543[info] 애플리케이션 실행....
+2023-06-20 23:42:52.649[info] DB connection success
+2023-06-20 23:42:52.673[info] Sequelize sync success
+2023-06-20 23:42:53.665[info] (post.info) undefined
+2023-06-20 23:42:53.666[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:44:44.895[info] 애플리케이션 실행....
+2023-06-20 23:44:44.993[info] DB connection success
+2023-06-20 23:44:45.011[info] Sequelize sync success
+2023-06-20 23:44:47.939[info] (post.info) undefined
+2023-06-20 23:44:47.940[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:47:03.472[info] 애플리케이션 실행....
+2023-06-20 23:47:03.669[info] DB connection success
+2023-06-20 23:47:03.702[info] Sequelize sync success
+2023-06-20 23:47:07.320[info] (post.info) undefined
+2023-06-20 23:47:07.324[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:47:17.289[info] (post.info) undefined
+2023-06-20 23:47:17.291[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:47:52.000[info] 애플리케이션 실행....
+2023-06-20 23:47:52.178[info] DB connection success
+2023-06-20 23:47:52.212[info] Sequelize sync success
+2023-06-20 23:47:54.759[info] (post.info) undefined
+2023-06-20 23:47:54.764[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:48:26.918[info] 애플리케이션 실행....
+2023-06-20 23:48:27.103[info] DB connection success
+2023-06-20 23:48:27.134[info] Sequelize sync success
+2023-06-20 23:48:28.889[info] (post.info) undefined
+2023-06-20 23:48:28.897[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:48:49.750[info] 애플리케이션 실행....
+2023-06-20 23:48:49.935[info] DB connection success
+2023-06-20 23:48:49.969[info] Sequelize sync success
+2023-06-20 23:48:52.324[info] (post.info) undefined
+2023-06-20 23:48:52.327[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:49:13.282[info] 애플리케이션 실행....
+2023-06-20 23:49:13.452[info] DB connection success
+2023-06-20 23:49:13.489[info] Sequelize sync success
+2023-06-20 23:49:17.911[info] (post.info) undefined
+2023-06-20 23:49:17.935[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:49:46.086[info] 애플리케이션 실행....
+2023-06-20 23:49:46.309[info] DB connection success
+2023-06-20 23:49:46.339[info] Sequelize sync success
+2023-06-20 23:49:47.918[info] (post.info) undefined
+2023-06-20 23:49:47.922[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:50:01.199[info] 애플리케이션 실행....
+2023-06-20 23:50:01.398[info] DB connection success
+2023-06-20 23:50:01.432[info] Sequelize sync success
+2023-06-20 23:50:16.651[info] (post.info) undefined
+2023-06-20 23:50:16.656[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:50:58.939[info] (post.info) undefined
+2023-06-20 23:50:58.957[error] (postService.list) TypeError: Cannot read property 'id' of undefined
+2023-06-20 23:51:03.589[info] 애플리케이션 실행....
+2023-06-20 23:51:03.734[info] DB connection success
+2023-06-20 23:51:03.775[info] Sequelize sync success
+2023-06-20 23:51:04.337[info] (post.info) undefined
+2023-06-20 23:51:04.385[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"viewCount":0,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"viewCount":0,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]
+2023-06-20 23:51:04.389[info] (post.info.result) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"viewCount":0,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"viewCount":0,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]
+2023-06-20 23:52:19.056[info] 애플리케이션 실행....
+2023-06-20 23:52:19.246[info] DB connection success
+2023-06-20 23:52:19.278[info] Sequelize sync success
+2023-06-20 23:52:29.345[info] 애플리케이션 실행....
+2023-06-20 23:52:29.560[info] DB connection success
+2023-06-20 23:52:29.595[info] Sequelize sync success
+2023-06-20 23:55:32.780[info] 애플리케이션 실행....
+2023-06-20 23:55:32.914[info] DB connection success
+2023-06-20 23:55:32.951[info] Sequelize sync success
+2023-06-20 23:55:47.154[info] 애플리케이션 실행....
+2023-06-20 23:55:47.335[info] DB connection success
+2023-06-20 23:55:47.374[info] Sequelize sync success
+2023-06-20 23:55:51.453[info] (post.info) undefined
+2023-06-20 23:55:51.468[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"viewCount":0,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"viewCount":0,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]
+2023-06-20 23:55:51.472[info] (post.info.result) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"viewCount":0,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"viewCount":0,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]
+2023-06-20 23:55:56.623[info] (post.list.params) {"userid":"dblee"}
+2023-06-20 23:55:56.634[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]
+2023-06-20 23:55:56.637[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 강남대로 328","additionalInfo":"지구","deposit":0,"monthlyRent":0,"price":100000000,"propertyType":"매매","structure":"1.5룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:38:52.000Z","updatedAt":"2023-06-20T13:38:52.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"서울 강남구 개포로 지하 403","additionalInfo":"돋보기","deposit":130000,"monthlyRent":0,"price":0,"propertyType":"전세","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-20T13:40:06.000Z","updatedAt":"2023-06-20T13:40:06.000Z","deletedAt":null}]

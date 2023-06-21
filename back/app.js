@@ -31,6 +31,7 @@ app.use(
   })
 );
 
+app.use("/uploads", express.static("uploads"));
 //passport 설정
 passportConfig();
 

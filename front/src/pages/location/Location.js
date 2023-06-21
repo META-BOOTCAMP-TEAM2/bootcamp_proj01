@@ -33,64 +33,65 @@ const Location = () => {
     <>
       <div className="location">
         <Header />
-        <div className="table2">
-          <table style={{ borderCollapse: "collapse" }}>
-            <thead>
-              <tr>
-                <th>시/도</th>
-              </tr>
-            </thead>
-            <tbody>
-              {Object.keys(areas).map((city) => (
-                <tr key={city}>
-                  <td
-                    style={{
-                      border: "1px solid black",
-                      padding: "5px",
-                    }}
-                    onMouseEnter={() => handleAreaMouseEnter(city)}
-                    onMouseLeave={handleAreaMouseLeave}
-                    onClick={() => handleCityChange({ target: { value: city } })}
-                    className={selectedCity === city ? "selected" : ""}
-                  >
-                    {city}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="table1">
-          {selectedCity && (
-            <table>
+        <h2>지역을 선택하세요</h2>
+        <div className="totalContents">
+          <div className="table1">
+            <table style={{ borderCollapse: "collapse" }}>
               <thead>
                 <tr>
-                  <th>지역을 선택하세요</th>
+                  <th>시/도</th>
                 </tr>
               </thead>
               <tbody>
-                {areas[selectedCity].map((area) => (
-                  <tr key={area}>
+                {Object.keys(areas).map((city) => (
+                  <tr key={city}>
                     <td
-                      style={{
-                        border: "1px solid black",
-                        padding: "5px",
-                      }}
-                      onMouseEnter={() => handleAreaMouseEnter(area)}
+                      onMouseEnter={() => handleAreaMouseEnter(city)}
                       onMouseLeave={handleAreaMouseLeave}
-                      onClick={() => handleAreaChange({ target: { value: area } })}
-                      className={selectedArea === area ? "selected" : ""}
+                      onClick={() => handleCityChange({ target: { value: city } })}
+                      className={selectedCity === city ? "selected" : ""}
                     >
-                      {area}
+                      {city}
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
-          )}
+          </div>
+          <div className="table2">
+            {selectedCity && (
+              <table>
+                <thead>
+                  <tr>
+                    <th>시/군/구</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {areas[selectedCity].map((area) => (
+                    <tr key={area}>
+                      <td
+                        onMouseEnter={() => handleAreaMouseEnter(area)}
+                        onMouseLeave={handleAreaMouseLeave}
+                        onClick={() => handleAreaChange({ target: { value: area } })}
+                        className={selectedArea === area ? "selected" : ""}
+                      >
+                        {area}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+          </div>
+          <div className="map">
+            <p>[ 지도 ]</p>{" "}
+            <Map
+              selectedCity={selectedCity}
+              selectedArea={selectedArea}
+              hoveredArea={hoveredArea}
+            />
+          </div>
         </div>
-        <Map selectedCity={selectedCity} selectedArea={selectedArea} hoveredArea={hoveredArea} />
-
         <Footer />
       </div>
     </>

@@ -1,22 +1,72 @@
 /* location 페이지 */
 .location {
-  display: flex;
-}
-.location .table2 {
-  padding-top: 80px;
+  display: grid;
+  place-items: center;
+  background-color: #e1dbf6;
+  min-height: 100vh;
 }
 
+.location h2 {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.totalContents {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 100px;
+}
+
+table {
+  border: 1px #a39485 solid;
+  font-size: 0.9em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  width: 120px;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+thead {
+  font-weight: bold;
+  color: #fff;
+  background: #78718d;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+  background: #fff;
+}
+.location table td:hover {
+  background-color: rgb(223, 214, 224);
+}
+th,
+p {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
 li {
   cursor: pointer;
-  padding: 8px;
 }
 
 li:hover {
   background-color: lightgray;
 }
 
-li.selected {
-  background-color: rgb(235, 34, 34);
+.map {
+  text-align: center;
+  font-weight: bold;
+  background: #78718d;
+  color: #fff;
+  border: 1px #a39485 solid;
+  font-size: 0.9em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  display: table;
 }
 
 /* LocationDetail */

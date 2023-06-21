@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import seoulJson from "../assets/seoul.json";
 import busanJson from "../assets/busan.json";
-import example2 from "../assets/example2";
-
-// const { kakao } = window;
+import axios from "axios";
+import addressChange from "./addressChange";
+const { kakao } = window;
 
 const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
   useEffect(() => {
@@ -42,32 +42,98 @@ const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
       disableClickZoom: true,
     });
 
-    var markers = [];
-    // console.log(example);
-    // console.log(example[0].address);
-    for (var i = 0; i < example2.length; i++) {
-      var marker = new kakao.maps.Marker({
-        position: new kakao.maps.LatLng(example2[i].ad[0], example2[i].ad[1]),
-        map: map,
-      });
-      marker.userData = {
-        propertyType: example2[i].propertyType,
-        structure: example2[i].structure,
-        options: example2[i].options,
-        address: example2[i].address,
-        price: example2[i].price,
-        img: example2[i].img,
-      };
-      // console.log(marker.userData.address + "hi");
+    // const fetchData = async () => {
+    //   try {
+    //     const response = await axios.get("/post");
+    //     let properties = response.data;
 
-      markers.push(marker);
-    }
-    // console.log(markers);
+    //     var markers = [];
+    //     for (var i = 0; i < properties.length; i++) {
+    //       var marker = new kakao.maps.Marker({
+    //         position: new kakao.maps.LatLng(properties[i].address, properties[i].address),
+    //         map: map,
+    //       });
+    //       console.log(marker);
+    //       marker.userData = {
+    //         propertyType: properties[i].propertyType,
+    //         structure: properties[i].structure,
+    //         options: properties[i].options,
+    //         address: properties[i].address,
+    //         price: properties[i].price,
+    //         img: properties[i].img,
+    //       };
+    //       markers.push(marker);
+    //     }
+    //     clusterer.addMarkers(markers);
+    //   } catch (error) {
+    //     console.error("Error fetching properties:", error);
+    //   }
+    // };
+    // fetchData();
 
-    clusterer.addMarkers(markers);
+    const createMarkers = async () => {
+      clusterer.clear(); // 기존 마커 제거
+      try {
+        const response = await axios.get("/post");
+        let properties = response.data;
+
+        const markers = properties.map(async (item) => {
+          const position = await addressChange(item.address);
+
+          const marker = new kakao.maps.Marker({
+            position: new kakao.maps.LatLng(position.lat, position.lng),
+            map: map,
+          });
+          // console.log(item.filename1);
+
+          marker.userData = {
+            propertyType: item.propertyType,
+            structure: item.structure,
+            options: item.options,
+            address: item.address,
+            price: item.price,
+            deposit: item.deposit,
+            monthlyRent: item.monthlyRent,
+            additionalInfo: item.additionalInfo,
+            img1: item.filename1,
+            img2: item.filename2,
+            img3: item.filename3,
+          };
+          console.log(marker.userData1);
+
+          return marker;
+        });
+
+        clusterer.addMarkers(await Promise.all(markers));
+      } catch (error) {
+        console.error("Error fetching properties:", error);
+      }
+    };
+
+    createMarkers();
 
     var zoomControl = new kakao.maps.ZoomControl();
     map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+    // markers.forEach(function (marker) {
+    //   kakao.maps.event.addListener(marker, "click", function () {
+    //     var markerInfo = [];
+    //     var info = {
+    //       address: marker.userData.address,
+    //       price: marker.userData.price,
+    //       structure: marker.userData.structure,
+    //       options: marker.userData.options,
+    //       propertyType: marker.userData.propertyType,
+    //       img: marker.userData.img,
+    //       saleItem: marker.userData.saleItem,
+    //       detailInfo: marker.userData.detailInfo,
+    //     };
+
+    //     markerInfo.push(info);
+
+    //     sessionStorage.setItem("myData", JSON.stringify(markerInfo));
+    //     window.open("http://localhost:3000/lists");
+    //   });
+    // });
 
     kakao.maps.event.addListener(clusterer, "clusterclick", function (cluster) {
       var markers = cluster.getMarkers();
@@ -77,29 +143,23 @@ const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
         var info = {
           address: marker.userData.address,
           price: marker.userData.price,
+          deposit: marker.userData.deposit,
+          monthlyRent: marker.userData.monthlyRent,
           structure: marker.userData.structure,
-          options: marker.userData.options,
           propertyType: marker.userData.propertyType,
-          img: marker.userData.img,
+          options: marker.userData.options,
+          additionalInfo: marker.userData.additionalInfo,
+          img1: marker.userData.img1,
+          img2: marker.userData.img2,
+          img3: marker.userData.img3,
         };
-        // console.log(typeof info);
-        // console.log(info);
+
+        console.log(info);
         markerInfo.push(info);
       });
 
       sessionStorage.setItem("myData", JSON.stringify(markerInfo));
-      window.open("http://localhost:3000/lists");
-
-      // // console.log(markerInfo + "????????");
-
-      // const data = JSON.stringify(markerInfo);
-      // // console.log(typeof data + "hidsjflsd");
-
-      // const childWindow = window.open("http://localhost:3000/lists");
-
-      // childWindow.addEventListener("load", function () {
-      //   childWindow.postMessage(data, "*");
-      // });
+      window.open("http://192.168.0.106:3000/lists");
     });
 
     const displayArea = (coordinates, name) => {

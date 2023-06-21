@@ -16,7 +16,7 @@ const SignUpPage = () => {
     phone: "", // 연락처
   });
   const [err, setError] = useState(null);
-  const [isUsernameValid, setIsUsernameValid] = useState(false);
+  const [isUsernameValid, setIsUsernameValid] = useState(null);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -81,6 +81,7 @@ const SignUpPage = () => {
         <form>
           <div>
             <input
+              className="signbox"
               required
               type="text"
               placeholder="이름 (예: 유비씨)"
@@ -90,23 +91,20 @@ const SignUpPage = () => {
           </div>
           <div>
             <input
+              className="signbox"
               required
               type="text"
               placeholder="아이디 (예: team)"
               name="userid"
               onChange={handleChange}
             />
-            <button onClick={handleDuplicateCheck} className="submitButton">
-              중복확인
-            </button>
-            {isUsernameValid ? (
-              <p>가입 가능한 회원입니다.</p>
-            ) : (
-              <p>중복된 사용자 이름입니다.</p>
-            )}
+            <button onClick={handleDuplicateCheck}>중복확인</button>
+            {isUsernameValid === true && <p>가입 가능한 회원입니다.</p>}
+            {isUsernameValid === false && <p>중복된 사용자 이름입니다.</p>}
           </div>
           <div>
             <input
+              className="signbox"
               required
               type="password"
               placeholder="비밀번호"
@@ -116,6 +114,7 @@ const SignUpPage = () => {
           </div>
           <div>
             <input
+              className="signbox"
               required
               type="email"
               placeholder="이메일 (예: test@test.com)"
@@ -125,6 +124,7 @@ const SignUpPage = () => {
           </div>
           <div>
             <input
+              className="signbox"
               required
               type="text"
               placeholder="연락처 (예: 010-1111-1111)"
@@ -133,11 +133,7 @@ const SignUpPage = () => {
             />
           </div>
           <div>
-            <button
-              className="submitButton"
-              onClick={handleSubmit}
-              disabled={!isUsernameValid}
-            >
+            <button className="submitButton" onClick={handleSubmit} disabled={!isUsernameValid}>
               가입하기
             </button>
           </div>

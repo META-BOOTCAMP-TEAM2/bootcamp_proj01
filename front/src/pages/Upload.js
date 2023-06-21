@@ -15,7 +15,7 @@ const UploadPage = () => {
     structure: "원룸", //방구조
     additionalInfo: "",
     userid: localStorage.getItem("userid"),
-    // options: [],
+    options: [],
   });
 
   const [selectedOptions, setSelectedOptions] = useState([]);
@@ -164,13 +164,10 @@ const UploadPage = () => {
 
         <form className="uploadForm">
           <h2>내 방 올리기</h2>
+
           <h3>계약 방식</h3>
           <div>
-            <select
-              name="propertyType"
-              value={inputs.propertyType}
-              onChange={handleChange}
-            >
+            <select name="propertyType" value={inputs.propertyType} onChange={handleChange}>
               <option value="매매">매매</option>
               <option value="전세">전세</option>
               <option value="월세">월세</option>
@@ -253,11 +250,7 @@ const UploadPage = () => {
           <br />
           <h3>방 구조</h3>
           <label>
-            <select
-              name="structure"
-              value={inputs.structure}
-              onChange={handleChange}
-            >
+            <select name="structure" value={inputs.structure} onChange={handleChange}>
               <option value="원룸">원룸</option>
               <option value="1.5룸">1.5룸</option>
               <option value="2룸 이상">2룸 이상</option>

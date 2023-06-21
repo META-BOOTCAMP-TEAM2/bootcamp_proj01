@@ -27,7 +27,7 @@ function App() {
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/lists" element={<Listing />} />
           <Route path="/myLists" element={<MyListing />} />
-          <Route path="/listDetail/:saleItem" element={<ListingDetail />} />
+          <Route path="/listDetail" element={<ListingDetail />} />
         </Routes>
       </Router>
     </>
