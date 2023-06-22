@@ -84,7 +84,7 @@ const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
             position: new kakao.maps.LatLng(position.lat, position.lng),
             map: map,
           });
-          // console.log(item.filename1);
+          console.log(item.filename1);
 
           marker.userData = {
             propertyType: item.propertyType,
@@ -159,7 +159,8 @@ const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
       });
 
       sessionStorage.setItem("myData", JSON.stringify(markerInfo));
-      window.open("http://192.168.0.106:3000/lists");
+      // window.open("http://192.168.0.106:3000/lists");
+      window.open("http://localhost:3000/lists");
     });
 
     const displayArea = (coordinates, name) => {
