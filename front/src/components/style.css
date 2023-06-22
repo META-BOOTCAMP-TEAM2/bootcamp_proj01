@@ -20,6 +20,8 @@ a {
   left: 0;
   height: 60px;
   z-index: 9999;
+  border-color: black;
+  border-width: 0px 0px 10px 0px;
 }
 .header1 {
   background-color: #000000;
@@ -37,6 +39,8 @@ a {
   justify-content: end;
   display: flex; /*가운데 정렬 쓰기 위한 기본 */
   align-items: center; /*내용 상하 가운데 정렬*/
+  border-color: black;
+  border-width: 0px 0px 10px 0px;
 }
 
 .Logo {

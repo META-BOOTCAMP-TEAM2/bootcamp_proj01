@@ -114,7 +114,7 @@ const UploadPage = () => {
   const handleUpload2 = async (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append("file", selectedFiles[0]);
+    formData.append("file", selectedFiles[1]);
 
     try {
       await axios.post("/upload", formData).then((res) => {
@@ -137,7 +137,7 @@ const UploadPage = () => {
   const handleUpload3 = async (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append("file", selectedFiles[0]);
+    formData.append("file", selectedFiles[2]);
 
     try {
       await axios.post("/upload", formData).then((res) => {
@@ -167,7 +167,11 @@ const UploadPage = () => {
 
           <h3>계약 방식</h3>
           <div>
-            <select name="propertyType" value={inputs.propertyType} onChange={handleChange}>
+            <select
+              name="propertyType"
+              value={inputs.propertyType}
+              onChange={handleChange}
+            >
               <option value="매매">매매</option>
               <option value="전세">전세</option>
               <option value="월세">월세</option>
@@ -250,7 +254,11 @@ const UploadPage = () => {
           <br />
           <h3>방 구조</h3>
           <label>
-            <select name="structure" value={inputs.structure} onChange={handleChange}>
+            <select
+              name="structure"
+              value={inputs.structure}
+              onChange={handleChange}
+            >
               <option value="원룸">원룸</option>
               <option value="1.5룸">1.5룸</option>
               <option value="2룸 이상">2룸 이상</option>
