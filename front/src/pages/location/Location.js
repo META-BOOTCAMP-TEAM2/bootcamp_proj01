@@ -33,7 +33,7 @@ const Location = () => {
     <>
       <div className="location">
         <Header />
-        <h2>지역을 선택하세요</h2>
+        <h2 id="title">지역을 선택하세요</h2>
         <div className="totalContents">
           <div className="table1">
             <table style={{ borderCollapse: "collapse" }}>

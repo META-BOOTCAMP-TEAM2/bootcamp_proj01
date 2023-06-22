@@ -7,8 +7,12 @@
 }
 
 .location h2 {
-  padding-top: 80px;
+  padding-top: 15px;
   padding-bottom: 20px;
+}
+
+.location #title {
+  margin-top: 50px;
 }
 
 .totalContents {

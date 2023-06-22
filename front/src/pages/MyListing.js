@@ -238,10 +238,10 @@ const Listing = () => {
         <div key={rowIndex} className="row">
           {row.map((item, itemIndex) => (
             <div key={itemIndex} className="item">
-              <Link to={`/listDetail/${item.saleItem}`} className="box">
+              <Link to={`/listDetail`} className="box">
                 <div>
                   <img
-                    src={"http://192.168.0.106:8000/uploads/" + item.filename1}
+                    src={"http://localhost:8000/uploads/" + item.filename1}
                     alt="Property"
                     style={{ width: "300px", height: "200px" }}
                   />
