@@ -134,21 +134,21 @@ const ListingDetail = () => {
             {/* { data.img.map((imgUrl, index) => ( */}
             <div>
               <img
-                src={"http://192.168.0.106:8000/uploads/" + data.img1}
+                src={"http://localhost:8000/uploads/" + data.img1}
                 alt="Property Image"
                 style={{ width: "600px", height: "400px" }}
               />
             </div>
             <div>
               <img
-                src={"http://192.168.0.106:8000/uploads/" + data.img2}
+                src={"http://localhost:8000/uploads/" + data.img2}
                 alt="Property Image"
                 style={{ width: "600px", height: "400px" }}
               />
             </div>
             <div>
               <img
-                src={"http://192.168.0.106:8000/uploads/" + data.img3}
+                src={"http://localhost:8000/uploads/" + data.img3}
                 alt="Property Image"
                 style={{ width: "600px", height: "400px" }}
               />

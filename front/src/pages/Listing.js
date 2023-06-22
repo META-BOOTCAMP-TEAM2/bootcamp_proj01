@@ -70,6 +70,7 @@ const Listing = () => {
   const storedData = sessionStorage.getItem("myData");
   const data = JSON.parse(storedData);
   const itemsPerRow = 4; // 한 줄에 표시할 항목 수
+  console.log("1");
   const imgClick = (item) => {
     const newUrl = `http://localhost:3000/listDetail`;
     const newWindow = window.open(newUrl);
@@ -97,7 +98,7 @@ const Listing = () => {
               <div className="box">
                 <div>
                   <img
-                    src={"http://localhost:3000/uploads/" + item.img1}
+                    src={"http://localhost:8000/uploads/" + item.img1}
                     alt="Property"
                     style={{ width: "300px", height: "200px" }}
                     onClick={() => imgClick(item)}

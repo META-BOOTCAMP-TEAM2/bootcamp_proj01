@@ -114,7 +114,7 @@ const UploadPage = () => {
   const handleUpload2 = async (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append("file", selectedFiles[0]);
+    formData.append("file", selectedFiles[1]);
 
     try {
       await axios.post("/upload", formData).then((res) => {
@@ -137,7 +137,7 @@ const UploadPage = () => {
   const handleUpload3 = async (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append("file", selectedFiles[0]);
+    formData.append("file", selectedFiles[2]);
 
     try {
       await axios.post("/upload", formData).then((res) => {
