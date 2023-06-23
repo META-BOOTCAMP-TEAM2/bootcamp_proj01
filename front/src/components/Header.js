@@ -30,7 +30,7 @@ function Header() {
       </div>
       <div className="header2">
         {currentUser && (
-          <div style={{ fontSize: "20px", color: "orange" }}>
+          <div style={{ fontSize: "20px", color: "black" }}>
             <h2>환영합니다! {currentUser} 님 </h2>
           </div>
         )}
