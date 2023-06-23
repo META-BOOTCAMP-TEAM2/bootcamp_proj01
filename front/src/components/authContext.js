@@ -9,7 +9,7 @@ export const AuthContextProvider = ({ children }) => {
   );
 
   const login = async (inputs) => {
-    const res = await axios.post("/auth/login", inputs);
+    const res = await axios.post("http://localhost:8000/auth/login", inputs);
     console.log(res.data);
     console.log(typeof res.data);
     const { userid, name, role } = res.data;
