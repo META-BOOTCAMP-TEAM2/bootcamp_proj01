@@ -21,48 +21,46 @@ function Header() {
   };
 
   return (
-    <div className="Header">
-      <div className="header1">
-        <Link to="/">
-          {" "}
-          <p className="Logo"> 🏠 Your Sweet Home</p>
-        </Link>
-      </div>
-      <div className="header2">
-        {currentUser && (
-          <div style={{ fontSize: "20px", color: "black" }}>
-            <h2>환영합니다! {currentUser} 님 </h2>
-          </div>
-        )}
-        <Link to="/">
-          <Button variant="Home" id="buttons">
-            Home
-          </Button>{" "}
-        </Link>
-
-        {currentUser ? (
-          <>
-            <Link to="/mypage">
-              <Button variant="My page" id="buttons">
-                My page
-              </Button>
-            </Link>
-            <span onClick={handleLogout}>Logout</span>
-          </>
-        ) : (
-          <>
-            <Link to="/login">
-              <Button variant="Login" id="buttons">
-                Login
-              </Button>{" "}
-            </Link>
-            <Link to="/signup">
-              <Button variant="Sign up" id="buttons">
-                Sign up
-              </Button>{" "}
-            </Link>
-          </>
-        )}
+    <div className="line">
+      <div className="navbar">
+        <div className="logo">
+          <Link to="/">
+            {" "}
+            <p className="logo"> 🏠 Your Sweet Home</p>
+          </Link>
+        </div>
+        <div className="menu">
+          <Link to="/">
+            <Button className="menu-item" variant="Home" id="buttons">
+              Home
+            </Button>{" "}
+          </Link>
+          {currentUser ? (
+            <>
+              <Link to="/mypage">
+                <Button className="menu-item" variant="My page" id="buttons">
+                  My page
+                </Button>
+              </Link>
+              <span className="menu-item" onClick={handleLogout}>
+                Logout
+              </span>
+            </>
+          ) : (
+            <>
+              <Link to="/login">
+                <Button className="menu-item" variant="Login" id="buttons">
+                  Login
+                </Button>{" "}
+              </Link>
+              <Link to="/signup">
+                <Button className="menu-item" variant="Sign up" id="buttons">
+                  Sign up
+                </Button>{" "}
+              </Link>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -12,63 +12,43 @@ a {
 }
 
 /* navbar */
-.Header {
-  position: fixed;
-  display: flex;
+.line {
   width: 100%;
-  top: 0;
-  left: 0;
-  height: 60px;
+  border-bottom: 2px solid rgb(108, 108, 108);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  color: #1b2035;
+  margin: 10px auto;
   z-index: 9999;
-  border-color: black;
-  border-width: 0px 0px 10px 0px;
 }
-.header1 {
-  background-color: #000000;
-  padding: 15px;
-  text-align: left;
-  font-size: 20px;
-  width: 30%;
-  color: #eceaf1;
-}
-.header2 {
-  background-color: #eceaf1;
-  padding: 0px 15px;
-  text-align: right;
-  width: 70%;
-  justify-content: end;
-  display: flex; /*가운데 정렬 쓰기 위한 기본 */
-  align-items: center; /*내용 상하 가운데 정렬*/
-  border-color: black;
-  border-width: 0px 0px 10px 0px;
-}
-
-.Logo {
+.navbar .logo {
   color: inherit;
   text-decoration: none;
-  color: white;
+  color: black;
+  font-size: 18px;
 }
-
-#buttons {
-  font-size: 20px;
-  margin-right: 50px;
-  border-radius: 50%;
+.navbar .menu {
+  float: right;
+  justify-content: space-between;
+}
+.navbar .menu-item {
+  font-size: 18px;
   font-style: italic;
+  padding: 0 30px;
 }
 
 /* footer */
 .footer {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #070707;
-  padding: 0;
+  border-top: 2px solid rgb(108, 108, 108);
   text-align: center;
-  font-size: 10px;
-  color: white;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  height: 30px;
   z-index: 9999;
 }

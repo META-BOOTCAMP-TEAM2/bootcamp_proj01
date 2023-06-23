@@ -18,22 +18,26 @@ function Home() {
   };
 
   return (
-    <div className="home">
+    <div className="total">
       <Header />
-      <div className="back">
-        <div className="sentence">
-          당신의<br></br>새로운 시작을 위한 최적의 선택,<br></br> 여러분의
-          행복을 위한<br></br>
-          최적의 선택을 제공합니다.
+      <div className="home">
+        <div className="homeImg">
+          <p className="homeImgText">
+            <p className="homeImgText1">A Perfect Start for Your Future</p>
+            <br />
+            Find your home
+          </p>
         </div>
-        <div className="buttons">
+        <div className="homeButtons">
           <Link to="/room">
-            <button className="choice" id="Button">
-              방 구하기
+            <button id="Button1">
+              {" "}
+              <p className="circle1">●&nbsp;</p> Buy
             </button>
           </Link>
-          <button className="upload" id="Button" onClick={handleRoomUpload}>
-            방 내놓기
+          <p className="homeLine">아래 라인 공간</p>
+          <button id="Button2" onClick={handleRoomUpload}>
+            <p className="circle2">●&nbsp;</p> Sell
           </button>
         </div>
       </div>

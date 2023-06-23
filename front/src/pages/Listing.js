@@ -69,7 +69,7 @@ import "./stylePages.css";
 const Listing = () => {
   const storedData = sessionStorage.getItem("myData");
   const data = JSON.parse(storedData);
-  const itemsPerRow = 4; // 한 줄에 표시할 항목 수
+  const itemsPerRow = 3; // 한 줄에 표시할 항목 수
   console.log("1");
   const imgClick = (item) => {
     const newUrl = `http://localhost:3000/listDetail`;
@@ -108,8 +108,12 @@ const Listing = () => {
                 <br />
                 <div>주소: {item.address}</div>
                 <br />
-                {item.propertyType === "매매" && <div>매매가: {item.price}</div>}
-                {item.propertyType === "전세" && <div>보증금: {item.deposit}</div>}
+                {item.propertyType === "매매" && (
+                  <div>매매가: {item.price}</div>
+                )}
+                {item.propertyType === "전세" && (
+                  <div>보증금: {item.deposit}</div>
+                )}
                 {item.propertyType === "월세" && (
                   <div>
                     보증금: {item.deposit}, 월세: {item.monthlyRent}
