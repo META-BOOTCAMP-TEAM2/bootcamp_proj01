@@ -1,0 +1,974 @@
+2023-06-23 09:07:04.327[info] App start.
+2023-06-23 09:07:04.833[error] DB Connection fail connect ECONNREFUSED 127.0.0.1:3306
+2023-06-23 09:16:44.631[info] App start.
+2023-06-23 09:16:44.830[error] DB Connection fail Access denied for user 'root'@'localhost' (using password: YES)
+2023-06-23 09:18:51.572[info] App start.
+2023-06-23 09:18:51.652[info] DB connection success
+2023-06-23 09:18:51.678[info] Sequelize sync success
+2023-06-23 09:23:47.077[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 09:23:47.103[debug] (userService.login) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-23 09:23:47.105[debug] (userService.checkPassword) true
+2023-06-23 09:23:47.106[info] (auth.login.result) {"id":1,"userid":"test","password":"JYxwBPvvg9sqVmH9T8H16Vqm5PVGkNXcIueTb/DE1TEfMVDOv9BDjVmi91SB5LNK5731xs0dDuZAyB+hzOaw+g==.bcb6771ec36405cce741bdedcdd84d23e1d9821685092e61c240d9c787791cbf890bfff4a614b0770b55e5022dfec78c18b40e832acd1c98e5caa0bf23b5fd95","name":"test","role":null}
+2023-06-23 10:14:30.866[info] App start.
+2023-06-23 10:14:31.427[info] DB connection success
+2023-06-23 10:14:31.454[info] Sequelize sync success
+2023-06-23 10:21:04.809[info] App start.
+2023-06-23 10:21:04.884[info] DB connection success
+2023-06-23 10:21:04.969[info] Sequelize sync success
+2023-06-23 10:24:53.673[info] App start.
+2023-06-23 10:24:53.752[info] DB connection success
+2023-06-23 10:24:53.776[info] Sequelize sync success
+2023-06-23 10:27:51.060[info] App start.
+2023-06-23 10:27:51.148[info] DB connection success
+2023-06-23 10:27:51.198[info] Sequelize sync success
+2023-06-23 10:29:27.226[info] App start.
+2023-06-23 10:29:27.301[info] DB connection success
+2023-06-23 10:29:27.324[info] Sequelize sync success
+2023-06-23 10:29:51.330[info] App start.
+2023-06-23 10:29:51.403[info] DB connection success
+2023-06-23 10:29:51.425[info] Sequelize sync success
+2023-06-23 10:32:29.389[info] App start.
+2023-06-23 10:32:29.466[info] DB connection success
+2023-06-23 10:32:29.487[info] Sequelize sync success
+2023-06-23 10:32:38.485[info] App start.
+2023-06-23 10:32:38.564[info] DB connection success
+2023-06-23 10:32:38.585[info] Sequelize sync success
+2023-06-23 10:34:08.328[info] App start.
+2023-06-23 10:34:08.405[info] DB connection success
+2023-06-23 10:34:08.425[info] Sequelize sync success
+2023-06-23 10:35:06.588[info] App start.
+2023-06-23 10:35:06.672[info] DB connection success
+2023-06-23 10:35:06.696[info] Sequelize sync success
+2023-06-23 10:35:16.806[info] App start.
+2023-06-23 10:35:16.886[info] DB connection success
+2023-06-23 10:35:16.905[info] Sequelize sync success
+2023-06-23 10:55:27.793[info] App start.
+2023-06-23 10:55:27.871[info] DB connection success
+2023-06-23 10:55:27.892[info] Sequelize sync success
+2023-06-23 10:55:49.523[info] App start.
+2023-06-23 10:55:49.604[info] DB connection success
+2023-06-23 10:55:49.627[info] Sequelize sync success
+2023-06-23 10:56:35.309[info] App start.
+2023-06-23 10:56:35.385[info] DB connection success
+2023-06-23 10:56:35.406[info] Sequelize sync success
+2023-06-23 10:56:39.560[info] App start.
+2023-06-23 10:56:39.650[info] DB connection success
+2023-06-23 10:56:39.670[info] Sequelize sync success
+2023-06-23 10:57:18.116[info] App start.
+2023-06-23 10:57:18.191[info] DB connection success
+2023-06-23 10:57:18.210[info] Sequelize sync success
+2023-06-23 10:57:56.111[info] App start.
+2023-06-23 10:57:56.188[info] DB connection success
+2023-06-23 10:57:56.208[info] Sequelize sync success
+2023-06-23 10:57:58.594[info] (user.reg.params) {"username":"이름","userid":"","password":"1111","role":"member","email":"test1@test.com","phone":"010-1111-1111"}
+2023-06-23 10:57:58.596[error] Error: Not allowed null (name, userid, password)
+2023-06-23 10:57:58.604[debug] (userService.makePassword) "1111"
+2023-06-23 10:57:58.645[debug] (userService.reg) {"id":1,"username":"이름","userid":"","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedAt":"2023-06-23T01:57:58.609Z","createdAt":"2023-06-23T01:57:58.609Z"}
+2023-06-23 10:58:45.812[info] App start.
+2023-06-23 10:58:45.891[info] DB connection success
+2023-06-23 10:58:45.913[info] Sequelize sync success
+2023-06-23 10:59:45.823[info] App start.
+2023-06-23 10:59:45.900[info] DB connection success
+2023-06-23 10:59:45.920[info] Sequelize sync success
+2023-06-23 11:00:11.819[info] App start.
+2023-06-23 11:00:11.896[info] DB connection success
+2023-06-23 11:00:11.919[info] Sequelize sync success
+2023-06-23 11:00:39.405[info] (user.reg.params) {"username":"이름","userid":"test","password":"1111","role":"member","email":"test1@test.com","phone":"010-1111-1111"}
+2023-06-23 11:00:39.407[debug] (userService.makePassword) "1111"
+2023-06-23 11:00:39.427[debug] (userService.reg) {"id":2,"username":"이름","userid":"test","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedAt":"2023-06-23T02:00:39.409Z","createdAt":"2023-06-23T02:00:39.409Z"}
+2023-06-23 11:00:39.428[info] (user.reg.result) {"id":2,"username":"이름","userid":"test","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedAt":"2023-06-23T02:00:39.409Z","createdAt":"2023-06-23T02:00:39.409Z"}
+2023-06-23 11:00:58.364[info] App start.
+2023-06-23 11:00:58.442[info] DB connection success
+2023-06-23 11:00:58.465[info] Sequelize sync success
+2023-06-23 11:01:59.380[info] App start.
+2023-06-23 11:01:59.460[info] DB connection success
+2023-06-23 11:01:59.481[info] Sequelize sync success
+2023-06-23 11:04:20.437[info] (auth.login.params) {"userid":"","password":"1111"}
+2023-06-23 11:04:20.439[error] Error: Not allowed null (userid, password)
+2023-06-23 11:04:20.456[debug] (userService.login) {"id":1,"userid":"","password":"MlxyltGMyx16m77ewJnnTl7mPiw696a7drKmIy0DpbS2HWMWthfTCuUVbHT6E0AsnHw5YZVdduKyRPUMdHNXZA==.6de5595fa778449d4ff1b3124a23b44f52a4b0dce59b68f96c55c0afc894636caf2cbcf93cb87fed1b72591baaf41fa11051bdca47d600482b5c9b386c90c867","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T01:57:58.000Z","updatedAt":"2023-06-23T01:57:58.000Z","deletedAt":null}
+2023-06-23 11:04:20.459[debug] (userService.checkPassword) true
+2023-06-23 11:07:51.283[info] App start.
+2023-06-23 11:07:51.357[info] DB connection success
+2023-06-23 11:07:51.377[info] Sequelize sync success
+2023-06-23 11:08:00.209[info] App start.
+2023-06-23 11:08:00.283[info] DB connection success
+2023-06-23 11:08:00.303[info] Sequelize sync success
+2023-06-23 11:08:04.701[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:08:04.712[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:08:04.716[debug] (userService.checkPassword) true
+2023-06-23 11:08:04.717[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:09:45.794[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:09:45.804[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:09:45.807[debug] (userService.checkPassword) true
+2023-06-23 11:09:45.808[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:09:52.630[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:09:52.636[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:09:52.640[debug] (userService.checkPassword) true
+2023-06-23 11:09:52.641[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:12:48.799[info] App start.
+2023-06-23 11:12:48.874[info] DB connection success
+2023-06-23 11:12:48.895[info] Sequelize sync success
+2023-06-23 11:12:58.693[info] App start.
+2023-06-23 11:12:58.767[info] DB connection success
+2023-06-23 11:12:58.787[info] Sequelize sync success
+2023-06-23 11:16:05.484[info] App start.
+2023-06-23 11:16:05.607[info] DB connection success
+2023-06-23 11:16:05.634[info] Sequelize sync success
+2023-06-23 11:16:10.937[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:16:10.947[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:16:10.950[debug] (userService.checkPassword) true
+2023-06-23 11:16:10.951[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:16:23.718[info] App start.
+2023-06-23 11:16:23.794[info] DB connection success
+2023-06-23 11:16:23.815[info] Sequelize sync success
+2023-06-23 11:17:13.866[info] App start.
+2023-06-23 11:17:13.946[info] DB connection success
+2023-06-23 11:17:13.968[info] Sequelize sync success
+2023-06-23 11:17:16.860[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:17:16.870[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:17:16.873[debug] (userService.checkPassword) true
+2023-06-23 11:17:16.875[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:17:22.293[info] App start.
+2023-06-23 11:17:22.371[info] DB connection success
+2023-06-23 11:17:22.394[info] Sequelize sync success
+2023-06-23 11:17:24.157[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:17:24.170[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:17:24.172[debug] (userService.checkPassword) true
+2023-06-23 11:17:24.173[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:19:34.233[info] App start.
+2023-06-23 11:19:34.317[info] DB connection success
+2023-06-23 11:19:34.342[info] Sequelize sync success
+2023-06-23 11:19:38.170[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:19:38.181[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:19:38.184[debug] (userService.checkPassword) true
+2023-06-23 11:19:38.185[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:19:50.598[info] App start.
+2023-06-23 11:19:50.694[info] DB connection success
+2023-06-23 11:19:50.717[info] Sequelize sync success
+2023-06-23 11:19:51.394[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:19:51.406[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:19:51.409[debug] (userService.checkPassword) true
+2023-06-23 11:20:11.287[info] App start.
+2023-06-23 11:20:11.365[info] DB connection success
+2023-06-23 11:20:11.386[info] Sequelize sync success
+2023-06-23 11:20:12.912[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:20:12.924[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:20:12.927[debug] (userService.checkPassword) true
+2023-06-23 11:20:12.928[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:21:32.162[info] App start.
+2023-06-23 11:21:32.240[info] DB connection success
+2023-06-23 11:21:32.259[info] Sequelize sync success
+2023-06-23 11:21:36.211[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:21:36.222[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:21:36.225[debug] (userService.checkPassword) true
+2023-06-23 11:21:36.226[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:21:54.774[info] App start.
+2023-06-23 11:21:54.853[info] DB connection success
+2023-06-23 11:21:54.875[info] Sequelize sync success
+2023-06-23 11:21:56.469[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:21:56.480[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:21:56.482[debug] (userService.checkPassword) true
+2023-06-23 11:21:56.483[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:21:56.485[error] [object SequelizeInstance:User]
+2023-06-23 11:25:40.272[info] App start.
+2023-06-23 11:25:40.348[info] DB connection success
+2023-06-23 11:25:40.371[info] Sequelize sync success
+2023-06-23 11:25:43.183[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:25:43.194[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:25:43.197[debug] (userService.checkPassword) true
+2023-06-23 11:25:43.197[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:25:43.198[error] [object SequelizeInstance:User]
+2023-06-23 11:26:51.614[info] App start.
+2023-06-23 11:26:51.694[info] DB connection success
+2023-06-23 11:26:51.715[info] Sequelize sync success
+2023-06-23 11:26:54.184[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:26:54.197[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:26:54.200[debug] (userService.checkPassword) true
+2023-06-23 11:26:54.201[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:26:54.202[error] [object SequelizeInstance:User]
+2023-06-23 11:27:36.673[info] App start.
+2023-06-23 11:27:36.779[info] DB connection success
+2023-06-23 11:27:36.799[info] Sequelize sync success
+2023-06-23 11:27:37.663[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:27:37.672[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:27:37.676[debug] (userService.checkPassword) true
+2023-06-23 11:27:37.677[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:28:27.780[info] App start.
+2023-06-23 11:28:27.860[info] DB connection success
+2023-06-23 11:28:27.879[info] Sequelize sync success
+2023-06-23 11:28:30.104[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:28:30.117[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:28:30.119[debug] (userService.checkPassword) true
+2023-06-23 11:28:30.120[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:28:51.690[info] App start.
+2023-06-23 11:28:51.766[info] DB connection success
+2023-06-23 11:28:51.786[info] Sequelize sync success
+2023-06-23 11:28:54.118[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:28:54.129[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:28:54.132[debug] (userService.checkPassword) true
+2023-06-23 11:28:54.134[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:29:05.015[info] App start.
+2023-06-23 11:29:05.092[info] DB connection success
+2023-06-23 11:29:05.111[info] Sequelize sync success
+2023-06-23 11:29:06.717[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:29:06.728[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:29:06.731[debug] (userService.checkPassword) true
+2023-06-23 11:29:06.732[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:30:46.768[info] App start.
+2023-06-23 11:30:46.850[info] DB connection success
+2023-06-23 11:30:46.871[info] Sequelize sync success
+2023-06-23 11:30:48.647[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:30:48.660[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:30:48.663[debug] (userService.checkPassword) true
+2023-06-23 11:30:48.664[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:31:24.248[info] App start.
+2023-06-23 11:31:24.324[info] DB connection success
+2023-06-23 11:31:24.344[info] Sequelize sync success
+2023-06-23 11:31:27.688[info] App start.
+2023-06-23 11:31:27.770[info] DB connection success
+2023-06-23 11:31:27.795[info] Sequelize sync success
+2023-06-23 11:31:29.733[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:31:29.752[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:31:29.761[debug] (userService.checkPassword) true
+2023-06-23 11:31:29.761[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:32:19.548[info] App start.
+2023-06-23 11:32:19.624[info] DB connection success
+2023-06-23 11:32:19.645[info] Sequelize sync success
+2023-06-23 11:32:20.909[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:32:20.920[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:32:20.923[debug] (userService.checkPassword) true
+2023-06-23 11:32:20.925[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:32:59.672[info] App start.
+2023-06-23 11:32:59.753[info] DB connection success
+2023-06-23 11:32:59.773[info] Sequelize sync success
+2023-06-23 11:33:06.528[info] App start.
+2023-06-23 11:33:06.602[info] DB connection success
+2023-06-23 11:33:06.623[info] Sequelize sync success
+2023-06-23 11:33:29.678[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:33:29.696[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:33:29.702[debug] (userService.checkPassword) true
+2023-06-23 11:33:29.703[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:33:54.260[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:33:54.268[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:33:54.270[debug] (userService.checkPassword) true
+2023-06-23 11:33:54.271[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:34:30.099[info] App start.
+2023-06-23 11:34:30.180[info] DB connection success
+2023-06-23 11:34:30.201[info] Sequelize sync success
+2023-06-23 11:34:38.562[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:34:38.573[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:34:38.575[debug] (userService.checkPassword) true
+2023-06-23 11:34:38.576[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:35:07.504[info] App start.
+2023-06-23 11:35:07.577[info] DB connection success
+2023-06-23 11:35:07.598[info] Sequelize sync success
+2023-06-23 11:35:16.460[info] App start.
+2023-06-23 11:35:16.536[info] DB connection success
+2023-06-23 11:35:16.558[info] Sequelize sync success
+2023-06-23 11:35:23.498[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:35:23.509[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:35:23.512[debug] (userService.checkPassword) true
+2023-06-23 11:35:23.513[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:37:50.634[info] App start.
+2023-06-23 11:37:50.699[info] DB connection success
+2023-06-23 11:37:50.720[info] Sequelize sync success
+2023-06-23 11:37:52.332[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:37:52.344[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:37:52.347[debug] (userService.checkPassword) true
+2023-06-23 11:37:52.348[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:38:03.136[info] App start.
+2023-06-23 11:38:03.201[info] DB connection success
+2023-06-23 11:38:03.220[info] Sequelize sync success
+2023-06-23 11:38:04.419[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:38:04.431[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:38:04.434[debug] (userService.checkPassword) true
+2023-06-23 11:38:04.435[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:38:07.116[info] App start.
+2023-06-23 11:38:07.177[info] DB connection success
+2023-06-23 11:38:07.196[info] Sequelize sync success
+2023-06-23 11:38:08.500[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:38:08.512[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:38:08.515[debug] (userService.checkPassword) true
+2023-06-23 11:38:08.517[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:38:12.237[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:38:12.242[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:38:12.245[debug] (userService.checkPassword) true
+2023-06-23 11:38:12.247[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:38:24.251[info] App start.
+2023-06-23 11:38:24.320[info] DB connection success
+2023-06-23 11:38:24.342[info] Sequelize sync success
+2023-06-23 11:38:25.655[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:38:25.667[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:38:25.669[debug] (userService.checkPassword) true
+2023-06-23 11:38:25.670[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:38:51.231[info] App start.
+2023-06-23 11:38:51.294[info] DB connection success
+2023-06-23 11:38:51.314[info] Sequelize sync success
+2023-06-23 11:38:53.923[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:38:53.934[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:38:53.937[debug] (userService.checkPassword) true
+2023-06-23 11:38:53.937[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:39:05.387[info] App start.
+2023-06-23 11:39:05.450[info] DB connection success
+2023-06-23 11:39:05.469[info] Sequelize sync success
+2023-06-23 11:39:08.219[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:39:08.230[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:39:08.233[debug] (userService.checkPassword) true
+2023-06-23 11:39:08.234[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:39:55.778[info] App start.
+2023-06-23 11:39:55.838[info] DB connection success
+2023-06-23 11:39:55.861[info] Sequelize sync success
+2023-06-23 11:40:09.405[info] App start.
+2023-06-23 11:40:09.476[info] DB connection success
+2023-06-23 11:40:09.496[info] Sequelize sync success
+2023-06-23 11:40:09.942[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:40:09.954[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:40:09.956[debug] (userService.checkPassword) true
+2023-06-23 11:40:09.957[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:40:09.958[error] [object SequelizeInstance:User]
+2023-06-23 11:41:11.340[info] App start.
+2023-06-23 11:41:11.398[info] DB connection success
+2023-06-23 11:41:11.418[info] Sequelize sync success
+2023-06-23 11:41:12.908[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 11:41:12.918[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 11:41:12.922[debug] (userService.checkPassword) true
+2023-06-23 11:41:12.923[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:39:19.947[info] App start.
+2023-06-23 12:39:20.027[info] DB connection success
+2023-06-23 12:39:20.050[info] Sequelize sync success
+2023-06-23 12:39:26.685[info] App start.
+2023-06-23 12:39:26.748[info] DB connection success
+2023-06-23 12:39:26.769[info] Sequelize sync success
+2023-06-23 12:39:29.782[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:39:29.792[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:39:29.796[debug] (userService.checkPassword) true
+2023-06-23 12:39:29.797[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:39:29.798[error] dataValues,_previousDataValues,uniqno,_changed,_options,isNewRecord
+2023-06-23 12:39:57.171[info] App start.
+2023-06-23 12:39:57.233[info] DB connection success
+2023-06-23 12:39:57.255[info] Sequelize sync success
+2023-06-23 12:40:02.012[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:40:02.025[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:40:02.027[debug] (userService.checkPassword) true
+2023-06-23 12:40:02.028[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:40:02.030[error] id,userid,password,username,role,email,phone,updatedPwDate,createdAt,updatedAt,deletedAt
+2023-06-23 12:41:54.958[info] App start.
+2023-06-23 12:41:55.019[info] DB connection success
+2023-06-23 12:41:55.039[info] Sequelize sync success
+2023-06-23 12:42:54.480[info] App start.
+2023-06-23 12:42:54.541[info] DB connection success
+2023-06-23 12:42:54.558[info] Sequelize sync success
+2023-06-23 12:42:56.087[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:42:56.098[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:42:56.101[debug] (userService.checkPassword) true
+2023-06-23 12:42:56.102[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:42:56.103[error] id,userid,password,username,role,email,phone,updatedPwDate,createdAt,updatedAt,deletedAt
+2023-06-23 12:46:03.740[info] App start.
+2023-06-23 12:46:03.802[info] DB connection success
+2023-06-23 12:46:03.820[info] Sequelize sync success
+2023-06-23 12:46:05.594[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:46:05.606[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:46:05.608[debug] (userService.checkPassword) true
+2023-06-23 12:46:05.609[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:46:05.610[error] id,userid,password,username,role,email,phone,updatedPwDate,createdAt,updatedAt,deletedAt
+2023-06-23 12:46:05.611[error] [object Object]
+2023-06-23 12:47:03.412[info] App start.
+2023-06-23 12:47:03.478[info] DB connection success
+2023-06-23 12:47:03.500[info] Sequelize sync success
+2023-06-23 12:47:04.098[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:47:04.111[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:47:04.113[debug] (userService.checkPassword) true
+2023-06-23 12:47:04.114[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:47:04.115[error] id,userid,password,username,role,email,phone,updatedPwDate,createdAt,updatedAt,deletedAt
+2023-06-23 12:47:34.351[info] App start.
+2023-06-23 12:47:34.427[info] DB connection success
+2023-06-23 12:47:34.448[info] Sequelize sync success
+2023-06-23 12:48:43.936[info] App start.
+2023-06-23 12:48:44.009[info] DB connection success
+2023-06-23 12:48:44.031[info] Sequelize sync success
+2023-06-23 12:49:08.223[info] App start.
+2023-06-23 12:49:08.330[info] DB connection success
+2023-06-23 12:49:08.347[info] Sequelize sync success
+2023-06-23 12:49:35.552[info] App start.
+2023-06-23 12:49:35.669[info] DB connection success
+2023-06-23 12:49:35.697[info] Sequelize sync success
+2023-06-23 12:49:36.365[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:49:36.378[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:49:36.382[debug] (userService.checkPassword) true
+2023-06-23 12:49:36.383[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:49:36.402[error] id,userid,password,username,role,email,phone,updatedPwDate,createdAt,updatedAt,deletedAt
+2023-06-23 12:49:57.326[info] App start.
+2023-06-23 12:49:57.404[info] DB connection success
+2023-06-23 12:49:57.423[info] Sequelize sync success
+2023-06-23 12:49:58.804[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:49:58.816[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:49:58.820[debug] (userService.checkPassword) true
+2023-06-23 12:49:58.821[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 12:49:58.822[error] id,userid,password,username,role,email,phone,updatedPwDate,createdAt,updatedAt,deletedAt
+2023-06-23 12:51:13.760[info] App start.
+2023-06-23 12:51:13.835[info] DB connection success
+2023-06-23 12:51:13.856[info] Sequelize sync success
+2023-06-23 12:52:26.845[info] App start.
+2023-06-23 12:52:26.928[info] DB connection success
+2023-06-23 12:52:26.951[info] Sequelize sync success
+2023-06-23 12:52:28.072[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:52:28.076[error] (userService.login) TypeError: attr.includes is not a function
+2023-06-23 12:53:25.072[info] App start.
+2023-06-23 12:53:25.153[info] DB connection success
+2023-06-23 12:53:25.172[info] Sequelize sync success
+2023-06-23 12:53:27.897[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:53:27.912[error] (userService.login) SequelizeDatabaseError: Unknown column 'name' in 'field list'
+2023-06-23 12:53:37.709[info] App start.
+2023-06-23 12:53:37.787[info] DB connection success
+2023-06-23 12:53:37.809[info] Sequelize sync success
+2023-06-23 12:55:16.893[info] App start.
+2023-06-23 12:55:16.974[info] DB connection success
+2023-06-23 12:55:16.994[info] Sequelize sync success
+2023-06-23 12:55:18.590[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:55:18.603[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member"}
+2023-06-23 12:55:18.605[debug] (userService.checkPassword) true
+2023-06-23 12:55:18.606[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member"}
+2023-06-23 12:55:18.607[error] id,userid,password,username,role
+2023-06-23 12:55:46.860[info] App start.
+2023-06-23 12:55:46.935[info] DB connection success
+2023-06-23 12:55:46.955[info] Sequelize sync success
+2023-06-23 12:55:48.875[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:55:48.886[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member"}
+2023-06-23 12:55:48.889[debug] (userService.checkPassword) true
+2023-06-23 12:55:48.890[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member"}
+2023-06-23 12:56:17.327[info] App start.
+2023-06-23 12:56:17.404[info] DB connection success
+2023-06-23 12:56:17.423[info] Sequelize sync success
+2023-06-23 12:56:22.124[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:56:22.133[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member"}
+2023-06-23 12:56:22.137[debug] (userService.checkPassword) true
+2023-06-23 12:56:22.137[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member"}
+2023-06-23 12:56:54.858[info] App start.
+2023-06-23 12:56:54.932[info] DB connection success
+2023-06-23 12:56:54.952[info] Sequelize sync success
+2023-06-23 12:57:00.051[info] App start.
+2023-06-23 12:57:00.126[info] DB connection success
+2023-06-23 12:57:00.146[info] Sequelize sync success
+2023-06-23 12:57:05.460[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 12:57:05.469[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member"}
+2023-06-23 12:57:05.472[debug] (userService.checkPassword) true
+2023-06-23 12:57:05.473[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member"}
+2023-06-23 13:00:36.262[info] App start.
+2023-06-23 13:00:36.333[info] DB connection success
+2023-06-23 13:00:36.356[info] Sequelize sync success
+2023-06-23 13:00:38.508[info] App start.
+2023-06-23 13:00:38.586[info] DB connection success
+2023-06-23 13:00:38.606[info] Sequelize sync success
+2023-06-23 13:00:43.441[info] App start.
+2023-06-23 13:00:43.512[info] DB connection success
+2023-06-23 13:00:43.532[info] Sequelize sync success
+2023-06-23 13:00:46.342[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:00:46.354[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:00:46.356[debug] (userService.checkPassword) true
+2023-06-23 13:00:46.357[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:00:46.359[error] [object SequelizeInstance:User]
+2023-06-23 13:01:18.705[info] App start.
+2023-06-23 13:01:18.789[info] DB connection success
+2023-06-23 13:01:18.811[info] Sequelize sync success
+2023-06-23 13:01:22.879[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:01:22.890[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:01:22.893[debug] (userService.checkPassword) true
+2023-06-23 13:01:22.893[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:01:22.895[error] [object SequelizeInstance:User]
+2023-06-23 13:01:34.495[info] App start.
+2023-06-23 13:01:34.572[info] DB connection success
+2023-06-23 13:01:34.592[info] Sequelize sync success
+2023-06-23 13:01:35.178[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:01:35.189[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:01:35.191[debug] (userService.checkPassword) true
+2023-06-23 13:01:35.192[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:01:35.193[error] [object SequelizeInstance:User]
+2023-06-23 13:01:54.866[info] App start.
+2023-06-23 13:01:54.953[info] DB connection success
+2023-06-23 13:01:54.973[info] Sequelize sync success
+2023-06-23 13:01:56.314[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:01:56.326[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:01:56.329[debug] (userService.checkPassword) true
+2023-06-23 13:01:56.329[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:01:56.331[error] [object SequelizeInstance:User]
+2023-06-23 13:03:12.509[info] App start.
+2023-06-23 13:03:12.581[info] DB connection success
+2023-06-23 13:03:12.601[info] Sequelize sync success
+2023-06-23 13:03:15.067[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:03:15.079[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:03:15.082[debug] (userService.checkPassword) true
+2023-06-23 13:03:15.083[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:03:15.084[error] [object SequelizeInstance:User]
+2023-06-23 13:04:30.442[info] App start.
+2023-06-23 13:04:30.516[info] DB connection success
+2023-06-23 13:04:30.538[info] Sequelize sync success
+2023-06-23 13:06:15.259[info] App start.
+2023-06-23 13:06:15.335[info] DB connection success
+2023-06-23 13:06:15.354[info] Sequelize sync success
+2023-06-23 13:06:16.877[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:06:16.888[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:06:16.891[debug] (userService.checkPassword) true
+2023-06-23 13:06:16.892[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:06:16.893[error] [object SequelizeInstance:User]
+2023-06-23 13:06:28.577[info] App start.
+2023-06-23 13:06:28.658[info] DB connection success
+2023-06-23 13:06:28.680[info] Sequelize sync success
+2023-06-23 13:06:29.288[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:06:29.299[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:06:29.303[debug] (userService.checkPassword) true
+2023-06-23 13:06:29.314[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:06:29.316[error] [object SequelizeInstance:User]
+2023-06-23 13:06:33.824[info] App start.
+2023-06-23 13:06:33.899[info] DB connection success
+2023-06-23 13:06:33.918[info] Sequelize sync success
+2023-06-23 13:06:34.411[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:06:34.424[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:06:34.451[debug] (userService.checkPassword) true
+2023-06-23 13:06:34.465[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:06:34.469[error] [object SequelizeInstance:User]
+2023-06-23 13:06:46.027[info] App start.
+2023-06-23 13:06:46.109[info] DB connection success
+2023-06-23 13:06:46.131[info] Sequelize sync success
+2023-06-23 13:06:46.736[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:06:46.757[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:06:46.760[debug] (userService.checkPassword) true
+2023-06-23 13:06:46.761[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:06:46.763[error] [object SequelizeInstance:User]
+2023-06-23 13:07:23.306[info] App start.
+2023-06-23 13:07:23.379[info] DB connection success
+2023-06-23 13:07:23.398[info] Sequelize sync success
+2023-06-23 13:07:26.911[info] App start.
+2023-06-23 13:07:26.991[info] DB connection success
+2023-06-23 13:07:27.012[info] Sequelize sync success
+2023-06-23 13:07:27.718[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:07:27.730[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:07:27.733[debug] (userService.checkPassword) true
+2023-06-23 13:07:27.734[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:07:59.431[info] App start.
+2023-06-23 13:07:59.513[info] DB connection success
+2023-06-23 13:07:59.534[info] Sequelize sync success
+2023-06-23 13:08:00.237[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:08:00.260[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:08:00.270[debug] (userService.checkPassword) true
+2023-06-23 13:08:00.296[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:08:28.448[info] App start.
+2023-06-23 13:08:28.553[info] DB connection success
+2023-06-23 13:08:28.575[info] Sequelize sync success
+2023-06-23 13:08:29.441[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:08:29.451[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:08:29.454[debug] (userService.checkPassword) true
+2023-06-23 13:08:29.455[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:08:35.144[info] App start.
+2023-06-23 13:08:35.219[info] DB connection success
+2023-06-23 13:08:35.240[info] Sequelize sync success
+2023-06-23 13:08:38.322[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:08:38.332[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:08:38.334[debug] (userService.checkPassword) true
+2023-06-23 13:08:38.334[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:08:57.269[info] App start.
+2023-06-23 13:08:57.372[info] DB connection success
+2023-06-23 13:08:57.392[info] Sequelize sync success
+2023-06-23 13:08:59.368[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:08:59.379[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:08:59.382[debug] (userService.checkPassword) true
+2023-06-23 13:08:59.383[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:09:15.869[info] App start.
+2023-06-23 13:09:15.953[info] DB connection success
+2023-06-23 13:09:15.972[info] Sequelize sync success
+2023-06-23 13:09:17.314[info] App start.
+2023-06-23 13:09:17.389[info] DB connection success
+2023-06-23 13:09:17.408[info] Sequelize sync success
+2023-06-23 13:09:18.618[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:09:18.630[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:09:18.634[debug] (userService.checkPassword) true
+2023-06-23 13:09:18.635[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:09:31.997[info] App start.
+2023-06-23 13:09:32.072[info] DB connection success
+2023-06-23 13:09:32.093[info] Sequelize sync success
+2023-06-23 13:09:32.786[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:09:32.799[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:09:32.803[debug] (userService.checkPassword) true
+2023-06-23 13:09:32.804[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:10:08.789[info] App start.
+2023-06-23 13:10:08.868[info] DB connection success
+2023-06-23 13:10:08.890[info] Sequelize sync success
+2023-06-23 13:10:11.632[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:10:11.642[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:10:11.645[debug] (userService.checkPassword) true
+2023-06-23 13:10:11.646[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:10:16.389[info] App start.
+2023-06-23 13:10:16.463[info] DB connection success
+2023-06-23 13:10:16.483[info] Sequelize sync success
+2023-06-23 13:10:18.457[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:10:18.474[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:10:18.478[debug] (userService.checkPassword) true
+2023-06-23 13:10:18.479[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:10:38.109[info] App start.
+2023-06-23 13:10:38.188[info] DB connection success
+2023-06-23 13:10:38.208[info] Sequelize sync success
+2023-06-23 13:10:38.526[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:10:38.543[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:10:38.546[debug] (userService.checkPassword) true
+2023-06-23 13:10:38.547[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:11:13.096[info] App start.
+2023-06-23 13:11:13.171[info] DB connection success
+2023-06-23 13:11:13.189[info] Sequelize sync success
+2023-06-23 13:11:16.255[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:11:16.264[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:11:16.267[debug] (userService.checkPassword) true
+2023-06-23 13:11:16.269[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:11:23.979[info] App start.
+2023-06-23 13:11:24.060[info] DB connection success
+2023-06-23 13:11:24.080[info] Sequelize sync success
+2023-06-23 13:11:24.936[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:11:24.946[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:11:24.948[debug] (userService.checkPassword) true
+2023-06-23 13:11:24.948[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:12:32.227[info] App start.
+2023-06-23 13:12:32.302[info] DB connection success
+2023-06-23 13:12:32.320[info] Sequelize sync success
+2023-06-23 13:12:34.250[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:12:34.263[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:12:34.266[debug] (userService.checkPassword) true
+2023-06-23 13:12:34.267[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:13:39.037[info] App start.
+2023-06-23 13:13:39.112[info] DB connection success
+2023-06-23 13:13:39.132[info] Sequelize sync success
+2023-06-23 13:13:46.118[info] App start.
+2023-06-23 13:13:46.193[info] DB connection success
+2023-06-23 13:13:46.213[info] Sequelize sync success
+2023-06-23 13:13:49.924[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:13:49.936[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:13:49.938[debug] (userService.checkPassword) true
+2023-06-23 13:13:49.939[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:22:50.875[info] App start.
+2023-06-23 13:22:50.953[info] DB connection success
+2023-06-23 13:22:50.974[info] Sequelize sync success
+2023-06-23 13:23:01.682[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:23:01.700[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:23:01.702[debug] (userService.checkPassword) true
+2023-06-23 13:23:01.703[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:23:11.090[info] App start.
+2023-06-23 13:23:11.167[info] DB connection success
+2023-06-23 13:23:11.188[info] Sequelize sync success
+2023-06-23 13:23:35.138[info] App start.
+2023-06-23 13:23:35.218[info] DB connection success
+2023-06-23 13:23:35.239[info] Sequelize sync success
+2023-06-23 13:23:37.772[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:23:37.785[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:23:37.788[debug] (userService.checkPassword) true
+2023-06-23 13:23:37.788[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:26:46.839[info] App start.
+2023-06-23 13:26:46.916[info] DB connection success
+2023-06-23 13:26:46.934[info] Sequelize sync success
+2023-06-23 13:27:23.212[info] App start.
+2023-06-23 13:27:23.287[info] DB connection success
+2023-06-23 13:27:23.303[info] Sequelize sync success
+2023-06-23 13:27:34.479[info] App start.
+2023-06-23 13:27:34.582[info] DB connection success
+2023-06-23 13:27:34.604[info] Sequelize sync success
+2023-06-23 13:27:36.946[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:27:36.959[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:27:36.961[debug] (userService.checkPassword) true
+2023-06-23 13:27:36.962[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:28:10.773[info] App start.
+2023-06-23 13:28:10.850[info] DB connection success
+2023-06-23 13:28:10.873[info] Sequelize sync success
+2023-06-23 13:28:22.088[info] App start.
+2023-06-23 13:28:22.184[info] DB connection success
+2023-06-23 13:28:22.203[info] Sequelize sync success
+2023-06-23 13:28:23.323[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:28:23.335[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:28:23.338[debug] (userService.checkPassword) true
+2023-06-23 13:28:23.339[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:28:23.345[error] [object Object]
+2023-06-23 13:30:57.661[info] App start.
+2023-06-23 13:30:57.757[info] DB connection success
+2023-06-23 13:30:57.794[info] Sequelize sync success
+2023-06-23 13:30:59.166[info] App start.
+2023-06-23 13:30:59.248[info] DB connection success
+2023-06-23 13:30:59.272[info] Sequelize sync success
+2023-06-23 13:31:00.958[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:31:00.972[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:31:00.974[debug] (userService.checkPassword) true
+2023-06-23 13:31:00.976[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:31:00.980[error] [object Object]
+2023-06-23 13:34:30.446[info] App start.
+2023-06-23 13:34:30.524[info] DB connection success
+2023-06-23 13:34:30.545[info] Sequelize sync success
+2023-06-23 13:34:32.109[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:34:32.124[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:34:32.126[debug] (userService.checkPassword) true
+2023-06-23 13:34:32.129[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:35:12.353[info] App start.
+2023-06-23 13:35:12.433[info] DB connection success
+2023-06-23 13:35:12.453[info] Sequelize sync success
+2023-06-23 13:35:13.673[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 13:35:13.685[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:35:13.688[debug] (userService.checkPassword) true
+2023-06-23 13:35:13.689[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 13:39:09.376[info] App start.
+2023-06-23 13:39:09.449[info] DB connection success
+2023-06-23 13:39:09.468[info] Sequelize sync success
+2023-06-23 13:39:26.435[info] App start.
+2023-06-23 13:39:26.517[info] DB connection success
+2023-06-23 13:39:26.536[info] Sequelize sync success
+2023-06-23 13:44:14.552[info] App start.
+2023-06-23 13:44:14.688[info] DB connection success
+2023-06-23 13:44:14.717[info] Sequelize sync success
+2023-06-23 13:44:18.755[info] App start.
+2023-06-23 13:44:18.829[info] DB connection success
+2023-06-23 13:44:18.849[info] Sequelize sync success
+2023-06-23 13:45:13.309[info] App start.
+2023-06-23 13:45:13.384[info] DB connection success
+2023-06-23 13:45:13.406[info] Sequelize sync success
+2023-06-23 13:45:16.332[info] App start.
+2023-06-23 13:45:16.407[info] DB connection success
+2023-06-23 13:45:16.427[info] Sequelize sync success
+2023-06-23 13:45:20.690[info] App start.
+2023-06-23 13:45:20.765[info] DB connection success
+2023-06-23 13:45:20.783[info] Sequelize sync success
+2023-06-23 13:45:58.671[info] App start.
+2023-06-23 13:45:58.747[info] DB connection success
+2023-06-23 13:45:58.767[info] Sequelize sync success
+2023-06-23 13:46:40.474[info] (user.reg.params) {"username":"이름","userid":"test1","password":"1111","role":"member","email":"test1@test.com","phone":"010-1111-1111"}
+2023-06-23 13:46:40.476[debug] (userService.makePassword) "1111"
+2023-06-23 13:46:40.501[debug] (userService.reg) {"id":3,"username":"이름","userid":"test1","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedAt":"2023-06-23T04:46:40.480Z","createdAt":"2023-06-23T04:46:40.480Z"}
+2023-06-23 13:46:40.503[info] (user.reg.result) {"id":3,"username":"이름","userid":"test1","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedAt":"2023-06-23T04:46:40.480Z","createdAt":"2023-06-23T04:46:40.480Z"}
+2023-06-23 13:46:51.682[info] (auth.login.params) {"userid":"test1","password":"1111"}
+2023-06-23 13:46:51.683[error] (userService.login) TypeError: userDao.selectUserForLogin is not a function
+2023-06-23 13:47:02.597[info] App start.
+2023-06-23 13:47:02.674[info] DB connection success
+2023-06-23 13:47:02.694[info] Sequelize sync success
+2023-06-23 13:47:04.330[info] (auth.login.params) {"userid":"test1","password":"1111"}
+2023-06-23 13:47:04.342[debug] (userService.login) {"id":3,"userid":"test1","password":"pkqlXKKg8wSMwiHRdxo8ZsBIaFiVN2d17edxN6Ffs7PPfPfw15Y1TcKuO2QR/iRz2HhBkS2BNWKNGbJSBmZzxQ==.e5b7ee5890e537ac1ec6263fe7126d31372d2ca338b50ffb8a62a86dc409d6cb1e9eeb8cf8946c534e65211bf1729829fce788aa5527426dc7ad75445132bceb","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T04:46:40.000Z","updatedAt":"2023-06-23T04:46:40.000Z","deletedAt":null}
+2023-06-23 13:47:04.345[debug] (userService.checkPassword) true
+2023-06-23 13:47:04.345[info] (auth.login.result) {"id":3,"userid":"test1","password":"pkqlXKKg8wSMwiHRdxo8ZsBIaFiVN2d17edxN6Ffs7PPfPfw15Y1TcKuO2QR/iRz2HhBkS2BNWKNGbJSBmZzxQ==.e5b7ee5890e537ac1ec6263fe7126d31372d2ca338b50ffb8a62a86dc409d6cb1e9eeb8cf8946c534e65211bf1729829fce788aa5527426dc7ad75445132bceb","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T04:46:40.000Z","updatedAt":"2023-06-23T04:46:40.000Z","deletedAt":null}
+2023-06-23 13:49:46.609[info] App start.
+2023-06-23 13:49:46.683[info] DB connection success
+2023-06-23 13:49:46.702[info] Sequelize sync success
+2023-06-23 13:49:58.896[info] App start.
+2023-06-23 13:49:58.969[info] DB connection success
+2023-06-23 13:49:58.988[info] Sequelize sync success
+2023-06-23 14:05:26.529[info] App start.
+2023-06-23 14:05:26.606[info] DB connection success
+2023-06-23 14:05:26.624[info] Sequelize sync success
+2023-06-23 14:12:00.586[info] App start.
+2023-06-23 14:12:00.659[info] DB connection success
+2023-06-23 14:12:00.682[info] Sequelize sync success
+2023-06-23 14:13:29.562[info] App start.
+2023-06-23 14:13:29.638[info] DB connection success
+2023-06-23 14:13:29.659[info] Sequelize sync success
+2023-06-23 14:14:25.482[info] App start.
+2023-06-23 14:14:25.558[info] DB connection success
+2023-06-23 14:14:25.576[info] Sequelize sync success
+2023-06-23 14:15:45.646[info] App start.
+2023-06-23 14:15:45.720[info] DB connection success
+2023-06-23 14:15:45.740[info] Sequelize sync success
+2023-06-23 14:16:19.521[info] App start.
+2023-06-23 14:16:19.598[info] DB connection success
+2023-06-23 14:16:19.621[info] Sequelize sync success
+2023-06-23 14:16:45.503[error] Error: 토큰이 없습니다.
+2023-06-23 14:17:44.933[info] App start.
+2023-06-23 14:17:45.010[info] DB connection success
+2023-06-23 14:17:45.029[info] Sequelize sync success
+2023-06-23 14:22:57.465[info] App start.
+2023-06-23 14:22:57.545[info] DB connection success
+2023-06-23 14:22:57.567[info] Sequelize sync success
+2023-06-23 14:23:13.581[info] App start.
+2023-06-23 14:23:13.659[info] DB connection success
+2023-06-23 14:23:13.683[info] Sequelize sync success
+2023-06-23 14:23:15.100[info] App start.
+2023-06-23 14:23:15.181[info] DB connection success
+2023-06-23 14:23:15.205[info] Sequelize sync success
+2023-06-23 14:23:21.508[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 14:23:21.517[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 14:23:21.519[debug] (userService.checkPassword) true
+2023-06-23 14:23:21.520[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 14:24:55.935[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-23 14:24:55.946[debug] (userService.login) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 14:24:55.949[debug] (userService.checkPassword) true
+2023-06-23 14:24:55.950[info] (auth.login.result) {"id":2,"userid":"test","password":"7rGJSkwsJgQidrwWfq9HvXuXUDsOz2bGSLu94MGU/1lfMj6xRA2Yi6yR9iG8V/spbBbJOaXBnhwH1JjvY/bRWQ==.55e61920b3e9ef9738bdd3c6c4a7ecb75c947472e726c061d70cbcd60face0a39b906f12d19253c68c9abd0ebbbefa439b0ce7c32901109f98622228bb4393d0","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedPwDate":null,"createdAt":"2023-06-23T02:00:39.000Z","updatedAt":"2023-06-23T02:00:39.000Z","deletedAt":null}
+2023-06-23 14:25:49.526[info] App start.
+2023-06-23 14:25:49.601[info] DB connection success
+2023-06-23 14:25:49.617[info] Sequelize sync success
+2023-06-23 14:28:28.361[info] App start.
+2023-06-23 14:28:28.433[info] DB connection success
+2023-06-23 14:28:28.453[info] Sequelize sync success
+2023-06-23 14:34:06.252[info] App start.
+2023-06-23 14:34:06.327[info] DB connection success
+2023-06-23 14:34:06.343[info] Sequelize sync success
+2023-06-23 14:51:37.548[info] App start.
+2023-06-23 14:51:37.634[info] DB connection success
+2023-06-23 14:51:37.657[info] Sequelize sync success
+2023-06-23 14:52:12.453[info] App start.
+2023-06-23 14:52:12.530[info] DB connection success
+2023-06-23 14:52:12.551[info] Sequelize sync success
+2023-06-23 15:20:43.923[info] App start.
+2023-06-23 15:20:44.002[info] DB connection success
+2023-06-23 15:20:44.023[info] Sequelize sync success
+2023-06-23 15:22:23.576[info] App start.
+2023-06-23 15:22:23.652[info] DB connection success
+2023-06-23 15:22:23.673[info] Sequelize sync success
+2023-06-23 15:23:46.457[info] App start.
+2023-06-23 15:23:46.583[info] DB connection success
+2023-06-23 15:23:46.603[info] Sequelize sync success
+2023-06-23 16:37:56.958[info] App start.
+2023-06-23 16:37:57.052[info] DB connection success
+2023-06-23 16:37:57.072[info] Sequelize sync success
+2023-06-23 16:51:53.410[info] App start.
+2023-06-23 16:51:53.491[info] DB connection success
+2023-06-23 16:51:53.514[info] Sequelize sync success
+2023-06-23 16:54:20.453[info] App start.
+2023-06-23 16:54:20.569[info] DB connection success
+2023-06-23 16:54:20.594[info] Sequelize sync success
+2023-06-23 17:24:27.344[info] App start.
+2023-06-23 17:24:27.435[info] DB connection success
+2023-06-23 17:24:27.456[info] Sequelize sync success
+2023-06-23 17:25:06.024[info] App start.
+2023-06-23 17:25:06.111[info] DB connection success
+2023-06-23 17:25:06.133[info] Sequelize sync success
+2023-06-23 17:25:24.433[info] App start.
+2023-06-23 17:25:24.521[info] DB connection success
+2023-06-23 17:25:24.545[info] Sequelize sync success
+2023-06-23 17:27:01.664[info] App start.
+2023-06-23 17:27:01.749[info] DB connection success
+2023-06-23 17:27:01.769[info] Sequelize sync success
+2023-06-23 17:27:21.967[info] App start.
+2023-06-23 17:27:22.050[info] DB connection success
+2023-06-23 17:27:22.072[info] Sequelize sync success
+2023-06-23 17:35:12.677[info] App start.
+2023-06-23 17:35:12.763[info] DB connection success
+2023-06-23 17:35:12.783[info] Sequelize sync success
+2023-06-23 17:36:09.188[info] App start.
+2023-06-23 17:36:09.270[info] DB connection success
+2023-06-23 17:36:09.290[info] Sequelize sync success
+2023-06-23 17:36:47.385[info] App start.
+2023-06-23 17:36:47.488[info] DB connection success
+2023-06-23 17:36:47.512[info] Sequelize sync success
+2023-06-23 17:39:26.701[info] App start.
+2023-06-23 17:39:26.789[info] DB connection success
+2023-06-23 17:39:26.811[info] Sequelize sync success
+2023-06-23 17:41:51.162[info] App start.
+2023-06-23 17:41:51.247[info] DB connection success
+2023-06-23 17:41:51.267[info] Sequelize sync success
+2023-06-23 17:57:09.213[info] App start.
+2023-06-23 17:57:09.297[info] DB connection success
+2023-06-23 17:57:09.323[info] Sequelize sync success
+2023-06-23 17:57:31.847[info] App start.
+2023-06-23 17:57:31.934[info] DB connection success
+2023-06-23 17:57:31.958[info] Sequelize sync success
+2023-06-23 17:57:44.186[info] App start.
+2023-06-23 17:57:44.268[info] DB connection success
+2023-06-23 17:57:44.288[info] Sequelize sync success
+2023-06-23 17:59:49.082[info] App start.
+2023-06-23 17:59:49.168[info] DB connection success
+2023-06-23 17:59:49.189[info] Sequelize sync success
+2023-06-23 18:00:06.004[info] App start.
+2023-06-23 18:00:06.090[info] DB connection success
+2023-06-23 18:00:06.110[info] Sequelize sync success
+2023-06-23 18:01:15.067[info] App start.
+2023-06-23 18:01:15.152[info] DB connection success
+2023-06-23 18:01:15.198[info] Sequelize sync success
+2023-06-23 18:01:27.576[info] App start.
+2023-06-23 18:01:27.660[info] DB connection success
+2023-06-23 18:01:27.679[info] Sequelize sync success
+2023-06-23 18:03:03.039[info] App start.
+2023-06-23 18:03:03.122[info] DB connection success
+2023-06-23 18:03:03.141[info] Sequelize sync success
+2023-06-23 18:03:07.661[info] App start.
+2023-06-23 18:03:07.746[info] DB connection success
+2023-06-23 18:03:07.766[info] Sequelize sync success
+2023-06-23 18:03:52.370[info] App start.
+2023-06-23 18:03:52.458[info] DB connection success
+2023-06-23 18:03:52.480[info] Sequelize sync success
+2023-06-23 18:07:01.573[info] App start.
+2023-06-23 18:07:01.659[info] DB connection success
+2023-06-23 18:07:01.682[info] Sequelize sync success
+2023-06-23 18:12:24.895[info] App start.
+2023-06-23 18:12:24.976[info] DB connection success
+2023-06-23 18:12:24.996[info] Sequelize sync success
+2023-06-23 18:12:45.716[info] App start.
+2023-06-23 18:12:45.832[info] DB connection success
+2023-06-23 18:12:45.851[info] Sequelize sync success
+2023-06-23 18:12:58.336[info] App start.
+2023-06-23 18:12:58.417[info] DB connection success
+2023-06-23 18:12:58.440[info] Sequelize sync success
+2023-06-23 18:13:21.979[info] App start.
+2023-06-23 18:13:22.063[info] DB connection success
+2023-06-23 18:13:22.082[info] Sequelize sync success
+2023-06-23 18:18:22.376[info] App start.
+2023-06-23 18:18:22.472[info] DB connection success
+2023-06-23 18:18:22.491[info] Sequelize sync success
+2023-06-23 18:19:44.634[info] App start.
+2023-06-23 18:19:44.754[info] DB connection success
+2023-06-23 18:19:44.777[info] Sequelize sync success
+2023-06-23 18:23:27.164[info] App start.
+2023-06-23 18:23:27.308[info] DB connection success
+2023-06-23 18:23:27.347[info] Sequelize sync success
+2023-06-23 18:25:01.837[info] App start.
+2023-06-23 18:25:01.937[info] DB connection success
+2023-06-23 18:25:01.959[info] Sequelize sync success
+2023-06-23 18:25:35.260[info] App start.
+2023-06-23 18:25:35.346[info] DB connection success
+2023-06-23 18:25:35.366[info] Sequelize sync success
+2023-06-23 18:26:19.417[info] App start.
+2023-06-23 18:26:19.508[info] DB connection success
+2023-06-23 18:26:19.529[info] Sequelize sync success
+2023-06-23 18:26:35.282[info] App start.
+2023-06-23 18:26:35.362[info] DB connection success
+2023-06-23 18:26:35.385[info] Sequelize sync success
+2023-06-23 18:27:59.607[info] App start.
+2023-06-23 18:27:59.692[info] DB connection success
+2023-06-23 18:27:59.716[info] Sequelize sync success
+2023-06-23 18:28:36.686[info] App start.
+2023-06-23 18:28:36.769[info] DB connection success
+2023-06-23 18:28:36.800[info] Sequelize sync success
+2023-06-23 18:28:50.893[info] App start.
+2023-06-23 18:28:50.975[info] DB connection success
+2023-06-23 18:28:50.996[info] Sequelize sync success
+2023-06-23 18:32:25.632[info] App start.
+2023-06-23 18:32:25.714[info] DB connection success
+2023-06-23 18:32:25.735[info] Sequelize sync success
+2023-06-23 18:32:48.201[info] App start.
+2023-06-23 18:32:48.279[info] DB connection success
+2023-06-23 18:32:48.300[info] Sequelize sync success
+2023-06-23 18:32:58.716[info] App start.
+2023-06-23 18:32:58.851[info] DB connection success
+2023-06-23 18:32:58.869[info] Sequelize sync success
+2023-06-23 18:34:36.666[info] App start.
+2023-06-23 18:34:36.753[info] DB connection success
+2023-06-23 18:34:36.787[info] Sequelize sync success
+2023-06-23 18:34:58.313[info] App start.
+2023-06-23 18:34:58.407[info] DB connection success
+2023-06-23 18:34:58.430[info] Sequelize sync success
+2023-06-23 18:35:03.780[info] App start.
+2023-06-23 18:35:03.869[info] DB connection success
+2023-06-23 18:35:03.894[info] Sequelize sync success
+2023-06-23 18:35:29.755[info] App start.
+2023-06-23 18:35:29.849[info] DB connection success
+2023-06-23 18:35:29.872[info] Sequelize sync success
+2023-06-23 18:35:31.968[info] App start.
+2023-06-23 18:35:32.061[info] DB connection success
+2023-06-23 18:35:32.084[info] Sequelize sync success
+2023-06-23 18:36:28.406[info] App start.
+2023-06-23 18:36:28.493[info] DB connection success
+2023-06-23 18:36:28.513[info] Sequelize sync success
+2023-06-23 18:36:47.546[info] App start.
+2023-06-23 18:36:47.627[info] DB connection success
+2023-06-23 18:36:47.663[info] Sequelize sync success
+2023-06-23 18:40:34.440[info] App start.
+2023-06-23 18:40:34.523[info] DB connection success
+2023-06-23 18:40:34.606[info] Sequelize sync success
+2023-06-23 18:48:58.822[info] App start.
+2023-06-23 18:48:58.904[info] DB connection success
+2023-06-23 18:48:58.924[info] Sequelize sync success
+2023-06-23 18:51:35.418[info] App start.
+2023-06-23 18:51:35.500[info] DB connection success
+2023-06-23 18:51:35.521[info] Sequelize sync success
+2023-06-23 18:53:48.830[info] App start.
+2023-06-23 18:53:48.909[info] DB connection success
+2023-06-23 18:53:48.930[info] Sequelize sync success
+2023-06-23 18:57:29.667[info] App start.
+2023-06-23 18:57:29.747[info] DB connection success
+2023-06-23 18:57:29.770[info] Sequelize sync success

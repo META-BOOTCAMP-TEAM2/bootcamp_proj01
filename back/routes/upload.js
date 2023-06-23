@@ -51,7 +51,7 @@ router.post("/", upload.single("file"), async (req, res) => {
 });
 
 // 리스트 조회
-router.get("/", async (req, res) => {
+router.get("/", isLoggedIn, async (req, res) => {
   try {
     const params = {
       title: req.query.title,

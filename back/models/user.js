@@ -5,9 +5,6 @@ module.exports = class User extends Sequelize.Model {
   static init(sequelize) {
     return super.init(
       {
-        name: {
-          type: Sequelize.STRING(100),
-        },
         userid: {
           type: Sequelize.STRING(255),
           unique: true,
@@ -15,16 +12,32 @@ module.exports = class User extends Sequelize.Model {
         },
         password: {
           type: Sequelize.STRING(500),
+          allowNull: true,
+        },
+        username: {
+          type: Sequelize.STRING(100),
           allowNull: false,
         },
         role: {
           type: Sequelize.STRING(20),
+          allowNull: true,
         },
         email: {
           type: Sequelize.STRING(255),
+          allowNull: true,
         },
         phone: {
           type: Sequelize.STRING(255),
+          allowNull: true,
+        },
+        provider: {
+          type: Sequelize.ENUM("local", "kakao", "google"),
+          allowNull: false,
+          defaultValue: "local",
+        },
+        snsId: {
+          type: Sequelize.STRING(30),
+          allowNull: true,
         },
         updatedPwDate: {
           type: Sequelize.DATE,
@@ -49,12 +62,22 @@ module.exports = class User extends Sequelize.Model {
     // });
   }
 
-  static includeAttributes = ["id", "name", "role", "email", "phone"];
+  static includeAttributes = ["id", "username", "role", "email", "phone"];
 };
 
-// 이름	name	varchar(100)
+// static associate(db) {
+//   db.User.belongsTo(db.Department, { foreignKey: { name: 'departmentId', onDelete: 'SET NULL', as: 'Department' } });
+//   db.User.hasMany(db.Board, { foreignKey: { name: 'userId', onDelete: 'SET NULL', as: 'Boards' } });
+//   db.User.hasMany(db.Post, { foreignKey: { name: 'userId', onDelete: 'SET NULL', as: 'Posts' } });
+//   db.User.hasMany(db.Comment, { foreignKey: { name: 'userId', onDelete: 'SET NULL', as: 'Comments' } });
+// }
+
+// static includeAttributes = ['id', 'name', 'role', 'email', 'phone'];
+// };
+
 // 아이디	userid	varchar(255)	unique, not null
 // 비밀번호	password	varchar(500)	not null
+// 이름	username	varchar(100)
 // 사용자권한	role	varchar(20)
 // 이메일	email	varchar(255)
 // 전화번호	phone	varchar(255)

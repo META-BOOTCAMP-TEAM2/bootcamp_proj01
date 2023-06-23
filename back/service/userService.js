@@ -3,12 +3,50 @@ const logger = require("../lib/logger");
 const userDao = require("../dao/userDao");
 const hashUtil = require("../lib/hashUtil");
 const service = {
-  // login 프로세스
+  // service_reg [유저 등록]
+  async reg(params) {
+    let inserted = null;
+    // 1. 비밀번호 암호화
+    let hashPassword = null;
+    try {
+      hashPassword = await hashUtil.makePasswordHash(params.password);
+      logger.debug(
+        `(userService.makePassword) ${JSON.stringify(params.password)}`
+      );
+    } catch (err) {
+      logger.error(`(userService.makePassword) ${err.toString()}`);
+      return new Promise((resolve, reject) => {
+        reject(err.toString());
+      });
+    }
+
+    // 2. 사용자 등록 처리
+    const newParams = {
+      ...params,
+      password: hashPassword,
+    };
+
+    try {
+      inserted = await userDao.insert(newParams);
+      logger.debug(`(userService.reg) ${JSON.stringify(inserted)}`);
+    } catch (err) {
+      logger.error(`(userService.reg) ${err.toString()}`);
+      return new Promise((resolve, reject) => {
+        reject(err.toString());
+      });
+    }
+
+    // 결과값 리턴
+    return new Promise((resolve) => {
+      resolve(inserted);
+    });
+  },
+  // service_reg [유저 로그인]
   async login(params) {
     // 1. 사용자 조회
     let user = null;
     try {
-      user = await userDao.selectUser(params);
+      user = await userDao.selectUserForLogin(params);
       logger.debug(`(userService.login) ${JSON.stringify(user)}`);
 
       // 해당 사용자가 없는 경우 튕겨냄
@@ -53,45 +91,6 @@ const service = {
 
     return new Promise((resolve) => {
       resolve(user);
-    });
-  },
-
-  // service_reg [유저 등록]
-  async reg(params) {
-    let inserted = null;
-    // 1. 비밀번호 암호화
-    let hashPassword = null;
-    try {
-      hashPassword = await hashUtil.makePasswordHash(params.password);
-      logger.debug(
-        `(userService.makePassword) ${JSON.stringify(params.password)}`
-      );
-    } catch (err) {
-      logger.error(`(userService.makePassword) ${err.toString()}`);
-      return new Promise((resolve, reject) => {
-        reject(err.toString());
-      });
-    }
-
-    // 2. 사용자 등록 처리
-    const newParams = {
-      ...params,
-      password: hashPassword,
-    };
-
-    try {
-      inserted = await userDao.insert(newParams);
-      logger.debug(`(userService.reg) ${JSON.stringify(inserted)}`);
-    } catch (err) {
-      logger.error(`(userService.reg) ${err.toString()}`);
-      return new Promise((resolve, reject) => {
-        reject(err.toString());
-      });
-    }
-
-    // 결과값 리턴
-    return new Promise((resolve) => {
-      resolve(inserted);
     });
   },
 

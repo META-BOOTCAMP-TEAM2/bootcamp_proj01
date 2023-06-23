@@ -5,37 +5,6 @@ const logger = require("../lib/logger");
 const userService = require("../service/userService");
 const { isLoggedIn } = require("../lib/middleware");
 
-// // 로컬 회원가입
-// router.post("/join", async (req, res) => {
-//   try {
-//     const params = {
-//       name: req.body.name,
-//       userid: req.body.userid,
-//       password: req.body.password,
-//       email: req.body.email,
-//       phone: req.body.phone,
-//     };
-//     logger.info(`(user.reg.params) ${JSON.stringify(params)}`);
-
-//     // 입력값 null 체크 -> front에서 input required 하므로 불필요한 코드
-//     if (!params.name || !params.userid || !params.password) {
-//       const err = new Error("Not allowed null (name, userid, password)");
-//       logger.error(err.toString());
-
-//       res.status(500).json({ err: err.toString() });
-//     }
-
-//     // 비즈니스 로직 호출
-//     const result = await userService.reg(params);
-//     logger.info(`(user.reg.result) ${JSON.stringify(result)}`);
-
-//     // 최종 응답
-//     res.status(200).json(result);
-//   } catch (err) {
-//     res.status(500).json({ err: err.toString() });
-//   }
-// });
-
 // // 리스트 조회
 // router.get("/", async (req, res) => {
 //   try {
@@ -58,7 +27,7 @@ const { isLoggedIn } = require("../lib/middleware");
 // 상세정보 조회
 // router.get("/:id", isLoggedIn, async (req, res) => {
 //  "/:id"는 경로 매개변수. 동적으로 값을 캡처함.  예를 들어 "/users/123"과 같은 요청에서 123은 id 매개변수에 할당.
-router.get("/:id", async (req, res) => {
+router.get("/:id", isLoggedIn, async (req, res) => {
   try {
     console.log(req.params);
     const params = {
