@@ -123,6 +123,7 @@ import "./stylePages.css";
 const ListingDetail = () => {
   const storedData = sessionStorage.getItem("myData");
   const data = JSON.parse(storedData);
+  console.log(data);
 
   return (
     <div className="listingDetail">
@@ -134,26 +135,25 @@ const ListingDetail = () => {
             {/* { data.img.map((imgUrl, index) => ( */}
             <div>
               <img
-                src={"http://localhost:8000/uploads/" + data.img1}
+                src={"http://localhost:8000/uploads/" + data.filename1}
                 alt="Property Image"
                 style={{ width: "600px", height: "400px" }}
               />
             </div>
             <div>
               <img
-                src={"http://localhost:8000/uploads/" + data.img2}
+                src={"http://localhost:8000/uploads/" + data.filename2}
                 alt="Property Image"
                 style={{ width: "600px", height: "400px" }}
               />
             </div>
             <div>
               <img
-                src={"http://localhost:8000/uploads/" + data.img3}
+                src={"http://localhost:8000/uploads/" + data.filename3}
                 alt="Property Image"
                 style={{ width: "600px", height: "400px" }}
               />
             </div>
-            {/* ))}  */}
           </Carousel>
           <div className="keyContent">
             <h3>중요 정보</h3>

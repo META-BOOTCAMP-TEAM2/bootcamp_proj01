@@ -133,7 +133,6 @@ import React, { useState, useEffect, useRef } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "./stylePages.css";
-import { Link } from "react-router-dom";
 import axios from "axios";
 
 const Listing = () => {
@@ -177,6 +176,13 @@ const Listing = () => {
         console.error(error);
       });
   }, [currentUser, filteredPropertyType, sortByPrice]);
+  const storedData = sessionStorage.getItem("myData");
+  const data = JSON.parse(storedData);
+  const imgClick = (item) => {
+    const newUrl = `http://localhost:3000/listDetail`;
+    const newWindow = window.open(newUrl);
+    newWindow.sessionStorage.setItem("myData", JSON.stringify(item));
+  };
 
   const filterByPropertyType = (propertyType) => {
     setFilteredPropertyType(propertyType);
@@ -238,32 +244,31 @@ const Listing = () => {
         <div key={rowIndex} className="row">
           {row.map((item, itemIndex) => (
             <div key={itemIndex} className="item">
-              <Link to={`/listDetail`} className="box">
+              <div>
+                <img
+                  src={"http://localhost:8000/uploads/" + item.filename1}
+                  alt="Property"
+                  style={{ width: "300px", height: "200px" }}
+                  onClick={() => imgClick(item)}
+                />
+              </div>
+              <div>계약 방식: {item.propertyType}</div>
+              <br />
+              <div>주소: {item.address}</div>
+              <br />
+
+              {item.propertyType === "매매" && <div>매매가: {item.price}</div>}
+              {item.propertyType === "전세" && <div>보증금: {item.deposit}</div>}
+              {item.propertyType === "월세" && (
                 <div>
-                  <img
-                    src={"http://localhost:8000/uploads/" + item.filename1}
-                    alt="Property"
-                    style={{ width: "300px", height: "200px" }}
-                  />
+                  보증금: {item.deposit}, 월세: {item.monthlyRent}
                 </div>
-                <div>계약 방식: {item.propertyType}</div>
-                <br />
-                <div>주소: {item.address}</div>
-                <br />
+              )}
 
-                {item.propertyType === "매매" && <div>매매가: {item.price}</div>}
-                {item.propertyType === "전세" && <div>보증금: {item.deposit}</div>}
-                {item.propertyType === "월세" && (
-                  <div>
-                    보증금: {item.deposit}, 월세: {item.monthlyRent}
-                  </div>
-                )}
-
-                <br />
-                <div>방 구조: {item.structure}</div>
-                <br />
-                {/* <div>해당 옵션: {item.options.join(", ")}</div> */}
-              </Link>
+              <br />
+              <div>방 구조: {item.structure}</div>
+              <br />
+              {/* <div>해당 옵션: {item.options.join(", ")}</div> */}
             </div>
           ))}
         </div>

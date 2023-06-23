@@ -6,7 +6,7 @@ import axios from "axios";
 import addressChange from "./addressChange";
 const { kakao } = window;
 
-const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
+const Map = React.memo(({ selectedCity, selectedArea, hoveredArea }) => {
   useEffect(() => {
     let data;
     if (selectedCity === "서울특별시") {
@@ -95,9 +95,9 @@ const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
             deposit: item.deposit,
             monthlyRent: item.monthlyRent,
             additionalInfo: item.additionalInfo,
-            img1: item.filename1,
-            img2: item.filename2,
-            img3: item.filename3,
+            filename1: item.filename1,
+            filename2: item.filename2,
+            filename3: item.filename3,
           };
           console.log(marker.userData1);
 
@@ -149,9 +149,9 @@ const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
           propertyType: marker.userData.propertyType,
           options: marker.userData.options,
           additionalInfo: marker.userData.additionalInfo,
-          img1: marker.userData.img1,
-          img2: marker.userData.img2,
-          img3: marker.userData.img3,
+          filename1: marker.userData.filename1,
+          filename2: marker.userData.filename2,
+          filename3: marker.userData.filename3,
         };
 
         console.log(info);
@@ -212,6 +212,6 @@ const Map = ({ selectedCity, selectedArea, hoveredArea }) => {
       <div id="map" style={{ width: "700px", height: "700px" }}></div>
     </div>
   );
-};
+});
 
 export default Map;

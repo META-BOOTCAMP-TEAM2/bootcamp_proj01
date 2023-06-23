@@ -98,7 +98,7 @@ const Listing = () => {
               <div className="box">
                 <div>
                   <img
-                    src={"http://localhost:8000/uploads/" + item.img1}
+                    src={"http://localhost:8000/uploads/" + item.filename1}
                     alt="Property"
                     style={{ width: "300px", height: "200px" }}
                     onClick={() => imgClick(item)}
