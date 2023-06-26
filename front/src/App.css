@@ -113,6 +113,7 @@ input {
   text-decoration: none;
 } */
 
+/*
 html,
 body {
   margin: 0;
@@ -200,8 +201,9 @@ body {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-}
+}*/
 /* 업로드 페이지 */
+/*
 input {
   width: 50px;
   padding: 15px 20px;
@@ -227,4 +229,4 @@ input {
 .link {
   color: inherit;
   text-decoration: none;
-}
+} */

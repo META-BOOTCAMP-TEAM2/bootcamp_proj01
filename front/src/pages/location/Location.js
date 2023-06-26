@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import areas from "./areas";
 import Map from "../../components/Map";
-import "./Location.css";
+import "../stylePages.css";
 
 const Location = () => {
   const [selectedCity, setSelectedCity] = useState("");
@@ -48,7 +48,9 @@ const Location = () => {
                     <td
                       onMouseEnter={() => handleAreaMouseEnter(city)}
                       onMouseLeave={handleAreaMouseLeave}
-                      onClick={() => handleCityChange({ target: { value: city } })}
+                      onClick={() =>
+                        handleCityChange({ target: { value: city } })
+                      }
                       className={selectedCity === city ? "selected" : ""}
                     >
                       {city}
@@ -72,7 +74,9 @@ const Location = () => {
                       <td
                         onMouseEnter={() => handleAreaMouseEnter(area)}
                         onMouseLeave={handleAreaMouseLeave}
-                        onClick={() => handleAreaChange({ target: { value: area } })}
+                        onClick={() =>
+                          handleAreaChange({ target: { value: area } })
+                        }
                         className={selectedArea === area ? "selected" : ""}
                       >
                         {area}
