@@ -110,29 +110,39 @@ const MyPage = () => {
       alert(err);
     }
   };
-
   return (
-    <div className="MyPage">
+    <div>
       <Header />
-      <div className="Title">
-        <h2>My Page</h2>
-      </div>
-      <div className="content">
-        <h3>나의 정보</h3>
-        {/* 여기에 필요한 사용자 정보를 직접 출력할 수 있습니다 */}
-        <p> 이름 : {userInfo.name}</p>
-        <p> 아이디 : {userInfo.userid}</p>
-        <p> 이메일 주소 : {userInfo.email}</p>
-        <p> 연락처 : {userInfo.phone}</p>
-      </div>
+      <div className="myPage">
+        <div className="myPageImg"></div>
+        <div className="myPageContent">
+          <div className="myPageTitle">
+            <h2>My Page</h2>
+          </div>
 
-      <button className="myUpLoad" onClick={() => btnClick1()}>
-        내가 올린 매물
-      </button>
-      <button className="myUpLoad" onClick={() => btnClick2()}>
-        내가 찜한 매물
-      </button>
+          <div className="myPageBox">
+            <h3 className="myPageSubTitle">나의 정보</h3>
+            <div className="myPageInfo">
+              {" "}
+              <p> 이름 : {userInfo.name}</p>
+              <p> 아이디 : {userInfo.userid}</p>
+              <p> 이메일 주소 : {userInfo.email}</p>
+              <p> 연락처 : {userInfo.phone}</p>
+            </div>
+          </div>
 
+          <div>
+            <button className="myUpLoad" onClick={() => btnClick1()}>
+              내가 올린 매물
+            </button>
+            <div>
+              <button className="myUpLoad" onClick={() => btnClick2()}>
+                내가 찜한 매물
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );

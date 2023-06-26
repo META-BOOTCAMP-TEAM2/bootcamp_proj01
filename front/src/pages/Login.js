@@ -32,65 +32,67 @@ const LoginForm = () => {
     }
   };
 
-  // const handleGoogleLogin = () => {
-  //   // 구글 소셜 로그인 처리
-  // };
+  const handleGoogleLogin = () => {
+    // 구글 소셜 로그인 처리
+  };
 
-  // const handleKakaoLogin = () => {
-  //   // 카카오 소셜 로그인 처리
-  // };
+  const handleKakaoLogin = () => {
+    // 카카오 소셜 로그인 처리
+  };
 
   return (
-    <>
+    <div>
       <Header />
-      <div className="Login">
-        <h2>로그인</h2>
-        <div>서비스 이용을 위해 로그인해주세요</div>
-        <form onSubmit={handleSubmit}>
-          <input
-            required
-            className="input-group"
-            type="text"
-            placeholder="아이디 입력"
-            name="userid"
-            // onChange={(e) => setUsername(e.target.value)}
-            onChange={handleChange}
-          />
-          <br />
-          <input
-            className="input-group"
-            type="password"
-            placeholder="비밀번호 입력"
-            name="password"
-            onChange={handleChange}
-          />
-          <br />
-          <button onClick={handleSubmit}>로그인</button>
+      <div className="login">
+        <div className="loginBackColor">
+          <div className="loginTitle">
+            <h2>로그인</h2>
+            <div>서비스 이용을 위해 로그인해주세요</div>
+          </div>
+          <form className="loginContent" onSubmit={handleSubmit}>
+            <div>
+              <input
+                className="loginBox"
+                required
+                type="text"
+                placeholder="아이디 입력"
+                name="userid"
+                // onChange={(e) => setUsername(e.target.value)}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <input
+                className="loginBox"
+                required
+                type="password"
+                placeholder="비밀번호 입력"
+                name="password"
+                onChange={handleChange}
+              />
+            </div>
+            <button className="loginSubmitButton" onClick={handleSubmit}>
+              로그인
+            </button>
+            <button type="button" onClick={handleGoogleLogin} className="loginButtonGoogle">
+              Login With Google
+            </button>
+            <button type="button" onClick={handleKakaoLogin} className="loginButtonKakao">
+              Login With Kakao
+            </button>
+            {err && <p>{err}</p>}
 
-          {/* <button
-            type="button"
-            onClick={handleGoogleLogin}
-            className="buttonGoogle"
-          >
-            Login With Google
-          </button> */}
-          <br />
-          {/* <button
-            type="button"
-            onClick={handleKakaoLogin}
-            className="buttonKakao"
-          >
-            Login With Kakao
-          </button> */}
-          <br />
-          {err && <p>{err}</p>}
-        </form>
-        <p className="linkSign">
-          계정이 있으신가요? <Link to="/signup">회원가입</Link>
-        </p>
+            <div className="loginInSignText">
+              계정이 있으신가요?{" "}
+              <Link className="loginInSign" to="/signup">
+                회원가입
+              </Link>
+            </div>
+          </form>
+        </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

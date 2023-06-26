@@ -84,73 +84,89 @@ const SignUpPage = () => {
   return (
     <div>
       <Header />
-      <div className="Sign">
-        <h2>회원가입</h2>
-        <br></br>
-        <form>
-          <div>
-            <input
-              className="signbox"
-              required
-              type="text"
-              placeholder="이름 (예: 유비씨)"
-              name="name"
-              onChange={handleChange}
-            />
+      <div className="sign">
+        <div className="signBackColor">
+          <div className="signTitle">
+            <h2>회원정보 입력</h2>
           </div>
-          <div>
-            <input
-              className="signbox"
-              required
-              type="text"
-              placeholder="아이디 (예: team)"
-              name="userid"
-              onChange={handleChange}
-            />
-            <button onClick={handleDuplicateCheck}>중복확인</button>
-            {isUsernameValid === true && <p>가입 가능한 회원입니다.</p>}
-            {isUsernameValid === false && <p>중복된 사용자 이름입니다.</p>}
-          </div>
-          <div>
-            <input
-              className="signbox"
-              required
-              type="password"
-              placeholder="비밀번호"
-              name="password"
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <input
-              className="signbox"
-              required
-              type="email"
-              placeholder="이메일 (예: test@test.com)"
-              name="email"
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <input
-              className="signbox"
-              required
-              type="text"
-              placeholder="연락처 (예: 010-1111-1111)"
-              name="phone"
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <button className="submitButton" onClick={handleSubmit} disabled={!isUsernameValid}>
-              가입하기
-            </button>
-          </div>
-          {err && <p>{err}</p>}
-          <div>
-            계정이 있으신가요? <Link to="/login">Login</Link>
-          </div>
-        </form>
+          <form>
+            <div>
+              <input
+                className="signBox"
+                required
+                type="text"
+                placeholder="이름 (예: 홍길동)"
+                name="name"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <input
+                className="signBox"
+                required
+                type="text"
+                placeholder="아이디 (예: team)"
+                name="userid"
+                onChange={handleChange}
+              />
+              <button className="idCheckButton" onClick={handleDuplicateCheck}>
+                중복확인
+              </button>
+              {isUsernameValid === true && <p className="signBoxText1">가입 가능한 회원입니다.</p>}
+              {isUsernameValid === false && (
+                <p className="signBoxText2">중복된 사용자 이름입니다.</p>
+              )}
+            </div>
+            <div>
+              <input
+                className="signBox"
+                required
+                type="password"
+                placeholder="비밀번호"
+                name="password"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <input
+                className="signBox"
+                required
+                type="email"
+                placeholder="이메일 (예: test@test.com)"
+                name="email"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <input
+                className="signBox"
+                required
+                type="text"
+                placeholder="연락처 (예: 010-1111-1111)"
+                name="phone"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="signContent">
+              <div>
+                <button
+                  className="signSubmitButton"
+                  onClick={handleSubmit}
+                  disabled={!isUsernameValid}
+                >
+                  가입하기
+                </button>
+              </div>
+              {err && <p>{err}</p>}
+              <div>
+                계정이 있으신가요?
+                <Link className="signInLogin" to="/login">
+                  Login
+                </Link>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
       <Footer />
     </div>

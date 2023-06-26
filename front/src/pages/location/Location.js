@@ -30,12 +30,14 @@ const Location = () => {
   };
 
   return (
-    <>
+    <div>
+      <Header />
       <div className="location">
-        <Header />
-        <h2 id="title">지역을 선택하세요</h2>
-        <div className="totalContents">
-          <div className="table1">
+        <div className="locationTitle">
+          <h2>지역을 선택하세요</h2>
+        </div>
+        <div className="locationContent">
+          <div className="locationTable1">
             <table style={{ borderCollapse: "collapse" }}>
               <thead>
                 <tr>
@@ -48,9 +50,7 @@ const Location = () => {
                     <td
                       onMouseEnter={() => handleAreaMouseEnter(city)}
                       onMouseLeave={handleAreaMouseLeave}
-                      onClick={() =>
-                        handleCityChange({ target: { value: city } })
-                      }
+                      onClick={() => handleCityChange({ target: { value: city } })}
                       className={selectedCity === city ? "selected" : ""}
                     >
                       {city}
@@ -60,7 +60,7 @@ const Location = () => {
               </tbody>
             </table>
           </div>
-          <div className="table2">
+          <div className="locationTable2">
             {selectedCity && (
               <table>
                 <thead>
@@ -74,9 +74,7 @@ const Location = () => {
                       <td
                         onMouseEnter={() => handleAreaMouseEnter(area)}
                         onMouseLeave={handleAreaMouseLeave}
-                        onClick={() =>
-                          handleAreaChange({ target: { value: area } })
-                        }
+                        onClick={() => handleAreaChange({ target: { value: area } })}
                         className={selectedArea === area ? "selected" : ""}
                       >
                         {area}
@@ -87,18 +85,18 @@ const Location = () => {
               </table>
             )}
           </div>
-          <div className="map">
-            <p>[ 지도 ]</p>{" "}
+          <div className="locationMap">
+            <p className="locationMapTitle">[ 지도 ]</p>{" "}
             <Map
               selectedCity={selectedCity}
               selectedArea={selectedArea}
               hoveredArea={hoveredArea}
             />
           </div>
-        </div>
-        <Footer />
+        </div>{" "}
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 
