@@ -4,7 +4,7 @@ const { Op } = require("sequelize");
 const { Post, User, Like } = require("../models/index");
 
 const dao = {
-  // 등록
+  // like 등록
   insert(params) {
     return new Promise((resolve, reject) => {
       Like.create(params)
@@ -17,7 +17,7 @@ const dao = {
     });
   },
 
-  // 게시물 조회
+  // user별 like 조회
   selectList(params) {
     return new Promise((resolve, reject) => {
       Like.findAll({
@@ -40,7 +40,7 @@ const dao = {
     });
   },
 
-  //상세조회
+  // user별 like 상세조회
   selectInfo(params) {
     return new Promise((resolve, reject) => {
       Like.findAll({

@@ -2,7 +2,7 @@ const logger = require("../lib/logger");
 const likeDao = require("../dao/likeDao");
 
 const service = {
-  // post 입력
+  // like 등록
   async reg(params) {
     let inserted = null;
 
@@ -21,7 +21,8 @@ const service = {
       resolve(inserted);
     });
   },
-  // selectList
+
+  // user별 like 조회
   async list(params) {
     let result = null;
 
@@ -40,7 +41,7 @@ const service = {
     });
   },
 
-  //상세조회
+  // user별 like 상세조회
   async listInfo(params) {
     let result = null;
 
@@ -58,7 +59,8 @@ const service = {
       resolve(result);
     });
   },
-  //delete
+
+  // 삭제
   async delete(params) {
     let result = null;
 

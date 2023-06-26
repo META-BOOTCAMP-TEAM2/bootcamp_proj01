@@ -5,7 +5,7 @@ const likeService = require("../service/likeService");
 const { isLoggedIn } = require("../lib/middleware");
 const tokenUtil = require("../lib/tokenUtil");
 
-// 등록
+// like 등록
 router.post("/", async (req, res) => {
   try {
     const params = {
@@ -24,7 +24,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// 로그인한 유저의 찜한 매물 목록 조회
+// user별 like 조회
 router.get("/:userid", async (req, res) => {
   try {
     const params = {
@@ -40,7 +40,8 @@ router.get("/:userid", async (req, res) => {
     res.status(500).json({ err: err.toString() });
   }
 });
-//상세조회
+
+//user별 like 상세조회
 router.get("/:userid/:postid", async (req, res) => {
   try {
     const params = {
