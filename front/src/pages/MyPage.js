@@ -85,11 +85,24 @@ const MyPage = () => {
     fetchData();
   }, []);
 
-  const btnClick = async () => {
+  const btnClick1 = async () => {
     try {
       const res = await axios.get(`/post/${currentUser}`);
       const result = res.data;
       const newUrl = "/myLists";
+      const newWindow = window.open(newUrl);
+      newWindow.sessionStorage.setItem("myData", JSON.stringify(result));
+      console.log(result);
+    } catch (err) {
+      alert(err);
+    }
+  };
+
+  const btnClick2 = async () => {
+    try {
+      const res = await axios.get(`/post/${currentUser}`);
+      const result = res.data;
+      const newUrl = "/likePage";
       const newWindow = window.open(newUrl);
       newWindow.sessionStorage.setItem("myData", JSON.stringify(result));
       console.log(result);
@@ -113,8 +126,11 @@ const MyPage = () => {
         <p> 연락처 : {userInfo.phone}</p>
       </div>
 
-      <button className="myUpLoad" onClick={() => btnClick()}>
+      <button className="myUpLoad" onClick={() => btnClick1()}>
         내가 올린 매물
+      </button>
+      <button className="myUpLoad" onClick={() => btnClick2()}>
+        내가 찜한 매물
       </button>
 
       <Footer />

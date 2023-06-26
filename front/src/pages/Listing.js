@@ -85,7 +85,7 @@ const Listing = () => {
     accumulator[rowIndex].push(currentValue);
     return accumulator;
   }, []);
-  console.log(data[1]);
+  console.log(data);
 
   return (
     <div className="listing">

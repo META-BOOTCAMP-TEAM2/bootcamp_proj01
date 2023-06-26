@@ -49,7 +49,10 @@ const SignUpPage = () => {
     // 연락처 정규표현식 (숫자 11개)
     const contactRegex = /^\d{3}-\d{4}-\d{4}$/;
 
-    const { email, phone } = inputs;
+    // 비밀번호 정규표현식
+    const passwordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9]).{6,25}$/;
+
+    const { email, phone, password } = inputs;
 
     // 이메일 유효성 검사
     if (!emailRegex.test(email)) {
@@ -60,6 +63,12 @@ const SignUpPage = () => {
     // 연락처 유효성 검사
     if (!contactRegex.test(phone)) {
       alert("올바른 연락처를 입력해주세요. 예: [010-1111-1111]");
+      return;
+    }
+
+    // 비밀번호 유효성 검사
+    if (!passwordRegex.test(password)) {
+      alert("올바른 비밀번호를 입력해주세요. 예: [영문 숫자 포함 6자리 이상]");
       return;
     }
 

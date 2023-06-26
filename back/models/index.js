@@ -3,6 +3,7 @@ const { sequelize } = require("./connection");
 const User = require("./user");
 const Board = require("./board");
 const Post = require("./post");
+const Like = require("./like");
 
 // const GoogleUser = require("./googleUser");
 // const KakaoUser = require("./kakaoUser");
@@ -15,11 +16,13 @@ db.sequelize = sequelize;
 db.User = User;
 db.Board = Board;
 db.Post = Post;
+db.Like = Like;
 
 // model init
 User.init(sequelize);
 Board.init(sequelize);
 Post.init(sequelize);
+Like.init(sequelize);
 // GoogleUser.init(sequelize);
 // KakaoUser.init(sequelize);
 
@@ -27,5 +30,6 @@ Post.init(sequelize);
 User.associate(db);
 Board.associate(db);
 Post.associate(db);
+Like.associate(db);
 
 module.exports = db;

@@ -11,6 +11,7 @@ import MyPage from "./pages/MyPage";
 import Listing from "./pages/Listing";
 import MyListing from "./pages/MyListing";
 import ListingDetail from "./pages/ListingDetail";
+import LikePage from "./pages/LikePage";
 import "../src/assets/example.json";
 
 // API 서버 url : http://localhost:8000
@@ -28,6 +29,7 @@ function App() {
           <Route path="/lists" element={<Listing />} />
           <Route path="/myLists" element={<MyListing />} />
           <Route path="/listDetail" element={<ListingDetail />} />
+          <Route path="/likePage" element={<LikePage />} />
         </Routes>
       </Router>
     </>

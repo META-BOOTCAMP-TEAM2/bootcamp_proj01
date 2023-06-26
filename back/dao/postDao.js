@@ -17,7 +17,7 @@ const dao = {
     });
   },
 
-  // 게시물 조회
+  // 게시물 상세조회
   selectList(params) {
     return new Promise((resolve, reject) => {
       Post.findAll({
