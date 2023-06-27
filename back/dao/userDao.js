@@ -20,6 +20,22 @@ const dao = {
         });
     });
   },
+  // 로그인 위한 사용자 조회
+  selectUserForLogin(params) {
+    return new Promise((resolve, reject) => {
+      User.findOne({
+        // attributes: ["id", "userid", "password", "username", "role"],
+        attributes: { exclude: [] }, //유저 전체 정보
+        where: { userid: params.userid },
+      })
+        .then((selectedOne) => {
+          resolve(selectedOne);
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    });
+  },
   // 리스트 조회
   selectList(params) {
     // where 검색 조건
@@ -81,21 +97,6 @@ const dao = {
     });
   },
 
-  // 로그인을 위한 사용자 조회
-  selectUser(params) {
-    return new Promise((resolve, reject) => {
-      User.findOne({
-        attributes: ["id", "userid", "password", "name", "role"],
-        where: { userid: params.userid },
-      })
-        .then((selectedOne) => {
-          resolve(selectedOne);
-        })
-        .catch((err) => {
-          reject(err);
-        });
-    });
-  },
   // 수정
   update(params) {
     return new Promise((resolve, reject) => {

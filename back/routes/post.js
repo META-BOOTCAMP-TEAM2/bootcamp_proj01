@@ -30,7 +30,7 @@ router.post("/", async (req, res) => {
       path2: req.body.path2,
       path3: req.body.path3,
 
-      userId: Number(1), //유저아이디
+      userId: Number(1), //유저DB 고유넘버
       userid: req.body.userid, //유저아이디
     };
     logger.info(`(post.reg.params) ${JSON.stringify(params)}`);

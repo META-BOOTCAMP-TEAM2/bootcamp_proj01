@@ -12,36 +12,23 @@ const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 const passport = require("passport");
 const passportConfig = require("./passport/index");
-const session = require("express-session");
 dotenv.config();
 
 const NODE_ENV = process.env.NODE_ENV;
 
 const indexRouter = require("./routes/index");
+const session = require("express-session");
 
 const app = express();
-logger.info("애플리케이션 실행....");
+logger.info("App start.");
+app.use(cors(corsConfig));
 
-//sessions
-app.use(
-  session({
-    secret: "keyboard cat",
-    resave: false,
-    saveUninitialized: false,
-  })
-);
-
-app.use("/uploads", express.static("uploads"));
 //passport 설정
 passportConfig();
 
-// view engine setup
+// view engine setup   [view 프론트엔드 진행.]
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
-
-//passport middleware
-app.use(passport.initialize());
-app.use(passport.session());
 
 // DB 연결 확인 및 table 생성
 models.sequelize
@@ -63,12 +50,27 @@ models.sequelize
     logger.error("DB Connection fail", err);
   });
 
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
-app.use(cors(corsConfig));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cookieParser(process.env.COOKIE_SECRET));
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/uploads", express.static("uploads"));
 
+app.use(
+  session({
+    resave: false,
+    saveUninitialized: false,
+    secret: process.env.COOKIE_SECRET,
+    cookie: {
+      httpOnly: true,
+      secure: false,
+    },
+  })
+);
+
+// passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
 // Routes
 app.use("/", indexRouter);
 
@@ -85,7 +87,7 @@ app.use((err, req, res, next) => {
 
   // render the error page
   res.status(err.status || 500);
-  res.render("error");
+  res.json("error: 서버에러");
 });
 
 module.exports = app;

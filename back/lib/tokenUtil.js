@@ -1,33 +1,50 @@
 /*eslint-disable*/
 const jwt = require("jsonwebtoken");
 
-const secretKey = process.env.SECRETKEY;
-const options = {
-  expiresIn: "1000h", // 만료시간
+const accessSecretKey = process.env.SECRETKEY;
+const accOptions = {
+  expiresIn: "10m", // 액세스 토큰 만료시간 (10분)
+  issuer: "My Sweet Home", //발행처
+};
+const refreshOptions = {
+  expiresIn: "14d", // 리프레시 토큰 만료시간 (2주)
+  issuer: "My Sweet Home", //발행처
 };
 
 const tokenUtil = {
-  // 토큰 생성
-  makeToken(user) {
+  // 액세스 토큰 생성
+  makeAccessToken(user) {
     const payload = {
       id: user.id,
       userid: user.userid,
-      name: user.name,
+      username: user.username,
       role: user.role,
+      email: user.email,
+      phone: user.phone,
     };
+    const accessToken = jwt.sign(payload, accessSecretKey, accOptions);
 
-    const token = jwt.sign(payload, secretKey, options);
-
-    return token;
+    return accessToken;
   },
-  // 토큰 검증
-  verifyToken(tokenHeader) {
+  makeRefreshToken(user) {
+    const payload = {};
+
+    const refreshToken = jwt.sign(payload, accessSecretKey, refreshOptions);
+
+    return refreshToken;
+  },
+  verifyAccessToken(token) {
     try {
-      if (tokenHeader && tokenHeader.startsWith("Bearer ")) {
-        // "Bearer " 스키마 제외
-        tokenHeader = tokenHeader.split(" ")[1];
-      }
-      const decoded = jwt.verify(tokenHeader, secretKey);
+      const decoded = jwt.verify(token, accessSecretKey);
+
+      return decoded;
+    } catch (err) {
+      return null;
+    }
+  },
+  verifyRefreshToken(token) {
+    try {
+      const decoded = jwt.verify(token, accessSecretKey);
 
       return decoded;
     } catch (err) {

@@ -2,7 +2,7 @@
 
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
-const GoogleUser = require("../models/googleUser");
+const GoogleUser = require("../models/user");
 
 module.exports = () => {
   passport.use(
@@ -13,17 +13,17 @@ module.exports = () => {
         callbackURL: "/auth/google/callback",
       },
       async (accessToken, refreshToken, profile, done) => {
-        console.log("google profile", profile);
+        // console.log("google profile", profile);
         const newUser = {
-          googleId: profile.id,
-          displayName: profile.displayName,
-          firstName: profile.name.givenName,
-          lastName: profile.name.familyName,
-          image: profile.photos[0].value,
+          id: profile.id,
+          userid: profile.id,
+          snsId: profile.id,
+          username: profile.displayName,
+          provider: "google",
         };
 
         try {
-          let user = await GoogleUser.findOne({ googleId: profile.id });
+          let user = await GoogleUser.findOne({ snsId: profile.id });
 
           if (user) {
             done(null, user);

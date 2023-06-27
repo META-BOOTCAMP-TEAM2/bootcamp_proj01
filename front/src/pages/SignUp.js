@@ -89,6 +89,7 @@ const SignUpPage = () => {
           <div className="signTitle">
             <h2>회원정보 입력</h2>
           </div>
+<<<<<<< HEAD
           <form>
             <div>
               <input
@@ -167,6 +168,65 @@ const SignUpPage = () => {
             </div>
           </form>
         </div>
+=======
+          <div>
+            <input
+              className="signbox"
+              required
+              type="text"
+              placeholder="아이디 (예: team)"
+              name="userid"
+              onChange={handleChange}
+            />
+            <button onClick={handleDuplicateCheck}>중복확인</button>
+            {isUsernameValid === true && <p>가입 가능한 회원입니다.</p>}
+            {isUsernameValid === false && <p>중복된 사용자 이름입니다.</p>}
+          </div>
+          <div>
+            <input
+              className="signbox"
+              required
+              type="password"
+              placeholder="비밀번호"
+              name="password"
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <input
+              className="signbox"
+              required
+              type="email"
+              placeholder="이메일 (예: test@test.com)"
+              name="email"
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <input
+              className="signbox"
+              required
+              type="text"
+              placeholder="연락처 (예: 010-1111-1111)"
+              name="phone"
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <button
+              className="submitButton"
+              onClick={handleSubmit}
+              disabled={!isUsernameValid}
+            >
+              가입하기
+            </button>
+          </div>
+          {err && <p>{err}</p>}
+          <div>
+            계정이 있으신가요? <Link to="/login">Login</Link>
+          </div>
+        </form>
+>>>>>>> d5bf5698864de21fc1ac36410994f668ffb7f0be
       </div>
       <Footer />
     </div>
