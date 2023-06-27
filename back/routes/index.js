@@ -11,8 +11,8 @@ const likeRouter = require("./like");
 
 router.use("/users", userRouter);
 router.use("/auth", authRouter);
-router.use("/post", uploadRouter);
-// router.use("/post", postRouter);
+router.use("/upload", uploadRouter);
+router.use("/post", postRouter);
 router.use("/address", addressRouter);
 router.use("/like", likeRouter);
 

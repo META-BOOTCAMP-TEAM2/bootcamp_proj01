@@ -97,12 +97,9 @@ const service = {
   // service_list [전체 유저 조회]
   async list(params) {
     let result = null;
-
     try {
       result = await userDao.selectList(params);
-      logger.debug(`(userService.list) ${JSON.stringify(result)}`);
     } catch (err) {
-      logger.error(`(userService.list) ${err.toString()}`);
       return new Promise((resolve, reject) => {
         reject(err);
       });
@@ -112,15 +109,12 @@ const service = {
       resolve(result);
     });
   },
-  // service_info [특정 유저 조회]
-  async info(params) {
+  // service_info [회원가입 - 특정 유저 조회]
+  async regInfo(params) {
     let result = null;
-
     try {
-      result = await userDao.selectUserForMypage(params);
-      logger.debug(`(userService.info) ${JSON.stringify(result)}`);
+      result = await userDao.selectUserForLogin(params);
     } catch (err) {
-      logger.error(`(userService.info) ${err.toString()}`);
       return new Promise((resolve, reject) => {
         reject(err.toString());
       });

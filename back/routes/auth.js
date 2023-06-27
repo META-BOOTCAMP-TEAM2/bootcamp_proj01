@@ -10,7 +10,7 @@ const userService = require("../service/userService");
 router.post("/join", async (req, res) => {
   try {
     const params = {
-      username: req.body.name,
+      username: req.body.username,
       userid: req.body.userid,
       password: req.body.password,
       role: req.body.role,
@@ -19,11 +19,10 @@ router.post("/join", async (req, res) => {
     };
     logger.info(`(user.reg.params) ${JSON.stringify(params)}`);
 
-    // 입력값 null 체크 -> front에서 required 처리하므로 불필요
+    // 입력값 null 체크 -> front에서 required 처리
     if (!params.username || !params.userid || !params.password) {
       const err = new Error("Not allowed null (name, userid, password)");
       logger.error(err.toString());
-
       res.json(err.toString());
     }
 

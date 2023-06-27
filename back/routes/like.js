@@ -1,4 +1,5 @@
 const express = require("express");
+
 const router = express.Router();
 const logger = require("../lib/logger");
 const likeService = require("../service/likeService");
@@ -12,7 +13,6 @@ router.post("/", async (req, res) => {
       userid: req.body.userid, // 로그인한 유저의 ID
       postid: req.body.postid, // 찜할 매물의 ID
     };
-    console.log("hi");
     logger.info(`(like.reg.params) ${JSON.stringify(params)}`);
 
     const result = await likeService.reg(params);
@@ -41,7 +41,7 @@ router.get("/:userid", async (req, res) => {
   }
 });
 
-//user별 like 상세조회
+// user별 like 상세조회
 router.get("/:userid/:postid", async (req, res) => {
   try {
     const params = {

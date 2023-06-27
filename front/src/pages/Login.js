@@ -26,8 +26,7 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await login(inputs);
-      navigate("/");
+      await login(inputs).then(navigate("/"));
     } catch (err) {
       setError(err.response.data);
     }
@@ -37,7 +36,7 @@ const LoginForm = () => {
     e.preventDefault();
     // 구글 소셜 로그인 처리
     try {
-      const response = await axios.get("http://localhost:8000/auth/google");
+      const response = await axios.get("/auth/google");
       console.log(response);
       navigate("/");
     } catch (error) {
@@ -76,7 +75,6 @@ const LoginForm = () => {
                 type="text"
                 placeholder="아이디 입력"
                 name="userid"
-                // onChange={(e) => setUsername(e.target.value)}
                 onChange={handleChange}
               />
             </div>
@@ -93,10 +91,18 @@ const LoginForm = () => {
             <button className="loginSubmitButton" onClick={handleSubmit}>
               로그인
             </button>
-            <button type="button" onClick={handleGoogleLogin} className="loginButtonGoogle">
+            <button
+              type="button"
+              onClick={handleGoogleLogin}
+              className="loginButtonGoogle"
+            >
               Login With Google
             </button>
-            <button type="button" onClick={handleKakaoLogin} className="loginButtonKakao">
+            <button
+              type="button"
+              onClick={handleKakaoLogin}
+              className="loginButtonKakao"
+            >
               Login With Kakao
             </button>
             {err && <p>{err}</p>}

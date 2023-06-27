@@ -5,7 +5,7 @@ const { Op } = require("sequelize");
 const { User } = require("../models/index");
 
 const dao = {
-  // 등록
+  // 회원가입
   insert(params) {
     return new Promise((resolve, reject) => {
       User.create(params)
@@ -20,12 +20,11 @@ const dao = {
         });
     });
   },
-  // 로그인 위한 사용자 조회
+  // 회원가입 - 사용자 조회
   selectUserForLogin(params) {
     return new Promise((resolve, reject) => {
       User.findOne({
-        // attributes: ["id", "userid", "password", "username", "role"],
-        attributes: { exclude: [] }, //유저 전체 정보
+        attributes: ["id", "userid", "username", "role"],
         where: { userid: params.userid },
       })
         .then((selectedOne) => {

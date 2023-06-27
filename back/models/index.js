@@ -3,9 +3,6 @@ const { sequelize } = require("./connection");
 const User = require("./user");
 const Post = require("./post");
 const Like = require("./like");
-
-// const GoogleUser = require("./googleUser");
-// const KakaoUser = require("./kakaoUser");
 const Address = require("./address");
 
 const db = {};
@@ -22,8 +19,6 @@ db.Address = Address;
 User.init(sequelize);
 Post.init(sequelize);
 Like.init(sequelize);
-// GoogleUser.init(sequelize);
-// KakaoUser.init(sequelize);
 Address.init(sequelize);
 
 // association(관계 생성)
