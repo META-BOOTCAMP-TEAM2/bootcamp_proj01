@@ -1,0 +1,395 @@
+2023-06-27 09:57:16.752[info] App start.
+2023-06-27 09:57:17.476[info] DB connection success
+2023-06-27 09:57:17.562[info] Sequelize sync success
+2023-06-27 10:54:20.471[info] App start.
+2023-06-27 10:54:20.960[info] DB connection success
+2023-06-27 10:54:21.004[info] Sequelize sync success
+2023-06-27 10:55:43.293[info] App start.
+2023-06-27 10:55:43.384[info] DB connection success
+2023-06-27 10:55:43.402[info] Sequelize sync success
+2023-06-27 10:57:33.280[info] App start.
+2023-06-27 10:57:33.366[info] DB connection success
+2023-06-27 10:57:33.385[info] Sequelize sync success
+2023-06-27 10:58:28.185[info] App start.
+2023-06-27 10:58:28.268[info] DB connection success
+2023-06-27 10:58:28.289[info] Sequelize sync success
+2023-06-27 11:01:09.494[info] App start.
+2023-06-27 11:01:09.579[info] DB connection success
+2023-06-27 11:01:09.598[info] Sequelize sync success
+2023-06-27 11:05:07.807[info] App start.
+2023-06-27 11:05:07.903[info] DB connection success
+2023-06-27 11:05:07.926[info] Sequelize sync success
+2023-06-27 11:05:59.518[info] App start.
+2023-06-27 11:05:59.604[info] DB connection success
+2023-06-27 11:05:59.629[info] Sequelize sync success
+2023-06-27 11:06:25.308[info] App start.
+2023-06-27 11:06:25.401[info] DB connection success
+2023-06-27 11:06:25.425[info] Sequelize sync success
+2023-06-27 11:06:47.498[info] App start.
+2023-06-27 11:06:47.592[info] DB connection success
+2023-06-27 11:06:47.615[info] Sequelize sync success
+2023-06-27 11:07:00.487[info] App start.
+2023-06-27 11:07:00.572[info] DB connection success
+2023-06-27 11:07:00.594[info] Sequelize sync success
+2023-06-27 11:07:20.809[info] App start.
+2023-06-27 11:07:20.893[info] DB connection success
+2023-06-27 11:07:20.914[info] Sequelize sync success
+2023-06-27 11:07:36.230[info] App start.
+2023-06-27 11:07:36.318[info] DB connection success
+2023-06-27 11:07:36.352[info] Sequelize sync success
+2023-06-27 11:08:06.533[info] App start.
+2023-06-27 11:08:06.631[info] DB connection success
+2023-06-27 11:08:06.655[info] Sequelize sync success
+2023-06-27 11:14:11.756[info] App start.
+2023-06-27 11:14:11.834[info] DB connection success
+2023-06-27 11:14:11.856[info] Sequelize sync success
+2023-06-27 11:21:57.743[info] App start.
+2023-06-27 11:21:57.831[info] DB connection success
+2023-06-27 11:21:57.855[info] Sequelize sync success
+2023-06-27 11:24:19.750[info] App start.
+2023-06-27 11:24:19.832[info] DB connection success
+2023-06-27 11:24:19.853[info] Sequelize sync success
+2023-06-27 11:25:15.834[info] App start.
+2023-06-27 11:25:15.918[info] DB connection success
+2023-06-27 11:25:15.938[info] Sequelize sync success
+2023-06-27 11:25:38.662[info] App start.
+2023-06-27 11:25:38.744[info] DB connection success
+2023-06-27 11:25:38.764[info] Sequelize sync success
+2023-06-27 11:25:46.068[info] App start.
+2023-06-27 11:25:46.154[info] DB connection success
+2023-06-27 11:25:46.171[info] Sequelize sync success
+2023-06-27 11:27:22.493[info] App start.
+2023-06-27 11:27:22.574[info] DB connection success
+2023-06-27 11:27:22.594[info] Sequelize sync success
+2023-06-27 11:27:46.269[info] (upload.reg.result) {"file1":[{"fieldname":"file1","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687832866245-astronaut-8061095_640.png","path":"uploads\\1687832866245-astronaut-8061095_640.png","size":177320}],"file2":[{"fieldname":"file2","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687832866246-astronaut-8061095_640.png","path":"uploads\\1687832866246-astronaut-8061095_640.png","size":177320}],"file3":[{"fieldname":"file3","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687832866250-astronaut-8061095_640.png","path":"uploads\\1687832866250-astronaut-8061095_640.png","size":177320}]}
+2023-06-27 11:28:45.730[info] App start.
+2023-06-27 11:28:45.823[info] DB connection success
+2023-06-27 11:28:45.846[info] Sequelize sync success
+2023-06-27 11:28:52.240[info] App start.
+2023-06-27 11:28:52.332[info] DB connection success
+2023-06-27 11:28:52.355[info] Sequelize sync success
+2023-06-27 11:29:03.940[info] App start.
+2023-06-27 11:29:04.021[info] DB connection success
+2023-06-27 11:29:04.042[info] Sequelize sync success
+2023-06-27 11:40:12.039[info] (upload.reg.result) {"file1":[{"fieldname":"file1","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687833612020-astronaut-8061095_640.png","path":"uploads\\1687833612020-astronaut-8061095_640.png","size":177320}],"file2":[{"fieldname":"file2","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687833612022-astronaut-8061095_640.png","path":"uploads\\1687833612022-astronaut-8061095_640.png","size":177320}],"file3":[{"fieldname":"file3","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687833612026-astronaut-8061095_640.png","path":"uploads\\1687833612026-astronaut-8061095_640.png","size":177320}]}
+2023-06-27 11:42:29.308[info] (upload.reg.result) {"file1":[{"fieldname":"file1","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687833749294-astronaut-8061095_640.png","path":"uploads\\1687833749294-astronaut-8061095_640.png","size":177320}],"file2":[{"fieldname":"file2","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687833749295-astronaut-8061095_640.png","path":"uploads\\1687833749295-astronaut-8061095_640.png","size":177320}],"file3":[{"fieldname":"file3","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687833749297-astronaut-8061095_640.png","path":"uploads\\1687833749297-astronaut-8061095_640.png","size":177320}]}
+2023-06-27 11:43:55.132[info] (upload.reg.result) {"file1":[{"fieldname":"file1","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687833835116-astronaut-8061095_640.png","path":"uploads\\1687833835116-astronaut-8061095_640.png","size":177320}],"file2":[{"fieldname":"file2","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687833835118-astronaut-8061095_640.png","path":"uploads\\1687833835118-astronaut-8061095_640.png","size":177320}],"file3":[{"fieldname":"file3","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687833835121-astronaut-8061095_640.png","path":"uploads\\1687833835121-astronaut-8061095_640.png","size":177320}]}
+2023-06-27 12:21:43.950[info] (post.reg.params) {"additionalInfo":"sdsdsadsad","address":"","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"dblee"}
+2023-06-27 12:21:43.980[debug] (postService.reg) {"viewCount":0,"id":1,"additionalInfo":"sdsdsadsad","address":"","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"dblee","updatedAt":"2023-06-27T03:21:43.954Z","createdAt":"2023-06-27T03:21:43.954Z"}
+2023-06-27 12:21:43.982[info] (post.reg.result) {"viewCount":0,"id":1,"additionalInfo":"sdsdsadsad","address":"","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"dblee","updatedAt":"2023-06-27T03:21:43.954Z","createdAt":"2023-06-27T03:21:43.954Z"}
+2023-06-27 12:21:45.606[info] (post.list.params) {"userid":"dblee"}
+2023-06-27 12:21:45.619[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"sdsdsadsad","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:21:43.000Z","updatedAt":"2023-06-27T03:21:43.000Z","deletedAt":null}]
+2023-06-27 12:21:45.620[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"sdsdsadsad","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:21:43.000Z","updatedAt":"2023-06-27T03:21:43.000Z","deletedAt":null}]
+2023-06-27 12:22:29.974[info] (post.reg.params) {"additionalInfo":"sadsadsadas","address":"","deposit":0,"monthlyRent":0,"price":"23232","propertyType":"매매","structure":"원룸","userId":1,"userid":"dblee"}
+2023-06-27 12:22:29.994[debug] (postService.reg) {"viewCount":0,"id":2,"additionalInfo":"sadsadsadas","address":"","deposit":0,"monthlyRent":0,"price":"23232","propertyType":"매매","structure":"원룸","userId":1,"userid":"dblee","updatedAt":"2023-06-27T03:22:29.976Z","createdAt":"2023-06-27T03:22:29.976Z"}
+2023-06-27 12:22:29.995[info] (post.reg.result) {"viewCount":0,"id":2,"additionalInfo":"sadsadsadas","address":"","deposit":0,"monthlyRent":0,"price":"23232","propertyType":"매매","structure":"원룸","userId":1,"userid":"dblee","updatedAt":"2023-06-27T03:22:29.976Z","createdAt":"2023-06-27T03:22:29.976Z"}
+2023-06-27 12:22:33.981[info] (post.list.params) {"userid":"dblee"}
+2023-06-27 12:22:33.987[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"sdsdsadsad","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:21:43.000Z","updatedAt":"2023-06-27T03:21:43.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"sadsadsadas","deposit":0,"monthlyRent":0,"price":23232,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:22:29.000Z","updatedAt":"2023-06-27T03:22:29.000Z","deletedAt":null}]
+2023-06-27 12:22:33.988[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"sdsdsadsad","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:21:43.000Z","updatedAt":"2023-06-27T03:21:43.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"sadsadsadas","deposit":0,"monthlyRent":0,"price":23232,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:22:29.000Z","updatedAt":"2023-06-27T03:22:29.000Z","deletedAt":null}]
+2023-06-27 12:24:54.166[info] App start.
+2023-06-27 12:24:54.286[info] DB connection success
+2023-06-27 12:24:54.306[info] Sequelize sync success
+2023-06-27 12:25:47.464[info] (post.reg.params) {"additionalInfo":"sadsdsdsdsada","address":"서울 강남구 강남대로 328","deposit":0,"monthlyRent":0,"price":"asdsadasd","propertyType":"매매","structure":"원룸","userId":1,"userid":"dblee"}
+2023-06-27 12:25:47.479[error] (postService.reg) SequelizeDatabaseError: Incorrect integer value: 'asdsadasd' for column 'price' at row 1
+2023-06-27 12:26:14.170[info] (post.reg.params) {"additionalInfo":"ㄴㅁㅇㅁㄴㅇㄴㅁㅇㄴ","address":"","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"dblee"}
+2023-06-27 12:26:14.188[debug] (postService.reg) {"viewCount":0,"id":3,"additionalInfo":"ㄴㅁㅇㅁㄴㅇㄴㅁㅇㄴ","address":"","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"dblee","updatedAt":"2023-06-27T03:26:14.172Z","createdAt":"2023-06-27T03:26:14.172Z"}
+2023-06-27 12:26:14.189[info] (post.reg.result) {"viewCount":0,"id":3,"additionalInfo":"ㄴㅁㅇㅁㄴㅇㄴㅁㅇㄴ","address":"","deposit":0,"monthlyRent":0,"price":"2000","propertyType":"매매","structure":"원룸","userId":1,"userid":"dblee","updatedAt":"2023-06-27T03:26:14.172Z","createdAt":"2023-06-27T03:26:14.172Z"}
+2023-06-27 12:26:16.730[info] (post.list.params) {"userid":"dblee"}
+2023-06-27 12:26:16.741[debug] (postService.list) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"sdsdsadsad","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:21:43.000Z","updatedAt":"2023-06-27T03:21:43.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"sadsadsadas","deposit":0,"monthlyRent":0,"price":23232,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:22:29.000Z","updatedAt":"2023-06-27T03:22:29.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"ㄴㅁㅇㅁㄴㅇㄴㅁㅇㄴ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:26:14.000Z","updatedAt":"2023-06-27T03:26:14.000Z","deletedAt":null}]
+2023-06-27 12:26:16.744[info] (post.list.result) [{"id":1,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"sdsdsadsad","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:21:43.000Z","updatedAt":"2023-06-27T03:21:43.000Z","deletedAt":null},{"id":2,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"sadsadsadas","deposit":0,"monthlyRent":0,"price":23232,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:22:29.000Z","updatedAt":"2023-06-27T03:22:29.000Z","deletedAt":null},{"id":3,"boardId":null,"userId":1,"userid":"dblee","address":"","additionalInfo":"ㄴㅁㅇㅁㄴㅇㄴㅁㅇㄴ","deposit":0,"monthlyRent":0,"price":2000,"propertyType":"매매","structure":"원룸","filename1":null,"filename2":null,"filename3":null,"originalName1":null,"originalName2":null,"originalName3":null,"path1":null,"path2":null,"path3":null,"createdAt":"2023-06-27T03:26:14.000Z","updatedAt":"2023-06-27T03:26:14.000Z","deletedAt":null}]
+2023-06-27 12:26:50.057[error] Error: 토큰이 없습니다.
+2023-06-27 12:50:19.106[info] App start.
+2023-06-27 12:50:19.190[info] DB connection success
+2023-06-27 12:50:19.212[info] Sequelize sync success
+2023-06-27 12:51:53.819[info] App start.
+2023-06-27 12:51:53.903[info] DB connection success
+2023-06-27 12:51:53.924[info] Sequelize sync success
+2023-06-27 12:56:07.339[info] App start.
+2023-06-27 12:56:07.420[info] DB connection success
+2023-06-27 12:56:07.439[info] Sequelize sync success
+2023-06-27 13:02:00.261[info] App start.
+2023-06-27 13:02:00.344[info] DB connection success
+2023-06-27 13:02:00.365[info] Sequelize sync success
+2023-06-27 13:02:50.031[info] App start.
+2023-06-27 13:02:50.119[info] DB connection success
+2023-06-27 13:02:50.139[info] Sequelize sync success
+2023-06-27 13:03:10.441[info] App start.
+2023-06-27 13:03:10.519[info] DB connection success
+2023-06-27 13:03:10.539[info] Sequelize sync success
+2023-06-27 13:03:24.459[info] (upload.reg.result) {"file1":[{"fieldname":"file1","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687838604428-astronaut-8061095_640.png","path":"uploads\\1687838604428-astronaut-8061095_640.png","size":177320}],"file2":[{"fieldname":"file2","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687838604430-astronaut-8061095_640.png","path":"uploads\\1687838604430-astronaut-8061095_640.png","size":177320}],"file3":[{"fieldname":"file3","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687838604434-astronaut-8061095_640.png","path":"uploads\\1687838604434-astronaut-8061095_640.png","size":177320}]}
+2023-06-27 13:03:41.728[info] App start.
+2023-06-27 13:03:41.817[info] DB connection success
+2023-06-27 13:03:41.841[info] Sequelize sync success
+2023-06-27 13:03:42.312[info] (upload.reg.result) {"file1":[{"fieldname":"file1","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687838622291-astronaut-8061095_640.png","path":"uploads\\1687838622291-astronaut-8061095_640.png","size":177320}],"file2":[{"fieldname":"file2","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687838622293-astronaut-8061095_640.png","path":"uploads\\1687838622293-astronaut-8061095_640.png","size":177320}],"file3":[{"fieldname":"file3","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687838622295-astronaut-8061095_640.png","path":"uploads\\1687838622295-astronaut-8061095_640.png","size":177320}]}
+2023-06-27 13:03:59.244[info] App start.
+2023-06-27 13:03:59.328[info] DB connection success
+2023-06-27 13:03:59.354[info] Sequelize sync success
+2023-06-27 13:04:00.628[info] (upload.reg.result) {}
+2023-06-27 13:06:19.375[info] App start.
+2023-06-27 13:06:19.476[info] DB connection success
+2023-06-27 13:06:19.499[info] Sequelize sync success
+2023-06-27 13:06:19.937[info] (upload.reg.result) {}
+2023-06-27 13:06:24.424[info] (upload.reg.result) {}
+2023-06-27 13:09:26.520[info] App start.
+2023-06-27 13:09:26.628[info] DB connection success
+2023-06-27 13:09:26.652[info] Sequelize sync success
+2023-06-27 13:09:33.143[info] (upload.reg.result) {"file1":[{"fieldname":"file1","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687838973125-astronaut-8061095_640.png","path":"uploads\\1687838973125-astronaut-8061095_640.png","size":177320}],"file2":[{"fieldname":"file2","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687838973127-astronaut-8061095_640.png","path":"uploads\\1687838973127-astronaut-8061095_640.png","size":177320}],"file3":[{"fieldname":"file3","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687838973130-astronaut-8061095_640.png","path":"uploads\\1687838973130-astronaut-8061095_640.png","size":177320}]}
+2023-06-27 13:14:48.939[info] App start.
+2023-06-27 13:14:49.019[info] DB connection success
+2023-06-27 13:14:49.039[info] Sequelize sync success
+2023-06-27 13:15:45.388[info] App start.
+2023-06-27 13:15:45.471[info] DB connection success
+2023-06-27 13:15:45.491[info] Sequelize sync success
+2023-06-27 13:18:12.139[info] App start.
+2023-06-27 13:18:12.225[info] DB connection success
+2023-06-27 13:18:12.245[info] Sequelize sync success
+2023-06-27 13:19:34.771[info] App start.
+2023-06-27 13:19:34.848[info] DB connection success
+2023-06-27 13:19:34.868[info] Sequelize sync success
+2023-06-27 13:19:50.326[info] App start.
+2023-06-27 13:19:50.414[info] DB connection success
+2023-06-27 13:19:50.434[info] Sequelize sync success
+2023-06-27 13:20:43.861[info] App start.
+2023-06-27 13:20:43.952[info] DB connection success
+2023-06-27 13:20:43.972[info] Sequelize sync success
+2023-06-27 13:21:49.661[info] App start.
+2023-06-27 13:21:49.744[info] DB connection success
+2023-06-27 13:21:49.763[info] Sequelize sync success
+2023-06-27 13:21:51.737[info] App start.
+2023-06-27 13:21:51.838[info] DB connection success
+2023-06-27 13:21:51.860[info] Sequelize sync success
+2023-06-27 13:24:12.778[info] App start.
+2023-06-27 13:24:12.866[info] DB connection success
+2023-06-27 13:24:12.889[info] Sequelize sync success
+2023-06-27 13:25:18.218[info] App start.
+2023-06-27 13:25:18.324[info] DB connection success
+2023-06-27 13:25:18.345[info] Sequelize sync success
+2023-06-27 13:25:44.947[info] App start.
+2023-06-27 13:25:45.040[info] DB connection success
+2023-06-27 13:25:45.066[info] Sequelize sync success
+2023-06-27 13:26:01.712[info] App start.
+2023-06-27 13:26:01.792[info] DB connection success
+2023-06-27 13:26:01.812[info] Sequelize sync success
+2023-06-27 13:26:48.027[info] App start.
+2023-06-27 13:26:48.110[info] DB connection success
+2023-06-27 13:26:48.131[info] Sequelize sync success
+2023-06-27 13:31:55.640[info] App start.
+2023-06-27 13:31:55.729[info] DB connection success
+2023-06-27 13:31:55.750[info] Sequelize sync success
+2023-06-27 13:35:27.122[info] App start.
+2023-06-27 13:35:27.237[info] DB connection success
+2023-06-27 13:35:27.259[info] Sequelize sync success
+2023-06-27 13:41:05.284[info] App start.
+2023-06-27 13:41:05.361[info] DB connection success
+2023-06-27 13:41:05.381[info] Sequelize sync success
+2023-06-27 13:42:20.141[info] App start.
+2023-06-27 13:42:20.234[info] DB connection success
+2023-06-27 13:42:20.257[info] Sequelize sync success
+2023-06-27 13:43:18.895[info] App start.
+2023-06-27 13:43:18.983[info] DB connection success
+2023-06-27 13:43:19.004[info] Sequelize sync success
+2023-06-27 13:43:53.579[info] App start.
+2023-06-27 13:43:53.664[info] DB connection success
+2023-06-27 13:43:53.684[info] Sequelize sync success
+2023-06-27 13:45:58.135[info] App start.
+2023-06-27 13:45:58.225[info] DB connection success
+2023-06-27 13:45:58.250[info] Sequelize sync success
+2023-06-27 13:55:26.460[info] App start.
+2023-06-27 13:55:26.540[info] DB connection success
+2023-06-27 13:55:26.564[info] Sequelize sync success
+2023-06-27 13:55:41.451[info] App start.
+2023-06-27 13:55:42.084[info] DB connection success
+2023-06-27 13:55:42.107[info] Sequelize sync success
+2023-06-27 13:55:48.645[info] App start.
+2023-06-27 13:55:48.729[info] DB connection success
+2023-06-27 13:55:48.747[info] Sequelize sync success
+2023-06-27 13:56:56.352[info] App start.
+2023-06-27 13:56:56.439[info] DB connection success
+2023-06-27 13:56:56.459[info] Sequelize sync success
+2023-06-27 13:57:29.527[info] App start.
+2023-06-27 13:57:29.615[info] DB connection success
+2023-06-27 13:57:29.637[info] Sequelize sync success
+2023-06-27 13:59:46.287[info] App start.
+2023-06-27 13:59:46.369[info] DB connection success
+2023-06-27 13:59:46.392[info] Sequelize sync success
+2023-06-27 13:59:50.304[info] App start.
+2023-06-27 13:59:50.385[info] DB connection success
+2023-06-27 13:59:50.405[info] Sequelize sync success
+2023-06-27 13:59:55.853[info] App start.
+2023-06-27 13:59:55.932[info] DB connection success
+2023-06-27 13:59:55.953[info] Sequelize sync success
+2023-06-27 14:00:43.744[info] App start.
+2023-06-27 14:00:43.819[info] DB connection success
+2023-06-27 14:00:43.840[info] Sequelize sync success
+2023-06-27 14:01:39.735[info] App start.
+2023-06-27 14:01:39.816[info] DB connection success
+2023-06-27 14:01:39.833[info] Sequelize sync success
+2023-06-27 14:02:09.449[info] App start.
+2023-06-27 14:02:09.529[info] DB connection success
+2023-06-27 14:02:09.550[info] Sequelize sync success
+2023-06-27 14:02:11.407[info] (upload.reg.result) {"file1":[{"fieldname":"file1","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687842131392-astronaut-8061095_640.png","path":"uploads\\1687842131392-astronaut-8061095_640.png","size":177320}],"file2":[{"fieldname":"file2","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687842131393-astronaut-8061095_640.png","path":"uploads\\1687842131393-astronaut-8061095_640.png","size":177320}],"file3":[{"fieldname":"file3","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687842131396-astronaut-8061095_640.png","path":"uploads\\1687842131396-astronaut-8061095_640.png","size":177320}]}
+2023-06-27 14:02:24.262[info] App start.
+2023-06-27 14:02:24.420[info] DB connection success
+2023-06-27 14:02:24.437[info] Sequelize sync success
+2023-06-27 14:02:25.253[info] (upload.reg.result) {"file1":[{"fieldname":"file1","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687842145232-astronaut-8061095_640.png","path":"uploads\\1687842145232-astronaut-8061095_640.png","size":177320}],"file2":[{"fieldname":"file2","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687842145234-astronaut-8061095_640.png","path":"uploads\\1687842145234-astronaut-8061095_640.png","size":177320}],"file3":[{"fieldname":"file3","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687842145238-astronaut-8061095_640.png","path":"uploads\\1687842145238-astronaut-8061095_640.png","size":177320}]}
+2023-06-27 14:35:26.403[info] App start.
+2023-06-27 14:35:26.525[info] DB connection success
+2023-06-27 14:35:26.547[info] Sequelize sync success
+2023-06-27 14:35:28.627[info] App start.
+2023-06-27 14:35:28.707[info] DB connection success
+2023-06-27 14:35:28.728[info] Sequelize sync success
+2023-06-27 14:36:29.615[info] App start.
+2023-06-27 14:36:29.696[info] DB connection success
+2023-06-27 14:36:29.716[info] Sequelize sync success
+2023-06-27 14:37:05.389[info] App start.
+2023-06-27 14:37:05.474[info] DB connection success
+2023-06-27 14:37:05.495[info] Sequelize sync success
+2023-06-27 14:39:03.961[info] App start.
+2023-06-27 14:39:04.045[info] DB connection success
+2023-06-27 14:39:04.065[info] Sequelize sync success
+2023-06-27 14:40:04.353[info] App start.
+2023-06-27 14:40:04.436[info] DB connection success
+2023-06-27 14:40:04.455[info] Sequelize sync success
+2023-06-27 15:09:45.361[info] App start.
+2023-06-27 15:09:45.446[info] DB connection success
+2023-06-27 15:09:45.461[info] Sequelize sync success
+2023-06-27 15:10:05.689[info] (upload.reg.result) {"file1":[{"fieldname":"file1","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687846205673-astronaut-8061095_640.png","path":"uploads\\1687846205673-astronaut-8061095_640.png","size":177320}],"file2":[{"fieldname":"file2","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687846205676-astronaut-8061095_640.png","path":"uploads\\1687846205676-astronaut-8061095_640.png","size":177320}],"file3":[{"fieldname":"file3","originalname":"astronaut-8061095_640.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"1687846205678-astronaut-8061095_640.png","path":"uploads\\1687846205678-astronaut-8061095_640.png","size":177320}]}
+2023-06-27 15:15:43.117[info] App start.
+2023-06-27 15:15:43.204[info] DB connection success
+2023-06-27 15:15:43.221[info] Sequelize sync success
+2023-06-27 15:16:01.366[info] App start.
+2023-06-27 15:16:01.443[info] DB connection success
+2023-06-27 15:16:01.474[info] Sequelize sync success
+2023-06-27 15:16:17.040[info] App start.
+2023-06-27 15:16:17.118[info] DB connection success
+2023-06-27 15:16:17.135[info] Sequelize sync success
+2023-06-27 15:16:19.172[info] App start.
+2023-06-27 15:16:19.253[info] DB connection success
+2023-06-27 15:16:19.270[info] Sequelize sync success
+2023-06-27 15:17:06.697[info] App start.
+2023-06-27 15:17:06.774[info] DB connection success
+2023-06-27 15:17:06.790[info] Sequelize sync success
+2023-06-27 15:17:56.293[info] App start.
+2023-06-27 15:17:56.376[info] DB connection success
+2023-06-27 15:17:56.393[info] Sequelize sync success
+2023-06-27 15:18:43.193[info] App start.
+2023-06-27 15:18:43.273[info] DB connection success
+2023-06-27 15:18:43.290[info] Sequelize sync success
+2023-06-27 15:46:14.951[info] App start.
+2023-06-27 15:46:15.038[info] DB connection success
+2023-06-27 15:46:15.055[info] Sequelize sync success
+2023-06-27 15:52:20.680[info] (auth.login.params) {"userid":"test1","password":"1111"}
+2023-06-27 15:52:20.698[debug] (userService.login) {"id":3,"userid":"test1","password":"rBMG2Rbuplr3JVYRUNbTRfn/h83/GYFBwptJv9CA6DEMzYRMEEiWCcXXIM83CgGGel51MTTO8KvPnoguFxAItw==.c7ada7a7036894cb405a0569d186f9da758cc918e1033ed6fac5ddd897fd0aaeb363aec53a570046bfc7671b5d1448c809b3c0fed2245eeddc3ce269f9b9038d","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","provider":"local","snsId":null,"updatedPwDate":null,"createdAt":"2023-06-26T01:44:11.000Z","updatedAt":"2023-06-26T01:44:11.000Z","deletedAt":null}
+2023-06-27 15:52:20.701[debug] (userService.checkPassword) true
+2023-06-27 15:52:20.702[info] (auth.login.result) {"id":3,"userid":"test1","password":"rBMG2Rbuplr3JVYRUNbTRfn/h83/GYFBwptJv9CA6DEMzYRMEEiWCcXXIM83CgGGel51MTTO8KvPnoguFxAItw==.c7ada7a7036894cb405a0569d186f9da758cc918e1033ed6fac5ddd897fd0aaeb363aec53a570046bfc7671b5d1448c809b3c0fed2245eeddc3ce269f9b9038d","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","provider":"local","snsId":null,"updatedPwDate":null,"createdAt":"2023-06-26T01:44:11.000Z","updatedAt":"2023-06-26T01:44:11.000Z","deletedAt":null}
+2023-06-27 15:52:26.148[info] (user.reg.params) {}
+2023-06-27 16:03:14.939[info] App start.
+2023-06-27 16:03:15.020[info] DB connection success
+2023-06-27 16:03:15.037[info] Sequelize sync success
+2023-06-27 16:04:00.225[info] App start.
+2023-06-27 16:04:00.304[info] DB connection success
+2023-06-27 16:04:00.322[info] Sequelize sync success
+2023-06-27 16:04:14.282[info] App start.
+2023-06-27 16:04:14.359[info] DB connection success
+2023-06-27 16:04:14.388[info] Sequelize sync success
+2023-06-27 16:04:30.037[info] App start.
+2023-06-27 16:04:30.128[info] DB connection success
+2023-06-27 16:04:30.142[info] Sequelize sync success
+2023-06-27 16:05:30.963[info] App start.
+2023-06-27 16:05:31.045[info] DB connection success
+2023-06-27 16:05:31.072[info] Sequelize sync success
+2023-06-27 16:07:21.403[info] App start.
+2023-06-27 16:07:21.486[info] DB connection success
+2023-06-27 16:07:21.508[info] Sequelize sync success
+2023-06-27 16:07:42.182[info] App start.
+2023-06-27 16:07:42.266[info] DB connection success
+2023-06-27 16:07:42.285[info] Sequelize sync success
+2023-06-27 16:08:04.561[info] App start.
+2023-06-27 16:08:04.643[info] DB connection success
+2023-06-27 16:08:04.659[info] Sequelize sync success
+2023-06-27 16:08:09.028[info] App start.
+2023-06-27 16:08:09.105[info] DB connection success
+2023-06-27 16:08:09.117[info] Sequelize sync success
+2023-06-27 16:08:20.487[info] App start.
+2023-06-27 16:08:20.567[info] DB connection success
+2023-06-27 16:08:20.584[info] Sequelize sync success
+2023-06-27 16:08:28.056[info] App start.
+2023-06-27 16:08:28.142[info] DB connection success
+2023-06-27 16:08:28.158[info] Sequelize sync success
+2023-06-27 16:09:04.800[info] App start.
+2023-06-27 16:09:04.885[info] DB connection success
+2023-06-27 16:09:04.902[info] Sequelize sync success
+2023-06-27 16:09:36.286[info] App start.
+2023-06-27 16:09:36.366[info] DB connection success
+2023-06-27 16:09:36.383[info] Sequelize sync success
+2023-06-27 16:10:06.219[info] App start.
+2023-06-27 16:10:06.305[info] DB connection success
+2023-06-27 16:10:06.319[info] Sequelize sync success
+2023-06-27 16:11:06.783[info] App start.
+2023-06-27 16:11:06.865[info] DB connection success
+2023-06-27 16:11:06.878[info] Sequelize sync success
+2023-06-27 16:11:57.941[info] App start.
+2023-06-27 16:11:58.042[info] DB connection success
+2023-06-27 16:11:58.059[info] Sequelize sync success
+2023-06-27 16:12:10.028[info] App start.
+2023-06-27 16:12:10.113[info] DB connection success
+2023-06-27 16:12:10.128[info] Sequelize sync success
+2023-06-27 17:09:35.173[info] App start.
+2023-06-27 17:09:35.266[info] DB connection success
+2023-06-27 17:09:35.349[info] Sequelize sync success
+2023-06-27 17:11:04.412[info] App start.
+2023-06-27 17:11:04.500[info] DB connection success
+2023-06-27 17:11:04.533[info] Sequelize sync success
+2023-06-27 17:13:48.386[info] App start.
+2023-06-27 17:13:48.463[info] DB connection success
+2023-06-27 17:13:48.488[info] Sequelize sync success
+2023-06-27 17:14:55.136[info] App start.
+2023-06-27 17:14:55.220[info] DB connection success
+2023-06-27 17:14:55.245[info] Sequelize sync success
+2023-06-27 17:15:03.013[info] App start.
+2023-06-27 17:15:03.088[info] DB connection success
+2023-06-27 17:15:03.114[info] Sequelize sync success
+2023-06-27 17:41:30.767[error] Error: 토큰이 없습니다. 로그인 필요.
+2023-06-27 17:42:11.447[info] (auth.login.params) {"userid":"test1","password":"1111"}
+2023-06-27 17:42:11.473[debug] (userService.login) {"id":3,"userid":"test1","password":"rBMG2Rbuplr3JVYRUNbTRfn/h83/GYFBwptJv9CA6DEMzYRMEEiWCcXXIM83CgGGel51MTTO8KvPnoguFxAItw==.c7ada7a7036894cb405a0569d186f9da758cc918e1033ed6fac5ddd897fd0aaeb363aec53a570046bfc7671b5d1448c809b3c0fed2245eeddc3ce269f9b9038d","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","provider":"local","snsId":null,"updatedPwDate":null,"createdAt":"2023-06-26T01:44:11.000Z","updatedAt":"2023-06-26T01:44:11.000Z","deletedAt":null}
+2023-06-27 17:42:11.477[debug] (userService.checkPassword) true
+2023-06-27 17:42:11.478[info] (auth.login.result) {"id":3,"userid":"test1","password":"rBMG2Rbuplr3JVYRUNbTRfn/h83/GYFBwptJv9CA6DEMzYRMEEiWCcXXIM83CgGGel51MTTO8KvPnoguFxAItw==.c7ada7a7036894cb405a0569d186f9da758cc918e1033ed6fac5ddd897fd0aaeb363aec53a570046bfc7671b5d1448c809b3c0fed2245eeddc3ce269f9b9038d","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","provider":"local","snsId":null,"updatedPwDate":null,"createdAt":"2023-06-26T01:44:11.000Z","updatedAt":"2023-06-26T01:44:11.000Z","deletedAt":null}
+2023-06-27 17:43:58.180[info] (auth.login.params) {"userid":"testsss","password":"111111"}
+2023-06-27 17:43:58.193[debug] (userService.login) null
+2023-06-27 17:43:58.195[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-27 17:44:04.658[info] (auth.login.params) {"userid":"testsdasd","password":"sdasdasdasd"}
+2023-06-27 17:44:04.664[debug] (userService.login) null
+2023-06-27 17:44:04.665[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-27 17:53:47.831[info] (user.info.params) {"userid":"testttt"}
+2023-06-27 17:53:47.847[debug] (userService.info) null
+2023-06-27 17:53:47.848[info] result값:  null
+2023-06-27 17:54:09.095[info] (user.reg.params) {"userid":"testttt","password":"1111dddd","email":"asdasdas@sdasdasd.com","phone":"010-1111-1111"}
+2023-06-27 17:54:09.095[error] Error: Not allowed null (name, userid, password)
+2023-06-27 17:54:09.098[debug] (userService.makePassword) "1111dddd"
+2023-06-27 17:54:44.855[info] App start.
+2023-06-27 17:54:44.967[info] DB connection success
+2023-06-27 17:54:45.007[info] Sequelize sync success
+2023-06-27 17:54:47.742[info] (user.reg.params) {"userid":"testttt","password":"1111dddd","email":"asdasdas@sdasdasd.com","phone":"010-1111-1111"}
+2023-06-27 17:54:47.743[error] Error: Not allowed null (name, userid, password)
+2023-06-27 17:54:53.511[info] App start.
+2023-06-27 17:54:53.645[info] DB connection success
+2023-06-27 17:54:53.684[info] Sequelize sync success
+2023-06-27 17:55:14.606[info] App start.
+2023-06-27 17:55:14.722[info] DB connection success
+2023-06-27 17:55:14.773[info] Sequelize sync success
+2023-06-27 17:55:16.127[info] (user.reg.params) {"userid":"testttt","password":"1111dddd","email":"asdasdas@sdasdasd.com","phone":"010-1111-1111"}
+2023-06-27 17:55:16.128[error] Error: Not allowed null (name, userid, password)
+2023-06-27 17:56:39.499[info] App start.
+2023-06-27 17:56:39.658[info] DB connection success
+2023-06-27 17:56:39.703[info] Sequelize sync success
+2023-06-27 17:56:55.429[info] (user.info.params) {"userid":"sadasdsadasdsad"}
+2023-06-27 17:56:55.449[debug] (userService.info) null
+2023-06-27 17:56:55.450[info] result값:  null
+2023-06-27 17:57:33.422[info] (user.reg.params) {"username":"sdsadasdas","userid":"sadasdsadasdsad","password":"asASAS1111","email":"SADAS@ASDASD.COM","phone":"010-1111-1111"}
+2023-06-27 17:57:33.425[debug] (userService.makePassword) "asASAS1111"
+2023-06-27 17:57:33.472[debug] (userService.reg) {"provider":"local","id":5,"username":"sdsadasdas","userid":"sadasdsadasdsad","email":"SADAS@ASDASD.COM","phone":"010-1111-1111","updatedAt":"2023-06-27T08:57:33.429Z","createdAt":"2023-06-27T08:57:33.429Z"}
+2023-06-27 17:57:33.475[info] (user.reg.result) {"provider":"local","id":5,"username":"sdsadasdas","userid":"sadasdsadasdsad","email":"SADAS@ASDASD.COM","phone":"010-1111-1111","updatedAt":"2023-06-27T08:57:33.429Z","createdAt":"2023-06-27T08:57:33.429Z"}
+2023-06-27 18:01:24.739[info] (auth.login.params) {"userid":"test1","password":"1111"}
+2023-06-27 18:01:24.764[debug] (userService.login) {"id":3,"userid":"test1","password":"rBMG2Rbuplr3JVYRUNbTRfn/h83/GYFBwptJv9CA6DEMzYRMEEiWCcXXIM83CgGGel51MTTO8KvPnoguFxAItw==.c7ada7a7036894cb405a0569d186f9da758cc918e1033ed6fac5ddd897fd0aaeb363aec53a570046bfc7671b5d1448c809b3c0fed2245eeddc3ce269f9b9038d","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","provider":"local","snsId":null,"updatedPwDate":null,"createdAt":"2023-06-26T01:44:11.000Z","updatedAt":"2023-06-26T01:44:11.000Z","deletedAt":null}
+2023-06-27 18:01:24.771[debug] (userService.checkPassword) true
+2023-06-27 18:01:24.773[info] (auth.login.result) {"id":3,"userid":"test1","password":"rBMG2Rbuplr3JVYRUNbTRfn/h83/GYFBwptJv9CA6DEMzYRMEEiWCcXXIM83CgGGel51MTTO8KvPnoguFxAItw==.c7ada7a7036894cb405a0569d186f9da758cc918e1033ed6fac5ddd897fd0aaeb363aec53a570046bfc7671b5d1448c809b3c0fed2245eeddc3ce269f9b9038d","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","provider":"local","snsId":null,"updatedPwDate":null,"createdAt":"2023-06-26T01:44:11.000Z","updatedAt":"2023-06-26T01:44:11.000Z","deletedAt":null}

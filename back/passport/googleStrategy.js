@@ -15,6 +15,7 @@ module.exports = () => {
       async (accessToken, refreshToken, profile, done) => {
         // console.log("google profile", profile);
         const newUser = {
+          id: profile.id,
           userid: profile.id,
           snsId: profile.id,
           username: profile.displayName,

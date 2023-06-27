@@ -133,7 +133,11 @@ const SignUpPage = () => {
             />
           </div>
           <div>
-            <button className="submitButton" onClick={handleSubmit} disabled={!isUsernameValid}>
+            <button
+              className="submitButton"
+              onClick={handleSubmit}
+              disabled={!isUsernameValid}
+            >
               가입하기
             </button>
           </div>

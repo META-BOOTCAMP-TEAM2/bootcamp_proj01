@@ -1,13 +1,10 @@
 const Sequelize = require("sequelize");
 
-module.exports = class Board extends Sequelize.Model {
+module.exports = class Address extends Sequelize.Model {
   static init(sequelize) {
     return super.init(
       {
-        userId: {
-          type: Sequelize.INTEGER,
-        },
-        title: {
+        address: {
           type: Sequelize.STRING(50),
           allowNull: false,
         },
@@ -29,13 +26,10 @@ module.exports = class Board extends Sequelize.Model {
   }
 
   static associate(db) {
-    db.Board.belongsTo(db.User, {
-      foreignKey: { name: "userId", onDelete: "SET NULL", as: "User" },
-    });
-    db.Board.hasMany(db.Post, {
-      foreignKey: { name: "boardId", onDelete: "SET NULL", as: "Posts" },
+    db.Address.hasMany(db.Post, {
+      foreignKey: { name: "addressId", onDelete: "SET NULL", as: "Post" },
     });
   }
 
-  static includeAttributes = ["id", "title", "active", "createdAt"];
+  static includeAttributes = ["id", "address", "active", "createdAt"];
 };

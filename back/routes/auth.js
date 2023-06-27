@@ -10,7 +10,7 @@ const userService = require("../service/userService");
 router.post("/join", async (req, res) => {
   try {
     const params = {
-      username: req.body.username,
+      username: req.body.name,
       userid: req.body.userid,
       password: req.body.password,
       role: req.body.role,
@@ -24,7 +24,7 @@ router.post("/join", async (req, res) => {
       const err = new Error("Not allowed null (name, userid, password)");
       logger.error(err.toString());
 
-      res.status(500).json(err.toString());
+      res.json(err.toString());
     }
 
     // 비즈니스 로직 호출

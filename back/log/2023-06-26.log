@@ -1,0 +1,31 @@
+2023-06-26 10:39:51.647[info] App start.
+2023-06-26 10:39:52.841[info] DB connection success
+2023-06-26 10:39:52.887[info] Sequelize sync success
+2023-06-26 10:41:04.317[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-26 10:41:04.342[debug] (userService.login) null
+2023-06-26 10:41:04.343[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-26 10:44:11.119[info] (user.reg.params) {"username":"이름","userid":"test1","password":"1111","role":"member","email":"test1@test.com","phone":"010-1111-1111"}
+2023-06-26 10:44:11.124[debug] (userService.makePassword) "1111"
+2023-06-26 10:44:11.156[debug] (userService.reg) {"provider":"local","id":3,"username":"이름","userid":"test1","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedAt":"2023-06-26T01:44:11.129Z","createdAt":"2023-06-26T01:44:11.129Z"}
+2023-06-26 10:44:11.158[info] (user.reg.result) {"provider":"local","id":3,"username":"이름","userid":"test1","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedAt":"2023-06-26T01:44:11.129Z","createdAt":"2023-06-26T01:44:11.129Z"}
+2023-06-26 10:45:07.218[info] (user.reg.params) {"username":"이름","userid":"test2","password":"1111","role":"member","email":"test1@test.com","phone":"010-1111-1111"}
+2023-06-26 10:45:07.222[debug] (userService.makePassword) "1111"
+2023-06-26 10:45:07.258[debug] (userService.reg) {"provider":"local","id":4,"username":"이름","userid":"test2","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedAt":"2023-06-26T01:45:07.224Z","createdAt":"2023-06-26T01:45:07.224Z"}
+2023-06-26 10:45:07.260[info] (user.reg.result) {"provider":"local","id":4,"username":"이름","userid":"test2","role":"member","email":"test1@test.com","phone":"010-1111-1111","updatedAt":"2023-06-26T01:45:07.224Z","createdAt":"2023-06-26T01:45:07.224Z"}
+2023-06-26 10:45:30.039[info] (auth.login.params) {"userid":"test2","password":"1111"}
+2023-06-26 10:45:30.054[debug] (userService.login) {"id":4,"userid":"test2","password":"NlJnkMzFr0/UK6Bn8VkXa+CYyhfEykMs8kZ3EfLyYBwV6zKSdqvSrhhlnsvVMs0biD7IzzuT9tyQzkh5R7M6/Q==.aba2293c489ffd656d299494d87d8644a2ea39db8343e266b25e9b7f278464fbbbf667f2fc406dea06c68ae32f3dd53ebf2e7bfa559e2d76da8c677e8f9d715b","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","provider":"local","snsId":null,"updatedPwDate":null,"createdAt":"2023-06-26T01:45:07.000Z","updatedAt":"2023-06-26T01:45:07.000Z","deletedAt":null}
+2023-06-26 10:45:30.059[debug] (userService.checkPassword) true
+2023-06-26 10:45:30.061[info] (auth.login.result) {"id":4,"userid":"test2","password":"NlJnkMzFr0/UK6Bn8VkXa+CYyhfEykMs8kZ3EfLyYBwV6zKSdqvSrhhlnsvVMs0biD7IzzuT9tyQzkh5R7M6/Q==.aba2293c489ffd656d299494d87d8644a2ea39db8343e266b25e9b7f278464fbbbf667f2fc406dea06c68ae32f3dd53ebf2e7bfa559e2d76da8c677e8f9d715b","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","provider":"local","snsId":null,"updatedPwDate":null,"createdAt":"2023-06-26T01:45:07.000Z","updatedAt":"2023-06-26T01:45:07.000Z","deletedAt":null}
+2023-06-26 11:24:43.063[info] App start.
+2023-06-26 11:24:44.314[info] DB connection success
+2023-06-26 11:24:44.347[info] Sequelize sync success
+2023-06-26 14:04:38.512[info] (auth.login.params) {"userid":"test","password":"1111"}
+2023-06-26 14:04:38.524[debug] (userService.login) null
+2023-06-26 14:04:38.525[error] Error: 아이디 혹은 비밀번호를 확인해주세요.(code:01)
+2023-06-26 14:04:44.637[info] (auth.login.params) {"userid":"test1","password":"1111"}
+2023-06-26 14:04:44.641[debug] (userService.login) {"id":3,"userid":"test1","password":"rBMG2Rbuplr3JVYRUNbTRfn/h83/GYFBwptJv9CA6DEMzYRMEEiWCcXXIM83CgGGel51MTTO8KvPnoguFxAItw==.c7ada7a7036894cb405a0569d186f9da758cc918e1033ed6fac5ddd897fd0aaeb363aec53a570046bfc7671b5d1448c809b3c0fed2245eeddc3ce269f9b9038d","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","provider":"local","snsId":null,"updatedPwDate":null,"createdAt":"2023-06-26T01:44:11.000Z","updatedAt":"2023-06-26T01:44:11.000Z","deletedAt":null}
+2023-06-26 14:04:44.644[debug] (userService.checkPassword) true
+2023-06-26 14:04:44.645[info] (auth.login.result) {"id":3,"userid":"test1","password":"rBMG2Rbuplr3JVYRUNbTRfn/h83/GYFBwptJv9CA6DEMzYRMEEiWCcXXIM83CgGGel51MTTO8KvPnoguFxAItw==.c7ada7a7036894cb405a0569d186f9da758cc918e1033ed6fac5ddd897fd0aaeb363aec53a570046bfc7671b5d1448c809b3c0fed2245eeddc3ce269f9b9038d","username":"이름","role":"member","email":"test1@test.com","phone":"010-1111-1111","provider":"local","snsId":null,"updatedPwDate":null,"createdAt":"2023-06-26T01:44:11.000Z","updatedAt":"2023-06-26T01:44:11.000Z","deletedAt":null}
+2023-06-26 14:38:08.316[info] (user.reg.params) {"userid":"asdsadsd","password":"q1111","email":"dasdas@dsda.com","phone":"010-1111-1111"}
+2023-06-26 14:38:08.317[error] Error: Not allowed null (name, userid, password)
+2023-06-26 14:38:08.320[debug] (userService.makePassword) "q1111"

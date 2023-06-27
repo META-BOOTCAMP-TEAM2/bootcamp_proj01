@@ -5,6 +5,7 @@ import { AuthContext } from "../components/authContext";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./stylePages.css";
+import axios from "axios";
 
 const LoginForm = () => {
   const [inputs, setInputs] = useState({
@@ -32,9 +33,18 @@ const LoginForm = () => {
     }
   };
 
-  // const handleGoogleLogin = () => {
-  //   // 구글 소셜 로그인 처리
-  // };
+  const handleGoogleLogin = async (e) => {
+    e.preventDefault();
+    // 구글 소셜 로그인 처리
+    try {
+      const response = await axios.get("http://localhost:8000/auth/google");
+      console.log(response);
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+      alert(error);
+    }
+  };
 
   // const handleKakaoLogin = () => {
   //   // 카카오 소셜 로그인 처리
@@ -67,13 +77,13 @@ const LoginForm = () => {
           <br />
           <button onClick={handleSubmit}>로그인</button>
 
-          {/* <button
+          <button
             type="button"
             onClick={handleGoogleLogin}
             className="buttonGoogle"
           >
             Login With Google
-          </button> */}
+          </button>
           <br />
           {/* <button
             type="button"

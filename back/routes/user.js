@@ -57,7 +57,7 @@ router.put("/:id", async (req, res) => {
       email: req.body.email,
       phone: req.body.phone,
     };
-    logger.info(`(department.edit.params) ${JSON.stringify(params)}`);
+    logger.info(`(user.edit.params) ${JSON.stringify(params)}`);
 
     // 비즈니스 로직 호출
     const result = await userService.edit(params);
@@ -75,7 +75,7 @@ router.delete("/:id", async (req, res) => {
     const params = {
       id: req.params.id,
     };
-    logger.info(`(department.delete.params) ${JSON.stringify(params)}`);
+    logger.info(`(user.delete.params) ${JSON.stringify(params)}`);
 
     // 비즈니스 로직 호출
     const result = await userService.delete(params);

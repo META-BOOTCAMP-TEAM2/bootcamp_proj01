@@ -26,9 +26,9 @@ app.use(cors(corsConfig));
 //passport 설정
 passportConfig();
 
-// // view engine setup   [view 프론트엔드 진행.]
-// app.set("views", path.join(__dirname, "views"));
-// app.set("view engine", "ejs");
+// view engine setup   [view 프론트엔드 진행.]
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
 
 // DB 연결 확인 및 table 생성
 models.sequelize

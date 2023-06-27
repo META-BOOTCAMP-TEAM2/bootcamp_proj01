@@ -27,20 +27,13 @@ const tokenUtil = {
     return accessToken;
   },
   makeRefreshToken(user) {
-    const payload = {
-      id: user.id,
-      userid: user.userid,
-      username: user.username,
-      role: user.role,
-      email: user.email,
-      phone: user.phone,
-    };
+    const payload = {};
 
     const refreshToken = jwt.sign(payload, accessSecretKey, refreshOptions);
 
     return refreshToken;
   },
-  verifyToken(token) {
+  verifyAccessToken(token) {
     try {
       const decoded = jwt.verify(token, accessSecretKey);
 
@@ -49,21 +42,15 @@ const tokenUtil = {
       return null;
     }
   },
+  verifyRefreshToken(token) {
+    try {
+      const decoded = jwt.verify(token, accessSecretKey);
 
-  // // 리프레쉬 토큰 검증
-  // verifyToken1(req, res) {
-  //   try {
-  //     const token = req.cookies.accessToken;
-  //     const data = jwt.verify(token, accessSecretKey);
-  //     if (data) {
-  //       //토큰 검증이 성공한 경우 새로 갱신해 준다.
-  //       const newAccessToken = makeAccessToken(data);
-  //     }
-  //     next(); // 미들웨어 통과(계속 진행)
-  //   } catch (error) {
-  //     res.status(500).json(error);
-  //   }
-  // },
+      return decoded;
+    } catch (err) {
+      return null;
+    }
+  },
 };
 
 module.exports = tokenUtil;

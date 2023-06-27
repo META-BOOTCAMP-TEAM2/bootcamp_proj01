@@ -54,26 +54,16 @@ module.exports = class User extends Sequelize.Model {
     );
   }
   static associate(db) {
-    db.User.hasMany(db.Board, {
-      foreignKey: { name: "userId", onDelete: "SET NULL", as: "Boards" },
+    db.User.hasMany(db.Post, {
+      foreignKey: { name: "userId", onDelete: "SET NULL", as: "Post" },
     });
-    // db.User.hasMany(db.Post, {
-    //   foreignKey: { name: "userId", onDelete: "SET NULL", as: "Posts" },
-    // });
+    db.User.hasMany(db.Like, {
+      foreignKey: { name: "userId", onDelete: "SET NULL", as: "Like" },
+    });
   }
 
   static includeAttributes = ["id", "username", "role", "email", "phone"];
 };
-
-// static associate(db) {
-//   db.User.belongsTo(db.Department, { foreignKey: { name: 'departmentId', onDelete: 'SET NULL', as: 'Department' } });
-//   db.User.hasMany(db.Board, { foreignKey: { name: 'userId', onDelete: 'SET NULL', as: 'Boards' } });
-//   db.User.hasMany(db.Post, { foreignKey: { name: 'userId', onDelete: 'SET NULL', as: 'Posts' } });
-//   db.User.hasMany(db.Comment, { foreignKey: { name: 'userId', onDelete: 'SET NULL', as: 'Comments' } });
-// }
-
-// static includeAttributes = ['id', 'name', 'role', 'email', 'phone'];
-// };
 
 // 아이디	userid	varchar(255)	unique, not null
 // 비밀번호	password	varchar(500)	not null
