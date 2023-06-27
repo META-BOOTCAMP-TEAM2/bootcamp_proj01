@@ -5,6 +5,7 @@ import { AuthContext } from "../components/authContext";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./stylePages.css";
+import axios from "axios";
 
 const LoginForm = () => {
   const [inputs, setInputs] = useState({
@@ -36,8 +37,17 @@ const LoginForm = () => {
     // 구글 소셜 로그인 처리
   };
 
-  const handleKakaoLogin = () => {
+  const handleKakaoLogin = async (e) => {
     // 카카오 소셜 로그인 처리
+    e.preventDefault();
+    try {
+      await axios.get("auth/kakao/logout").then((req, res) => {
+        alert(Object.keys(res));
+      });
+      navigate("/");
+    } catch (err) {
+      alert(err);
+    }
   };
 
   return (

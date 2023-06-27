@@ -135,7 +135,7 @@ import Header from "../components/Header";
 import "./stylePages.css";
 import axios from "axios";
 
-const Listing = () => {
+const MyListing = () => {
   const [filteredPropertyType, setFilteredPropertyType] = useState(null);
   const [sortByPrice, setSortByPrice] = useState(null);
   const [rows, setRows] = useState([]);
@@ -278,4 +278,4 @@ const Listing = () => {
   );
 };
 
-export default Listing;
+export default MyListing;

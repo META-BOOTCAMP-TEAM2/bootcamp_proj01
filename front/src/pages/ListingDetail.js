@@ -117,6 +117,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./stylePages.css";
 import HeartButton from "../components/heartButton";
+import addressChange from "../components/addressChange";
+const { kakao } = window;
 
 const ListingDetail = (props) => {
   const [like, setLike] = useState(false);
@@ -125,7 +127,7 @@ const ListingDetail = (props) => {
 
   const data = JSON.parse(storedData);
   const postId = data.id;
-  console.log(data);
+  console.log(data.address);
 
   const fetchData = async () => {
     const res = await axios.get(`/like/${userId}/${postId}`);
@@ -234,6 +236,7 @@ const ListingDetail = (props) => {
           <p>{data.additionalInfo}</p>
         </div>
       </div>
+
       <Footer />
     </div>
   );
