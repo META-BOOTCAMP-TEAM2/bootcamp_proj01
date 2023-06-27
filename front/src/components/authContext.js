@@ -7,12 +7,8 @@ export const AuthContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(localStorage.getItem("userid") || null);
 
   const login = async (inputs) => {
-<<<<<<< HEAD
     // const API = "http://192.168.0.30:8000";
     const res = await axios.post("auth/login", inputs);
-=======
-    const res = await axios.post("http://localhost:8000/auth/login", inputs);
->>>>>>> d5bf5698864de21fc1ac36410994f668ffb7f0be
     console.log(res.data);
     console.log(typeof res.data);
     const { userid, name, role, id } = res.data;
