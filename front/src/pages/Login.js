@@ -33,10 +33,6 @@ const LoginForm = () => {
     }
   };
 
-<<<<<<< HEAD
-  const handleGoogleLogin = () => {
-    // 구글 소셜 로그인 처리
-=======
   const handleGoogleLogin = async (e) => {
     e.preventDefault();
     // 구글 소셜 로그인 처리
@@ -48,7 +44,6 @@ const LoginForm = () => {
       console.log(error);
       alert(error);
     }
->>>>>>> d5bf5698864de21fc1ac36410994f668ffb7f0be
   };
 
   const handleKakaoLogin = async (e) => {
@@ -106,7 +101,6 @@ const LoginForm = () => {
             </button>
             {err && <p>{err}</p>}
 
-<<<<<<< HEAD
             <div className="loginInSignText">
               계정이 있으신가요?{" "}
               <Link className="loginInSign" to="/signup">
@@ -115,29 +109,6 @@ const LoginForm = () => {
             </div>
           </form>
         </div>
-=======
-          <button
-            type="button"
-            onClick={handleGoogleLogin}
-            className="buttonGoogle"
-          >
-            Login With Google
-          </button>
-          <br />
-          {/* <button
-            type="button"
-            onClick={handleKakaoLogin}
-            className="buttonKakao"
-          >
-            Login With Kakao
-          </button> */}
-          <br />
-          {err && <p>{err}</p>}
-        </form>
-        <p className="linkSign">
-          계정이 있으신가요? <Link to="/signup">회원가입</Link>
-        </p>
->>>>>>> d5bf5698864de21fc1ac36410994f668ffb7f0be
       </div>
       <Footer />
     </div>
