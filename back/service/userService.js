@@ -41,6 +41,22 @@ const service = {
       resolve(inserted);
     });
   },
+  // service_info [회원가입 - 특정 유저 조회]
+  async regInfo(params) {
+    let result = null;
+    try {
+      result = await userDao.selectUserForLogin(params);
+    } catch (err) {
+      return new Promise((resolve, reject) => {
+        reject(err.toString());
+      });
+    }
+
+    // 결과값 리턴
+    return new Promise((resolve) => {
+      resolve(result);
+    });
+  },
   // service_reg [유저 로그인]
   async login(params) {
     // 1. 사용자 조회
@@ -93,7 +109,21 @@ const service = {
       resolve(user);
     });
   },
+  //service_info [마이페이지 유저 조회]
+  async userInfo(params) {
+    let result = null;
+    try {
+      result = await userDao.selectUserForMypage(params);
+    } catch (err) {
+      return new Promise((resolve, reject) => {
+        reject(err);
+      });
+    }
 
+    return new Promise((resolve) => {
+      resolve(result);
+    });
+  },
   // service_list [전체 유저 조회]
   async list(params) {
     let result = null;
@@ -105,22 +135,6 @@ const service = {
       });
     }
 
-    return new Promise((resolve) => {
-      resolve(result);
-    });
-  },
-  // service_info [회원가입 - 특정 유저 조회]
-  async regInfo(params) {
-    let result = null;
-    try {
-      result = await userDao.selectUserForLogin(params);
-    } catch (err) {
-      return new Promise((resolve, reject) => {
-        reject(err.toString());
-      });
-    }
-
-    // 결과값 리턴
     return new Promise((resolve) => {
       resolve(result);
     });

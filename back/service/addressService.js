@@ -2,7 +2,7 @@ const logger = require("../lib/logger");
 const addressDao = require("../dao/addressDao");
 
 const service = {
-  // department 입력
+  // address 입력
   async reg(params) {
     let inserted = null;
 

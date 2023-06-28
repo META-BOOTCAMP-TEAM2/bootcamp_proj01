@@ -18,6 +18,19 @@ router.get("/search/:userid", async (req, res) => {
   }
 });
 
+//[마이페이지 - 사용자 정보조회]
+router.get("/mypage/:userid", async (req, res) => {
+  try {
+    const params = {
+      userid: req.params.userid,
+    };
+    const result = await userService.userInfo(params);
+    res.status(200).json(result);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 // 유저 수정
 router.put("/:id", async (req, res) => {
   try {

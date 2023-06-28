@@ -61,21 +61,21 @@ router.post("/login", async (req, res) => {
     const accessToken = tokenUtil.makeAccessToken(result);
     const refreshToken = tokenUtil.makeRefreshToken(result);
     // token 전송
-    // const tokenSet = { access_token: accessToken, refresh_token: refreshToken };
-    res.cookie("accessToken", accessToken, {
-      secure: false,
-      httpOnly: true,
-    });
+    const tokenSet = { access_token: accessToken, refresh_token: refreshToken };
+    // res.cookie("accessToken", accessToken, {
+    //   secure: false,
+    //   httpOnly: true,
+    // });
 
-    res.cookie("refreshToken", refreshToken, {
-      secure: false,
-      httpOnly: true,
-    });
+    // res.cookie("refreshToken", refreshToken, {
+    //   secure: false,
+    //   httpOnly: true,
+    // });
 
     const user = { ...result.dataValues };
     delete user.password;
     // 최종 응답
-    res.status(200).json(user); //유저 정보를 전달
+    res.status(200).json(tokenSet); //유저 정보를 전달
   } catch (err) {
     res.status(500).json(err);
   }

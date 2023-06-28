@@ -24,7 +24,7 @@ const dao = {
   selectUserForLogin(params) {
     return new Promise((resolve, reject) => {
       User.findOne({
-        attributes: ["id", "userid","password", "username", "role"],
+        attributes: ["id", "userid", "password", "username", "role"],
         where: { userid: params.userid },
       })
         .then((selectedOne) => {
@@ -35,6 +35,22 @@ const dao = {
         });
     });
   },
+  // 마이페이지 사용자 조회
+  selectUserForMypage(params) {
+    return new Promise((resolve, reject) => {
+      User.findOne({
+        attributes: { exclude: ["password"] }, // password 필드 제외
+        where: { userid: params.userid },
+      })
+        .then((selectedOne) => {
+          resolve(selectedOne);
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    });
+  },
+
   // 리스트 조회
   selectList(params) {
     // where 검색 조건
@@ -72,21 +88,6 @@ const dao = {
   selectUserByPk(params) {
     return new Promise((resolve, reject) => {
       User.findByPk(params.id)
-        .then((selectedOne) => {
-          resolve(selectedOne);
-        })
-        .catch((err) => {
-          reject(err);
-        });
-    });
-  },
-  // 마이페이지 사용자 조회
-  selectUserForMypage(params) {
-    return new Promise((resolve, reject) => {
-      User.findOne({
-        attributes: { exclude: ["password"] }, // password 필드 제외
-        where: { userid: params.userid },
-      })
         .then((selectedOne) => {
           resolve(selectedOne);
         })

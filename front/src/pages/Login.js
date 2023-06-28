@@ -54,6 +54,7 @@ const LoginForm = () => {
       });
       navigate("/");
     } catch (err) {
+      setError(err);
       alert(err);
     }
   };

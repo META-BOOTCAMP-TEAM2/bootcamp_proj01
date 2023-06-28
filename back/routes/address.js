@@ -5,23 +5,21 @@ const logger = require("../lib/logger");
 const addressService = require("../service/addressService");
 const { isLoggedIn } = require("../lib/middleware");
 
-// 등록
-router.post("/", isLoggedIn, async (req, res) => {
-  const loginUserId = res.get("userId") || null;
+// 주소등록
+router.post("/", async (req, res) => {
   try {
     const params = {
-      title: req.body.title,
+      address: req.body.address,
       active: req.body.active || true,
-      userId: loginUserId,
     };
     logger.info(`(board.reg.params) ${JSON.stringify(params)}`);
 
     // 입력값 null 체크
-    if (!params.title) {
-      const err = new Error("Not allowed null (title)");
+    if (!params.address) {
+      const err = new Error("Not allowed null (address)");
       logger.error(err.toString());
 
-      res.status(500).json({ err: err.toString() });
+      res.status(500).json(err.toString());
     }
 
     // 비즈니스 로직 호출
@@ -31,7 +29,7 @@ router.post("/", isLoggedIn, async (req, res) => {
     // 최종 응답
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ err: err.toString() });
+    res.status(500).json(err.toString());
   }
 });
 
