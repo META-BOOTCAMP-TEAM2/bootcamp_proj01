@@ -4,7 +4,7 @@ module.exports = class Post extends Sequelize.Model {
   static init(sequelize) {
     return super.init(
       {
-        boardId: {
+        addressId: {
           type: Sequelize.INTEGER,
         },
         userId: {
@@ -43,26 +43,6 @@ module.exports = class Post extends Sequelize.Model {
         structure: {
           type: Sequelize.STRING(255),
         },
-        filename1: {
-          type: Sequelize.STRING(255),
-        },
-        filename2: {
-          type: Sequelize.STRING(255),
-        },
-        filename3: {
-          type: Sequelize.STRING(255),
-        },
-
-        originalName1: {
-          type: Sequelize.STRING(255),
-        },
-        originalName2: {
-          type: Sequelize.STRING(255),
-        },
-        originalName3: {
-          type: Sequelize.STRING(255),
-        },
-
         path1: {
           type: Sequelize.STRING(255),
         },

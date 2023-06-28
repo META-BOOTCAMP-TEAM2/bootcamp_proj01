@@ -88,75 +88,6 @@ const UploadPage = () => {
 
   //////파일 업로드
 
-  const handleUpload1 = async (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("file", selectedFiles[0]);
-
-    try {
-      await axios.post("/upload", formData).then((res) => {
-        console.log(res.data);
-        let { originalName, filename, path } = res.data;
-        setInputs((prevInputs) => ({
-          ...prevInputs,
-          originalName1: originalName,
-          filename1: filename,
-          path1: path,
-        }));
-      });
-      alert("파일1 업로드 완료");
-      console.log(inputs);
-    } catch (error) {
-      const err = error.message;
-      console.log(`Error uploading file: ${err}`);
-    }
-  };
-  const handleUpload2 = async (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("file", selectedFiles[1]);
-
-    try {
-      await axios.post("/upload", formData).then((res) => {
-        console.log(res.data);
-        let { originalName, filename, path } = res.data;
-        setInputs((prevInputs) => ({
-          ...prevInputs,
-          originalName2: originalName,
-          filename2: filename,
-          path2: path,
-        }));
-      });
-      alert("파일2 업로드 완료");
-      console.log(inputs);
-    } catch (error) {
-      const err = error.message;
-      console.log(`Error uploading file: ${err}`);
-    }
-  };
-  const handleUpload3 = async (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("file", selectedFiles[2]);
-
-    try {
-      await axios.post("/upload", formData).then((res) => {
-        console.log(res.data);
-        let { originalName, filename, path } = res.data;
-        setInputs((prevInputs) => ({
-          ...prevInputs,
-          originalName3: originalName,
-          filename3: filename,
-          path3: path,
-        }));
-      });
-      alert("파일3 업로드 완료");
-      console.log(inputs);
-    } catch (error) {
-      const err = error.message;
-      console.log(`Error uploading file: ${err}`);
-    }
-  };
   return (
     <div>
       <Header />
@@ -173,13 +104,20 @@ const UploadPage = () => {
                 주소 검색: <div style={{ color: "red" }}>{inputs.address}</div>
               </p>
               <div className="searchAddress">
-                <DaumPostcode onComplete={handleAddressSelect} autoClose={false} />
+                <DaumPostcode
+                  onComplete={handleAddressSelect}
+                  autoClose={false}
+                />
               </div>
             </div>
             <div className="uploadContent2">
               <h3>계약 방식</h3>
               <div>
-                <select name="propertyType" value={inputs.propertyType} onChange={handleChange}>
+                <select
+                  name="propertyType"
+                  value={inputs.propertyType}
+                  onChange={handleChange}
+                >
                   <option value="매매">매매</option>
                   <option value="전세">전세</option>
                   <option value="월세">월세</option>
@@ -242,7 +180,11 @@ const UploadPage = () => {
 
               <h3>방 구조</h3>
               <label>
-                <select name="structure" value={inputs.structure} onChange={handleChange}>
+                <select
+                  name="structure"
+                  value={inputs.structure}
+                  onChange={handleChange}
+                >
                   <option value="원룸">원룸</option>
                   <option value="1.5룸">1.5룸</option>
                   <option value="2룸 이상">2룸 이상</option>
@@ -302,19 +244,7 @@ const UploadPage = () => {
                 </label>
               </div>
               <h3>사진 등록</h3>
-              <h5>사진 등록후 업로드 버튼 클릭.</h5>
               <input type="file" multiple onChange={handleFileChange} />
-              <div>
-                <button className="upload-button" onClick={handleUpload1}>
-                  파일1 업로드
-                </button>
-                <button className="upload-button" onClick={handleUpload2}>
-                  파일2 업로드
-                </button>
-                <button className="upload-button" onClick={handleUpload3}>
-                  파일3 업로드
-                </button>
-              </div>
               <div>
                 {selectedFiles.map((file, index) => (
                   <img
@@ -350,3 +280,73 @@ const UploadPage = () => {
 };
 
 export default UploadPage;
+
+// const handleUpload1 = async (e) => {
+//   e.preventDefault();
+//   const formData = new FormData();
+//   formData.append("file", selectedFiles[0]);
+
+//   try {
+//     await axios.post("/upload", formData).then((res) => {
+//       console.log(res.data);
+//       let { originalName, filename, path } = res.data;
+//       setInputs((prevInputs) => ({
+//         ...prevInputs,
+//         originalName1: originalName,
+//         filename1: filename,
+//         path1: path,
+//       }));
+//     });
+//     alert("파일1 업로드 완료");
+//     console.log(inputs);
+//   } catch (error) {
+//     const err = error.message;
+//     console.log(`Error uploading file: ${err}`);
+//   }
+// };
+// const handleUpload2 = async (e) => {
+//   e.preventDefault();
+//   const formData = new FormData();
+//   formData.append("file", selectedFiles[1]);
+
+//   try {
+//     await axios.post("/upload", formData).then((res) => {
+//       console.log(res.data);
+//       let { originalName, filename, path } = res.data;
+//       setInputs((prevInputs) => ({
+//         ...prevInputs,
+//         originalName2: originalName,
+//         filename2: filename,
+//         path2: path,
+//       }));
+//     });
+//     alert("파일2 업로드 완료");
+//     console.log(inputs);
+//   } catch (error) {
+//     const err = error.message;
+//     console.log(`Error uploading file: ${err}`);
+//   }
+// };
+// const handleUpload3 = async (e) => {
+//   e.preventDefault();
+//   const formData = new FormData();
+//   formData.append("file", selectedFiles[2]);
+
+//   try {
+//     await axios.post("/upload", formData).then((res) => {
+//       console.log(res.data);
+//       let { originalName, filename, path } = res.data;
+//       setInputs((prevInputs) => ({
+//         ...prevInputs,
+//         originalName3: originalName,
+//         filename3: filename,
+//         path3: path,
+//       }));
+//     });
+//     alert("파일3 업로드 완료");
+//     console.log(inputs);
+//   } catch (error) {
+//     const err = error.message;
+//     console.log(`Error uploading file: ${err}`);
+//   }
+// };

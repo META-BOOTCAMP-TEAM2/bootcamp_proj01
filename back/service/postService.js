@@ -2,7 +2,7 @@ const logger = require("../lib/logger");
 const postDao = require("../dao/postDao");
 
 const service = {
-  // post 입력
+  // 파일업로드
   async reg(params) {
     let inserted = null;
 
