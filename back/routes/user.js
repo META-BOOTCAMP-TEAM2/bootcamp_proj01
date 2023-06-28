@@ -19,7 +19,7 @@ router.get("/search/:userid", async (req, res) => {
 });
 
 //[마이페이지 - 사용자 정보조회]
-router.get("/mypage/:userid", async (req, res) => {
+router.get("/mypage/:userid", isLoggedIn, async (req, res) => {
   try {
     const params = {
       userid: req.params.userid,

@@ -8,8 +8,8 @@ function Home() {
   const navigate = useNavigate();
 
   const handleRoomUpload = () => {
-    const token = localStorage.getItem("token");
-    if (!token) {
+    const userid = localStorage.getItem("userid");
+    if (!userid) {
       alert("로그인이 필요합니다.");
       navigate("/login"); // 로그인 페이지로 이동
     } else {

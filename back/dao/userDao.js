@@ -21,10 +21,25 @@ const dao = {
     });
   },
   // 회원가입 - 사용자 조회
-  selectUserForLogin(params) {
+  SearchUserForReg(params) {
     return new Promise((resolve, reject) => {
       User.findOne({
-        attributes: ["id", "userid", "password", "username", "role"],
+        attributes: ["id", "userid", "username", "role"],
+        where: { userid: params.userid },
+      })
+        .then((selectedOne) => {
+          resolve(selectedOne);
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    });
+  },
+  // 로그인
+  userLogin(params) {
+    return new Promise((resolve, reject) => {
+      User.findOne({
+        attributes: ["id", "userid", "password", "username", "email", "role"],
         where: { userid: params.userid },
       })
         .then((selectedOne) => {
@@ -50,7 +65,6 @@ const dao = {
         });
     });
   },
-
   // 리스트 조회
   selectList(params) {
     // where 검색 조건

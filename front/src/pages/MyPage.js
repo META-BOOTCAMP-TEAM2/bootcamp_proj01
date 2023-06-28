@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../components/authContext";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -7,8 +7,9 @@ import "./stylePages.css";
 import axios from "axios";
 
 const MyPage = () => {
+  const navigate = useNavigate();
   const [userInfo, setUserInfo] = useState({});
-  const currentUser = localStorage.getItem("userid");
+  const { currentUser } = useContext(AuthContext);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -16,7 +17,8 @@ const MyPage = () => {
         const result = res.data;
         setUserInfo(result);
       } catch (err) {
-        alert(err);
+        alert(err.response.data);
+        if (err.response.status === 401) navigate("/login");
       }
     };
     fetchData();
@@ -44,7 +46,7 @@ const MyPage = () => {
       newWindow.sessionStorage.setItem("myData", JSON.stringify(result));
       console.log(result);
     } catch (err) {
-      alert(err);
+      alert(err.response.data);
     }
   };
   return (
@@ -60,11 +62,10 @@ const MyPage = () => {
           <div className="myPageBox">
             <h3 className="myPageSubTitle">나의 정보</h3>
             <div className="myPageInfo">
-              {" "}
-              <p> 이름 : {userInfo.name}</p>
-              <p> 아이디 : {userInfo.userid}</p>
-              <p> 이메일 주소 : {userInfo.email}</p>
-              <p> 연락처 : {userInfo.phone}</p>
+              <p> 이름 : {userInfo?.username}</p>
+              <p> 아이디 : {userInfo?.userid}</p>
+              <p> 이메일 주소 : {userInfo?.email}</p>
+              <p> 연락처 : {userInfo?.phone}</p>
             </div>
           </div>
 
@@ -86,3 +87,11 @@ const MyPage = () => {
 };
 
 export default MyPage;
+
+// 페이지를 새로고침할 때 currentUser 값이 사라지는 이유는 currentUser 값을 로컬 스토리지(localStorage)에 저장했기 때문입니다. 로컬 스토리지는 브라우저의 세션에 종속되는 저장소이며, 페이지를 새로고침하면 로컬 스토리지에 저장된 값이 초기화됩니다.
+
+// currentUser 값을 페이지 새로고침에도 유지하기 위해서는 다음과 같은 방법 중 하나를 선택할 수 있습니다:
+
+// 쿠키를 사용하여 currentUser 값을 저장하기: 서버에서 응답할 때 쿠키를 설정하여 currentUser 값을 저장하고, 페이지가 로드될 때 쿠키를 읽어서 값을 복원합니다. 이렇게 하면 쿠키에 저장된 값은 페이지 새로고침에도 유지됩니다.
+
+// React Context를 사용하여 currentUser 값을 관리하기: AuthContext와 같은 React Context를 사용하여 currentUser 값을 전역적으로 관리합니다. Context를 사용하면 여러 컴포넌트에서 currentUser 값을 공유하고 사용할 수 있으며, 페이지 새로고침에도 값이 유지됩니다.

@@ -5,7 +5,6 @@ export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
-
   const login = async (inputs) => {
     // const API = "http://192.168.0.30:8000";
     const res = await axios.post("auth/login", inputs);
@@ -20,14 +19,20 @@ export const AuthContextProvider = ({ children }) => {
     setCurrentUser(res.data.userid);
   };
 
-  const logout = () => {
+  const logout = async () => {
     // 로그아웃 시 localStorage에서 해당 데이터 제거
-
-    localStorage.removeItem("id");
-    localStorage.removeItem("userid");
-    localStorage.removeItem("username");
-    localStorage.removeItem("role");
-    setCurrentUser(null);
+    axios
+      .post("/auth/logout")
+      .then(() => {
+        localStorage.removeItem("id");
+        localStorage.removeItem("userid");
+        localStorage.removeItem("username");
+        localStorage.removeItem("role");
+        setCurrentUser(null);
+      })
+      .catch((err) => {
+        alert(err);
+      });
   };
 
   return (

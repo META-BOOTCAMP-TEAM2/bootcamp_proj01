@@ -1,10 +1,8 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../components/authContext";
-
 import { Button } from "react-bootstrap";
 import "./style.css"; // CSS 파일을 불러옵니다.
-import axios from "axios";
 
 function Header() {
   const { currentUser, logout } = useContext(AuthContext);

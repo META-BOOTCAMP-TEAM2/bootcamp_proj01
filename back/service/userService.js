@@ -45,7 +45,7 @@ const service = {
   async regInfo(params) {
     let result = null;
     try {
-      result = await userDao.selectUserForLogin(params);
+      result = await userDao.SearchUserForReg(params);
     } catch (err) {
       return new Promise((resolve, reject) => {
         reject(err.toString());
@@ -62,7 +62,7 @@ const service = {
     // 1. 사용자 조회
     let user = null;
     try {
-      user = await userDao.selectUserForLogin(params);
+      user = await userDao.userLogin(params);
       logger.debug(`(userService.login) ${JSON.stringify(user)}`);
 
       // 해당 사용자가 없는 경우 튕겨냄
@@ -77,7 +77,7 @@ const service = {
     } catch (err) {
       logger.error(`(userService.login) ${err.toString()}`);
       return new Promise((resolve, reject) => {
-        reject(err.toString());
+        reject(err.message);
       });
     }
 
@@ -93,9 +93,8 @@ const service = {
       if (!checkPassword) {
         const err = new Error("아이디 혹은 비밀번호를 확인해주세요.(code:02)");
         logger.error(err.toString());
-
         return new Promise((resolve, reject) => {
-          reject(err.toString());
+          reject(err.message);
         });
       }
     } catch (err) {

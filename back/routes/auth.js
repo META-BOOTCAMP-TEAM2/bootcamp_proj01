@@ -21,9 +21,9 @@ router.post("/join", async (req, res) => {
 
     // 입력값 null 체크 -> front에서 required 처리
     if (!params.username || !params.userid || !params.password) {
-      const err = new Error("Not allowed null (name, userid, password)");
-      logger.error(err.toString());
-      res.json(err.toString());
+      const err = new Error("Not allowed null (username, userid, password)");
+      logger.error(err.message);
+      res.json(err.message);
     }
 
     // 비즈니스 로직 호출
@@ -33,7 +33,7 @@ router.post("/join", async (req, res) => {
     // 최종 응답
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json(err.toString());
+    res.status(500).json(err.message);
   }
 });
 
@@ -46,12 +46,12 @@ router.post("/login", async (req, res) => {
     };
     logger.info(`(auth.login.params) ${JSON.stringify(params)}`);
 
-    // 입력값 null 체크 ->front required 하므로 불필요
+    // 입력값 null 체크
     if (!params.userid || !params.password) {
       const err = new Error("Not allowed null (userid, password)");
       logger.error(err.toString());
 
-      res.status(500).json(err.toString());
+      res.status(500).json(err.message);
     }
 
     // 비즈니스 로직 호출
@@ -61,23 +61,37 @@ router.post("/login", async (req, res) => {
     const accessToken = tokenUtil.makeAccessToken(result);
     const refreshToken = tokenUtil.makeRefreshToken(result);
     // token 전송
-    const tokenSet = { access_token: accessToken, refresh_token: refreshToken };
-    // res.cookie("accessToken", accessToken, {
-    //   secure: false,
-    //   httpOnly: true,
-    // });
+    // const tokenSet = { access_token: accessToken, refresh_token: refreshToken };
+    res.cookie("accessToken", accessToken, {
+      secure: false,
+      httpOnly: true,
+    });
 
-    // res.cookie("refreshToken", refreshToken, {
-    //   secure: false,
-    //   httpOnly: true,
-    // });
+    res.cookie("refreshToken", refreshToken, {
+      secure: false,
+      httpOnly: true,
+    });
 
     const user = { ...result.dataValues };
     delete user.password;
     // 최종 응답
-    res.status(200).json(tokenSet); //유저 정보를 전달
+    res.status(200).json(user); //유저 정보를 전달
   } catch (err) {
-    res.status(500).json(err);
+    res.status(500).json(err.toString()); //
+  }
+});
+
+//로그아웃
+router.post("/logout", async (req, res) => {
+  try {
+    // accessToken 쿠키 삭제
+    res.clearCookie("accessToken");
+    // refreshToken 쿠키 삭제
+    res.clearCookie("refreshToken");
+    // 최종 응답
+    res.status(200).json("logout success , delete cookies"); //유저 정보를 전달
+  } catch (error) {
+    res.status(500).json(err.toString());
   }
 });
 

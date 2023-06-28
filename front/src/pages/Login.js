@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../components/authContext";
-
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./stylePages.css";
@@ -25,11 +24,21 @@ const LoginForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      await login(inputs).then(navigate("/"));
-    } catch (err) {
-      setError(err.response.data);
-    }
+    await login(inputs)
+      .then(() => navigate("/"))
+      .catch((err) => {
+        // console.log(typeof err.response.data);
+        // console.log(Object.keys(err.response));
+        //(6) ['data', 'status', 'statusText', 'headers', 'config', 'request']
+        // 0: "data"
+        // 1: "status"
+        // 2: "statusText"
+        // 3: "headers"
+        // 4: "config"
+        // 5: "request"
+        alert(err.response.data);
+        setError(err.response.data);
+      });
   };
 
   const handleGoogleLogin = async (e) => {

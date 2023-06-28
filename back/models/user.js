@@ -21,6 +21,7 @@ module.exports = class User extends Sequelize.Model {
         role: {
           type: Sequelize.STRING(20),
           allowNull: true,
+          defaultValue: "member", //guest , member , supervisor, etc
         },
         email: {
           type: Sequelize.STRING(255),
