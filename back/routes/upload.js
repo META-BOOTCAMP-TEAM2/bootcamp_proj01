@@ -35,6 +35,9 @@ router.post(
   ]),
   async (req, res) => {
     try {
+console.log(req.files);
+console.log(req.body);
+
       const params = {
         additionalInfo: req.body.additionalInfo, //상세정보
         address: req.body.address, //매물주소

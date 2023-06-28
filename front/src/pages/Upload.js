@@ -6,25 +6,61 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const UploadPage = () => {
-  const [inputs, setInputs] = useState({
-    propertyType: "매매", //계약방식
+  const [previewURL1, setPreviewURL1] = useState("");
+  const [previewURL2, setPreviewURL2] = useState("");
+  const [previewURL3, setPreviewURL3] = useState("");
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    propertyType: "매매",
     address: "", //주소
-    price: 0, //매매가
-    deposit: 0, //전세가
-    monthlyRent: 0, //월세가
-    structure: "원룸", //방구조
+    price: null, //매매가
+    deposit: null, //전세가
+    monthlyRent: null, //월세가
+    structure: "원룸",
     additionalInfo: "",
-    userid: localStorage.getItem("userid"),
     options: [],
+
+    file1: null,
+    file2: null,
+    file3: null,
+    userid: localStorage.getItem("userid") || "test",
   });
 
-  const [selectedOptions, setSelectedOptions] = useState([]);
-  const [err, setError] = useState(null);
+  const handleChange = (event) => {
+    const { name, value, type, files } = event.target;
 
-  const handleChange = (e) => {
-    setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    if (type === "file") {
+      setFormData({
+        ...formData,
+        [name]: files[0],
+      });
+    }
+    if (name === "file1") {
+      let reader = new FileReader();
+      reader.onloadend = () => {
+        setPreviewURL1(reader.result);
+      };
+      reader.readAsDataURL(files[0]);
+    } else if (name === "file2") {
+      let reader = new FileReader();
+      reader.onloadend = () => {
+        setPreviewURL2(reader.result);
+      };
+      reader.readAsDataURL(files[0]);
+    } else if (name === "file3") {
+      let reader = new FileReader();
+      reader.onloadend = () => {
+        setPreviewURL3(reader.result);
+      };
+      reader.readAsDataURL(files[0]);
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
   };
 
+  const [selectedOptions, setSelectedOptions] = useState([]);
+
+  //체크박스 옵션 처리.
   const handleOptionChange = (event) => {
     const option = event.target.value;
     setSelectedOptions((prevOptions) => {
@@ -39,7 +75,7 @@ const UploadPage = () => {
       ? selectedOptions.filter((prevOption) => prevOption !== option)
       : [...selectedOptions, option];
 
-    setInputs((prevInputs) => ({
+    setFormData((prevInputs) => ({
       ...prevInputs,
       options: updatedOptions, // 선택한 옵션을 업데이트된 options으로 설정
     }));
@@ -48,7 +84,6 @@ const UploadPage = () => {
   };
 
   //카카오 주소검색
-
   useEffect(() => {
     handleAddressSearch();
   }, []);
@@ -59,49 +94,57 @@ const UploadPage = () => {
 
   const handleAddressSelect = (data) => {
     const fullAddress = data.address;
-    setInputs((prevInputs) => ({
+    setFormData((prevInputs) => ({
       ...prevInputs,
       address: fullAddress,
     }));
   };
 
-  const [selectedFiles, setSelectedFiles] = useState([]);
-
-  const handleFileChange = (event) => {
-    const files = Array.from(event.target.files);
-    setSelectedFiles((prevFiles) => [...prevFiles, ...files]);
-  };
-
-  const navigate = useNavigate();
-
+  //  입력 내용 서버로 전송
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // 나머지 입력 내용 서버로 전송
-      const res = await axios.post("/post", inputs);
+      const data = new FormData();
+      data.append("propertyType", formData.propertyType);
+      data.append("address", formData.address);
+      data.append("price", formData.price);
+      data.append("deposit", formData.deposit);
+      data.append("monthlyRent", formData.monthlyRent);
+      data.append("structure", formData.structure);
+      data.append("additionalInfo", formData.additionalInfo);
+      data.append("options", formData.options);
+      data.append("userid", formData.userid);
+      data.append("file1", formData.file1);
+      data.append("file2", formData.file2);
+      data.append("file3", formData.file3);
+
+      await axios.post("/upload", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
       alert("성공적으로 게시물이 등록되었습니다.");
       navigate("/myLists");
     } catch (error) {
-      alert("Error uploading data:", error);
+      alert("upload Error:", error);
     }
   };
-
-  //////파일 업로드
 
   return (
     <div>
       <Header />
+      <div className="uploadTitle">
+        <h2>내 방 올리기</h2>
+      </div>
       <div className="upload">
-        <form>
-          <div className="uploadTitle">
-            <h2>내 방 올리기</h2>
-          </div>
+        <form onSubmit={handleSubmit}>
           <div className="uploadContentTotal">
             <div className="uploadContent1">
               {" "}
               <h3>위치 등록</h3>
               <p>
-                주소 검색: <div style={{ color: "red" }}>{inputs.address}</div>
+                주소 검색:{" "}
+                <div style={{ color: "red" }}>{formData.address}</div>
               </p>
               <div className="searchAddress">
                 <DaumPostcode
@@ -115,7 +158,7 @@ const UploadPage = () => {
               <div>
                 <select
                   name="propertyType"
-                  value={inputs.propertyType}
+                  value={formData.propertyType}
                   onChange={handleChange}
                 >
                   <option value="매매">매매</option>
@@ -124,7 +167,7 @@ const UploadPage = () => {
                 </select>
               </div>
               <div className="매매방식에 따른 입력">
-                {inputs.propertyType === "매매" && (
+                {formData.propertyType === "매매" && (
                   <div>
                     <label>
                       매매가격:
@@ -132,13 +175,13 @@ const UploadPage = () => {
                         type="text"
                         placeholder="만원 단위로 입력해주세요"
                         name="price"
-                        value={inputs.price}
+                        value={formData.price}
                         onChange={handleChange}
                       />
                     </label>
                   </div>
                 )}
-                {inputs.propertyType === "전세" && (
+                {formData.propertyType === "전세" && (
                   <div>
                     <label>
                       전세가:
@@ -146,13 +189,13 @@ const UploadPage = () => {
                         type="text"
                         placeholder="만원 단위로 입력해주세요"
                         name="deposit"
-                        value={inputs.deposit}
+                        value={formData.deposit}
                         onChange={handleChange}
                       />
                     </label>
                   </div>
                 )}
-                {inputs.propertyType === "월세" && (
+                {formData.propertyType === "월세" && (
                   <div>
                     <label>
                       보증금:
@@ -160,7 +203,7 @@ const UploadPage = () => {
                         type="text"
                         placeholder="만원 단위로 입력해주세요"
                         name="deposit"
-                        value={inputs.deposit}
+                        value={formData.deposit}
                         onChange={handleChange}
                       />
                     </label>
@@ -170,7 +213,7 @@ const UploadPage = () => {
                         type="text"
                         placeholder="만원 단위로 입력해주세요"
                         name="monthlyRent"
-                        value={inputs.monthlyRent}
+                        value={formData.monthlyRent}
                         onChange={handleChange}
                       />
                     </label>
@@ -182,7 +225,7 @@ const UploadPage = () => {
               <label>
                 <select
                   name="structure"
-                  value={inputs.structure}
+                  value={formData.structure}
                   onChange={handleChange}
                 >
                   <option value="원룸">원룸</option>
@@ -192,46 +235,48 @@ const UploadPage = () => {
               </label>
               <div>
                 <h3>해당 옵션</h3>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="options"
-                    value="냉장고"
-                    checked={selectedOptions.includes("냉장고")}
-                    onChange={handleOptionChange}
-                  />
-                  냉장고
-                </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="options"
-                    value="세탁기"
-                    checked={selectedOptions.includes("세탁기")}
-                    onChange={handleOptionChange}
-                  />
-                  세탁기
-                </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="options"
-                    value="에어컨"
-                    checked={selectedOptions.includes("에어컨")}
-                    onChange={handleOptionChange}
-                  />
-                  에어컨
-                </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="options"
-                    value="침대"
-                    checked={selectedOptions.includes("침대")}
-                    onChange={handleOptionChange}
-                  />
-                  침대
-                </label>
+                <div>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="options"
+                      value="냉장고"
+                      checked={selectedOptions.includes("냉장고")}
+                      onChange={handleOptionChange}
+                    />
+                    냉장고
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="options"
+                      value="세탁기"
+                      checked={selectedOptions.includes("세탁기")}
+                      onChange={handleOptionChange}
+                    />
+                    세탁기
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="options"
+                      value="에어컨"
+                      checked={selectedOptions.includes("에어컨")}
+                      onChange={handleOptionChange}
+                    />
+                    에어컨
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="options"
+                      value="침대"
+                      checked={selectedOptions.includes("침대")}
+                      onChange={handleOptionChange}
+                    />
+                    침대
+                  </label>
+                </div>
                 <label>
                   <input
                     type="checkbox"
@@ -243,34 +288,85 @@ const UploadPage = () => {
                   책상
                 </label>
               </div>
-              <h3>사진 등록</h3>
-              <input type="file" multiple onChange={handleFileChange} />
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <h3>사진 등록</h3>
+                <label htmlFor="files1">
+                  upload 1:{" "}
+                  <input
+                    type="file"
+                    name="file1"
+                    accept="image/*"
+                    onChange={handleChange}
+                  />
+                </label>
+
+                <label htmlFor="files2">
+                  upload 2:{" "}
+                  <input
+                    type="file"
+                    name="file2"
+                    accept="image/*"
+                    onChange={handleChange}
+                  />
+                </label>
+
+                <label htmlFor="files3">
+                  upload 3:{" "}
+                  <input
+                    type="file"
+                    name="file3"
+                    accept="image/*"
+                    onChange={handleChange}
+                  />{" "}
+                </label>
+              </div>
               <div>
-                {selectedFiles.map((file, index) => (
+                {previewURL1 && (
                   <img
-                    key={index}
-                    src={URL.createObjectURL(file)}
-                    alt={`Image ${index + 1}`}
+                    src={previewURL1}
+                    alt="미리보기 이미지 1"
                     style={{
                       width: "250px",
                       height: "200px",
                       marginRight: "20px",
                     }}
                   />
-                ))}
+                )}
+                {previewURL2 && (
+                  <img
+                    src={previewURL2}
+                    alt="미리보기 이미지 2"
+                    style={{
+                      width: "250px",
+                      height: "200px",
+                      marginRight: "20px",
+                    }}
+                  />
+                )}
+                {previewURL3 && (
+                  <img
+                    src={previewURL3}
+                    alt="미리보기 이미지 3"
+                    style={{
+                      width: "250px",
+                      height: "200px",
+                      marginRight: "20px",
+                    }}
+                  />
+                )}
               </div>
               <h3>추가 정보</h3>
-              <div>상세 설명을 적어주세요 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+              <h5>상세 설명을 적어주세요</h5>
               <textarea
                 style={{ width: "400px", height: "60px" }}
                 name="additionalInfo"
-                value={inputs.additionalInfo}
+                value={formData.textarea}
                 onChange={handleChange}
-              ></textarea>
+              />
+              <div className="uploadButton">
+                <button type="submit">매물 등록</button>
+              </div>
             </div>
-          </div>
-          <div className="uploadButton">
-            <button onClick={handleSubmit}>매물 등록</button>
           </div>
         </form>
       </div>
@@ -280,73 +376,3 @@ const UploadPage = () => {
 };
 
 export default UploadPage;
-
-// const handleUpload1 = async (e) => {
-//   e.preventDefault();
-//   const formData = new FormData();
-//   formData.append("file", selectedFiles[0]);
-
-//   try {
-//     await axios.post("/upload", formData).then((res) => {
-//       console.log(res.data);
-//       let { originalName, filename, path } = res.data;
-//       setInputs((prevInputs) => ({
-//         ...prevInputs,
-//         originalName1: originalName,
-//         filename1: filename,
-//         path1: path,
-//       }));
-//     });
-//     alert("파일1 업로드 완료");
-//     console.log(inputs);
-//   } catch (error) {
-//     const err = error.message;
-//     console.log(`Error uploading file: ${err}`);
-//   }
-// };
-// const handleUpload2 = async (e) => {
-//   e.preventDefault();
-//   const formData = new FormData();
-//   formData.append("file", selectedFiles[1]);
-
-//   try {
-//     await axios.post("/upload", formData).then((res) => {
-//       console.log(res.data);
-//       let { originalName, filename, path } = res.data;
-//       setInputs((prevInputs) => ({
-//         ...prevInputs,
-//         originalName2: originalName,
-//         filename2: filename,
-//         path2: path,
-//       }));
-//     });
-//     alert("파일2 업로드 완료");
-//     console.log(inputs);
-//   } catch (error) {
-//     const err = error.message;
-//     console.log(`Error uploading file: ${err}`);
-//   }
-// };
-// const handleUpload3 = async (e) => {
-//   e.preventDefault();
-//   const formData = new FormData();
-//   formData.append("file", selectedFiles[2]);
-
-//   try {
-//     await axios.post("/upload", formData).then((res) => {
-//       console.log(res.data);
-//       let { originalName, filename, path } = res.data;
-//       setInputs((prevInputs) => ({
-//         ...prevInputs,
-//         originalName3: originalName,
-//         filename3: filename,
-//         path3: path,
-//       }));
-//     });
-//     alert("파일3 업로드 완료");
-//     console.log(inputs);
-//   } catch (error) {
-//     const err = error.message;
-//     console.log(`Error uploading file: ${err}`);
-//   }
-// };

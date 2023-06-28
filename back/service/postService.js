@@ -5,7 +5,6 @@ const service = {
   // 파일업로드
   async reg(params) {
     let inserted = null;
-
     try {
       inserted = await postDao.insert(params);
       logger.debug(`(postService.reg) ${JSON.stringify(inserted)}`);

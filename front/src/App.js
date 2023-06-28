@@ -11,6 +11,7 @@ import Listing from "./pages/Listing";
 import MyListing from "./pages/MyListing";
 import ListingDetail from "./pages/ListingDetail";
 import LikePage from "./pages/LikePage";
+// import Sample from "./pages/ss";
 import "../src/assets/example.json";
 
 // API 서버 url : http://localhost:8000
