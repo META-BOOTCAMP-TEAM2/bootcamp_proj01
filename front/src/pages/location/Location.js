@@ -30,7 +30,7 @@ const Location = () => {
   };
 
   return (
-    <div>
+    <div className="LOCATION">
       <Header />
       <div className="location">
         <div className="locationTitle">
@@ -50,7 +50,9 @@ const Location = () => {
                     <td
                       onMouseEnter={() => handleAreaMouseEnter(city)}
                       onMouseLeave={handleAreaMouseLeave}
-                      onClick={() => handleCityChange({ target: { value: city } })}
+                      onClick={() =>
+                        handleCityChange({ target: { value: city } })
+                      }
                       className={selectedCity === city ? "selected" : ""}
                     >
                       {city}
@@ -74,7 +76,9 @@ const Location = () => {
                       <td
                         onMouseEnter={() => handleAreaMouseEnter(area)}
                         onMouseLeave={handleAreaMouseLeave}
-                        onClick={() => handleAreaChange({ target: { value: area } })}
+                        onClick={() =>
+                          handleAreaChange({ target: { value: area } })
+                        }
                         className={selectedArea === area ? "selected" : ""}
                       >
                         {area}

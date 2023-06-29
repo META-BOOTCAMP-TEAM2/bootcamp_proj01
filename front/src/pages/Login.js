@@ -106,14 +106,22 @@ const LoginForm = () => {
               onClick={handleGoogleLogin}
               className="loginButtonGoogle"
             >
-              Login With Google
+              <h4>
+                <span>G</span>
+                <span>o</span>
+                <span>o</span>
+                <span>g</span>
+                <span>l</span>
+                <span>e</span>
+                <span>&nbsp;Login</span>
+              </h4>
             </button>
             <button
               type="button"
               onClick={handleKakaoLogin}
               className="loginButtonKakao"
             >
-              Login With Kakao
+              <h4>Kakao Login</h4>
             </button>
             {err && <p>{err}</p>}
 

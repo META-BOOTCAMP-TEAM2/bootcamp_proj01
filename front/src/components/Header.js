@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../components/authContext";
-import { Button } from "react-bootstrap";
 import "./style.css"; // CSS 파일을 불러옵니다.
 
 function Header() {
@@ -23,39 +22,33 @@ function Header() {
       <div className="navbar">
         <div className="logo">
           <Link to="/">
-            {" "}
             <p className="logo"> 🏠 Your Sweet Home</p>
           </Link>
         </div>
         <div className="menu">
-          <Link to="/">
-            <Button className="menu-item" variant="Home" id="buttons">
-              Home
-            </Button>{" "}
-          </Link>
           {localStorage.getItem("userid") ? (
             <>
-              <Link to="/mypage">
-                <Button className="menu-item" variant="My page" id="buttons">
-                  My page
-                </Button>
-              </Link>
-              <span className="menu-item" onClick={handleLogout}>
+              <div className="welcome">
+                {localStorage.getItem("userid")} 님, 환영합니다😊
+              </div>
+              <p className="menu-item" variant="link" id="buttons">
+                <Link to="/mypage">My page</Link>
+              </p>
+              <a href="#" className="menu-item" onClick={handleLogout}>
                 Logout
-              </span>
+              </a>
             </>
           ) : (
             <>
-              <Link to="/login">
-                <Button className="menu-item" variant="Login" id="buttons">
-                  Login
-                </Button>{" "}
-              </Link>
-              <Link to="/signup">
-                <Button className="menu-item" variant="Sign up" id="buttons">
-                  Sign up
-                </Button>{" "}
-              </Link>
+              <p className="menu-item" variant="link" id="buttons">
+                <Link to="/">Home</Link>
+              </p>
+              <p className="menu-item" variant="link" id="buttons">
+                <Link to="/login">Login</Link>
+              </p>
+              <p className="menu-item" variant="link" id="buttons">
+                <Link to="/signup">Sign up</Link>
+              </p>
             </>
           )}
         </div>

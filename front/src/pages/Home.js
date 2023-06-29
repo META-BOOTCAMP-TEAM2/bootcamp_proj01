@@ -32,12 +32,11 @@ function Home() {
           <Link to="/room">
             <button id="Button1">
               {" "}
-              <p className="circle1">●&nbsp;</p> Buy
+              <p className="circle1">●&nbsp;</p> Buy&nbsp;
             </button>
           </Link>
-          <p className="homeLine">아래 라인 공간</p>
           <button id="Button2" onClick={handleRoomUpload}>
-            <p className="circle2">●&nbsp;</p> Sell
+            <p className="circle2">●&nbsp;</p> Sell&nbsp;
           </button>
         </div>
       </div>
