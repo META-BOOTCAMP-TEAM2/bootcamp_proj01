@@ -89,14 +89,17 @@ const Listing = () => {
       filteredItems = filteredItems.sort((a, b) => a.price - b.price);
     }
 
-    const updatedRows = filteredItems.reduce((accumulator, currentValue, index) => {
-      const rowIndex = Math.floor(index / itemsPerRow);
-      if (!accumulator[rowIndex]) {
-        accumulator[rowIndex] = [];
-      }
-      accumulator[rowIndex].push(currentValue);
-      return accumulator;
-    }, []);
+    const updatedRows = filteredItems.reduce(
+      (accumulator, currentValue, index) => {
+        const rowIndex = Math.floor(index / itemsPerRow);
+        if (!accumulator[rowIndex]) {
+          accumulator[rowIndex] = [];
+        }
+        accumulator[rowIndex].push(currentValue);
+        return accumulator;
+      },
+      []
+    );
     setRows(updatedRows);
   }, [filteredPropertyType, sortByPrice]);
 
@@ -146,17 +149,22 @@ const Listing = () => {
   return (
     <div>
       <Header />
-      <div className="LISTING">
-        <div className="listing">
+      <div className="listing">
+        <div className="listingBox">
           <div className="listingTitleTop">
-            <div className="listingTitle">
-              <h2>지역 매물 목록</h2>
-            </div>
+            <h2>지역 매물 목록</h2>
           </div>
           <div className="listingFilters">
             <div className="propertyType">
-              <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <button ref={allButtonRef} className="dropdown-item" onClick={clearFilters}>
+              <div
+                className="dropdown-menu"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <button
+                  ref={allButtonRef}
+                  className="dropdown-item"
+                  onClick={clearFilters}
+                >
                   전체
                 </button>
                 {propertyTypes.map((propertyType) => (
@@ -172,7 +180,10 @@ const Listing = () => {
             </div>
             <div className="priceType">
               <div className="dropdown">
-                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
                   {priceOptions.map((option) => (
                     <button
                       key={option.value}
@@ -190,8 +201,8 @@ const Listing = () => {
             {rows.map((row, rowIndex) => (
               <div key={rowIndex} className="listingRow">
                 {row.map((item, itemIndex) => (
-                  <div key={itemIndex} className="listingItem">
-                    <div
+                  <ul key={itemIndex} className="listingItem">
+                    <li
                       className="imageWrapper"
                       onMouseOver={() => handleMouseOver(rowIndex, itemIndex)}
                       onMouseOut={() => handleMouseOut(rowIndex)}
@@ -211,25 +222,22 @@ const Listing = () => {
                           </figcaption>
                         )}
                       </figure>
-                    </div>
-                    <div>계약 방식: {item.propertyType}</div>
-                    <br />
-                    <div>주소: {item.address}</div>
-                    <br />
-
-                    {item.propertyType === "매매" && <div>매매가: {item.price}</div>}
-                    {item.propertyType === "전세" && <div>보증금: {item.deposit}</div>}
-                    {item.propertyType === "월세" && (
-                      <div>
-                        보증금: {item.deposit}, 월세: {item.monthlyRent}
-                      </div>
+                    </li>
+                    <li>계약 방식: {item.propertyType}</li>
+                    <li>주소: {item.address}</li>
+                    {item.propertyType === "매매" && (
+                      <div>매매가: {item.price}</div>
                     )}
-
-                    <br />
-                    <div>방 구조: {item.structure}</div>
-                    <br />
-                    {/* <div>해당 옵션: {item.options.join(", ")}</div> */}
-                  </div>
+                    {item.propertyType === "전세" && (
+                      <div>보증금: {item.deposit}</div>
+                    )}
+                    {item.propertyType === "월세" && (
+                      <li>
+                        보증금: {item.deposit}, 월세: {item.monthlyRent}
+                      </li>
+                    )}
+                    <li>방 구조: {item.structure}</li>
+                  </ul>
                 ))}
               </div>
             ))}

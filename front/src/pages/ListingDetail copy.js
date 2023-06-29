@@ -127,10 +127,6 @@ const ListingDetail = (props) => {
 
   const data = JSON.parse(storedData);
   const postId = data.id;
-  const sessionUserId = data.userid;
-  const localUserId = localStorage.getItem("userid");
-  const [showButton, setShowButton] = useState(false);
-  const [contentHeight, setContentHeight] = useState(310); // 기본 높이
   console.log(data.address);
 
   const fetchData = async () => {
@@ -138,6 +134,9 @@ const ListingDetail = (props) => {
     console.log(res.data.length);
     if (res.data.length !== 0) setLike(true);
   };
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const toggleLike = async () => {
     try {
@@ -170,20 +169,6 @@ const ListingDetail = (props) => {
       console.error(error);
     }
   };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    if (localUserId && sessionUserId && localUserId === sessionUserId) {
-      setShowButton(true); // 버튼 보이기
-      setContentHeight(310); // 컨텐츠 높이 변경
-    } else {
-      setShowButton(false); // 버튼 숨기기
-      setContentHeight(360); // 컨텐츠 높이 변경
-    }
-  }, [localUserId, sessionUserId]);
 
   useEffect(() => {
     const mapContainer = document.getElementById("map");
@@ -235,40 +220,24 @@ const ListingDetail = (props) => {
                   style={{ width: "600px", height: "400px" }}
                 />
               </Carousel>
-              <div className="listingDetailContentTopSide">
-                {showButton && (
-                  <button
-                    id="DeleteButton"
-                    type="submit"
-                    className="listingDelete"
-                  >
-                    게시물 삭제
-                  </button>
+              <div className="listingDetailKeyContent">
+                <h3>중요 정보</h3>
+                <p>계약 방식: {data.propertyType}</p>
+                {data.propertyType === "매매" && <p>가격: {data.price}</p>}
+                {data.propertyType === "전세" && <p>보증금: {data.deposit}</p>}
+                {data.propertyType === "월세" && (
+                  <p>
+                    보증금: {data.deposit}, 월세: {data.monthlyRent}
+                  </p>
                 )}
-                <div
-                  className="listingDetailKeyContent"
-                  style={{ height: `${contentHeight}px` }}
-                >
-                  <h3>중요 정보</h3>
-                  <p>계약 방식: {data.propertyType}</p>
-                  {data.propertyType === "매매" && <p>가격: {data.price}</p>}
-                  {data.propertyType === "전세" && (
-                    <p>보증금: {data.deposit}</p>
-                  )}
-                  {data.propertyType === "월세" && (
-                    <p>
-                      보증금: {data.deposit}, 월세: {data.monthlyRent}
-                    </p>
-                  )}
-                  <p>주소: {data.address}</p>
-                  <p>방 구조: {data.structure}</p>
-                  {/* <p>옵션: {data.options.join(", ")}</p> */}
-                  <div className="listingDetailHeart">
-                    <HeartButton like={like} onClick={toggleLike} />
-                    찜하기
-                  </div>
-                  {/* <Detail content={content} /> */}
+                <p>주소: {data.address}</p>
+                <p>방 구조: {data.structure}</p>
+                {/* <p>옵션: {data.options.join(", ")}</p> */}
+                <div className="listingDetailHeart">
+                  <HeartButton like={like} onClick={toggleLike} />
+                  찜하기
                 </div>
+                {/* <Detail content={content} /> */}
               </div>
             </div>
             <div className="listingDetailContentBottom">
