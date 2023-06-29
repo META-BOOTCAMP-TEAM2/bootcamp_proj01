@@ -3,7 +3,7 @@ const postDao = require("../dao/postDao");
 
 const service = {
   // 파일업로드
-  async reg(params) {
+  async upload(params) {
     let inserted = null;
     try {
       inserted = await postDao.insert(params);
@@ -43,11 +43,10 @@ const service = {
     let result = null;
     try {
       result = await postDao.selectInfo();
-      logger.debug(`(postService.list) ${JSON.stringify(result)}`);
+      logger.debug(`(postService.info) ${JSON.stringify(result)}`);
     } catch (err) {
-      logger.error(`(postService.list) ${err.toString()}`);
+      logger.error(`(postService.info) ${err.toString()}`);
       return new Promise((resolve, reject) => {
-        console.log(err);
         reject(err);
       });
     }

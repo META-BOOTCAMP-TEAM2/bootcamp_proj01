@@ -21,12 +21,12 @@ const dao = {
   selectList(params) {
     return new Promise((resolve, reject) => {
       Like.findAll({
-        where: { userid: params.userid },
-        attributes: ["postid"],
+        where: { userId: params.userId },
+        attributes: ["postId"],
         raw: true,
       })
         .then((likes) => {
-          const postIds = likes.map((like) => like.postid);
+          const postIds = likes.map((like) => like.postId);
           return Post.findAll({
             where: { id: postIds },
           });
@@ -44,7 +44,7 @@ const dao = {
   selectInfo(params) {
     return new Promise((resolve, reject) => {
       Like.findAll({
-        where: { userid: params.userid, postid: params.postid },
+        where: { userId: params.userId, postId: params.postId },
       })
         .then((selected) => {
           resolve(selected);
@@ -58,7 +58,7 @@ const dao = {
   delete(params) {
     return new Promise((resolve, reject) => {
       Like.destroy({
-        where: { userid: params.userid, postid: params.postid },
+        where: { userId: params.userId, postId: params.postId },
       })
         .then((deleted) => {
           resolve({ deletedCount: deleted });

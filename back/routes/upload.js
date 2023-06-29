@@ -51,7 +51,7 @@ router.post(
         path2: req.files.file2[0].path,
         path3: req.files.file3[0].path,
 
-        userId: Number(1), //유저DB 고유넘버
+        userId: req.body.userId, //유저DB 고유넘버
         userid: req.body.userid, //유저아이디
       };
 
@@ -109,7 +109,7 @@ router.post(
         throw new Error("파일 업로드 실패");
       }
       // 비즈니스 로직 호출
-      const result = await postService.reg(params);
+      const result = await postService.upload(params);
       logger.info(`(upload.reg.result) ${JSON.stringify(result)}`);
 
       // 최종 응답

@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../components/authContext";
-import "./style.css"; // CSS 파일을 불러옵니다.
+import "./style.css";
 
 function Header() {
-  const { logout } = useContext(AuthContext);
+  const { logout, currentUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -26,7 +26,7 @@ function Header() {
           </Link>
         </div>
         <div className="menu">
-          {localStorage.getItem("userid") ? (
+          {currentUser ? (
             <>
               <div className="welcome">
                 {localStorage.getItem("userid")} 님, 환영합니다😊

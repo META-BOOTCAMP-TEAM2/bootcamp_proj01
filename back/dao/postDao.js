@@ -22,7 +22,6 @@ const dao = {
     return new Promise((resolve, reject) => {
       Post.findAll({
         attributes: { exclude: ["viewCount"] },
-        where: { userid: params.userid },
       })
         .then((selectedOne) => {
           resolve(selectedOne);
@@ -34,7 +33,17 @@ const dao = {
   },
   // 게시물 조회
   selectInfo() {
-    return Post.findAll();
+    return new Promise((resolve, reject) => {
+      Post.findAll({
+        attributes: { exclude: ["viewCount"] },
+      })
+        .then((selectedOne) => {
+          resolve(selectedOne);
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    });
   },
 
   // 리스트 조회

@@ -10,8 +10,8 @@ const tokenUtil = require("../lib/tokenUtil");
 router.post("/", async (req, res) => {
   try {
     const params = {
-      userid: req.body.userid, // 로그인한 유저의 ID
-      postid: req.body.postid, // 찜할 매물의 ID
+      userId: req.body.userid, // 로그인한 유저의 ID
+      postId: req.body.postid, // 찜할 매물의 ID
     };
     logger.info(`(like.reg.params) ${JSON.stringify(params)}`);
 
@@ -28,7 +28,7 @@ router.post("/", async (req, res) => {
 router.get("/:userid", async (req, res) => {
   try {
     const params = {
-      userid: req.params.userid, // 로그인한 유저의 ID
+      userId: req.params.userid, // 로그인한 유저의 ID
     };
     logger.info(`(like.list.params) ${JSON.stringify(params)}`);
 
@@ -45,8 +45,8 @@ router.get("/:userid", async (req, res) => {
 router.get("/:userid/:postid", async (req, res) => {
   try {
     const params = {
-      userid: req.params.userid, // 로그인한 유저의 ID
-      postid: req.params.postid,
+      userId: req.params.userid, // 로그인한 유저의 ID
+      postId: req.params.postid,
     };
     logger.info(`(like.list.params) ${JSON.stringify(params)}`);
 
@@ -63,8 +63,8 @@ router.get("/:userid/:postid", async (req, res) => {
 router.delete("/:userid", async (req, res) => {
   try {
     const params = {
-      userid: req.body.userid, // 로그인한 유저의 ID
-      postid: req.body.postid, // 찜 ID
+      userId: req.body.userid, // 로그인한 유저의 ID
+      postId: req.body.postid, // 찜 ID
     };
 
     logger.info(`(like.delete.params) ${JSON.stringify(params)}`);

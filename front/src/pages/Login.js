@@ -27,7 +27,7 @@ const LoginForm = () => {
     await login(inputs)
       .then(() => navigate("/"))
       .catch((err) => {
-        // console.log(typeof err.response.data);
+        // console.log(typeof .data);
         // console.log(Object.keys(err.response));
         //(6) ['data', 'status', 'statusText', 'headers', 'config', 'request']
         // 0: "data"

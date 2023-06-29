@@ -5,10 +5,9 @@ const router = express.Router();
 const logger = require("../lib/logger");
 const postService = require("../service/postService");
 const { isLoggedIn } = require("../lib/middleware");
-// const { isLoggedIn } = require("../lib/middleware");
 
 // 상세정보 조회
-router.get("/:id", async (req, res) => {
+router.get("/:id", isLoggedIn, async (req, res) => {
   try {
     const params = {
       userid: req.params.id,
@@ -21,7 +20,7 @@ router.get("/:id", async (req, res) => {
     // 최종 응답
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ err: err.toString() });
+    res.status(500).json(err.toString());
   }
 });
 
@@ -36,7 +35,7 @@ router.get("/", async (req, res) => {
     // 최종 응답
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ err: err.toString() });
+    res.status(500).json(err.toString());
   }
 });
 
@@ -76,7 +75,7 @@ router.delete("/:id", isLoggedIn, async (req, res) => {
     // 최종 응답
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ err: err.toString() });
+    res.status(500).json(err.toString());
   }
 });
 

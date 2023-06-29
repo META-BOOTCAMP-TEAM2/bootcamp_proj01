@@ -135,7 +135,7 @@ import Header from "../components/Header";
 import "./stylePages.css";
 import axios from "axios";
 
-const MyListing = () => {
+const Listing = () => {
   const [filteredPropertyType, setFilteredPropertyType] = useState(null);
   const [sortByPrice, setSortByPrice] = useState(null);
   const [rows, setRows] = useState([]);
@@ -175,19 +175,36 @@ const MyListing = () => {
           : data;
 
         if (sortByPrice === "expensive") {
-          filteredItems = filteredItems.sort((a, b) => b.price - a.price);
+          if (
+            filteredPropertyType === "전세" ||
+            filteredPropertyType === "월세"
+          ) {
+            filteredItems = filteredItems.sort((a, b) => b.deposit - a.deposit);
+          } else {
+            filteredItems = filteredItems.sort((a, b) => b.price - a.price);
+          }
         } else if (sortByPrice === "cheap") {
-          filteredItems = filteredItems.sort((a, b) => a.price - b.price);
+          if (
+            filteredPropertyType === "전세" ||
+            filteredPropertyType === "월세"
+          ) {
+            filteredItems = filteredItems.sort((a, b) => a.deposit - b.deposit);
+          } else {
+            filteredItems = filteredItems.sort((a, b) => a.price - b.price);
+          }
         }
 
-        const updatedRows = filteredItems.reduce((accumulator, currentValue, index) => {
-          const rowIndex = Math.floor(index / itemsPerRow);
-          if (!accumulator[rowIndex]) {
-            accumulator[rowIndex] = [];
-          }
-          accumulator[rowIndex].push(currentValue);
-          return accumulator;
-        }, []);
+        const updatedRows = filteredItems.reduce(
+          (accumulator, currentValue, index) => {
+            const rowIndex = Math.floor(index / itemsPerRow);
+            if (!accumulator[rowIndex]) {
+              accumulator[rowIndex] = [];
+            }
+            accumulator[rowIndex].push(currentValue);
+            return accumulator;
+          },
+          []
+        );
         setRows(updatedRows);
       })
       .catch((error) => {
@@ -196,6 +213,7 @@ const MyListing = () => {
   }, [currentUser, filteredPropertyType, sortByPrice]);
   const storedData = sessionStorage.getItem("myData");
   const data = JSON.parse(storedData);
+  const handleCaptionClick = (item) => {
   const handleCaptionClick = (item) => {
     const newUrl = `http://localhost:3000/listDetail`;
     const newWindow = window.open(newUrl);
@@ -220,8 +238,26 @@ const MyListing = () => {
     { label: "높은 가격순", value: "expensive" },
     { label: "낮은 가격순", value: "cheap" },
   ];
+  const [hoveredIndexes, setHoveredIndexes] = useState([]);
+
+  const handleMouseOver = (rowIndex, itemIndex) => {
+    setHoveredIndexes((prev) => {
+      const updatedHoveredIndexes = [...prev];
+      updatedHoveredIndexes[rowIndex] = itemIndex;
+      return updatedHoveredIndexes;
+    });
+  };
+
+  const handleMouseOut = (rowIndex) => {
+    setHoveredIndexes((prev) => {
+      const updatedHoveredIndexes = [...prev];
+      updatedHoveredIndexes[rowIndex] = null;
+      return updatedHoveredIndexes;
+    });
+  };
 
   return (
+    <div>
     <div>
       <Header />
       <div className="LISTING">
@@ -314,4 +350,4 @@ const MyListing = () => {
   );
 };
 
-export default MyListing;
+export default Listing;

@@ -65,6 +65,11 @@ const service = {
     let result = null;
 
     try {
+      console.log(`sadsadasdsadsasdasasaasdsadsasa${params}`);
+      console.log(`sadsadasdsadsasdasasaasdsadsasa${Object.keys(params)}`);
+      console.log(`sadsadasdsadsasdasasaasdsadsasa    ${params.userId}`);
+      console.log(`sadsadasdsadsasdasasaasdsadsasa    ${params.postId}`);
+
       result = await likeDao.delete(params);
       logger.debug(`(likeService.delete) ${JSON.stringify(result)}`);
     } catch (err) {

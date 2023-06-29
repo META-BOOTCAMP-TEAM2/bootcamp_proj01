@@ -9,7 +9,6 @@ module.exports = class Post extends Sequelize.Model {
         },
         userId: {
           type: Sequelize.INTEGER,
-          defaultValue: 1,
         },
         userid: {
           type: Sequelize.STRING(255),
@@ -54,6 +53,9 @@ module.exports = class Post extends Sequelize.Model {
         },
         options: {
           type: Sequelize.STRING(255),
+        },
+        like: {
+          type: Sequelize.BOOLEAN,
         },
         viewCount: {
           type: Sequelize.INTEGER,
