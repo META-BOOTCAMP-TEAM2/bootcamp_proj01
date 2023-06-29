@@ -84,11 +84,5 @@ module.exports = class Post extends Sequelize.Model {
     });
   }
 
-  static includeAttributes = [
-    "id",
-    "address",
-    "propertyType",
-    "userId",
-    "createdAt",
-  ];
+  static includeAttributes = ["id", "address", "propertyType", "userId", "createdAt"];
 };

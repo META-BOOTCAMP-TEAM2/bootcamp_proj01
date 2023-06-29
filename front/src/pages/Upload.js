@@ -143,24 +143,16 @@ const UploadPage = () => {
               {" "}
               <h3>위치 등록</h3>
               <p>
-                주소 검색:{" "}
-                <div style={{ color: "red" }}>{formData.address}</div>
+                주소 검색: <div style={{ color: "red" }}>{formData.address}</div>
               </p>
               <div className="searchAddress">
-                <DaumPostcode
-                  onComplete={handleAddressSelect}
-                  autoClose={false}
-                />
+                <DaumPostcode onComplete={handleAddressSelect} autoClose={false} />
               </div>
             </div>
             <div className="uploadContent2">
               <h3>계약 방식</h3>
               <div>
-                <select
-                  name="propertyType"
-                  value={formData.propertyType}
-                  onChange={handleChange}
-                >
+                <select name="propertyType" value={formData.propertyType} onChange={handleChange}>
                   <option value="매매">매매</option>
                   <option value="전세">전세</option>
                   <option value="월세">월세</option>
@@ -223,11 +215,7 @@ const UploadPage = () => {
 
               <h3>방 구조</h3>
               <label>
-                <select
-                  name="structure"
-                  value={formData.structure}
-                  onChange={handleChange}
-                >
+                <select name="structure" value={formData.structure} onChange={handleChange}>
                   <option value="원룸">원룸</option>
                   <option value="1.5룸">1.5룸</option>
                   <option value="2룸 이상">2룸 이상</option>
@@ -292,32 +280,17 @@ const UploadPage = () => {
                 <h3>사진 등록</h3>
                 <label htmlFor="files1">
                   upload 1:{" "}
-                  <input
-                    type="file"
-                    name="file1"
-                    accept="image/*"
-                    onChange={handleChange}
-                  />
+                  <input type="file" name="file1" accept="image/*" onChange={handleChange} />
                 </label>
 
                 <label htmlFor="files2">
                   upload 2:{" "}
-                  <input
-                    type="file"
-                    name="file2"
-                    accept="image/*"
-                    onChange={handleChange}
-                  />
+                  <input type="file" name="file2" accept="image/*" onChange={handleChange} />
                 </label>
 
                 <label htmlFor="files3">
                   upload 3:{" "}
-                  <input
-                    type="file"
-                    name="file3"
-                    accept="image/*"
-                    onChange={handleChange}
-                  />{" "}
+                  <input type="file" name="file3" accept="image/*" onChange={handleChange} />{" "}
                 </label>
               </div>
               <div>

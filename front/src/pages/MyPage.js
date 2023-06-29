@@ -13,7 +13,6 @@ const MyPage = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(`/users/mypage/${currentUser}`);
-        console.log(res.data);
       } catch (err) {
         alert(err.response.data);
         if (err.response.status === 401) {
@@ -28,6 +27,7 @@ const MyPage = () => {
   const btnClick1 = async () => {
     try {
       const res = await axios.get(`/post/${currentUser}`);
+      console.log(res.data);
       const result = res.data;
       const newUrl = "/myLists";
       const newWindow = window.open(newUrl);

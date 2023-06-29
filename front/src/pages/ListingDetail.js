@@ -60,21 +60,21 @@
 //             {/* { data.img.map((imgUrl, index) => ( */}
 //             <div>
 //               <img
-//                 src={"http://localhost:8000/uploads/" + data.filename1}
+//                 src={"http://localhost:8000/uploads/" + data.path1}
 //                 alt="Property Image"
 //                 style={{ width: "600px", height: "400px" }}
 //               />
 //             </div>
 //             <div>
 //               <img
-//                 src={"http://localhost:8000/uploads/" + data.filename2}
+//                 src={"http://localhost:8000/uploads/" + data.path2}
 //                 alt="Property Image"
 //                 style={{ width: "600px", height: "400px" }}
 //               />
 //             </div>
 //             <div>
 //               <img
-//                 src={"http://localhost:8000/uploads/" + data.filename3}
+//                 src={"http://localhost:8000/uploads/" + data.path3}
 //                 alt="Property Image"
 //                 style={{ width: "600px", height: "400px" }}
 //               />
@@ -117,8 +117,6 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./stylePages.css";
 import HeartButton from "../components/heartButton";
-import addressChange from "../components/addressChange";
-const { kakao } = window;
 
 const ListingDetail = (props) => {
   const [like, setLike] = useState(false);
@@ -194,21 +192,21 @@ const ListingDetail = (props) => {
             {/* { data.img.map((imgUrl, index) => ( */}
             <div>
               <img
-                src={"http://localhost:8000/uploads/" + data.filename1}
+                src={"http://192.168.0.30:8000/" + data.path1}
                 alt="Property Image"
                 style={{ width: "600px", height: "400px" }}
               />
             </div>
             <div>
               <img
-                src={"http://localhost:8000/uploads/" + data.filename2}
+                src={"http://192.168.0.30:8000/" + data.path2}
                 alt="Property Image"
                 style={{ width: "600px", height: "400px" }}
               />
             </div>
             <div>
               <img
-                src={"http://localhost:8000/uploads/" + data.filename3}
+                src={"http://192.168.0.30:8000/" + data.path3}
                 alt="Property Image"
                 style={{ width: "600px", height: "400px" }}
               />

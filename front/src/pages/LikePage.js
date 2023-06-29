@@ -117,7 +117,7 @@ const LikePage = () => {
             <div key={itemIndex} className="item">
               <div>
                 <img
-                  src={"http://localhost:8000/uploads/" + item.filename1}
+                  src={"http://localhost:8000/" + item.path1}
                   alt="Property"
                   style={{ width: "300px", height: "200px" }}
                   onClick={() => imgClick(item)}
