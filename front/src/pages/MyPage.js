@@ -12,7 +12,7 @@ const MyPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`/users/mypage/${currentUser}`);
+        const res = await axios.get(`/users/mypage/${localStorage.getItem("userid")}`);
       } catch (err) {
         alert(err.response.data);
         if (err.response.status === Number(401)) {
@@ -25,7 +25,7 @@ const MyPage = () => {
 
   const btnClick1 = async () => {
     try {
-      const res = await axios.get(`/post/${currentUser}`);
+      const res = await axios.get(`/post/${localStorage.getItem("userid")}`);
       console.log(res.data);
       const result = res.data;
       const newUrl = "/myLists";
@@ -39,7 +39,7 @@ const MyPage = () => {
 
   const btnClick2 = async () => {
     try {
-      const res = await axios.get(`/post/${currentUser}`);
+      const res = await axios.get(`/like/${localStorage.getItem("userid")}`);
       const result = res.data;
       const newUrl = "/likePage";
       const newWindow = window.open(newUrl);

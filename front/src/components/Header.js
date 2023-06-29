@@ -26,11 +26,9 @@ function Header() {
           </Link>
         </div>
         <div className="menu">
-          {currentUser ? (
+          {localStorage.getItem("userid") ? (
             <>
-              <div className="welcome">
-                {localStorage.getItem("userid")} 님, 환영합니다😊
-              </div>
+              <div className="welcome">{localStorage.getItem("userid")} 님, 환영합니다😊</div>
               <p className="menu-item" variant="link" id="buttons">
                 <Link to="/mypage">My page</Link>
               </p>

@@ -30,55 +30,106 @@ const Map = React.memo(({ selectedCity, selectedArea, hoveredArea }) => {
       minLevel: 2,
       disableClickZoom: true,
     });
+    console.log(clusterer);
 
     const createMarkers = async () => {
+      clusterer = new kakao.maps.MarkerClusterer({
+        map: map,
+        averageCenter: true,
+        minLevel: 2,
+        disableClickZoom: true,
+      });
       try {
         const response = await axios.get("/post");
         let properties = response.data;
 
-        const markers = await Promise.all(
+        await Promise.all(
           properties.map(async (item) => {
             const position = await addressChange(item.address);
-            const marker = new kakao.maps.Marker({
-              position: new kakao.maps.LatLng(position.lat, position.lng),
-
-              map: map,
-              clickable: true,
-            });
-            console.log(position.lat);
-
-            marker.userData = {
-              id: item.id,
-              propertyType: item.propertyType,
-              structure: item.structure,
-              options: item.options,
-              address: item.address,
-              price: item.price,
-              deposit: item.deposit,
-              monthlyRent: item.monthlyRent,
-              additionalInfo: item.additionalInfo,
-              path1: item.path1,
-              path2: item.path2,
-              path3: item.path3,
-            };
-
-            // 마커 클릭 이벤트 핸들러를 각 마커에 추가
-            kakao.maps.event.addListener(marker, "click", function () {
-              const newUrl = `http://localhost:3000/listDetail`;
-              const newWindow = window.open(newUrl);
-              newWindow.sessionStorage.setItem("myData", JSON.stringify(marker.userData));
-            });
-
-            return marker;
+            if (position) {
+              const marker = new kakao.maps.Marker({
+                position: new kakao.maps.LatLng(position.lat, position.lng),
+                map: map,
+                clickable: true,
+              });
+              console.log(item);
+              marker.userData = {
+                id: item.id,
+                propertyType: item.propertyType,
+                structure: item.structure,
+                options: item.options,
+                address: item.address,
+                price: item.price,
+                deposit: item.deposit,
+                monthlyRent: item.monthlyRent,
+                additionalInfo: item.additionalInfo,
+                path1: item.path1,
+                path2: item.path2,
+                path3: item.path3,
+              };
+              // 마커 클릭 이벤트 핸들러 등 마커와 관련된 작업들을 이곳에 추가할 수 있습니다.
+              // ...
+              kakao.maps.event.addListener(marker, "click", function () {
+                const newUrl = `http://localhost:3000/listDetail`;
+                const newWindow = window.open(newUrl);
+                newWindow.sessionStorage.setItem("myData", JSON.stringify(marker.userData));
+              });
+              clusterer.addMarker(marker);
+            }
           })
         );
-
-        clusterer.addMarkers(markers);
-        console.log(clusterer);
       } catch (error) {
         console.error("Error fetching properties:", error);
       }
     };
+
+    // const createMarkers = async () => {
+    //   try {
+    //     const response = await axios.get("/post");
+    //     let properties = response.data;
+
+    //     const markers = properties.map(async (item) => {
+    //       const position = await addressChange(item.address);
+    //       const marker = new kakao.maps.Marker({
+    //         position: new kakao.maps.LatLng(position.lat, position.lng),
+
+    //         map: map,
+    //         clickable: true,
+    //       });
+    //       console.log(position.lat);
+    //       console.log(position.lng);
+
+    //       marker.userData = {
+    //         id: item.id,
+    //         propertyType: item.propertyType,
+    //         structure: item.structure,
+    //         options: item.options,
+    //         address: item.address,
+    //         price: item.price,
+    //         deposit: item.deposit,
+    //         monthlyRent: item.monthlyRent,
+    //         additionalInfo: item.additionalInfo,
+    //         path1: item.path1,
+    //         path2: item.path2,
+    //         path3: item.path3,
+    //       };
+
+    //       // 마커 클릭 이벤트 핸들러를 각 마커에 추가
+    //       kakao.maps.event.addListener(marker, "click", function () {
+    //         const newUrl = `http://localhost:3000/listDetail`;
+    //         const newWindow = window.open(newUrl);
+    //         newWindow.sessionStorage.setItem("myData", JSON.stringify(marker.userData));
+    //       });
+
+    //       return marker;
+    //     });
+
+    //     clusterer.addMarkers(markers);
+    //     console.log(clusterer);
+    //   } catch (error) {
+    //     console.error("Error fetching properties:", error);
+    //   }
+    // };
     createMarkers();
 
     var zoomControl = new kakao.maps.ZoomControl();
