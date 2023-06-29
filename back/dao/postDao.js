@@ -1,11 +1,11 @@
 /*eslint-disable*/
 
 const { Op } = require("sequelize");
-const { Post, User, Board } = require("../models/index");
+const { Post, User, Address, Like } = require("../models/index");
 
 const dao = {
-  // 등록
-  insert(params) {
+  // 매물등록
+  upload(params) {
     return new Promise((resolve, reject) => {
       Post.create(params)
         .then((inserted) => {
@@ -17,20 +17,32 @@ const dao = {
     });
   },
 
-  // 게시물 상세조회
-  selectList(params) {
+  // 특정 사용자에 대한 전체 매물검색
+  selectUserRoomList(params) {
+    // where 검색 조건
+    const setQuery = {};
+    setQuery.where = {
+      ...setQuery.where,
+      userid: params.id, // '='검색
+    };
+
+    // order by 정렬 조건
+    setQuery.order = [["userid", "DESC"]];
+
     return new Promise((resolve, reject) => {
-      Post.findAll({
-        attributes: { exclude: ["viewCount"] },
+      Post.findAndCountAll({
+        ...setQuery,
+        attributes: { exclude: ["viewCount"] }, // password 필드 제외
       })
-        .then((selectedOne) => {
-          resolve(selectedOne);
+        .then((selectedList) => {
+          resolve(selectedList);
         })
         .catch((err) => {
           reject(err);
         });
     });
   },
+
   // 게시물 조회
   selectInfo() {
     return new Promise((resolve, reject) => {
@@ -148,14 +160,14 @@ const dao = {
         });
     });
   },
-  // 삭제
+  // 게시물 삭제
   delete(params) {
     return new Promise((resolve, reject) => {
       Post.destroy({
         where: { id: params.id },
       })
-        .then((deleted) => {
-          resolve({ deletedCount: deleted });
+        .then(() => {
+          resolve("delete success");
         })
         .catch((err) => {
           reject(err);

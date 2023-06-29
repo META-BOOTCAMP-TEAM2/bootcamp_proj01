@@ -5,7 +5,7 @@ const { Post, User, Like } = require("../models/index");
 
 const dao = {
   // like 등록
-  insert(params) {
+  like(params) {
     return new Promise((resolve, reject) => {
       Like.create(params)
         .then((inserted) => {
@@ -18,7 +18,7 @@ const dao = {
   },
 
   // user별 like 조회
-  selectList(params) {
+  likeList(params) {
     return new Promise((resolve, reject) => {
       Like.findAll({
         where: { userId: params.userId },
@@ -40,8 +40,8 @@ const dao = {
     });
   },
 
-  // user별 like 상세조회
-  selectInfo(params) {
+  // user가 찜한 특정 매물 표식
+  selectedHeart(params) {
     return new Promise((resolve, reject) => {
       Like.findAll({
         where: { userId: params.userId, postId: params.postId },
@@ -54,7 +54,7 @@ const dao = {
         });
     });
   },
-  // 삭제
+  // 찜(좋아요) 삭제
   delete(params) {
     return new Promise((resolve, reject) => {
       Like.destroy({

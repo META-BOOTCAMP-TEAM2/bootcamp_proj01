@@ -147,11 +147,11 @@ router.get("/kakao/logout", (req, res) => {
   }
 });
 // [ejs 서버 템플릿엔진으로 체크.]
-// // router.get("/login", function (req, res, next) {
-// //   res.render("index", { title: "로그인 폼 양식입니다." });
-// // });
-// // router.get("/join", function (req, res, next) {
-// //   res.render("register", { title: "회원가입 폼 양식입니다." });
-// // });
+router.get("/login", function (req, res, next) {
+  res.render("index", { title: "로그인 폼 양식입니다." });
+});
+router.get("/join", function (req, res, next) {
+  res.render("register", { title: "회원가입 폼 양식입니다." });
+});
 
 module.exports = router;

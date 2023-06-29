@@ -50,16 +50,16 @@ module.exports = class User extends Sequelize.Model {
         // freezeTableName: true, // true: table명의 복수형 변환을 막음
         underscored: true, // true: underscored, false: camelCase
         timestamps: true, // createAt, updatedAt
-        paranoid: true, // deletedAt
+        paranoid: false, // deletedAt
       }
     );
   }
   static associate(db) {
     db.User.hasMany(db.Post, {
-      foreignKey: { name: "userId", onDelete: "SET NULL", as: "Post" },
+      foreignKey: { name: "userId", onDelete: "CASCADE", as: "Post" },
     });
     db.User.hasMany(db.Like, {
-      foreignKey: { name: "userId", onDelete: "SET NULL", as: "Like" },
+      foreignKey: { name: "userId", onDelete: "CASCADE", as: "Like" },
     });
   }
 

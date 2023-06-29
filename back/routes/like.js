@@ -4,10 +4,9 @@ const router = express.Router();
 const logger = require("../lib/logger");
 const likeService = require("../service/likeService");
 const { isLoggedIn } = require("../lib/middleware");
-const tokenUtil = require("../lib/tokenUtil");
 
-// like 등록
-router.post("/", async (req, res) => {
+// 찜하기 like 등록
+router.post("/", isLoggedIn, async (req, res) => {
   try {
     const params = {
       userId: req.body.userid, // 로그인한 유저의 ID
@@ -15,7 +14,7 @@ router.post("/", async (req, res) => {
     };
     logger.info(`(like.reg.params) ${JSON.stringify(params)}`);
 
-    const result = await likeService.reg(params);
+    const result = await likeService.like(params);
     logger.info(`(like.reg.result) ${JSON.stringify(result)}`);
 
     res.status(200).json(result);
@@ -24,42 +23,42 @@ router.post("/", async (req, res) => {
   }
 });
 
-// user별 like 조회
-router.get("/:userid", async (req, res) => {
+// user가 선택한 like 전체조회
+router.get("/:userid", isLoggedIn, async (req, res) => {
   try {
     const params = {
       userId: req.params.userid, // 로그인한 유저의 ID
     };
     logger.info(`(like.list.params) ${JSON.stringify(params)}`);
 
-    const result = await likeService.list(params);
+    const result = await likeService.likeList(params);
     logger.info(`(like.list.result) ${JSON.stringify(result)}`);
 
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ err: err.toString() });
+    res.status(500).json(err.toString());
   }
 });
 
-// user별 like 상세조회
+// 특정 매물을 사용자가 찜했는지 조회 (하트표시)
 router.get("/:userid/:postid", async (req, res) => {
   try {
     const params = {
       userId: req.params.userid, // 로그인한 유저의 ID
       postId: req.params.postid,
     };
-    logger.info(`(like.list.params) ${JSON.stringify(params)}`);
+    logger.info(`(like.selectedHeart.params) ${JSON.stringify(params)}`);
 
-    const result = await likeService.listInfo(params);
-    logger.info(`(like.list.result) ${JSON.stringify(result)}`);
+    const result = await likeService.selectedHeart(params);
+    logger.info(`(like.selectedHeart.result) ${JSON.stringify(result)}`);
 
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ err: err.toString() });
+    res.status(500).json(err.toString());
   }
 });
 
-// 삭제
+// 찜 매물 삭제
 router.delete("/:userid", async (req, res) => {
   try {
     const params = {
@@ -74,7 +73,7 @@ router.delete("/:userid", async (req, res) => {
 
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ err: err.toString() });
+    res.status(500).json(err.toString());
   }
 });
 

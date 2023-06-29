@@ -91,26 +91,3 @@ module.exports = router;
 //     res.status(500).json({ err: err.toString() });
 //   }
 // });
-
-// 상세정보 조회
-
-// // 상세정보 조회
-// router.get("/:id", isLoggedIn, async (req, res) => {
-//   try {
-//     console.log(req.params);
-//     const params = {
-//       userid: req.params.id,
-//     };
-//     logger.info(`(user.info.params) ${JSON.stringify(params)}`);
-
-//     // 비즈니스 로직 호출
-//     const result = await userService.info(params);
-
-//     // 최종 응답
-//     logger.info(`result값:  ${result}`);
-
-//     res.status(200).json(result);
-//   } catch (err) {
-//     res.status(500).json(err.toString());
-//   }
-// });

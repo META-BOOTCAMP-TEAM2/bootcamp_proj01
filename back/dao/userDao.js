@@ -139,8 +139,8 @@ const dao = {
       User.destroy({
         where: { id: params.id },
       })
-        .then((deleted) => {
-          resolve({ deletedCount: deleted });
+        .then(() => {
+          resolve("회원탈퇴 되었습니다.");
         })
         .catch((err) => {
           reject(err);

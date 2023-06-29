@@ -123,21 +123,6 @@ const service = {
       resolve(result);
     });
   },
-  // service_list [전체 유저 조회]
-  async list(params) {
-    let result = null;
-    try {
-      result = await userDao.selectList(params);
-    } catch (err) {
-      return new Promise((resolve, reject) => {
-        reject(err);
-      });
-    }
-
-    return new Promise((resolve) => {
-      resolve(result);
-    });
-  },
 
   // service_update [유저 정보 수정]
   async edit(params) {
@@ -180,3 +165,19 @@ const service = {
 };
 
 module.exports = service;
+
+// // service_list [전체 유저 조회]
+//   async list(params) {
+//     let result = null;
+//     try {
+//       result = await userDao.selectList(params);
+//     } catch (err) {
+//       return new Promise((resolve, reject) => {
+//         reject(err);
+//       });
+//     }
+
+//     return new Promise((resolve) => {
+//       resolve(result);
+//     });
+//   },

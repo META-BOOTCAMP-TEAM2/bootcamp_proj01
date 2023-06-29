@@ -18,7 +18,7 @@ module.exports = class Like extends Sequelize.Model {
       {
         sequelize,
         underscored: true, // true: underscored, false: camelCase
-        timestamps: false, // createAt, updatedAt
+        timestamps: true, // createAt, updatedAt
         paranoid: false, // deletedAt
       }
     );
@@ -32,5 +32,5 @@ module.exports = class Like extends Sequelize.Model {
       foreignKey: { name: "userId", onDelete: "CASCADE", as: "User" },
     });
   }
-  static includeAttributes = ["like", "userId", "createdAt"];
+  static includeAttributes = ["like", "userId", "postId", "createdAt"];
 };

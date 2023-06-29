@@ -6,16 +6,16 @@ const logger = require("../lib/logger");
 const postService = require("../service/postService");
 const { isLoggedIn } = require("../lib/middleware");
 
-// 상세정보 조회
+//유저가 올린 매물 목록 조회
 router.get("/:id", isLoggedIn, async (req, res) => {
   try {
     const params = {
-      userid: req.params.id,
+      id: req.params.id,
     };
-    logger.info(`(post.list.params) ${JSON.stringify(params)}`);
+    logger.info(`(post.userRoomList.params) ${JSON.stringify(params)}`);
 
-    const result = await postService.list(params);
-    logger.info(`(post.list.result) ${JSON.stringify(result)}`);
+    const result = await postService.userRoomList(params);
+    logger.info(`(post.userRoomList.result) ${JSON.stringify(result)}`);
 
     // 최종 응답
     res.status(200).json(result);
@@ -39,6 +39,26 @@ router.get("/", async (req, res) => {
   }
 });
 
+// 삭제
+router.delete("/:id", isLoggedIn, async (req, res) => {
+  try {
+    const params = {
+      id: req.params.id,
+    };
+    logger.info(`(post.delete.params) ${JSON.stringify(params)}`);
+
+    const result = await postService.delete(params);
+    logger.info(`(post.delete.result) ${JSON.stringify(result)}`);
+
+    // 최종 응답
+    res.status(200).json(result);
+  } catch (err) {
+    res.status(500).json(err.toString());
+  }
+});
+
+module.exports = router;
+
 // // 수정
 // router.put("/:id", isLoggedIn, async (req, res) => {
 //   try {
@@ -60,23 +80,3 @@ router.get("/", async (req, res) => {
 //     res.status(500).json({ err: err.toString() });
 //   }
 // });
-
-// 삭제
-router.delete("/:id", isLoggedIn, async (req, res) => {
-  try {
-    const params = {
-      id: req.params.id,
-    };
-    logger.info(`(post.delete.params) ${JSON.stringify(params)}`);
-
-    const result = await postService.delete(params);
-    logger.info(`(post.delete.result) ${JSON.stringify(result)}`);
-
-    // 최종 응답
-    res.status(200).json(result);
-  } catch (err) {
-    res.status(500).json(err.toString());
-  }
-});
-
-module.exports = router;

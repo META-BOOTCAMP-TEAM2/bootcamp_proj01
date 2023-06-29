@@ -6,10 +6,10 @@ const service = {
   async upload(params) {
     let inserted = null;
     try {
-      inserted = await postDao.insert(params);
-      logger.debug(`(postService.reg) ${JSON.stringify(inserted)}`);
+      inserted = await postDao.upload(params);
+      logger.debug(`(postService.upload) ${JSON.stringify(inserted)}`);
     } catch (err) {
-      logger.error(`(postService.reg) ${err.toString()}`);
+      logger.error(`(postService.upload) ${err.toString()}`);
       return new Promise((resolve, reject) => {
         reject(err.toString());
       });
@@ -20,15 +20,15 @@ const service = {
       resolve(inserted);
     });
   },
-  // selectList
-  async list(params) {
+  // 사용자가 올린 매물만 검색
+  async userRoomList(params) {
     let result = null;
 
     try {
-      result = await postDao.selectList(params);
-      logger.debug(`(postService.list) ${JSON.stringify(result)}`);
+      result = await postDao.selectUserRoomList(params);
+      logger.debug(`(postService.userRoomList) ${JSON.stringify(result)}`);
     } catch (err) {
-      logger.error(`(postService.list) ${err.toString()}`);
+      logger.error(`(postService.userRoomList) ${err.toString()}`);
       return new Promise((resolve, reject) => {
         reject(err);
       });
@@ -38,6 +38,7 @@ const service = {
       resolve(result);
     });
   },
+
   // selectInfo
   async info() {
     let result = null;
@@ -100,24 +101,25 @@ const service = {
   //     resolve(result);
   //   });
   // },
-  // // delelte
-  // async delete(params) {
-  //   let result = null;
 
-  //   try {
-  //     result = await postDao.delete(params);
-  //     logger.debug(`(postService.delete) ${JSON.stringify(result)}`);
-  //   } catch (err) {
-  //     logger.error(`(postService.delete) ${err.toString()}`);
-  //     return new Promise((resolve, reject) => {
-  //       reject(err);
-  //     });
-  //   }
+  // delelte
+  async delete(params) {
+    let result = null;
 
-  //   return new Promise((resolve) => {
-  //     resolve(result);
-  //   });
-  // },
+    try {
+      result = await postDao.delete(params);
+      logger.debug(`(postService.delete) ${JSON.stringify(result)}`);
+    } catch (err) {
+      logger.error(`(postService.delete) ${err.toString()}`);
+      return new Promise((resolve, reject) => {
+        reject(err);
+      });
+    }
+
+    return new Promise((resolve) => {
+      resolve(result);
+    });
+  },
 };
 
 module.exports = service;

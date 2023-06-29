@@ -69,7 +69,7 @@ module.exports = class Post extends Sequelize.Model {
         // freezeTableName: true, // true: table명의 복수형 변환을 막음
         underscored: true, // true: underscored, false: camelCase
         timestamps: true, // createAt, updatedAt
-        paranoid: true, // deletedAt
+        paranoid: false, // deletedAt
       }
     );
   }
@@ -79,12 +79,18 @@ module.exports = class Post extends Sequelize.Model {
       foreignKey: { name: "addressId", onDelete: "SET NULL", as: "Address" },
     });
     db.Post.belongsTo(db.User, {
-      foreignKey: { name: "userId", onDelete: "SET NULL", as: "User" },
+      foreignKey: { name: "userId", onDelete: "CASCADE", as: "User" },
     });
     db.Post.hasMany(db.Like, {
-      foreignKey: { name: "postId", onDelete: "SET NULL", as: "Like" },
+      foreignKey: { name: "postId", onDelete: "CASCADE", as: "Like" },
     });
   }
 
-  static includeAttributes = ["id", "address", "propertyType", "userId", "createdAt"];
+  static includeAttributes = [
+    "id",
+    "address",
+    "propertyType",
+    "userId",
+    "createdAt",
+  ];
 };
