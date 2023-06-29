@@ -323,7 +323,6 @@
   background-color: #e1dbf6;
   width: 100%;
   text-align: center;
-  min-height: 100vh;
 }
 .listingDetailForm {
   padding-top: 80px;
@@ -350,8 +349,8 @@
   line-height: 2;
 }
 
-.keyContent h3,
-.content h3 {
+.listingDetailKeyContent h3,
+.listingDetailKeyContent h3 {
   text-align: center;
 }
 .listingDetail .content {

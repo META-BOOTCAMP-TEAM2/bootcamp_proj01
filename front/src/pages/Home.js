@@ -11,6 +11,7 @@ function Home() {
     const token = localStorage.getItem("token");
     if (!token) {
       alert("로그인이 필요합니다.");
+
       navigate("/login"); // 로그인 페이지로 이동
     } else {
       navigate("/upload"); // 업로드 페이지로 이동
@@ -32,12 +33,11 @@ function Home() {
           <Link to="/room">
             <button id="Button1">
               {" "}
-              <p className="circle1">●&nbsp;</p> Buy
+              <p className="circle1">●&nbsp;</p> Buy&nbsp;
             </button>
           </Link>
-          <p className="homeLine">아래 라인 공간</p>
           <button id="Button2" onClick={handleRoomUpload}>
-            <p className="circle2">●&nbsp;</p> Sell
+            <p className="circle2">●&nbsp;</p> Sell&nbsp;
           </button>
         </div>
       </div>

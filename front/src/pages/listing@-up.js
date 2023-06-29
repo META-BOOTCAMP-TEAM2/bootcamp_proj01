@@ -4,47 +4,31 @@ import Header from "../components/Header";
 import "./stylePages.css";
 import axios from "axios";
 
-const LikePage = () => {
+const Listing = () => {
   const [filteredPropertyType, setFilteredPropertyType] = useState(null);
   const [sortByPrice, setSortByPrice] = useState(null);
   const [rows, setRows] = useState([]);
-  const itemsPerRow = 3;
+  const itemsPerRow = 2;
   const allButtonRef = useRef(null);
   useEffect(() => {
     allButtonRef.current.focus();
   }, []);
-  let currentUser = localStorage.getItem("id");
-  //   const userid = localStorage.getItem("userid");
+  let currentUser = localStorage.getItem("userid");
 
   useEffect(() => {
-    const results = axios.get(`/like/${currentUser}`);
-    results
-      .then((result) => {
-        let data = result.data;
-        console.log(data);
+    const fetchListingData = async () => {
+      try {
+        const response = await axios.get(`/post/${currentUser}`);
+        let data = response.data;
 
         let filteredItems = filteredPropertyType
           ? data.filter((item) => item.propertyType === filteredPropertyType)
           : data;
 
         if (sortByPrice === "expensive") {
-          if (
-            filteredPropertyType === "전세" ||
-            filteredPropertyType === "월세"
-          ) {
-            filteredItems = filteredItems.sort((a, b) => b.deposit - a.deposit);
-          } else {
-            filteredItems = filteredItems.sort((a, b) => b.price - a.price);
-          }
+          filteredItems = filteredItems.sort((a, b) => b.price - a.price);
         } else if (sortByPrice === "cheap") {
-          if (
-            filteredPropertyType === "전세" ||
-            filteredPropertyType === "월세"
-          ) {
-            filteredItems = filteredItems.sort((a, b) => a.deposit - b.deposit);
-          } else {
-            filteredItems = filteredItems.sort((a, b) => a.price - b.price);
-          }
+          filteredItems = filteredItems.sort((a, b) => a.price - b.price);
         }
 
         const updatedRows = filteredItems.reduce(
@@ -59,14 +43,15 @@ const LikePage = () => {
           []
         );
         setRows(updatedRows);
-      })
-      .catch((error) => {
+      } catch (error) {
         console.error(error);
-      });
+      }
+    };
+
+    fetchListingData();
   }, [currentUser, filteredPropertyType, sortByPrice]);
-  const storedData = sessionStorage.getItem("myData");
-  const data = JSON.parse(storedData);
-  const imgClick = (item) => {
+
+  const handleCaptionClick = (item) => {
     const newUrl = `http://localhost:3000/listDetail`;
     const newWindow = window.open(newUrl);
     newWindow.sessionStorage.setItem("myData", JSON.stringify(item));
@@ -90,14 +75,33 @@ const LikePage = () => {
     { label: "높은 가격순", value: "expensive" },
     { label: "낮은 가격순", value: "cheap" },
   ];
+  const [hoveredIndexes, setHoveredIndexes] = useState([]);
+
+  const handleMouseOver = (rowIndex, itemIndex) => {
+    setHoveredIndexes((prev) => {
+      const updatedHoveredIndexes = [...prev];
+      updatedHoveredIndexes[rowIndex] = itemIndex;
+      return updatedHoveredIndexes;
+    });
+  };
+
+  const handleMouseOut = (rowIndex) => {
+    setHoveredIndexes((prev) => {
+      const updatedHoveredIndexes = [...prev];
+      updatedHoveredIndexes[rowIndex] = null;
+      return updatedHoveredIndexes;
+    });
+  };
 
   return (
     <div>
       <Header />
       <div className="LISTING">
         <div className="listing">
-          <div className="listingTitle">
-            <h2>내가 찜한 매물 목록</h2>
+          <div className="listingTitleTop">
+            <div className="listingTitle">
+              <h2>매물 목록</h2>
+            </div>
           </div>
           <div className="listingFilters">
             <div className="propertyType">
@@ -147,16 +151,32 @@ const LikePage = () => {
               <div key={rowIndex} className="listingRow">
                 {row.map((item, itemIndex) => (
                   <div key={itemIndex} className="listingItem">
-                    <div>
-                      <img
-                        src={"http://localhost:8000/uploads/" + item.filename1}
-                        alt="Property"
-                        style={{ width: "300px", height: "200px" }}
-                        onClick={() => imgClick(item)}
-                      />
+                    <div
+                      className="imageWrapper"
+                      onMouseOver={() => handleMouseOver(rowIndex, itemIndex)}
+                      onMouseOut={() => handleMouseOut(rowIndex)}
+                    >
+                      <figure>
+                        <img
+                          src={
+                            "http://localhost:8000/uploads/" + item.filename1
+                          }
+                          alt="Property"
+                          style={{ width: "300px", height: "200px" }}
+                        />
+                        {hoveredIndexes[rowIndex] === itemIndex && (
+                          <figcaption
+                            className="imageCaption"
+                            onClick={() => handleCaptionClick(item)}
+                          >
+                            자세히보기
+                          </figcaption>
+                        )}
+                      </figure>
                     </div>
                     <div>계약 방식: {item.propertyType}</div>
                     <div>주소: {item.address}</div>
+
                     {item.propertyType === "매매" && (
                       <div>매매가: {item.price}</div>
                     )}
@@ -182,4 +202,4 @@ const LikePage = () => {
   );
 };
 
-export default LikePage;
+export default Listing;

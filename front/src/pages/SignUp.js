@@ -110,9 +110,11 @@ const SignUpPage = () => {
                 onChange={handleChange}
               />
               <button className="idCheckButton" onClick={handleDuplicateCheck}>
-                중복확인
+                ID Check
               </button>
-              {isUsernameValid === true && <p className="signBoxText1">가입 가능한 회원입니다.</p>}
+              {isUsernameValid === true && (
+                <p className="signBoxText1">가입 가능한 회원입니다.</p>
+              )}
               {isUsernameValid === false && (
                 <p className="signBoxText2">중복된 사용자 이름입니다.</p>
               )}

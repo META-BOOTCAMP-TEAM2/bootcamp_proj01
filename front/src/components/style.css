@@ -1,14 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Gothic+A1&display=swap");
+
 /* 웹페이지 통합, 설정 초기값으로 없애기 */
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  font-family: "Gothic A1", sans-serif;
 }
 button {
   border: none;
   background: none;
-}
-a {
   text-decoration: none;
+}
+.logo a,
+.menu a {
+  color: black;
+  text-decoration: underline lightgreen;
+}
+.menu a:focus,
+.menu a:hover {
+  text-decoration: none;
+  display: inline-block;
+  color: lightgreen;
+  transform: translateY(-2px);
+  transition: 1s;
 }
 
 /* navbar */
@@ -33,23 +49,39 @@ a {
 }
 .navbar .menu {
   float: right;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
 }
 .navbar .menu-item {
   font-size: 18px;
-  font-style: italic;
-  padding: 0 30px;
+  margin: 0 15px;
+}
+
+.navbar .button:hover {
+  cursor: pointer;
+}
+.navbar .menu-item:hover {
+  cursor: pointer;
+}
+.welcome {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 2rem;
+  color: rgb(31, 88, 31);
 }
 
 /* footer */
 .footer {
   z-index: 9999;
-  border-top: 2px solid rgb(108, 108, 108);
+  border-top: 2px solid rgb(151, 151, 151);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  height: 30px;
-  background-color: white;
+  font-size: 10px;
+  height: 25px;
+  background-color: rgb(150, 150, 150);
+  color: white;
+  position: absolute;
+  width: 100%;
 }

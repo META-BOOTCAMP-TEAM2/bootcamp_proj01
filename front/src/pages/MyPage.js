@@ -132,11 +132,11 @@ const MyPage = () => {
           </div>
 
           <div>
-            <button className="myUpLoad" onClick={() => btnClick1()}>
+            <button className="myPageMyUpLoad" onClick={() => btnClick1()}>
               내가 올린 매물
             </button>
             <div>
-              <button className="myUpLoad" onClick={() => btnClick2()}>
+              <button className="myLove" onClick={() => btnClick2()}>
                 내가 찜한 매물
               </button>
             </div>
