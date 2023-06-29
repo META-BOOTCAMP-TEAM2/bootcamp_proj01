@@ -18,40 +18,38 @@ function Header() {
   };
 
   return (
-    <div className="line">
-      <div className="navbar">
-        <div className="logo">
-          <Link to="/">
-            <p className="logo"> 🏠 Your Sweet Home</p>
-          </Link>
-        </div>
-        <div className="menu">
-          {localStorage.getItem("userid") ? (
-            <>
-              <div className="welcome">{localStorage.getItem("userid")} 님, 환영합니다😊</div>
-              <p className="menu-item" variant="link" id="buttons">
-                <Link to="/mypage">My page</Link>
-              </p>
-              <a href="#" className="menu-item" onClick={handleLogout}>
-                Logout
-              </a>
-            </>
-          ) : (
-            <>
-              <p className="menu-item" variant="link" id="buttons">
-                <Link to="/">Home</Link>
-              </p>
-              <p className="menu-item" variant="link" id="buttons">
-                <Link to="/login">Login</Link>
-              </p>
-              <p className="menu-item" variant="link" id="buttons">
-                <Link to="/signup">Sign up</Link>
-              </p>
-            </>
-          )}
-        </div>
+    <header>
+      <div className="logo">
+        <Link to="/">
+          <p className="logo"> 🏠 Your Sweet Home</p>
+        </Link>
       </div>
-    </div>
+      <div className="menu">
+        {localStorage.getItem("userid") ? (
+          <>
+            <div className="welcome">{localStorage.getItem("userid")} 님, 환영합니다😊</div>
+            <p className="menu-item" variant="link" id="buttons">
+              <Link to="/mypage">My page</Link>
+            </p>
+            <a href="#" className="menu-item" onClick={handleLogout}>
+              Logout
+            </a>
+          </>
+        ) : (
+          <>
+            <p className="menu-item" variant="link" id="buttons">
+              <Link to="/">Home</Link>
+            </p>
+            <p className="menu-item" variant="link" id="buttons">
+              <Link to="/login">Login</Link>
+            </p>
+            <p className="menu-item" variant="link" id="buttons">
+              <Link to="/signup">Sign up</Link>
+            </p>
+          </>
+        )}
+      </div>
+    </header>
   );
 }
 

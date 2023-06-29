@@ -8,6 +8,15 @@
   text-decoration: none;
   font-family: "Gothic A1", sans-serif;
 }
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+li {
+  list-style: none;
+}
 button {
   border: none;
   background: none;
@@ -28,39 +37,36 @@ button {
 }
 
 /* navbar */
-.line {
-  width: 100%;
+header {
   border-bottom: 2px solid rgb(108, 108, 108);
-}
-.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
   color: #1b2035;
-  margin: 10px auto;
+  padding: 10px 40px;
   z-index: 9999;
 }
-.navbar .logo {
+.header .logo {
   color: inherit;
   text-decoration: none;
   color: black;
   font-size: 18px;
 }
-.navbar .menu {
+header .menu {
   float: right;
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
-.navbar .menu-item {
+header .menu-item {
   font-size: 18px;
   margin: 0 15px;
 }
 
-.navbar .button:hover {
+.header .button:hover {
   cursor: pointer;
 }
-.navbar .menu-item:hover {
+.header .menu-item:hover {
   cursor: pointer;
 }
 .welcome {
@@ -82,6 +88,6 @@ button {
   height: 25px;
   background-color: rgb(150, 150, 150);
   color: white;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
 }
