@@ -117,6 +117,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./stylePages.css";
 import HeartButton from "../components/heartButton";
+import addressChange from "../components/addressChange";
+const { kakao } = window;
 
 const ListingDetail = (props) => {
   const [like, setLike] = useState(false);
@@ -168,73 +170,90 @@ const ListingDetail = (props) => {
     }
   };
 
-  // 로컬 스토리지에 저장된 ID가 없으면 토글 버튼이 작동하지 않도록 처리
-  // if (!userId) {
-  //   return (
-  //     <div className="listingDetail">
-  //       <Header />
-  //       <div className="listingDetailForm">
-  //         <h1>상세 정보</h1>
-  //         <p>ID가 없습니다.</p>
-  //       </div>
-  //       <Footer />
-  //     </div>
-  //   );
-  // }
+  useEffect(() => {
+    const mapContainer = document.getElementById("map");
+
+    const getAddressPosition = async () => {
+      try {
+        const position = await addressChange(data.address);
+        const options = {
+          center: new kakao.maps.LatLng(position.lat, position.lng),
+          level: 5,
+        };
+        const map = new kakao.maps.Map(mapContainer, options);
+        const marker = new kakao.maps.Marker({
+          position: new kakao.maps.LatLng(position.lat, position.lng),
+          map: map,
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    getAddressPosition();
+  }, [data]);
 
   return (
-    <div className="listingDetail">
+    <div>
       <Header />
-      <div className="listingDetailForm">
-        <h1>상세 정보</h1>
-        <div className="top">
-          <Carousel className="imgTotal" showThumbs={false}>
-            {/* { data.img.map((imgUrl, index) => ( */}
-            <div>
-              <img
-                src={"http://192.168.0.30:8000/" + data.path1}
-                alt="Property Image"
-                style={{ width: "600px", height: "400px" }}
-              />
+      <div className="ListingDetail">
+        <div className="listingDetail">
+          <div className="listingDetailTitle">
+            <h2>상세 정보</h2>
+          </div>
+          <div className="listingDetailContentTotal">
+            <div className="listingDetailContentTop">
+              <Carousel className="listingDetailImgTotal" showThumbs={false}>
+                <img
+                  src={"http://192.168.0.30:8000/" + data.path1}
+                  alt="Property Image"
+                  style={{ width: "600px", height: "400px" }}
+                />
+                <img
+                  src={"http://192.168.0.30:8000/" + data.path2}
+                  alt="Property Image"
+                  style={{ width: "600px", height: "400px" }}
+                />
+                <img
+                  src={"http://192.168.0.30:8000/" + data.path3}
+                  alt="Property Image"
+                  style={{ width: "600px", height: "400px" }}
+                />
+              </Carousel>
+              <div className="listingDetailKeyContent">
+                <h3>중요 정보</h3>
+                <p>계약 방식: {data.propertyType}</p>
+                {data.propertyType === "매매" && <p>가격: {data.price}</p>}
+                {data.propertyType === "전세" && <p>보증금: {data.deposit}</p>}
+                {data.propertyType === "월세" && (
+                  <p>
+                    보증금: {data.deposit}, 월세: {data.monthlyRent}
+                  </p>
+                )}
+                <p>주소: {data.address}</p>
+                <p>방 구조: {data.structure}</p>
+                {/* <p>옵션: {data.options.join(", ")}</p> */}
+                <div className="listingDetailHeart">
+                  <HeartButton like={like} onClick={toggleLike} />
+                  찜하기
+                </div>
+                {/* <Detail content={content} /> */}
+              </div>
             </div>
-            <div>
-              <img
-                src={"http://192.168.0.30:8000/" + data.path2}
-                alt="Property Image"
-                style={{ width: "600px", height: "400px" }}
-              />
-            </div>
-            <div>
-              <img
-                src={"http://192.168.0.30:8000/" + data.path3}
-                alt="Property Image"
-                style={{ width: "600px", height: "400px" }}
-              />
-            </div>
-          </Carousel>
-          <div className="keyContent">
-            <h3>중요 정보</h3>
-            <p>계약 방식: {data.propertyType}</p>
-            {data.propertyType === "매매" && <p>가격: {data.price}</p>}
-            {data.propertyType === "전세" && <p>보증금: {data.deposit}</p>}
-            {data.propertyType === "월세" && (
-              <p>
-                보증금: {data.deposit}, 월세: {data.monthlyRent}
-              </p>
-            )}
-            <p>주소: {data.address}</p>
-            <p>방 구조: {data.structure}</p>
-            {/* <p>옵션: {data.options.join(", ")}</p> */}
-            <HeartButton like={like} onClick={toggleLike} />
-            {/* <Detail content={content} /> */}
+            <div className="listingDetailContentBottom">
+              <div className="listingDetailSubContent">
+                <h3>부가 설명</h3>
+                <p>{data.additionalInfo}</p>
+                <p>옵션: {data.options}</p>
+              </div>
+              <div className="listingDetailMap">
+                <h3>위치 확인</h3>
+                <div id="map" style={{ width: "400px", height: "300px" }}></div>
+              </div>
+            </div>{" "}
           </div>
         </div>
-        <div className="content">
-          <h3>상세 정보</h3>
-          <p>{data.additionalInfo}</p>
-        </div>
       </div>
-
       <Footer />
     </div>
   );

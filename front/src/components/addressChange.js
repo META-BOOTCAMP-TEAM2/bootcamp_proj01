@@ -28,8 +28,8 @@ const change = async (address) => {
 const addressChange = async (address) => {
   try {
     const position = await change(address);
-    const formattedPosition = `${position.lat},${position.lng}`;
-    console.log(formattedPosition);
+    // const formattedPosition = `${position.lat},${position.lng}`;
+
     return position;
   } catch (error) {
     console.log(error);
