@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../components/authContext";
 import Header from "../components/Header";
@@ -16,9 +16,8 @@ const MyPage = () => {
         console.log(res.data);
       } catch (err) {
         alert(err.response.data);
-        if (err.response.status === 401) {
-          logout();
-          navigate("/login");
+        if (err.response.status === Number(401)) {
+          logout().then(navigate("/login", { replace: true }));
         }
       }
     };

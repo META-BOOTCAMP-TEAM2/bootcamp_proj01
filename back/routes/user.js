@@ -32,11 +32,11 @@ router.get("/mypage/:userid", isLoggedIn, async (req, res) => {
 });
 
 // 유저 수정
-router.put("/:id", async (req, res) => {
+router.put("/:id", isLoggedIn, async (req, res) => {
   try {
     const params = {
       id: req.params.id,
-      name: req.body.name,
+      username: req.body.username,
       role: req.body.role,
       email: req.body.email,
       phone: req.body.phone,
@@ -49,12 +49,12 @@ router.put("/:id", async (req, res) => {
     // 최종 응답
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ err: err.toString() });
+    res.status(500).json(err.toString());
   }
 });
 
 // 유저 삭제
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", isLoggedIn, async (req, res) => {
   try {
     const params = {
       id: req.params.id,
@@ -67,7 +67,7 @@ router.delete("/:id", async (req, res) => {
     // 최종 응답
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ err: err.toString() });
+    res.status(500).json(err.toString());
   }
 });
 

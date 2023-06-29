@@ -17,6 +17,7 @@ export const AuthContextProvider = ({ children }) => {
     localStorage.setItem("role", role); //유저 등급
     localStorage.setItem("email", email); //유저 이메일
     localStorage.setItem("phone", phone); //유저 연락처
+    setCurrentUser(true);
   };
 
   const logout = async () => {

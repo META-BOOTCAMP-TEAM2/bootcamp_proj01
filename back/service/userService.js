@@ -94,7 +94,7 @@ const service = {
         const err = new Error("아이디 혹은 비밀번호를 확인해주세요.(code:02)");
         logger.error(err.toString());
         return new Promise((resolve, reject) => {
-          reject(err.message);
+          reject(err.toString());
         });
       }
     } catch (err) {

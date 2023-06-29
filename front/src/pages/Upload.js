@@ -19,11 +19,11 @@ const UploadPage = () => {
     structure: "원룸",
     additionalInfo: "",
     options: [],
-
     file1: null,
     file2: null,
     file3: null,
     userid: localStorage.getItem("userid") || "test",
+    userId: localStorage.getItem("id") || Number(99),
   });
 
   const handleChange = (event) => {
@@ -114,6 +114,7 @@ const UploadPage = () => {
       data.append("additionalInfo", formData.additionalInfo);
       data.append("options", formData.options);
       data.append("userid", formData.userid);
+      data.append("userid", formData.userId);
       data.append("file1", formData.file1);
       data.append("file2", formData.file2);
       data.append("file3", formData.file3);

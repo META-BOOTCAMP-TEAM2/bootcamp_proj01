@@ -24,14 +24,13 @@ router.post("/join", async (req, res) => {
       const err = new Error("Not allowed null (username, userid, password)");
       logger.error(err.message);
       res.json(err.message);
+    } else {
+      // 비즈니스 로직 호출
+      const result = await userService.reg(params);
+      logger.info(`(user.reg.result) ${JSON.stringify(result)}`);
+      // 최종 응답
+      res.status(200).json(result);
     }
-
-    // 비즈니스 로직 호출
-    const result = await userService.reg(params);
-    logger.info(`(user.reg.result) ${JSON.stringify(result)}`);
-
-    // 최종 응답
-    res.status(200).json(result);
   } catch (err) {
     res.status(500).json(err.message);
   }
@@ -50,32 +49,31 @@ router.post("/login", async (req, res) => {
     if (!params.userid || !params.password) {
       const err = new Error("Not allowed null (userid, password)");
       logger.error(err.toString());
-
       res.status(500).json(err.message);
+    } else {
+      // 비즈니스 로직 호출
+      const result = await userService.login(params);
+      logger.info(`(auth.login.result) ${JSON.stringify(result)}`);
+      // 토큰 생성
+      const accessToken = tokenUtil.makeAccessToken(result);
+      const refreshToken = tokenUtil.makeRefreshToken(result);
+      // token 전송
+      // const tokenSet = { access_token: accessToken, refresh_token: refreshToken };
+      res.cookie("accessToken", accessToken, {
+        secure: false,
+        httpOnly: true,
+      });
+
+      res.cookie("refreshToken", refreshToken, {
+        secure: false,
+        httpOnly: true,
+      });
+
+      const user = { ...result.dataValues };
+      delete user.password;
+      // 최종 응답
+      res.status(200).json(user); //유저 정보를 전달
     }
-
-    // 비즈니스 로직 호출
-    const result = await userService.login(params);
-    logger.info(`(auth.login.result) ${JSON.stringify(result)}`);
-    // 토큰 생성
-    const accessToken = tokenUtil.makeAccessToken(result);
-    const refreshToken = tokenUtil.makeRefreshToken(result);
-    // token 전송
-    // const tokenSet = { access_token: accessToken, refresh_token: refreshToken };
-    res.cookie("accessToken", accessToken, {
-      secure: false,
-      httpOnly: true,
-    });
-
-    res.cookie("refreshToken", refreshToken, {
-      secure: false,
-      httpOnly: true,
-    });
-
-    const user = { ...result.dataValues };
-    delete user.password;
-    // 최종 응답
-    res.status(200).json(user); //유저 정보를 전달
   } catch (err) {
     res.status(500).json(err.toString()); //
   }
