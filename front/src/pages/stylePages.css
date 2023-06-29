@@ -17,10 +17,11 @@
   align-content: center;
 }
 .homeImgText {
-  font-size: 30px;
+  font-size: 40px;
   margin-right: 3rem;
   margin-top: 10rem;
   line-height: 1;
+  font-family: "Dongle", sans-serif;
 }
 .homeImgText1 {
   font-weight: bold;
@@ -33,30 +34,55 @@
   justify-content: center;
   align-items: center;
 }
+.homeButtons a {
+  color: inherit;
+  text-decoration: none;
+}
 .homeLine {
   border-bottom: 2px solid rgb(108, 108, 108);
   color: #fff;
 }
 #Button1 {
   display: flex;
-  font-size: 30px;
+  font-family: "Dongle", sans-serif;
+  font-size: 50px;
   font-weight: bold;
   align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid grey;
 }
 .circle1 {
-  font-size: 40px;
+  font-size: 60px;
   color: rgb(255, 150, 101);
+}
+#Button1:focus,
+#Button1:hover {
+  color: rgb(255, 150, 101);
+  transform: translateY(-2px);
+  transition: 1s;
+  font-size: 55px;
+  cursor: pointer;
 }
 #Button2 {
   display: flex;
-  margin-top: 20px;
-  font-size: 30px;
+  padding-top: 10px;
+  font-family: "Dongle", sans-serif;
+  font-size: 50px;
   font-weight: bold;
   align-items: center;
+  cursor: pointer;
 }
 .circle2 {
-  font-size: 40px;
-  color: rgb(136, 252, 136);
+  font-size: 60px;
+  color: lightgreen;
+  /* color: rgb(136, 252, 136); */
+}
+#Button2:focus,
+#Button2:hover {
+  color: lightgreen;
+  transform: translateY(-2px);
+  transition: 1s;
+  font-size: 55px;
 }
 
 /* signUp 페이지 ////////////////////////*/
@@ -98,6 +124,12 @@
   padding: 0.5rem;
   border-radius: 5px;
 }
+.signBox:hover,
+.signBox:focus {
+  border: 2px solid lightgreen;
+  background-color: #e7ffd1;
+  cursor: pointer;
+}
 .signBoxText1 {
   margin-left: 6rem;
   padding: 0.2rem;
@@ -114,10 +146,20 @@
   border-radius: 5px;
   height: 30px;
   margin: 0 0.7rem;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  font-family: "Dongle", sans-serif;
+  font-size: 25px;
+}
+.idCheckButton:hover {
+  font-weight: bold;
+  color: white;
+  background-color: grey;
+  cursor: pointer;
 }
 .signSubmitButton {
-  background-color: #c1c7fb;
+  background-color: #e7ffd1;
+  border: 1px solid #a3b98f;
   color: rgb(30, 30, 30);
   border-radius: 10px;
   width: 265px;
@@ -127,14 +169,25 @@
   font-size: 20px;
   font-weight: bolder;
 }
+.signSubmitButton:hover {
+  cursor: pointer;
+  border: 3px solid lightgreen;
+}
 .signInLogin {
   margin-left: 0.7rem;
-  padding: 0.2rem 2rem;
-  color: inherit;
+  padding: 0 2rem;
   text-decoration: none;
   color: black;
   background-color: #d3d3d3;
   border-radius: 5px;
+  font-weight: bold;
+  font-family: "Dongle", sans-serif;
+  font-size: 25px;
+}
+.signInLogin:hover {
+  font-weight: bold;
+  color: white;
+  background-color: grey;
 }
 
 /* login 페이지 //////////////////////////////*/
@@ -178,8 +231,15 @@
   margin: 0.5rem 0;
   border-radius: 5px;
 }
+.loginBox:hover,
+.loginBox:focus {
+  border: 2px solid lightgreen;
+  background-color: #e7ffd1;
+  cursor: pointer;
+}
 .loginSubmitButton {
-  background-color: #c1c7fb;
+  background-color: #e7ffd1;
+  border: 1px solid #a3b98f;
   color: rgb(30, 30, 30);
   border-radius: 5px;
   width: 265px;
@@ -189,22 +249,53 @@
   font-size: 20px;
   font-weight: bolder;
 }
+.loginSubmitButton:hover {
+  cursor: pointer;
+  border: 3px solid lightgreen;
+}
 .loginButtonGoogle {
   content: "\f1a0";
-  color: white;
-  background-color: #1420f7;
-  font-size: 18px;
+  background-color: white;
+  border: 1.5px solid black;
+  font-size: 20px;
   width: 260px;
   height: 45px;
   border-radius: 10px;
   justify-content: center;
   margin-top: 20px;
 }
+.loginButtonGoogle h4 span:nth-child(1) {
+  color: #4285f4;
+  font-size: 25px;
+}
+.loginButtonGoogle h4 span:nth-child(2) {
+  color: #ea4335;
+  font-size: 25px;
+}
+.loginButtonGoogle h4 span:nth-child(3) {
+  color: #fbbc05;
+  font-size: 25px;
+}
+.loginButtonGoogle h4 span:nth-child(4) {
+  color: #4285f4;
+  font-size: 25px;
+}
+.loginButtonGoogle h4 span:nth-child(5) {
+  color: #34a853;
+  font-size: 25px;
+}
+.loginButtonGoogle h4 span:nth-child(6) {
+  color: #ea4335;
+  font-size: 25px;
+}
+.loginButtonGoogle h4 span:nth-child(7) {
+  color: black;
+}
 .loginButtonKakao {
   content: "\f1a0";
-  color: rgb(0, 0, 0);
-  background-color: #f7f014;
-  font-size: 18px;
+  background-color: #fee500;
+  border: 1px solid black;
+  font-size: 20px;
   width: 260px;
   height: 45px;
   border-radius: 10px;
@@ -216,12 +307,20 @@
 }
 .loginInSign {
   margin-left: 0.5rem;
-  padding: 0.2rem 1rem;
+  padding: 0 1rem;
   color: inherit;
   text-decoration: none;
+  font-weight: bold;
   color: black;
   background-color: #d3d3d3;
   border-radius: 5px;
+  font-family: "Dongle", sans-serif;
+  font-size: 25px;
+}
+.loginInSign:hover {
+  font-weight: bold;
+  color: white;
+  background-color: grey;
 }
 /* myPage 페이지 /////////////////////////////////*/
 .myPage {
@@ -249,6 +348,7 @@
   font-size: 20px;
   margin: 2rem 0;
   color: rgb(30, 30, 30);
+  font-family: "Dongle", sans-serif;
 }
 
 .myPageBox {
@@ -256,16 +356,16 @@
   width: 70%;
   display: grid;
   text-align: center;
-  border: 2px solid #c1c7fb;
+  border: 2px solid #a3b98f;
 }
 .myPageSubTitle {
-  background-color: #eaecfc;
+  background-color: #e7ffd1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 1rem;
-  border: 1px solid #c1c7fb;
+  border: 1px solid #a3b98f;
 }
 .myPageInfo {
   display: grid;
@@ -275,7 +375,8 @@
   align-items: center;
 }
 .myPageMyUpLoad {
-  background-color: #c1c7fb;
+  background-color: #e7ffd1;
+  border: 1px solid #a3b98f;
   color: rgb(30, 30, 30);
   border-radius: 5px;
   width: 250px;
@@ -285,7 +386,8 @@
   margin: 2rem 0;
 }
 .myLove {
-  background-color: #c1c7fb;
+  background-color: #e7ffd1;
+  border: 1px solid #a3b98f;
   color: rgb(30, 30, 30);
   border-radius: 5px;
   width: 250px;
@@ -293,8 +395,16 @@
   font-size: 20px;
   font-weight: bolder;
 }
+.myPageMyUpLoad:hover,
+.myLove:hover {
+  cursor: pointer;
+  border: 3px solid lightgreen;
+}
 
 /* location 페이지 ////////////////////*/
+.LOCATION {
+  position: relative;
+}
 .location {
   width: 100%;
   margin: 0 auto;
@@ -304,18 +414,25 @@
   align-items: center;
   flex-direction: column;
   background-color: white;
+  overflow: auto;
 }
 .locationTitle {
+  /* margin: 2rem 0; */
+  width: 100%;
+  text-align: center;
   font-size: 20px;
-  margin: 2rem 0;
+  padding: 1.5rem 0;
   color: rgb(30, 30, 30);
+  background-color: #e7ffd1;
+  border-bottom: 2px solid #a3b98f;
+  margin-bottom: 1rem;
 }
 .locationContent {
   display: flex;
   gap: 10px;
 }
 .locationTable1 {
-  border: 1px #c1c7fb solid;
+  border: 1px lightgreen solid;
   font-size: 0.9em;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
   border-collapse: collapse;
@@ -323,7 +440,7 @@
   background-color: white;
 }
 .locationTable2 {
-  border: 1px #c1c7fb solid;
+  border: 1px lightgreen solid;
   font-size: 0.9em;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
   border-collapse: collapse;
@@ -333,20 +450,21 @@
 .location thead {
   font-weight: bold;
   color: rgb(30, 30, 30);
-  background: #c1c7fb;
+  background: rgb(116, 156, 116);
+  color: white;
   width: 10rem;
 }
 .location td {
-  border: 1px solid #c1c7fb;
+  border: 1px solid lightgreen;
   padding: 5px;
   background: #fff;
   width: 10rem;
 }
 .location table td:hover {
-  background-color: #dee1fc;
+  background-color: #e7ffd1;
 }
-th,
-p {
+.locationContent th,
+.locationContent p {
   font-size: 20px;
   margin-bottom: 2px;
 }
@@ -355,7 +473,7 @@ li {
 }
 
 li:hover {
-  background-color: #c1c7fb;
+  background-color: #e7ffd1;
 }
 .locationMap {
   display: flex;
@@ -364,121 +482,231 @@ li:hover {
   align-items: center;
   text-align: center;
   font-weight: bold;
-  border: 2px solid #c1c7fb;
+  border: 2px solid lightgreen;
   background: white;
   width: 730px;
 }
 .locationMapTitle {
   padding-bottom: 0.3rem;
-  background-color: #c1c7fb;
+  background-color: rgb(116, 156, 116);
+  color: white;
   width: 730px;
 }
 
-/* LocationDetail 페이지 */
-/* .Detail-total {
-  background-color: #e1dbf6;
-  min-height: 100vh;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  padding-top: 50px;
-} */
-
 /* upload 페이지 ///////////////////////*/
+.UPLOAD {
+  position: relative;
+}
+
 .upload {
   width: 100%;
   margin: 0 auto;
   height: 89vh;
   display: grid;
+  overflow: auto;
 }
 .uploadTitle {
   text-align: center;
   font-size: 20px;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   color: rgb(30, 30, 30);
-  background-color: #eaecfc;
+  background-color: #e7ffd1;
+  border-bottom: 2px solid #a3b98f;
 }
 .uploadContentTotal {
   display: flex;
 }
 .uploadContent1 {
   width: 50%;
-  padding: 0 3rem;
+  padding: 2rem 3rem;
   line-height: 2;
-  border: 2px solid #c1c7fb;
+  border-right: 2px solid #a3b98f;
 }
 .uploadContent2 {
   width: 50%;
-  padding: 0 3rem;
+  padding: 2rem 3rem;
   line-height: 2;
-  border: 2px solid #c1c7fb;
 }
 .uploadButton {
-  background-color: #c1c7fb;
+  margin: 1rem 0;
+  display: grid;
+  place-items: center;
+}
+.uploadButton button {
+  background-color: #e7ffd1;
+  border: 1px solid #a3b98f;
   color: rgb(30, 30, 30);
   border-radius: 5px;
   width: 250px;
   height: 45px;
   font-size: 20px;
   font-weight: bolder;
-  margin: 2rem 0;
+}
+.uploadButton button:hover {
+  cursor: pointer;
+  border: 3px solid #a3b98f;
 }
 
-/* upload */
-/* .upload {
-  background-color: #f0fded;
-  display: flex;
-  /* 수직 방향 (세로)에서 요소들을 정렬하는데 사용*/
-/*align-items: center;
-  /* 수평 방향 (가로)에서 요소들을 정렬하는데 사용 */
-/*justify-content: center;
-  /* 텍스트의 정렬을 제어 */
-/*text-align: center;
+/* MyListing / listing / MyLike 페이지들 ///// */
+
+.LISTING {
+  background-color: #eaecfc;
 }
-.uploadForm {
-  padding-top: 60px;
-  text-align: center;
-  padding-bottom: 50px;
-  line-height: 50px;
-}
-.uploadForm h2 {
-  margin: 20px 0;
-}
-.uploadForm .content1 {
-  display: flex;
-  justify-content: flex-start;
-}
-.uploadForm .content2 {
+.listing {
+  margin: 0 auto;
   display: grid;
-  justify-content: flex-start;
-  text-align: start;
-  line-height: 50px;
+  width: 1200px;
+  background-color: white;
+  justify-content: center;
 }
-.upload .searchAddress {
-  width: 200%;
+.listingTitleTop {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.searchAddress > div {
-  width: 100% !important;
+.listingTitle {
+  width: 900px;
+  text-align: center;
+  font-size: 20px;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  color: rgb(30, 30, 30);
+  background-color: #e7ffd1;
 }
-.inputMoney,
-.detailAddress,
-.photo {
-  width: 200px;
+.listingFilters {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
 }
-.upload-Button {
-  display: inline-block;
+
+.listingFilters .dropdown-item {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 1px solid #a3b98f;
+}
+
+.listingFilters .dropdown-item:focus {
+  background-color: #e7ffd1;
+  outline: none;
+  font-weight: bolder;
+}
+
+.listingPost {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  border-top: 0.5px solid #c4c4c4;
+}
+.listingItem {
+  background-color: white;
+  border: 3px solid #e7ffd1;
+  padding: 0.5rem;
+  line-height: 2;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+.listingItem .imageWrapper {
+  position: relative;
+}
+
+.listingItem .imageCaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.575);
+  display: grid;
+  place-items: center;
   color: white;
-  background-color: #78718d;
-  border-radius: 10px;
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
-  margin-top: 30px;
-  font-size: 30px;
-} */
+  height: 200px;
+  font-weight: bold;
+  text-align: center;
+  transform: translateY(-10px);
+}
+.listingPost .listingRow {
+  display: flex;
+  gap: 32px;
+}
+.listingPost .listingRow .listingItem:hover {
+  background-color: #e7ffd1;
+  border: 4px solid #a3b98f;
+}
+
+/* ListingDetail 페이지 */
+.ListingDetail {
+  background-color: #eaecfc;
+  position: relative;
+}
+.listingDetail {
+  width: 1200px;
+  margin: 0 auto;
+  height: 89vh;
+  display: grid;
+  overflow: auto;
+  justify-content: center;
+  background-color: white;
+}
+.listingDetailTitle {
+  text-align: center;
+  font-size: 20px;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  color: rgb(30, 30, 30);
+  background-color: #e7ffd1;
+  width: 900px;
+}
+.listingDetailContentTotal {
+  display: grid;
+  gap: 1rem;
+}
+.listingDetailContentTop {
+  display: flex;
+  gap: 1rem;
+}
+.listingDetailImgTotal {
+  display: grid;
+  place-items: center;
+  width: 600px;
+}
+.listingDetailContentTotal h3 {
+  color: white;
+  background-color: #a6c48b;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.listingDetailKeyContent {
+  padding: 1rem;
+  width: 250px;
+  display: grid;
+  text-align: start;
+  line-height: 1;
+  border: 3px solid #a3b98f;
+}
+.listingDetailHeart {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  place-items: center;
+  font-weight: bolder;
+}
+.listingDetailContentBottom {
+  width: 900px;
+  border: 3px solid #a3b98f;
+  line-height: 2;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.listingDetailSubContent {
+  width: 50%;
+  padding: 1rem;
+}
+.listingDetailMap {
+  padding: 1rem;
+}

@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 
 const accessSecretKey = process.env.SECRETKEY;
 const accOptions = {
-  expiresIn: "10s", // 액세스 토큰 만료시간 (10분)
+  expiresIn: "5s", // 액세스 토큰 만료시간 (10분)
   issuer: "My Sweet Home", //발행처
 };
 const refreshOptions = {
