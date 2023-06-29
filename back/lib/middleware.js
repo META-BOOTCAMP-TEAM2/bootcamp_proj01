@@ -14,7 +14,7 @@ const middleware = {
 
       if (decodedACC) {
         // 1. 토큰 검증이 성공한 경우 새로 갱신해 준다.
-        const newAccessToken = tokenUtil.makeAccessToken(decodedACC);
+        const newAccessToken = decodedACC;
         logger.info(`갱신 전 액세스토큰: ${accesstoken}`);
         logger.info(`갱신 후 액세스토큰: ${newAccessToken}`);
 

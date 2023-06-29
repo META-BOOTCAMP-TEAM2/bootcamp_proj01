@@ -8,17 +8,18 @@ import axios from "axios";
 
 const MyPage = () => {
   const navigate = useNavigate();
-  const [userInfo, setUserInfo] = useState({});
-  const { currentUser } = useContext(AuthContext);
+  const { currentUser, logout } = useContext(AuthContext);
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await axios.get(`/users/mypage/${currentUser}`);
-        const result = res.data;
-        setUserInfo(result);
+        console.log(res.data);
       } catch (err) {
         alert(err.response.data);
-        if (err.response.status === 401) navigate("/login");
+        if (err.response.status === 401) {
+          logout();
+          navigate("/login");
+        }
       }
     };
     fetchData();
@@ -62,10 +63,10 @@ const MyPage = () => {
           <div className="myPageBox">
             <h3 className="myPageSubTitle">나의 정보</h3>
             <div className="myPageInfo">
-              <p> 이름 : {userInfo?.username}</p>
-              <p> 아이디 : {userInfo?.userid}</p>
-              <p> 이메일 주소 : {userInfo?.email}</p>
-              <p> 연락처 : {userInfo?.phone}</p>
+              <p> 이름 : {localStorage.getItem("username")}</p>
+              <p> 아이디 : {localStorage.getItem("userid")}</p>
+              <p> 이메일 주소 : {localStorage.getItem("email")}</p>
+              <p> 연락처 : {localStorage.getItem("phone")}</p>
             </div>
           </div>
 

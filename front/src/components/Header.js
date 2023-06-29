@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 import "./style.css"; // CSS 파일을 불러옵니다.
 
 function Header() {
-  const { currentUser, logout } = useContext(AuthContext);
+  const { logout } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -33,7 +33,7 @@ function Header() {
               Home
             </Button>{" "}
           </Link>
-          {currentUser ? (
+          {localStorage.getItem("userid") ? (
             <>
               <Link to="/mypage">
                 <Button className="menu-item" variant="My page" id="buttons">
