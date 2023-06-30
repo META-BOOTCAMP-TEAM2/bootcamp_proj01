@@ -4,7 +4,7 @@ import { AuthContext } from "../components/authContext";
 import "./style.css";
 
 function Header() {
-  const { logout, currentUser } = useContext(AuthContext);
+  const { logout } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -26,7 +26,7 @@ function Header() {
           </Link>
         </div>
         <div className="menu">
-          {currentUser ? (
+          {localStorage.getItem("userid") ? (
             <>
               <div className="welcome">
                 {localStorage.getItem("userid")} 님, 환영합니다😊

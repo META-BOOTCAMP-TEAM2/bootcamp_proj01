@@ -12,7 +12,7 @@ const MyPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`/users/mypage/${currentUser}`);
+        await axios.get(`/users/mypage/${currentUser}`);
       } catch (err) {
         alert(err.response.data);
         if (err.response.status === Number(401)) {

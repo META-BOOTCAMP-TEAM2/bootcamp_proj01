@@ -46,7 +46,7 @@ const LoginForm = () => {
     // 구글 소셜 로그인 처리
     try {
       const response = await axios.get("/auth/google");
-      console.log(response);
+      // console.log(response);
       navigate("/");
     } catch (error) {
       console.log(error);
@@ -58,8 +58,8 @@ const LoginForm = () => {
     // 카카오 소셜 로그인 처리
     e.preventDefault();
     try {
-      await axios.get("auth/kakao/logout").then((req, res) => {
-        alert(Object.keys(res));
+      await axios.get("/auth/kakao").then((req, res) => {
+        // console.log(Object.keys(res));
       });
       navigate("/");
     } catch (err) {

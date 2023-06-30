@@ -2,7 +2,7 @@
 
 //사용자에 대한 데이터베이스 액세스관련기능 처리
 const { Op } = require("sequelize");
-const { User } = require("../models/index");
+const { User, Post, Like } = require("../models/index");
 
 const dao = {
   // 회원가입

@@ -36,6 +36,7 @@ router.put("/:id", isLoggedIn, async (req, res) => {
   try {
     const params = {
       id: req.params.id,
+      userid: req.body.userid,
       username: req.body.username,
       role: req.body.role,
       email: req.body.email,
@@ -65,6 +66,7 @@ router.delete("/:id", isLoggedIn, async (req, res) => {
     const result = await userService.delete(params);
 
     // 최종 응답
+
     res.status(200).json(result);
   } catch (err) {
     res.status(500).json(err.toString());
