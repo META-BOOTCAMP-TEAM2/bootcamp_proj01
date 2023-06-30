@@ -110,6 +110,7 @@
 // export default ListingDetail;
 
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import axios from "axios";
@@ -138,6 +139,35 @@ const ListingDetail = (props) => {
     console.log(res.data.length);
     if (res.data.length !== 0) setLike(true);
   };
+
+  const navigate = useNavigate();
+
+  const deleteData = async () => {
+    const res = await axios.delete(`/post/${postId}`, {
+      data: {
+        postid: postId, // 매물의 ID
+        userid: userId, // 로컬 스토리지에서 가져온 사용자 ID
+      },
+    });
+    alert("삭제하시겠습니까?");
+    navigate("/mypage");
+
+    console.log(res.data);
+  };
+  // const deleteData = async () => {
+  //   try {
+  //     const res = await axios.delete(`/post/${postId}`, {
+  //       data: {
+  //         postid: postId, // 매물의 ID
+  //         userid: userId, // 로컬 스토리지에서 가져온 사용자 ID
+  //       },
+  //     });
+  //     sessionStorage.removeItem("myData");
+  //     window.location.href - "/mypage";
+  //   } catch (error) {
+  //     console.log("hi");
+  //   }
+  // };
 
   const toggleLike = async () => {
     try {
@@ -176,7 +206,7 @@ const ListingDetail = (props) => {
   }, []);
 
   useEffect(() => {
-    if (localUserId && sessionUserId && localUserId === sessionUserId) {
+    if (localUserId && localUserId === sessionUserId) {
       setShowButton(true); // 버튼 보이기
       setContentHeight(310); // 컨텐츠 높이 변경
     } else {
@@ -209,7 +239,7 @@ const ListingDetail = (props) => {
   }, [data]);
 
   return (
-    <div>
+    <>
       <Header />
       <div className="ListingDetail">
         <div className="listingDetail">
@@ -241,20 +271,16 @@ const ListingDetail = (props) => {
                     id="DeleteButton"
                     type="submit"
                     className="listingDelete"
+                    onClick={deleteData}
                   >
                     게시물 삭제
                   </button>
                 )}
-                <div
-                  className="listingDetailKeyContent"
-                  style={{ height: `${contentHeight}px` }}
-                >
+                <div className="listingDetailKeyContent" style={{ height: `${contentHeight}px` }}>
                   <h3>중요 정보</h3>
                   <p>계약 방식: {data.propertyType}</p>
                   {data.propertyType === "매매" && <p>가격: {data.price}</p>}
-                  {data.propertyType === "전세" && (
-                    <p>보증금: {data.deposit}</p>
-                  )}
+                  {data.propertyType === "전세" && <p>보증금: {data.deposit}</p>}
                   {data.propertyType === "월세" && (
                     <p>
                       보증금: {data.deposit}, 월세: {data.monthlyRent}
@@ -286,7 +312,7 @@ const ListingDetail = (props) => {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

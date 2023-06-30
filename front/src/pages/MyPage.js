@@ -23,6 +23,25 @@ const MyPage = () => {
     fetchData();
   }, []);
 
+  const userUpdate = async () => {
+    try {
+      navigate("/userUpdate");
+    } catch (err) {
+      alert(err);
+    }
+  };
+
+  const userDelete = async () => {
+    try {
+      const res = await axios.delete(`/users/${localStorage.getItem("id")}`);
+      alert("삭제하시겠습니까?");
+      logout();
+      navigate("/");
+    } catch (err) {
+      alert(err);
+    }
+  };
+
   const btnClick1 = async () => {
     try {
       const res = await axios.get(`/post/${localStorage.getItem("userid")}`);
@@ -76,6 +95,16 @@ const MyPage = () => {
             <div>
               <button className="myLove" onClick={() => btnClick2()}>
                 내가 찜한 매물
+              </button>
+            </div>
+            <div>
+              <button className="myLove" onClick={userDelete}>
+                회원탈퇴
+              </button>
+            </div>
+            <div>
+              <button className="myLove" onClick={userUpdate}>
+                회원수정
               </button>
             </div>
           </div>

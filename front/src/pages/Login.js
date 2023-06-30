@@ -101,11 +101,7 @@ const LoginForm = () => {
             <button className="loginSubmitButton" onClick={handleSubmit}>
               로그인
             </button>
-            <button
-              type="button"
-              onClick={handleGoogleLogin}
-              className="loginButtonGoogle"
-            >
+            <button type="button" onClick={handleGoogleLogin} className="loginButtonGoogle">
               <h4>
                 <span>G</span>
                 <span>o</span>
@@ -116,11 +112,7 @@ const LoginForm = () => {
                 <span>&nbsp;Login</span>
               </h4>
             </button>
-            <button
-              type="button"
-              onClick={handleKakaoLogin}
-              className="loginButtonKakao"
-            >
+            <button type="button" onClick={handleKakaoLogin} className="loginButtonKakao">
               <h4>Kakao Login</h4>
             </button>
             {err && <p>{err}</p>}
@@ -128,7 +120,7 @@ const LoginForm = () => {
             <div className="loginInSignText">
               계정이 있으신가요?{" "}
               <Link className="loginInSign" to="/signup">
-                회원가입
+                Sign up
               </Link>
             </div>
           </form>

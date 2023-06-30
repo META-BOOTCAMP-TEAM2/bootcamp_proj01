@@ -28,36 +28,27 @@ const Listing = () => {
           : data;
 
         if (sortByPrice === "expensive") {
-          if (
-            filteredPropertyType === "전세" ||
-            filteredPropertyType === "월세"
-          ) {
+          if (filteredPropertyType === "전세" || filteredPropertyType === "월세") {
             filteredItems = filteredItems.sort((a, b) => b.deposit - a.deposit);
           } else {
             filteredItems = filteredItems.sort((a, b) => b.price - a.price);
           }
         } else if (sortByPrice === "cheap") {
-          if (
-            filteredPropertyType === "전세" ||
-            filteredPropertyType === "월세"
-          ) {
+          if (filteredPropertyType === "전세" || filteredPropertyType === "월세") {
             filteredItems = filteredItems.sort((a, b) => a.deposit - b.deposit);
           } else {
             filteredItems = filteredItems.sort((a, b) => a.price - b.price);
           }
         }
 
-        const updatedRows = filteredItems.reduce(
-          (accumulator, currentValue, index) => {
-            const rowIndex = Math.floor(index / itemsPerRow);
-            if (!accumulator[rowIndex]) {
-              accumulator[rowIndex] = [];
-            }
-            accumulator[rowIndex].push(currentValue);
-            return accumulator;
-          },
-          []
-        );
+        const updatedRows = filteredItems.reduce((accumulator, currentValue, index) => {
+          const rowIndex = Math.floor(index / itemsPerRow);
+          if (!accumulator[rowIndex]) {
+            accumulator[rowIndex] = [];
+          }
+          accumulator[rowIndex].push(currentValue);
+          return accumulator;
+        }, []);
         setRows(updatedRows);
       })
       .catch((error) => {
@@ -67,7 +58,7 @@ const Listing = () => {
   const storedData = sessionStorage.getItem("myData");
   const data = JSON.parse(storedData);
   const handleCaptionClick = (item) => {
-    const newUrl = `http://localhost:3000/listDetail`;
+    const newUrl = `/listDetail`;
     const newWindow = window.open(newUrl);
     newWindow.sessionStorage.setItem("myData", JSON.stringify(item));
   };
@@ -117,15 +108,8 @@ const Listing = () => {
           </div>
           <div className="listingFilters">
             <div className="propertyType">
-              <div
-                className="dropdown-menu"
-                aria-labelledby="dropdownMenuButton"
-              >
-                <button
-                  ref={allButtonRef}
-                  className="dropdown-item"
-                  onClick={clearFilters}
-                >
+              <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button ref={allButtonRef} className="dropdown-item" onClick={clearFilters}>
                   전체
                 </button>
                 {propertyTypes.map((propertyType) => (
@@ -142,10 +126,7 @@ const Listing = () => {
 
             <div className="priceType">
               <div className="dropdown">
-                <div
-                  className="dropdown-menu"
-                  aria-labelledby="dropdownMenuButton"
-                >
+                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   {priceOptions.map((option) => (
                     <button
                       key={option.value}
@@ -189,12 +170,8 @@ const Listing = () => {
                     <li>계약 방식: {item.propertyType}</li>
                     <li>주소: {item.address}</li>
 
-                    {item.propertyType === "매매" && (
-                      <div>매매가: {item.price}</div>
-                    )}
-                    {item.propertyType === "전세" && (
-                      <div>보증금: {item.deposit}</div>
-                    )}
+                    {item.propertyType === "매매" && <div>매매가: {item.price}</div>}
+                    {item.propertyType === "전세" && <div>보증금: {item.deposit}</div>}
                     {item.propertyType === "월세" && (
                       <li>
                         보증금: {item.deposit}, 월세: {item.monthlyRent}

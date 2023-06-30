@@ -55,6 +55,7 @@ const Map = React.memo(({ selectedCity, selectedArea, hoveredArea }) => {
               console.log(item);
               marker.userData = {
                 id: item.id,
+                userid: item.userid,
                 propertyType: item.propertyType,
                 structure: item.structure,
                 options: item.options,
@@ -70,7 +71,7 @@ const Map = React.memo(({ selectedCity, selectedArea, hoveredArea }) => {
               // 마커 클릭 이벤트 핸들러 등 마커와 관련된 작업들을 이곳에 추가할 수 있습니다.
               // ...
               kakao.maps.event.addListener(marker, "click", function () {
-                const newUrl = `http://localhost:3000/listDetail`;
+                const newUrl = `/listDetail`;
                 const newWindow = window.open(newUrl);
                 newWindow.sessionStorage.setItem("myData", JSON.stringify(marker.userData));
               });
@@ -142,6 +143,7 @@ const Map = React.memo(({ selectedCity, selectedArea, hoveredArea }) => {
       markers.forEach(function (marker) {
         var info = {
           id: marker.userData.id,
+          userid: marker.userData.userid,
           address: marker.userData.address,
           price: marker.userData.price,
           deposit: marker.userData.deposit,
@@ -158,7 +160,7 @@ const Map = React.memo(({ selectedCity, selectedArea, hoveredArea }) => {
         markerInfo.push(info);
       });
 
-      const newUrl = `http://localhost:3000/lists`;
+      const newUrl = "lists";
       const newWindow = window.open(newUrl);
       newWindow.sessionStorage.setItem("myData", JSON.stringify(markerInfo));
     });
